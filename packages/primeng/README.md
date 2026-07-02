@@ -82,7 +82,7 @@ npm install @libreng/ui @libreng/themes
 
 ## Documentation & Source
 
-https://github.com/JackAndJack26/libreng-ui — the showcase app in `apps/showcase` documents all 80+ components with live demos.
+Live demo: https://libreng-ui.vercel.app — source: https://github.com/JackAndJack26/libreng-ui
 
 ## License
 

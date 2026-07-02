@@ -2,6 +2,8 @@
 
 **LibreNG UI** is an open source (MIT) UI component library for **Angular 22+** — 80+ rich, accessible components, a token-based theming engine with four built-in presets, and a full documentation showcase.
 
+**Live demo & docs: https://libreng-ui.vercel.app**
+
 It is a community-maintained fork of [PrimeNG](https://github.com/primefaces/primeng) v21 — the last version released by PrimeTek under the MIT license — migrated to Angular 22 and TypeScript 6. Component APIs and selectors are unchanged, so existing PrimeNG v21 applications migrate with a find-and-replace. PrimeNG and the Prime brand belong to PrimeTek Informatics; this project is not affiliated with or endorsed by PrimeTek.
 
 ## Packages
@@ -139,6 +141,16 @@ pnpm run build:themes     # build @libreng/themes
 pnpm run test:unit        # run the unit test suite (7000+ tests)
 pnpm run format           # format with prettier
 ```
+
+### How the engine packages are generated
+
+`@libreng/styled`, `@libreng/utils`, `@libreng/styles` and `@libreng/motion` are not compiled from source on every build. Their `dist/` folders are **deterministic copies of the last MIT `@primeuix` artifacts** stored in [`vendor/`](./vendor) (tarball URLs and sha1 checksums recorded in `vendor/README.md`), with the package specifiers renamed to the `@libreng` scope by [`scripts/engine-dist.mjs`](./scripts/engine-dist.mjs). The dists are committed, so a fresh clone builds with no extra step; regenerate them any time with:
+
+```bash
+pnpm run build:engine
+```
+
+Each engine package also carries the original TypeScript sources (recovered from the published sourcemaps) in its `src/` folder — that is the starting point if a bug fix or feature ever requires compiling the engine from source.
 
 Bug reports and pull requests are welcome on the [issue tracker](https://github.com/JackAndJack26/libreng-ui/issues) and [discussions](https://github.com/JackAndJack26/libreng-ui/discussions).
 
