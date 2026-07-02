@@ -1,11 +1,11 @@
 import { NgTemplateOutlet } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, computed, contentChild, forwardRef, inject, InjectionToken, input, model, ViewEncapsulation } from '@angular/core';
 import { equals } from '@primeuix/utils';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
 import { TabPanelStyle } from './style/tabpanelstyle';
 import { Tabs } from './tabs';
-import { TabPanelPassThrough } from 'primeng/types/tabs';
+import { TabPanelPassThrough } from '@libreng/ui/types/tabs';
 
 const TABPANEL_INSTANCE = new InjectionToken<TabPanel>('TABPANEL_INSTANCE');
 

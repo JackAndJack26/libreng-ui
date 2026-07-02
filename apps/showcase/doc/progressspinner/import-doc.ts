@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ProgressSpinnerModule } from 'primeng/progressspinner';`
+        typescript: `import { ProgressSpinnerModule } from '@libreng/ui/progressspinner';`
     };
 }

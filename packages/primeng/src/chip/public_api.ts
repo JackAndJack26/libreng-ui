@@ -1,3 +1,3 @@
-export * from 'primeng/types/chip';
+export * from '@libreng/ui/types/chip';
 export * from './chip';
 export * from './style/chipstyle';

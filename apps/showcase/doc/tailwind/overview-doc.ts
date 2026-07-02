@@ -14,8 +14,8 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
                 that take this approach to build components specifically for Tailwind.
             </p>
             <p>
-                Tailwind is an outstanding CSS library, however it lacks a true comprehensive UI suite when combined with Angular, this is where PrimeNG comes in by providing a wide range of highly accessible and feature rich UI component library.
-                The core of PrimeNG does not depend on Tailwind CSS.
+                Tailwind is an outstanding CSS library, however it lacks a true comprehensive UI suite when combined with Angular, this is where LibreNG UI comes in by providing a wide range of highly accessible and feature rich UI component library.
+                The core of LibreNG UI does not depend on Tailwind CSS.
             </p>
         </app-docsectiontext>
     `

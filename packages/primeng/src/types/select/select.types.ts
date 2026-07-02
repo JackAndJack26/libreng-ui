@@ -1,10 +1,10 @@
 import { TemplateRef } from '@angular/core';
-import type { PassThrough, PassThroughOption, ScrollerOptions } from 'primeng/api';
-import type { IconFieldPassThrough } from 'primeng/types/iconfield';
-import type { InputIconPassThrough } from 'primeng/types/inputicon';
-import type { InputTextPassThrough } from 'primeng/types/inputtext';
-import type { OverlayPassThrough } from 'primeng/types/overlay';
-import type { VirtualScrollerPassThrough } from 'primeng/types/scroller';
+import type { PassThrough, PassThroughOption, ScrollerOptions } from '@libreng/ui/api';
+import type { IconFieldPassThrough } from '@libreng/ui/types/iconfield';
+import type { InputIconPassThrough } from '@libreng/ui/types/inputicon';
+import type { InputTextPassThrough } from '@libreng/ui/types/inputtext';
+import type { OverlayPassThrough } from '@libreng/ui/types/overlay';
+import type { VirtualScrollerPassThrough } from '@libreng/ui/types/scroller';
 
 /**
  * Custom pass-through(pt) options.

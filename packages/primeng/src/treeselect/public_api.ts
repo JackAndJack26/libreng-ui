@@ -1,3 +1,3 @@
 export * from './treeselect';
-export * from 'primeng/types/treeselect';
+export * from '@libreng/ui/types/treeselect';
 export * from './style/treeselectstyle';

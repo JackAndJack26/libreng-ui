@@ -25,15 +25,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { Aria, PrimeTemplate, SelectItem, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { Select, SelectChangeEvent } from 'primeng/select';
-import { AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleLeftIcon, AngleRightIcon } from 'primeng/icons';
-import { InputNumber } from 'primeng/inputnumber';
-import { Ripple } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
-import { PaginatorDropdownItemTemplateContext, PaginatorPassThrough, PaginatorState, PaginatorTemplateContext } from 'primeng/types/paginator';
+import { Aria, PrimeTemplate, SelectItem, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { Select, SelectChangeEvent } from '@libreng/ui/select';
+import { AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleLeftIcon, AngleRightIcon } from '@libreng/ui/icons';
+import { InputNumber } from '@libreng/ui/inputnumber';
+import { Ripple } from '@libreng/ui/ripple';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import { PaginatorDropdownItemTemplateContext, PaginatorPassThrough, PaginatorState, PaginatorTemplateContext } from '@libreng/ui/types/paginator';
 import { PaginatorStyle } from './style/paginatorstyle';
 
 const PAGINATOR_INSTANCE = new InjectionToken<Paginator>('PAGINATOR_INSTANCE');

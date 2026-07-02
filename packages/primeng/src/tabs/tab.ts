@@ -1,11 +1,11 @@
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, computed, ElementRef, forwardRef, HostListener, inject, InjectionToken, input, model, ViewEncapsulation } from '@angular/core';
 import { equals, focus, getAttribute } from '@primeuix/utils';
-import { SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { Ripple } from 'primeng/ripple';
-import { TabPassThrough } from 'primeng/types/tabs';
+import { SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { Ripple } from '@libreng/ui/ripple';
+import { TabPassThrough } from '@libreng/ui/types/tabs';
 import { TabStyle } from './style/tabstyle';
 import { TabList } from './tablist';
 import { Tabs } from './tabs';

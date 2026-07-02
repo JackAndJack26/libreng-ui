@@ -28,23 +28,23 @@ import {
 import { FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MotionOptions } from '@primeuix/motion';
 import { deepEquals, equals, findLastIndex, findSingle, focus, getFirstFocusableElement, getFocusableElements, getLastFocusableElement, isArray, isNotEmpty, isPrintableCharacter, resolveFieldData, uuid } from '@primeuix/utils';
-import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseEditableHolder } from 'primeng/baseeditableholder';
-import { Bind, BindModule } from 'primeng/bind';
-import { Checkbox } from 'primeng/checkbox';
-import { Chip } from 'primeng/chip';
-import { DomHandler, unblockBodyScroll } from 'primeng/dom';
-import { Fluid } from 'primeng/fluid';
-import { IconField } from 'primeng/iconfield';
-import { CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputText } from 'primeng/inputtext';
-import { Overlay } from 'primeng/overlay';
-import { Scroller } from 'primeng/scroller';
-import { Tooltip } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
+import { FilterService, Footer, Header, OverlayOptions, OverlayService, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { Checkbox } from '@libreng/ui/checkbox';
+import { Chip } from '@libreng/ui/chip';
+import { DomHandler, unblockBodyScroll } from '@libreng/ui/dom';
+import { Fluid } from '@libreng/ui/fluid';
+import { IconField } from '@libreng/ui/iconfield';
+import { CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from '@libreng/ui/icons';
+import { InputIcon } from '@libreng/ui/inputicon';
+import { InputText } from '@libreng/ui/inputtext';
+import { Overlay } from '@libreng/ui/overlay';
+import { Scroller } from '@libreng/ui/scroller';
+import { Tooltip } from '@libreng/ui/tooltip';
+import { Nullable } from '@libreng/ui/ts-helpers';
 import {
     MultiSelectBlurEvent,
     MultiSelectChangeEvent,
@@ -64,8 +64,8 @@ import {
     MultiSelectRemoveEvent,
     MultiSelectSelectAllChangeEvent,
     MultiSelectSelectedItemsTemplateContext
-} from 'primeng/types/multiselect';
-import { ObjectUtils } from 'primeng/utils';
+} from '@libreng/ui/types/multiselect';
+import { ObjectUtils } from '@libreng/ui/utils';
 import { MultiSelectStyle } from './style/multiselectstyle';
 
 const MULTISELECT_INSTANCE = new InjectionToken<MultiSelect>('MULTISELECT_INSTANCE');

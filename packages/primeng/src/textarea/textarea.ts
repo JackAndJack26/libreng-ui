@@ -1,10 +1,10 @@
 import { booleanAttribute, computed, Directive, effect, EventEmitter, HostListener, inject, InjectionToken, input, Input, NgModule, Output } from '@angular/core';
 import { NgControl } from '@angular/forms';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseModelHolder } from 'primeng/basemodelholder';
-import { Bind } from 'primeng/bind';
-import { Fluid } from 'primeng/fluid';
-import { TextareaPassThrough } from 'primeng/types/textarea';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseModelHolder } from '@libreng/ui/basemodelholder';
+import { Bind } from '@libreng/ui/bind';
+import { Fluid } from '@libreng/ui/fluid';
+import { TextareaPassThrough } from '@libreng/ui/types/textarea';
 import { Subscription } from 'rxjs';
 import { TextareaStyle } from './style/textareastyle';
 

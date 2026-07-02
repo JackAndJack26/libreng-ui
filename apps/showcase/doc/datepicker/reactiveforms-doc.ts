@@ -2,11 +2,11 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { MessageService } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { DatePickerModule } from 'primeng/datepicker';
-import { MessageModule } from 'primeng/message';
-import { ToastModule } from 'primeng/toast';
+import { MessageService } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { DatePickerModule } from '@libreng/ui/datepicker';
+import { MessageModule } from '@libreng/ui/message';
+import { ToastModule } from '@libreng/ui/toast';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

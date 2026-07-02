@@ -11,8 +11,8 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ProgressBarModule } from 'primeng/progressbar';
+        typescript: `import { ProgressBarModule } from '@libreng/ui/progressbar';
 // For dynamic progressbar demo
-import { ToastModule } from 'primeng/toast';`
+import { ToastModule } from '@libreng/ui/toast';`
     };
 }

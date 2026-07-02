@@ -23,16 +23,16 @@ import {
 } from '@angular/core';
 import { MotionOptions } from '@primeuix/motion';
 import { uuid } from '@primeuix/utils';
-import { MenuItem, PrimeTemplate, SharedModule, TooltipOptions } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { ButtonDirective } from 'primeng/button';
-import { ChevronDownIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TieredMenu } from 'primeng/tieredmenu';
-import { TooltipModule } from 'primeng/tooltip';
-import { ButtonProps, MenuButtonProps, SplitButtonPassThrough } from 'primeng/types/splitbutton';
+import { MenuItem, PrimeTemplate, SharedModule, TooltipOptions } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { ButtonDirective } from '@libreng/ui/button';
+import { ChevronDownIcon } from '@libreng/ui/icons';
+import { Ripple } from '@libreng/ui/ripple';
+import { TieredMenu } from '@libreng/ui/tieredmenu';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { ButtonProps, MenuButtonProps, SplitButtonPassThrough } from '@libreng/ui/types/splitbutton';
 import { SplitButtonStyle } from './style/splitbuttonstyle';
 
 const SPLITBUTTON_INSTANCE = new InjectionToken<SplitButton>('SPLITBUTTON_INSTANCE');

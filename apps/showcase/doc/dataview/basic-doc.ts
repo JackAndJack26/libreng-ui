@@ -4,9 +4,9 @@ import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, signal } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { DataViewModule } from 'primeng/dataview';
-import { TagModule } from 'primeng/tag';
+import { ButtonModule } from '@libreng/ui/button';
+import { DataViewModule } from '@libreng/ui/dataview';
+import { TagModule } from '@libreng/ui/tag';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

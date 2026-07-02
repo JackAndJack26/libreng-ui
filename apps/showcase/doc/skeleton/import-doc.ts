@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { SkeletonModule } from 'primeng/skeleton';`
+        typescript: `import { SkeletonModule } from '@libreng/ui/skeleton';`
     };
 }

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
-import { AvatarModule } from 'primeng/avatar';
-import { BadgeModule } from 'primeng/badge';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { BadgeModule } from '@libreng/ui/badge';
 import { RouterModule } from '@angular/router';
 
 @Component({

@@ -6,8 +6,8 @@ import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TableModule } from 'primeng/table';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
+import { TableModule } from '@libreng/ui/table';
+import { ToggleSwitchModule } from '@libreng/ui/toggleswitch';
 
 @Component({
     selector: 'multipleselection-doc',

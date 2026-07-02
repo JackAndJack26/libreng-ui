@@ -6,14 +6,14 @@ import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MessageService, SelectItem } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { RippleModule } from 'primeng/ripple';
-import { SelectModule } from 'primeng/select';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { ToastModule } from 'primeng/toast';
+import { MessageService, SelectItem } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { RippleModule } from '@libreng/ui/ripple';
+import { SelectModule } from '@libreng/ui/select';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { ToastModule } from '@libreng/ui/toast';
 
 @Component({
     selector: 'rowedit-doc',

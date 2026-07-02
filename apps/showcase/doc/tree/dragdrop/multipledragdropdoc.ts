@@ -1,8 +1,8 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
-import { TreeDragDropService, TreeNode } from 'primeng/api';
-import { TreeModule } from 'primeng/tree';
+import { TreeDragDropService, TreeNode } from '@libreng/ui/api';
+import { TreeModule } from '@libreng/ui/tree';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

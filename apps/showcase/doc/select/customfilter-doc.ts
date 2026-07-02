@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { SelectFilterOptions } from 'primeng/select';
+import { SelectFilterOptions } from '@libreng/ui/select';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
 import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
+import { SelectModule } from '@libreng/ui/select';
+import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { InputGroupAddonModule } from '@libreng/ui/inputgroupaddon';
+import { ButtonModule } from '@libreng/ui/button';
+import { InputTextModule } from '@libreng/ui/inputtext';
 import { CommonModule } from '@angular/common';
 
 interface City {

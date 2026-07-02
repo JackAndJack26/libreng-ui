@@ -3,8 +3,8 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { PhotoService } from '@/service/photoservice';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, OnDestroy, OnInit, PLATFORM_ID, signal, ViewChild } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { Galleria, GalleriaModule } from 'primeng/galleria';
+import { ButtonModule } from '@libreng/ui/button';
+import { Galleria, GalleriaModule } from '@libreng/ui/galleria';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

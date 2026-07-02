@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
 import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
-import { ButtonModule } from 'primeng/button';
+import { SelectModule } from '@libreng/ui/select';
+import { ButtonModule } from '@libreng/ui/button';
 import { CommonModule } from '@angular/common';
 
 @Component({

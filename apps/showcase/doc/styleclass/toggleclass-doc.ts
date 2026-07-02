@@ -1,9 +1,9 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { StyleClassModule } from 'primeng/styleclass';
+import { ButtonModule } from '@libreng/ui/button';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { StyleClassModule } from '@libreng/ui/styleclass';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

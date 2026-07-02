@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ContentChild, ContentChildren, EventEmitter, inject, InjectionToken, Input, NgModule, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { Router, RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { Badge } from 'primeng/badge';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { ChevronRightIcon, HomeIcon } from 'primeng/icons';
-import { TooltipModule } from 'primeng/tooltip';
-import { BreadcrumbItemClickEvent, BreadcrumbItemTemplateContext, BreadcrumbPassThrough } from 'primeng/types/breadcrumb';
+import { MenuItem, PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { Badge } from '@libreng/ui/badge';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { ChevronRightIcon, HomeIcon } from '@libreng/ui/icons';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { BreadcrumbItemClickEvent, BreadcrumbItemTemplateContext, BreadcrumbPassThrough } from '@libreng/ui/types/breadcrumb';
 import { BreadCrumbStyle } from './style/breadcrumbstyle';
 
 const BREADCRUMB_INSTANCE = new InjectionToken<Breadcrumb>('BREADCRUMB_INSTANCE');

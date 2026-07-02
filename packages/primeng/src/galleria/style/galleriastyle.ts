@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { style } from '@primeuix/styles/galleria';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const classes = {
     mask: 'p-galleria-mask p-overlay-mask',

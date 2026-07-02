@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MenuItem, MessageService } from 'primeng/api';
-import { ContextMenu, ContextMenuModule } from 'primeng/contextmenu';
-import { ToastModule } from 'primeng/toast';
-import { Tag } from 'primeng/tag';
+import { MenuItem, MessageService } from '@libreng/ui/api';
+import { ContextMenu, ContextMenuModule } from '@libreng/ui/contextmenu';
+import { ToastModule } from '@libreng/ui/toast';
+import { Tag } from '@libreng/ui/tag';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 interface Users {

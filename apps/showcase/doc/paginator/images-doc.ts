@@ -1,7 +1,7 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { PaginatorModule, PaginatorState } from 'primeng/paginator';
+import { PaginatorModule, PaginatorState } from '@libreng/ui/paginator';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

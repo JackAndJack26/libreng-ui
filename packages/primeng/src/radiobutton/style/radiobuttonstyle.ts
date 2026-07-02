@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as radiobutton_style } from '@primeuix/styles/radiobutton';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${radiobutton_style}
 
-    /* For PrimeNG */
+    /* For LibreNG UI */
     p-radioButton.ng-invalid.ng-dirty .p-radiobutton-box,
     p-radio-button.ng-invalid.ng-dirty .p-radiobutton-box,
     p-radiobutton.ng-invalid.ng-dirty .p-radiobutton-box {

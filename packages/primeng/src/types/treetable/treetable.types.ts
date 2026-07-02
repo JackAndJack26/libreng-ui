@@ -1,9 +1,9 @@
 import { TemplateRef } from '@angular/core';
-import type { FilterMetadata, LazyLoadMeta, PassThrough, PassThroughOption, SortMeta, TreeNode, TreeTableNode } from 'primeng/api';
-import type { BadgePassThrough } from 'primeng/types/badge';
-import type { CheckboxPassThrough } from 'primeng/types/checkbox';
-import type { PaginatorPassThrough } from 'primeng/types/paginator';
-import type { VirtualScrollerPassThrough } from 'primeng/types/scroller';
+import type { FilterMetadata, LazyLoadMeta, PassThrough, PassThroughOption, SortMeta, TreeNode, TreeTableNode } from '@libreng/ui/api';
+import type { BadgePassThrough } from '@libreng/ui/types/badge';
+import type { CheckboxPassThrough } from '@libreng/ui/types/checkbox';
+import type { PaginatorPassThrough } from '@libreng/ui/types/paginator';
+import type { VirtualScrollerPassThrough } from '@libreng/ui/types/scroller';
 
 /**
  * Custom pass-through(pt) options.

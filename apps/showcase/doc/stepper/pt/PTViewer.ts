@@ -1,8 +1,8 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { StepperModule } from 'primeng/stepper';
+import { ButtonModule } from '@libreng/ui/button';
+import { StepperModule } from '@libreng/ui/stepper';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -2,7 +2,7 @@ import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputOtpModule } from 'primeng/inputotp';
+import { InputOtpModule } from '@libreng/ui/inputotp';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

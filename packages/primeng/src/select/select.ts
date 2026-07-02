@@ -30,21 +30,21 @@ import {
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MotionOptions } from '@primeuix/motion';
 import { deepEquals, equals, findLastIndex, findSingle, focus, getFirstFocusableElement, getFocusableElements, getLastFocusableElement, isEmpty, isNotEmpty, isPrintableCharacter, resolveFieldData, scrollInView, uuid } from '@primeuix/utils';
-import { FilterService, OverlayOptions, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseInput } from 'primeng/baseinput';
-import { Bind, BindModule } from 'primeng/bind';
-import { unblockBodyScroll } from 'primeng/dom';
-import { IconField } from 'primeng/iconfield';
-import { BlankIcon, CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputText } from 'primeng/inputtext';
-import { Overlay } from 'primeng/overlay';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Tooltip } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
+import { FilterService, OverlayOptions, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseInput } from '@libreng/ui/baseinput';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { unblockBodyScroll } from '@libreng/ui/dom';
+import { IconField } from '@libreng/ui/iconfield';
+import { BlankIcon, CheckIcon, ChevronDownIcon, SearchIcon, TimesIcon } from '@libreng/ui/icons';
+import { InputIcon } from '@libreng/ui/inputicon';
+import { InputText } from '@libreng/ui/inputtext';
+import { Overlay } from '@libreng/ui/overlay';
+import { Ripple } from '@libreng/ui/ripple';
+import { Scroller } from '@libreng/ui/scroller';
+import { Tooltip } from '@libreng/ui/tooltip';
+import { Nullable } from '@libreng/ui/ts-helpers';
 import {
     SelectChangeEvent,
     SelectFilterEvent,
@@ -57,7 +57,7 @@ import {
     SelectLoaderTemplateContext,
     SelectPassThrough,
     SelectSelectedItemTemplateContext
-} from 'primeng/types/select';
+} from '@libreng/ui/types/select';
 import { SelectStyle } from './style/selectstyle';
 
 const SELECT_INSTANCE = new InjectionToken<Select>('SELECT_INSTANCE');

@@ -12,7 +12,7 @@ OrderList is used as a controlled input with value property. Content of a list i
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { OrderListModule } from 'primeng/orderlist';
+import { OrderListModule } from '@libreng/ui/orderlist';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -59,7 +59,7 @@ Items can be reordered using drag and drop by enabling dragdrop property. Depend
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { OrderListModule } from 'primeng/orderlist';
+import { OrderListModule } from '@libreng/ui/orderlist';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -121,7 +121,7 @@ Filter value is checked against the property of an object configured with the fi
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { OrderListModule } from 'primeng/orderlist';
+import { OrderListModule } from '@libreng/ui/orderlist';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -183,7 +183,7 @@ For custom content support define an item template that gets the item instance a
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { OrderListModule } from 'primeng/orderlist';
+import { OrderListModule } from '@libreng/ui/orderlist';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 

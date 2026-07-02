@@ -1,16 +1,16 @@
 import { ChangeDetectionStrategy, Component, computed, inject, OnInit, PLATFORM_ID, ViewChild } from '@angular/core';
-import { Drawer, DrawerModule } from 'primeng/drawer';
+import { Drawer, DrawerModule } from '@libreng/ui/drawer';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { DesignerService } from '@/service/designerservice';
 import { AppConfigService } from '@/service/appconfigservice';
-import { ToastModule } from 'primeng/toast';
-import { PrimeNG } from 'primeng/config';
-import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { ToastModule } from '@libreng/ui/toast';
+import { PrimeNG } from '@libreng/ui/config';
+import { ConfirmDialogModule } from '@libreng/ui/confirmdialog';
 import { DesignDashboard } from '@/components/layout/designer/dashboard/designdashboard';
 import { DesignCreateTheme } from '@/components/layout/designer/create/designcreatetheme';
 import { DesignEditor } from '@/components/layout/designer/editor/designeditor';
 import { DesignEditorFooter } from '@/components/layout/designer/editor/designeditorfooter';
-import { ConfirmPopupModule } from 'primeng/confirmpopup';
+import { ConfirmPopupModule } from '@libreng/ui/confirmpopup';
 
 @Component({
     selector: 'app-designer',

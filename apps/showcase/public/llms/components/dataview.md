@@ -12,9 +12,9 @@ DataView requires a value to display along with a list template that receives an
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { DataViewModule } from 'primeng/dataview';
-import { TagModule } from 'primeng/tag';
+import { ButtonModule } from '@libreng/ui/button';
+import { DataViewModule } from '@libreng/ui/dataview';
+import { TagModule } from '@libreng/ui/tag';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -102,10 +102,10 @@ DataView supports list and grid display modes defined with the layout property. 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DataViewModule } from 'primeng/dataview';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { TagModule } from 'primeng/tag';
-import { ButtonModule } from 'primeng/button';
+import { DataViewModule } from '@libreng/ui/dataview';
+import { SelectButtonModule } from '@libreng/ui/selectbutton';
+import { TagModule } from '@libreng/ui/tag';
+import { ButtonModule } from '@libreng/ui/button';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -215,9 +215,9 @@ While data is being loaded. Skeleton component may be used to indicate the busy 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DataViewModule } from 'primeng/dataview';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { SkeletonModule } from 'primeng/skeleton';
+import { DataViewModule } from '@libreng/ui/dataview';
+import { SelectButtonModule } from '@libreng/ui/selectbutton';
+import { SkeletonModule } from '@libreng/ui/skeleton';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -306,9 +306,9 @@ Pagination is enabled with the paginator and rows properties. Refer to the Pagin
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { DataViewModule } from 'primeng/dataview';
-import { TagModule } from 'primeng/tag';
+import { ButtonModule } from '@libreng/ui/button';
+import { DataViewModule } from '@libreng/ui/dataview';
+import { TagModule } from '@libreng/ui/tag';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -378,12 +378,12 @@ Built-in sorting is controlled by bindings sortField and sortOrder properties fr
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { DataViewModule } from 'primeng/dataview';
-import { SelectModule } from 'primeng/select';
-import { TagModule } from 'primeng/tag';
+import { ButtonModule } from '@libreng/ui/button';
+import { DataViewModule } from '@libreng/ui/dataview';
+import { SelectModule } from '@libreng/ui/select';
+import { TagModule } from '@libreng/ui/tag';
 import { ProductService } from '@/service/productservice';
-import { SelectItem } from 'primeng/api';
+import { SelectItem } from '@libreng/ui/api';
 import { Product } from '@/domain/product';
 
 @Component({

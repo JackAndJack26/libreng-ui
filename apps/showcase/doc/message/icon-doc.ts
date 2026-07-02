@@ -1,8 +1,8 @@
 import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
-import { MessageModule } from 'primeng/message';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

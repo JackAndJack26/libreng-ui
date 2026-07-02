@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { PanelMenu } from 'primeng/panelmenu';
-import { ToastModule } from 'primeng/toast';
+import { MenuItem, MessageService } from '@libreng/ui/api';
+import { PanelMenu } from '@libreng/ui/panelmenu';
+import { ToastModule } from '@libreng/ui/toast';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

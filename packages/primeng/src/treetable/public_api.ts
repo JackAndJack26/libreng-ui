@@ -1,3 +1,3 @@
-export * from 'primeng/types/treetable';
+export * from '@libreng/ui/types/treetable';
 export * from './style/treetablestyle';
 export * from './treetable';

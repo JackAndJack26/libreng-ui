@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { DragDropModule } from 'primeng/dragdrop';`
+        typescript: `import { DragDropModule } from '@libreng/ui/dragdrop';`
     };
 }

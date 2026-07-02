@@ -23,16 +23,16 @@ import {
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { findLastIndex, findSingle, focus, isEmpty, isNotEmpty, isPrintableCharacter, isTouchDevice, resolve, uuid } from '@primeuix/utils';
-import { MegaMenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { AngleDownIcon, AngleRightIcon, BarsIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { VoidListener } from 'primeng/ts-helpers';
-import { MegaMenuItemTemplateContext, MegaMenuPassThrough } from 'primeng/types/megamenu';
-import { ZIndexUtils } from 'primeng/utils';
+import { MegaMenuItem, PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BadgeModule } from '@libreng/ui/badge';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { AngleDownIcon, AngleRightIcon, BarsIcon } from '@libreng/ui/icons';
+import { Ripple } from '@libreng/ui/ripple';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { VoidListener } from '@libreng/ui/ts-helpers';
+import { MegaMenuItemTemplateContext, MegaMenuPassThrough } from '@libreng/ui/types/megamenu';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { MegaMenuStyle } from './style/megamenustyle';
 
 const MEGAMENU_INSTANCE = new InjectionToken<MegaMenu>('MEGAMENU_INSTANCE');

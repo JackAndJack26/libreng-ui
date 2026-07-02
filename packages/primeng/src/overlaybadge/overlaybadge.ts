@@ -1,10 +1,10 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, inject, InjectionToken, Input, NgModule, ViewEncapsulation } from '@angular/core';
-import { SharedModule } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { OverlayBadgePassThrough } from 'primeng/types/overlaybadge';
+import { SharedModule } from '@libreng/ui/api';
+import { BadgeModule } from '@libreng/ui/badge';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { OverlayBadgePassThrough } from '@libreng/ui/types/overlaybadge';
 import { OverlayBadgeStyle } from './style/overlaybadgestyle';
 
 const OVERLAYBADGE_INSTANCE = new InjectionToken<OverlayBadge>('OVERLAYBADGE_INSTANCE');

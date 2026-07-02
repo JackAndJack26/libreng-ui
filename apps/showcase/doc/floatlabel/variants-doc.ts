@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { FloatLabelModule } from 'primeng/floatlabel';
-import { InputTextModule } from 'primeng/inputtext';
+import { FloatLabelModule } from '@libreng/ui/floatlabel';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

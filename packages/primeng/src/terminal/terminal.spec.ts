@@ -3,7 +3,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 import { Terminal } from './terminal';
 import { TerminalService } from './terminalservice';
 
@@ -13,7 +13,7 @@ import { TerminalService } from './terminalservice';
     template: ` <p-terminal [welcomeMessage]="welcomeMessage" [prompt]="prompt" [styleClass]="styleClass" [style]="style"> </p-terminal> `
 })
 class TestBasicTerminalComponent {
-    welcomeMessage: string | undefined = 'Welcome to PrimeNG Terminal';
+    welcomeMessage: string | undefined = 'Welcome to LibreNG UI Terminal';
     prompt: string | undefined = 'prime$ ';
     styleClass: string | undefined;
     style: { [key: string]: any } | undefined;

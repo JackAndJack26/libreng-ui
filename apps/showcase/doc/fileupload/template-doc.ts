@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MessageService } from 'primeng/api';
-import { PrimeNG } from 'primeng/config';
-import { FileUploadModule } from 'primeng/fileupload';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { BadgeModule } from 'primeng/badge';
-import { ProgressBarModule } from 'primeng/progressbar';
+import { MessageService } from '@libreng/ui/api';
+import { PrimeNG } from '@libreng/ui/config';
+import { FileUploadModule } from '@libreng/ui/fileupload';
+import { ToastModule } from '@libreng/ui/toast';
+import { ButtonModule } from '@libreng/ui/button';
+import { BadgeModule } from '@libreng/ui/badge';
+import { ProgressBarModule } from '@libreng/ui/progressbar';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

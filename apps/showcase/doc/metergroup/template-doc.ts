@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { MeterGroupModule } from 'primeng/metergroup';
-import { CardModule } from 'primeng/card';
-import { ButtonModule } from 'primeng/button';
+import { MeterGroupModule } from '@libreng/ui/metergroup';
+import { CardModule } from '@libreng/ui/card';
+import { ButtonModule } from '@libreng/ui/button';
 import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

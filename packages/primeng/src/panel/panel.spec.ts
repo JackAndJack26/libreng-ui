@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component, DebugElement, provideZonelessChange
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
-import { ButtonModule } from 'primeng/button';
-import { MinusIcon, PlusIcon } from 'primeng/icons';
-import { PanelAfterToggleEvent, PanelBeforeToggleEvent } from 'primeng/types/panel';
+import { ButtonModule } from '@libreng/ui/button';
+import { MinusIcon, PlusIcon } from '@libreng/ui/icons';
+import { PanelAfterToggleEvent, PanelBeforeToggleEvent } from '@libreng/ui/types/panel';
 import { Panel } from './panel';
 
 @Component({

@@ -5,10 +5,10 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
-import { SharedModule } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { ListboxModule } from 'primeng/listbox';
-import { RippleModule } from 'primeng/ripple';
+import { SharedModule } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { ListboxModule } from '@libreng/ui/listbox';
+import { RippleModule } from '@libreng/ui/ripple';
 import { OrderList } from './orderlist';
 
 interface Product {

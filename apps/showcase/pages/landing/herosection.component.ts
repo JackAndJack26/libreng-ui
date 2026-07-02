@@ -3,18 +3,18 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { MenuItem, SelectItem } from 'primeng/api';
-import { AvatarModule } from 'primeng/avatar';
-import { BadgeModule } from 'primeng/badge';
-import { ButtonModule } from 'primeng/button';
-import { ChartModule } from 'primeng/chart';
-import { DividerModule } from 'primeng/divider';
-import { DrawerModule } from 'primeng/drawer';
-import { KnobModule } from 'primeng/knob';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
-import { SelectButton } from 'primeng/selectbutton';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem, SelectItem } from '@libreng/ui/api';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { BadgeModule } from '@libreng/ui/badge';
+import { ButtonModule } from '@libreng/ui/button';
+import { ChartModule } from '@libreng/ui/chart';
+import { DividerModule } from '@libreng/ui/divider';
+import { DrawerModule } from '@libreng/ui/drawer';
+import { KnobModule } from '@libreng/ui/knob';
+import { OverlayBadgeModule } from '@libreng/ui/overlaybadge';
+import { SelectButton } from '@libreng/ui/selectbutton';
+import { ToggleSwitchModule } from '@libreng/ui/toggleswitch';
+import { TooltipModule } from '@libreng/ui/tooltip';
 import { Subscription } from 'rxjs';
 import { CardsApp } from './samples/cardsapp.component';
 import { ChatApp } from './samples/chatapp.component';
@@ -54,14 +54,14 @@ import { OverviewApp } from './samples/overviewapp.component';
             <div class="flex flex-col items-center">
                 <h1 class="text-5xl font-bold text-center xl:text-left leading-tight">The Next-Gen UI Suite for <span class="font-bold text-primary">Angular</span></h1>
                 <p class="text-center mt-0 mb-8 text-surface-500 dark:text-surface-400 font-medium text-xl leading-relaxed lg:px-56">
-                    Enhance your web applications with PrimeNG's comprehensive suite of customizable, feature-rich UI components. With PrimeNG, turning your development vision into reality has never been easier.
+                    Enhance your web applications with LibreNG UI's comprehensive suite of customizable, feature-rich UI components. With LibreNG UI, turning your development vision into reality has never been easier.
                 </p>
                 <div class="flex items-center gap-4">
                     <a [routerLink]="'installation'" class="linkbox linkbox-primary">
                         <span>Get Started</span>
                         <i class="pi pi-arrow-right ms-4"></i>
                     </a>
-                    <a href="https://github.com/primefaces/primeng" target="_blank" rel="noopener noreferrer" class="linkbox">
+                    <a href="https://github.com/capivaramu/orbia-ui" target="_blank" rel="noopener noreferrer" class="linkbox">
                         <span>Give a Star</span>
                         <i class="pi pi-star-fill ms-4 text-yellow-500"></i>
                     </a>

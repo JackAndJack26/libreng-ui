@@ -26,18 +26,18 @@ import {
 } from '@angular/core';
 import { FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { equals, findLastIndex, findSingle, focus, getFirstFocusableElement, isEmpty, isFunction, isNotEmpty, isPrintableCharacter, resolveFieldData, uuid } from '@primeuix/utils';
-import { FilterService, Footer, Header, PrimeTemplate, ScrollerOptions, SharedModule } from 'primeng/api';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseEditableHolder } from 'primeng/baseeditableholder';
-import { Bind, BindModule } from 'primeng/bind';
-import { Checkbox } from 'primeng/checkbox';
-import { IconField } from 'primeng/iconfield';
-import { BlankIcon, CheckIcon, SearchIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputText } from 'primeng/inputtext';
-import { Ripple } from 'primeng/ripple';
-import { Scroller, ScrollerLazyLoadEvent } from 'primeng/scroller';
-import { Nullable } from 'primeng/ts-helpers';
+import { FilterService, Footer, Header, PrimeTemplate, ScrollerOptions, SharedModule } from '@libreng/ui/api';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { Checkbox } from '@libreng/ui/checkbox';
+import { IconField } from '@libreng/ui/iconfield';
+import { BlankIcon, CheckIcon, SearchIcon } from '@libreng/ui/icons';
+import { InputIcon } from '@libreng/ui/inputicon';
+import { InputText } from '@libreng/ui/inputtext';
+import { Ripple } from '@libreng/ui/ripple';
+import { Scroller, ScrollerLazyLoadEvent } from '@libreng/ui/scroller';
+import { Nullable } from '@libreng/ui/ts-helpers';
 import {
     ListBoxPassThrough,
     ListboxChangeEvent,
@@ -54,7 +54,7 @@ import {
     ListboxItemTemplateContext,
     ListboxLoaderTemplateContext,
     ListboxSelectAllChangeEvent
-} from 'primeng/types/listbox';
+} from '@libreng/ui/types/listbox';
 import { Subscription } from 'rxjs';
 import { ListBoxStyle } from './style/listboxstyle';
 

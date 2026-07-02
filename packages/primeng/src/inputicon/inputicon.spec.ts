@@ -3,9 +3,9 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { InputIcon } from './inputicon';
-import { IconField } from 'primeng/iconfield';
-import { InputText } from 'primeng/inputtext';
-import { providePrimeNG } from 'primeng/config';
+import { IconField } from '@libreng/ui/iconfield';
+import { InputText } from '@libreng/ui/inputtext';
+import { providePrimeNG } from '@libreng/ui/config';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

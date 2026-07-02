@@ -12,8 +12,8 @@ Drawer is used as a container and visibility is controlled with a binding to vis
 
 ```typescript
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { DrawerModule } from 'primeng/drawer';
+import { ButtonModule } from '@libreng/ui/button';
+import { DrawerModule } from '@libreng/ui/drawer';
 
 @Component({
     template: `
@@ -41,8 +41,8 @@ Drawer can cover the whole page when fullScreen property is enabled.
 
 ```typescript
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { DrawerModule } from 'primeng/drawer';
+import { ButtonModule } from '@libreng/ui/button';
+import { DrawerModule } from '@libreng/ui/drawer';
 
 @Component({
     template: `
@@ -70,10 +70,10 @@ Headless mode allows you to customize the entire user interface instead of the d
 
 ```typescript
 import { Component } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { Drawer, DrawerModule } from 'primeng/drawer';
-import { RippleModule } from 'primeng/ripple';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { ButtonModule } from '@libreng/ui/button';
+import { Drawer, DrawerModule } from '@libreng/ui/drawer';
+import { RippleModule } from '@libreng/ui/ripple';
 
 @Component({
     template: `
@@ -300,8 +300,8 @@ Drawer location is configured with the position property that can take left , ri
 
 ```typescript
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { Drawer, DrawerModule } from 'primeng/drawer';
+import { ButtonModule } from '@libreng/ui/button';
+import { Drawer, DrawerModule } from '@libreng/ui/drawer';
 
 @Component({
     template: `
@@ -355,8 +355,8 @@ Drawer dimension can be defined with style or class properties, this responsive 
 
 ```typescript
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { DrawerModule } from 'primeng/drawer';
+import { ButtonModule } from '@libreng/ui/button';
+import { DrawerModule } from '@libreng/ui/drawer';
 
 @Component({
     template: `
@@ -384,9 +384,9 @@ Drawer is customizable by header , content , footer templates.
 
 ```typescript
 import { Component } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
-import { DrawerModule } from 'primeng/drawer';
-import { ButtonModule } from 'primeng/button';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { DrawerModule } from '@libreng/ui/drawer';
+import { ButtonModule } from '@libreng/ui/button';
 
 @Component({
     template: `

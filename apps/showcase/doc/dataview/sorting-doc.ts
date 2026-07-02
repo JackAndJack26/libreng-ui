@@ -5,11 +5,11 @@ import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectItem } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { DataViewModule } from 'primeng/dataview';
-import { SelectModule } from 'primeng/select';
-import { TagModule } from 'primeng/tag';
+import { SelectItem } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { DataViewModule } from '@libreng/ui/dataview';
+import { SelectModule } from '@libreng/ui/select';
+import { TagModule } from '@libreng/ui/tag';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { Fluid } from 'primeng/fluid';
-import { InputTextModule } from 'primeng/inputtext';
+import { Fluid } from '@libreng/ui/fluid';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

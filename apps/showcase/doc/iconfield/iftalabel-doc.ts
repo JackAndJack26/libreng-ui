@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { IftaLabelModule } from 'primeng/iftalabel';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
+import { IftaLabelModule } from '@libreng/ui/iftalabel';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { InputTextModule } from '@libreng/ui/inputtext';
 import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

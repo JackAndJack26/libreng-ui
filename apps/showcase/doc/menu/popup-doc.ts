@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { MenuModule } from 'primeng/menu';
-import { ButtonModule } from 'primeng/button';
+import { MenuItem, MessageService } from '@libreng/ui/api';
+import { MenuModule } from '@libreng/ui/menu';
+import { ButtonModule } from '@libreng/ui/button';
 import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

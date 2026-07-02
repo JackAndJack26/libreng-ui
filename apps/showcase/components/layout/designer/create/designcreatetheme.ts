@@ -6,9 +6,9 @@ import Aura from '@primeuix/themes/aura';
 import Lara from '@primeuix/themes/lara';
 import Material from '@primeuix/themes/material';
 import Nora from '@primeuix/themes/nora';
-import { MessageService } from 'primeng/api';
-import { DividerModule } from 'primeng/divider';
-import { FileUploadModule } from 'primeng/fileupload';
+import { MessageService } from '@libreng/ui/api';
+import { DividerModule } from '@libreng/ui/divider';
+import { FileUploadModule } from '@libreng/ui/fileupload';
 
 const presets = {
     Aura,

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { FileUploadModule } from 'primeng/fileupload';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
+import { MessageService } from '@libreng/ui/api';
+import { FileUploadModule } from '@libreng/ui/fileupload';
+import { ToastModule } from '@libreng/ui/toast';
+import { ButtonModule } from '@libreng/ui/button';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

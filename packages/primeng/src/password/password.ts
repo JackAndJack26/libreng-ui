@@ -31,19 +31,19 @@ import {
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MotionOptions } from '@primeuix/motion';
 import { absolutePosition, addClass, hasClass, isTouchDevice, removeClass } from '@primeuix/utils';
-import { OverlayOptions, OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseEditableHolder } from 'primeng/baseeditableholder';
-import { BaseInput } from 'primeng/baseinput';
-import { Bind, BindModule } from 'primeng/bind';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { Fluid } from 'primeng/fluid';
-import { EyeIcon, EyeSlashIcon, TimesIcon } from 'primeng/icons';
-import { InputText } from 'primeng/inputtext';
-import { Overlay } from 'primeng/overlay';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import type { PasswordIconTemplateContext, PasswordPassThrough } from 'primeng/types/password';
+import { OverlayOptions, OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';
+import { BaseInput } from '@libreng/ui/baseinput';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@libreng/ui/dom';
+import { Fluid } from '@libreng/ui/fluid';
+import { EyeIcon, EyeSlashIcon, TimesIcon } from '@libreng/ui/icons';
+import { InputText } from '@libreng/ui/inputtext';
+import { Overlay } from '@libreng/ui/overlay';
+import { Nullable, VoidListener } from '@libreng/ui/ts-helpers';
+import type { PasswordIconTemplateContext, PasswordPassThrough } from '@libreng/ui/types/password';
 import { Subscription } from 'rxjs';
 import { PasswordStyle } from './style/passwordstyle';
 
@@ -90,22 +90,22 @@ export class PasswordDirective extends BaseEditableHolder {
         this.bindDirectiveInstance.setAttrs(this.ptms(['host', 'root']));
     }
     /**
-     * Text to prompt password entry. Defaults to PrimeNG I18N API configuration.
+     * Text to prompt password entry. Defaults to LibreNG UI I18N API configuration.
      * @group Props
      */
     @Input() promptLabel: string = 'Enter a password';
     /**
-     * Text for a weak password. Defaults to PrimeNG I18N API configuration.
+     * Text for a weak password. Defaults to LibreNG UI I18N API configuration.
      * @group Props
      */
     @Input() weakLabel: string = 'Weak';
     /**
-     * Text for a medium password. Defaults to PrimeNG I18N API configuration.
+     * Text for a medium password. Defaults to LibreNG UI I18N API configuration.
      * @group Props
      */
     @Input() mediumLabel: string = 'Medium';
     /**
-     * Text for a strong password. Defaults to PrimeNG I18N API configuration.
+     * Text for a strong password. Defaults to LibreNG UI I18N API configuration.
      * @group Props
      */
     @Input() strongLabel: string = 'Strong';
@@ -544,7 +544,7 @@ export class Password extends BaseInput<PasswordPassThrough> {
      */
     @Input() label: string | undefined;
     /**
-     * Text to prompt password entry. Defaults to PrimeNG I18N API configuration.
+     * Text to prompt password entry. Defaults to LibreNG UI I18N API configuration.
      * @group Props
      */
     @Input() promptLabel: string | undefined;
@@ -559,12 +559,12 @@ export class Password extends BaseInput<PasswordPassThrough> {
      */
     @Input() strongRegex: string = '^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.{8,})';
     /**
-     * Text for a weak password. Defaults to PrimeNG I18N API configuration.
+     * Text for a weak password. Defaults to LibreNG UI I18N API configuration.
      * @group Props
      */
     @Input() weakLabel: string | undefined;
     /**
-     * Text for a medium password. Defaults to PrimeNG I18N API configuration.
+     * Text for a medium password. Defaults to LibreNG UI I18N API configuration.
      * @group Props
      */
     @Input() mediumLabel: string | undefined;
@@ -575,7 +575,7 @@ export class Password extends BaseInput<PasswordPassThrough> {
      */
     @Input({ transform: numberAttribute }) maxLength: number | undefined;
     /**
-     * Text for a strong password. Defaults to PrimeNG I18N API configuration.
+     * Text for a strong password. Defaults to LibreNG UI I18N API configuration.
      * @group Props
      */
     @Input() strongLabel: string | undefined;

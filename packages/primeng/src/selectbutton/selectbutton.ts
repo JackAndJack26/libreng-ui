@@ -22,12 +22,12 @@ import {
 } from '@angular/core';
 import { FormsModule, NG_VALUE_ACCESSOR } from '@angular/forms';
 import { equals, resolveFieldData } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseEditableHolder } from 'primeng/baseeditableholder';
-import { Bind, BindModule } from 'primeng/bind';
-import { ToggleButton } from 'primeng/togglebutton';
-import { SelectButtonChangeEvent, SelectButtonItemTemplateContext, SelectButtonOptionClickEvent, SelectButtonPassThrough } from 'primeng/types/selectbutton';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { ToggleButton } from '@libreng/ui/togglebutton';
+import { SelectButtonChangeEvent, SelectButtonItemTemplateContext, SelectButtonOptionClickEvent, SelectButtonPassThrough } from '@libreng/ui/types/selectbutton';
 import { SelectButtonStyle } from './style/selectbuttonstyle';
 
 const SELECTBUTTON_INSTANCE = new InjectionToken<SelectButton>('SELECTBUTTON_INSTANCE');

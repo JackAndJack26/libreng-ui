@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { PopoverModule } from 'primeng/popover';
-import { ButtonModule } from 'primeng/button';
+import { PopoverModule } from '@libreng/ui/popover';
+import { ButtonModule } from '@libreng/ui/button';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

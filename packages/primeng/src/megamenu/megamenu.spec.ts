@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
 import { RouterTestingModule } from '@angular/router/testing';
-import { MegaMenuItem, SharedModule } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
+import { MegaMenuItem, SharedModule } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
 import { MegaMenu } from './megamenu';
 
 @Component({
@@ -1551,7 +1551,7 @@ describe('MegaMenu', () => {
         });
 
         describe('Case 7: Test from PrimeNGConfig', () => {
-            it('should apply global PT configuration from PrimeNG config', async () => {
+            it('should apply global PT configuration from LibreNG UI config', async () => {
                 await TestBed.resetTestingModule();
                 await TestBed.configureTestingModule({
                     declarations: [TestBasicMegaMenuComponent],
@@ -1578,7 +1578,7 @@ describe('MegaMenu', () => {
                 expect(hostElement.getAttribute('aria-label')).toBe('TEST_GLOBAL_ARIA_LABEL');
             });
 
-            it('should apply global CSS from PrimeNG config', async () => {
+            it('should apply global CSS from LibreNG UI config', async () => {
                 await TestBed.resetTestingModule();
                 await TestBed.configureTestingModule({
                     declarations: [TestBasicMegaMenuComponent],

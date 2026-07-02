@@ -20,12 +20,12 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { hasClass, isAttributeEquals } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule, TreeNode } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { ChevronDownIcon, ChevronUpIcon } from 'primeng/icons';
-import { Nullable } from 'primeng/ts-helpers';
-import { OrganizationChartNodeCollapseEvent, OrganizationChartNodeExpandEvent, OrganizationChartNodeSelectEvent, OrganizationChartNodeUnSelectEvent, OrganizationChartPassThrough } from 'primeng/types/organizationchart';
+import { PrimeTemplate, SharedModule, TreeNode } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { ChevronDownIcon, ChevronUpIcon } from '@libreng/ui/icons';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import { OrganizationChartNodeCollapseEvent, OrganizationChartNodeExpandEvent, OrganizationChartNodeSelectEvent, OrganizationChartNodeUnSelectEvent, OrganizationChartPassThrough } from '@libreng/ui/types/organizationchart';
 import { Subject, Subscription } from 'rxjs';
 import { OrganizationChartStyle } from './style/organizationchartstyle';
 

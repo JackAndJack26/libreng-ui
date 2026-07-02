@@ -3,7 +3,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { InputNumberModule } from 'primeng/inputnumber';
+import { InputNumberModule } from '@libreng/ui/inputnumber';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -4,9 +4,9 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
-import { SharedModule } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
-import { ToggleButtonChangeEvent } from 'primeng/types/togglebutton';
+import { SharedModule } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
+import { ToggleButtonChangeEvent } from '@libreng/ui/types/togglebutton';
 import { ToggleButton } from './togglebutton';
 
 @Component({

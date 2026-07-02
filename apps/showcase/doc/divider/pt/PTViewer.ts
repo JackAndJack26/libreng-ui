@@ -1,7 +1,7 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { DividerModule } from 'primeng/divider';
+import { DividerModule } from '@libreng/ui/divider';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

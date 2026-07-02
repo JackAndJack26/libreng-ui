@@ -23,7 +23,7 @@ const staticMessages = {
 async function main() {
     const app = await TypeDoc.Application.bootstrapWithPlugins({
         // typedoc options here
-        name: 'PrimeNG',
+        name: 'LibreNG UI',
         entryPointStrategy: 'expand',
         entryPoints: ['../../packages/primeng/'],
         hideGenerator: true,

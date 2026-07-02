@@ -1,6 +1,6 @@
 import { TemplateRef } from '@angular/core';
-import type { PassThrough, PassThroughOption } from 'primeng/api';
-import { TreeNode } from 'primeng/api';
+import type { PassThrough, PassThroughOption } from '@libreng/ui/api';
+import { TreeNode } from '@libreng/ui/api';
 
 /**
  * Custom pass-through(pt) options.

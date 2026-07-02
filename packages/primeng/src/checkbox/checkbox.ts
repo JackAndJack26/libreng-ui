@@ -25,14 +25,14 @@ import {
 } from '@angular/core';
 import { FormControl, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
 import { contains, equals } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseEditableHolder } from 'primeng/baseeditableholder';
-import { Bind, BindModule } from 'primeng/bind';
-import { CheckIcon } from 'primeng/icons/check';
-import { MinusIcon } from 'primeng/icons/minus';
-import { Nullable } from 'primeng/ts-helpers';
-import { CheckboxChangeEvent, CheckboxIconTemplateContext, CheckboxPassThrough } from 'primeng/types/checkbox';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { CheckIcon } from '@libreng/ui/icons/check';
+import { MinusIcon } from '@libreng/ui/icons/minus';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import { CheckboxChangeEvent, CheckboxIconTemplateContext, CheckboxPassThrough } from '@libreng/ui/types/checkbox';
 import { CheckboxStyle } from './style/checkboxstyle';
 
 const CHECKBOX_INSTANCE = new InjectionToken<Checkbox>('CHECKBOX_INSTANCE');

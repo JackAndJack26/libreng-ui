@@ -22,9 +22,9 @@ export class VSCodeDoc {
     code: Code = {
         typescript: `{
     "servers": {
-        "primeng": {
+        "@libreng/ui": {
             "command": "npx",
-            "args": ["-y", "@primeng/mcp"]
+            "args": ["-y", "@libreng/mcp"]
         }
     }
 }`

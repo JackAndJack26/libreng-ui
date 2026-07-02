@@ -1,7 +1,7 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
-import { TerminalModule, TerminalService } from 'primeng/terminal';
+import { TerminalModule, TerminalService } from '@libreng/ui/terminal';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -16,7 +16,7 @@ import { TerminalModule, TerminalService } from 'primeng/terminal';
                     Enter "<strong>date</strong>" to display the current date, "<strong>greet {{ '{0}' }}</strong
                     >" for a message and "<strong>random</strong>" to get a random number.
                 </p>
-                <p-terminal welcomeMessage="Welcome to PrimeNG" prompt="primeng $" aria-label="PrimeNG Terminal Service"></p-terminal>
+                <p-terminal welcomeMessage="Welcome to LibreNG UI" prompt="primeng $" aria-label="LibreNG UI Terminal Service"></p-terminal>
             </div>
         </app-docptviewer>
     `

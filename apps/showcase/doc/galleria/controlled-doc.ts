@@ -1,8 +1,8 @@
 import { PhotoService } from '@/service/photoservice';
 import { ChangeDetectionStrategy, Component, inject, model, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GalleriaModule } from 'primeng/galleria';
-import { ButtonModule } from 'primeng/button';
+import { GalleriaModule } from '@libreng/ui/galleria';
+import { ButtonModule } from '@libreng/ui/button';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

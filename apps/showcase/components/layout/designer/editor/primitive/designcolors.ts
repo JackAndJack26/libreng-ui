@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { palette } from '@primeuix/themes';
-import { FieldsetModule } from 'primeng/fieldset';
+import { FieldsetModule } from '@libreng/ui/fieldset';
 
 @Component({
     selector: 'design-colors',

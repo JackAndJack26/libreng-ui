@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as selectbutton_style } from '@primeuix/styles/selectbutton';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${selectbutton_style}
 
-    /* For PrimeNG */
+    /* For LibreNG UI */
     .p-selectbutton.ng-invalid.ng-dirty {
         outline: 1px solid dt('selectbutton.invalid.border.color');
         outline-offset: 0;

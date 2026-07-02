@@ -6,16 +6,16 @@ import { CustomerService } from '@/service/customerservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { SelectModule } from 'primeng/select';
-import { SliderModule } from 'primeng/slider';
-import { Table, TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { ButtonModule } from '@libreng/ui/button';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
+import { ProgressBarModule } from '@libreng/ui/progressbar';
+import { SelectModule } from '@libreng/ui/select';
+import { SliderModule } from '@libreng/ui/slider';
+import { Table, TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
 
 @Component({
     selector: 'customers-doc',

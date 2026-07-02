@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@libreng/ui/api';
 import { FormsModule } from '@angular/forms';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { ToastModule } from 'primeng/toast';
-import { MessageModule } from 'primeng/message';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { ButtonModule } from '@libreng/ui/button';
+import { ToastModule } from '@libreng/ui/toast';
+import { MessageModule } from '@libreng/ui/message';
 import { AppCodeModule } from '@/components/doc/app.code';
 
 @Component({

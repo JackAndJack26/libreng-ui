@@ -1,7 +1,7 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MegaMenuModule } from 'primeng/megamenu';
+import { MegaMenuModule } from '@libreng/ui/megamenu';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

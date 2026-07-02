@@ -48,17 +48,17 @@ import {
     resolve,
     uuid
 } from '@primeuix/utils';
-import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BindModule } from 'primeng/bind';
-import { AngleRightIcon } from 'primeng/icons';
-import { MotionModule } from 'primeng/motion';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { VoidListener } from 'primeng/ts-helpers';
-import { ContextMenuItemTemplateContext, ContextMenuPassThrough, ContextMenuSubmenuIconTemplateContext } from 'primeng/types/contextmenu';
-import { ZIndexUtils } from 'primeng/utils';
+import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BadgeModule } from '@libreng/ui/badge';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BindModule } from '@libreng/ui/bind';
+import { AngleRightIcon } from '@libreng/ui/icons';
+import { MotionModule } from '@libreng/ui/motion';
+import { Ripple } from '@libreng/ui/ripple';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { VoidListener } from '@libreng/ui/ts-helpers';
+import { ContextMenuItemTemplateContext, ContextMenuPassThrough, ContextMenuSubmenuIconTemplateContext } from '@libreng/ui/types/contextmenu';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { ContextMenuStyle } from './style/contextmenustyle';
 
 const CONTEXTMENU_INSTANCE = new InjectionToken<ContextMenu>('CONTEXTMENU_INSTANCE');

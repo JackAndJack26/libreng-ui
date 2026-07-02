@@ -12,7 +12,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     selector: 'passthrough',
     standalone: true,
     imports: [AppDoc],
-    template: ` <app-doc docTitle="PrimeNG - Pass Through" header="Pass Through" description="The Pass Through attributes is an API to customize the internal DOM Structure of the components." [docs]="docs" docType="page"></app-doc> `
+    template: ` <app-doc docTitle="LibreNG UI - Pass Through" header="Pass Through" description="The Pass Through attributes is an API to customize the internal DOM Structure of the components." [docs]="docs" docType="page"></app-doc> `
 })
 export class PassThroughDemoComponent {
     docs = [

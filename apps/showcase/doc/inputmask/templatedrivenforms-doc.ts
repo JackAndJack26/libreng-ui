@@ -1,13 +1,13 @@
 import { AppCodeModule } from '@/components/doc/app.code';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MessageService } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { FluidModule } from 'primeng/fluid';
-import { InputMaskModule } from 'primeng/inputmask';
-import { InputText } from 'primeng/inputtext';
-import { MessageModule } from 'primeng/message';
-import { ToastModule } from 'primeng/toast';
+import { MessageService } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { FluidModule } from '@libreng/ui/fluid';
+import { InputMaskModule } from '@libreng/ui/inputmask';
+import { InputText } from '@libreng/ui/inputtext';
+import { MessageModule } from '@libreng/ui/message';
+import { ToastModule } from '@libreng/ui/toast';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

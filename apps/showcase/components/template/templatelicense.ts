@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@libreng/ui/button';
 
 @Component({
     selector: 'template-license',

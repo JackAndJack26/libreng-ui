@@ -21,15 +21,15 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { findIndexInList, setAttribute, uuid } from '@primeuix/utils';
-import { FilterService, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { ButtonModule, ButtonProps } from 'primeng/button';
-import { AngleDoubleDownIcon, AngleDoubleUpIcon, AngleDownIcon, AngleUpIcon } from 'primeng/icons';
-import { Listbox, ListboxChangeEvent } from 'primeng/listbox';
-import { Ripple } from 'primeng/ripple';
-import { Nullable } from 'primeng/ts-helpers';
-import { OrderListFilterEvent, OrderListFilterOptions, OrderListFilterTemplateContext, OrderListItemTemplateContext, OrderListPassThrough, OrderListSelectionChangeEvent } from 'primeng/types/orderlist';
+import { FilterService, PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { ButtonModule, ButtonProps } from '@libreng/ui/button';
+import { AngleDoubleDownIcon, AngleDoubleUpIcon, AngleDownIcon, AngleUpIcon } from '@libreng/ui/icons';
+import { Listbox, ListboxChangeEvent } from '@libreng/ui/listbox';
+import { Ripple } from '@libreng/ui/ripple';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import { OrderListFilterEvent, OrderListFilterOptions, OrderListFilterTemplateContext, OrderListItemTemplateContext, OrderListPassThrough, OrderListSelectionChangeEvent } from '@libreng/ui/types/orderlist';
 import { OrderListStyle } from './style/orderliststyle';
 
 const ORDERLIST_INSTANCE = new InjectionToken<OrderList>('ORDERLIST_INSTANCE');

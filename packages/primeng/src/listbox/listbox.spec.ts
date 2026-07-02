@@ -4,8 +4,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
-import { providePrimeNG } from 'primeng/config';
-import { ListboxChangeEvent } from 'primeng/types/listbox';
+import { providePrimeNG } from '@libreng/ui/config';
+import { ListboxChangeEvent } from '@libreng/ui/types/listbox';
 import { BehaviorSubject, Observable, delay, of } from 'rxjs';
 import { Listbox } from './listbox';
 

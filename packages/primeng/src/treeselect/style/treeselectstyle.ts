@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as treeselect_style } from '@primeuix/styles/treeselect';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${treeselect_style}
 
-    /* For PrimeNG */
+    /* For LibreNG UI */
 
     .p-treeselect.ng-invalid.ng-dirty {
         border-color: dt('treeselect.invalid.border.color');

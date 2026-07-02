@@ -150,7 +150,7 @@ export class GenesisPage {
             id: 4,
             title: 'Figma File',
             description:
-                'Genesis uses Figma as the design tool. It will be possible to download the Figma file after your purchase. You can <a href="https://www.figma.com/design/bGujrJyznnSatJFMtkXbTN/Preview-%7C-Genesis?node-id=0-1&t=etuXAwkUAEuhJ3p0-1" target="_blank" rel="noopener noreferrer">preview the Figma file</a> before the purchase. Note that PrimeNG UI components are excluded from the Genesis Figma file as they are available in PrimeOne for Figma only.',
+                'Genesis uses Figma as the design tool. It will be possible to download the Figma file after your purchase. You can <a href="https://www.figma.com/design/bGujrJyznnSatJFMtkXbTN/Preview-%7C-Genesis?node-id=0-1&t=etuXAwkUAEuhJ3p0-1" target="_blank" rel="noopener noreferrer">preview the Figma file</a> before the purchase. Note that LibreNG UI UI components are excluded from the Genesis Figma file as they are available in PrimeOne for Figma only.',
             src: 'https://primefaces.org/cdn/primeng/images/templates/genesis/animation-figma.png'
         }
     ];

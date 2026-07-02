@@ -1,8 +1,8 @@
 import { TemplateRef } from '@angular/core';
 import type { MotionOptions } from '@primeuix/motion';
-import type { PassThrough, PassThroughOption } from 'primeng/api';
-import type { ButtonPassThrough } from 'primeng/types/button';
-import type { InputTextPassThrough } from 'primeng/types/inputtext';
+import type { PassThrough, PassThroughOption } from '@libreng/ui/api';
+import type { ButtonPassThrough } from '@libreng/ui/types/button';
+import type { InputTextPassThrough } from '@libreng/ui/types/inputtext';
 
 /**
  * Custom pass-through(pt) options.

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { DialogService, DynamicDialog, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { ButtonModule } from '@libreng/ui/button';
+import { DialogService, DynamicDialog, DynamicDialogRef } from '@libreng/ui/dynamicdialog';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

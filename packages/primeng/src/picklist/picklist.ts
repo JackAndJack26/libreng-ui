@@ -22,14 +22,14 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { find, findIndexInList, isEmpty, setAttribute, uuid } from '@primeuix/utils';
-import { FilterService, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { ButtonModule, ButtonProps } from 'primeng/button';
-import { AngleDoubleDownIcon, AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleDoubleUpIcon, AngleDownIcon, AngleLeftIcon, AngleRightIcon, AngleUpIcon } from 'primeng/icons';
-import { Listbox, ListboxChangeEvent } from 'primeng/listbox';
-import { Ripple } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { FilterService, PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { ButtonModule, ButtonProps } from '@libreng/ui/button';
+import { AngleDoubleDownIcon, AngleDoubleLeftIcon, AngleDoubleRightIcon, AngleDoubleUpIcon, AngleDownIcon, AngleLeftIcon, AngleRightIcon, AngleUpIcon } from '@libreng/ui/icons';
+import { Listbox, ListboxChangeEvent } from '@libreng/ui/listbox';
+import { Ripple } from '@libreng/ui/ripple';
+import { Nullable, VoidListener } from '@libreng/ui/ts-helpers';
 import {
     PickListFilterOptions,
     PickListFilterTemplateContext,
@@ -45,7 +45,7 @@ import {
     PickListTargetReorderEvent,
     PickListTargetSelectEvent,
     PickListTransferIconTemplateContext
-} from 'primeng/types/picklist';
+} from '@libreng/ui/types/picklist';
 import { PickListStyle } from './style/pickliststyle';
 
 const PICKLIST_INSTANCE = new InjectionToken<PickList>('PICKLIST_INSTANCE');

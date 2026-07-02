@@ -35,7 +35,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class PTOptionsDoc {
     codeGlobal: Code = {
         typescript: `import { ApplicationConfig } from '@angular/core';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 
 export const appConfig: ApplicationConfig = {
     providers: [
@@ -56,7 +56,7 @@ export const appConfig: ApplicationConfig = {
 
     codeComponent: Code = {
         typescript: `import { Component } from '@angular/core';
-import { Panel, PanelModule, PanelPassThrough } from 'primeng/panel';
+import { Panel, PanelModule, PanelPassThrough } from '@libreng/ui/panel';
 
 @Component({
     selector: 'ptoptions-doc',
@@ -84,7 +84,7 @@ export class PanelPtDemo {
 
     codeComponentTrueTrue: Code = {
         typescript: `import { Component } from '@angular/core';
-import { Panel, PanelModule, PanelPassThrough } from 'primeng/panel';
+import { Panel, PanelModule, PanelPassThrough } from '@libreng/ui/panel';
 
 @Component({
     selector: 'ptoptions-doc',
@@ -112,7 +112,7 @@ export class PanelPtDemo {
 
     codeComponentFalseTrue: Code = {
         typescript: `import { Component } from '@angular/core';
-import { Panel, PanelModule, PanelPassThrough } from 'primeng/panel';
+import { Panel, PanelModule, PanelPassThrough } from '@libreng/ui/panel';
 
 @Component({
     selector: 'ptoptions-doc',
@@ -138,7 +138,7 @@ export class PanelPtDemo {
 
     codeComponentFalseFalse: Code = {
         typescript: `import { Component } from '@angular/core';
-import { Panel, PanelModule, PanelPassThrough } from 'primeng/panel';
+import { Panel, PanelModule, PanelPassThrough } from '@libreng/ui/panel';
 
 @Component({
     selector: 'ptoptions-doc',

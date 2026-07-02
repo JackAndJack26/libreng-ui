@@ -1,7 +1,7 @@
 import { TemplateRef } from '@angular/core';
-import type { PassThrough, PassThroughOption } from 'primeng/api';
-import { MenuItem } from 'primeng/api';
-import type { BadgePassThrough } from 'primeng/types/badge';
+import type { PassThrough, PassThroughOption } from '@libreng/ui/api';
+import { MenuItem } from '@libreng/ui/api';
+import type { BadgePassThrough } from '@libreng/ui/types/badge';
 
 /**
  * Custom pass-through(pt) options.

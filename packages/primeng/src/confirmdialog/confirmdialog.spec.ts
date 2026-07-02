@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { ConfirmationService } from 'primeng/api';
-import { Button } from 'primeng/button';
-import { Dialog } from 'primeng/dialog';
+import { ConfirmationService } from '@libreng/ui/api';
+import { Button } from '@libreng/ui/button';
+import { Dialog } from '@libreng/ui/dialog';
 import { ConfirmDialog } from './confirmdialog';
 
 // Basic ConfirmDialog Component Test

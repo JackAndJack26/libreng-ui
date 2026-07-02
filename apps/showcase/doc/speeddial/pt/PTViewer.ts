@@ -1,9 +1,9 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { SpeedDialModule } from 'primeng/speeddial';
-import { ToastModule } from 'primeng/toast';
+import { MenuItem, MessageService } from '@libreng/ui/api';
+import { SpeedDialModule } from '@libreng/ui/speeddial';
+import { ToastModule } from '@libreng/ui/toast';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

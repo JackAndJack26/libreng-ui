@@ -12,13 +12,13 @@ Toolbar is a grouping component for buttons and other content. Its content can b
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { SplitButtonModule } from 'primeng/splitbutton';
-import { ToolbarModule } from 'primeng/toolbar';
-import { InputTextModule } from 'primeng/inputtext';
-import { MenuItem } from 'primeng/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { SplitButtonModule } from '@libreng/ui/splitbutton';
+import { ToolbarModule } from '@libreng/ui/toolbar';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { MenuItem } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -68,9 +68,9 @@ Content can also be placed using the start , center and end templates.
 
 ```typescript
 import { Component } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { ToolbarModule } from 'primeng/toolbar';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { ButtonModule } from '@libreng/ui/button';
+import { ToolbarModule } from '@libreng/ui/toolbar';
 
 @Component({
     template: `

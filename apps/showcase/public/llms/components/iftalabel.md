@@ -13,8 +13,8 @@ IftaLabel is used by wrapping the input and its label.
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { IftaLabelModule } from 'primeng/iftalabel';
-import { InputTextModule } from 'primeng/inputtext';
+import { IftaLabelModule } from '@libreng/ui/iftalabel';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     template: `
@@ -40,8 +40,8 @@ When the form element is invalid, the label is also highlighted.
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { IftaLabelModule } from 'primeng/iftalabel';
-import { InputTextModule } from 'primeng/inputtext';
+import { IftaLabelModule } from '@libreng/ui/iftalabel';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     template: `

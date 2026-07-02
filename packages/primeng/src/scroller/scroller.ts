@@ -20,11 +20,11 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { findSingle, getHeight, getWidth, isTouchDevice, isVisible } from '@primeuix/utils';
-import { PrimeTemplate, ScrollerOptions, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { SpinnerIcon } from 'primeng/icons';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { PrimeTemplate, ScrollerOptions, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { SpinnerIcon } from '@libreng/ui/icons';
+import { Nullable, VoidListener } from '@libreng/ui/ts-helpers';
 import {
     ScrollerContentTemplateContext,
     ScrollerItemTemplateContext,
@@ -35,7 +35,7 @@ import {
     ScrollerScrollIndexChangeEvent,
     ScrollerToType,
     VirtualScrollerPassThrough
-} from 'primeng/types/scroller';
+} from '@libreng/ui/types/scroller';
 import { ScrollerStyle } from './style/scrollerstyle';
 
 const SCROLLER_INSTANCE = new InjectionToken<Scroller>('SCROLLER_INSTANCE');

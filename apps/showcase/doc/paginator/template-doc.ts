@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { PaginatorState, PaginatorModule } from 'primeng/paginator';
-import { ButtonModule } from 'primeng/button';
-import { DividerModule } from 'primeng/divider';
-import { SelectModule } from 'primeng/select';
-import { SliderModule } from 'primeng/slider';
+import { PaginatorState, PaginatorModule } from '@libreng/ui/paginator';
+import { ButtonModule } from '@libreng/ui/button';
+import { DividerModule } from '@libreng/ui/divider';
+import { SelectModule } from '@libreng/ui/select';
+import { SliderModule } from '@libreng/ui/slider';
 import { FormsModule } from '@angular/forms';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';

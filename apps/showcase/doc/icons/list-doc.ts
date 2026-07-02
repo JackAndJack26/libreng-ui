@@ -2,7 +2,7 @@ import { default as IconData } from '@/assets/data/icons.json';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

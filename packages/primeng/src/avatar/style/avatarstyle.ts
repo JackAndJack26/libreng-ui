@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { style } from '@primeuix/styles/avatar';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const classes = {
     root: ({ instance }) => [
@@ -29,7 +29,7 @@ export class AvatarStyle extends BaseStyle {
  *
  * Avatar represents people using icons, labels and images.
  *
- * - [Live Demo](https://primeng.org/avatar)
+ * - [Live Demo](https://github.com/capivaramu/orbia-ui/avatar)
  *
  * @module avatarstyle
  *

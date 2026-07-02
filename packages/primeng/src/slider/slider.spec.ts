@@ -4,9 +4,9 @@ import { FormControl, FormGroup, FormsModule, Validators } from '@angular/forms'
 import { By } from '@angular/platform-browser';
 
 import { CommonModule } from '@angular/common';
-import { SharedModule } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
-import { SliderChangeEvent, SliderSlideEndEvent } from 'primeng/types/slider';
+import { SharedModule } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
+import { SliderChangeEvent, SliderSlideEndEvent } from '@libreng/ui/types/slider';
 import { Slider, SliderModule } from './slider';
 
 // Test Components

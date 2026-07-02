@@ -3,8 +3,8 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { InputGroup } from './inputgroup';
-import { InputGroupAddon } from 'primeng/inputgroupaddon';
-import { providePrimeNG } from 'primeng/config';
+import { InputGroupAddon } from '@libreng/ui/inputgroupaddon';
+import { providePrimeNG } from '@libreng/ui/config';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

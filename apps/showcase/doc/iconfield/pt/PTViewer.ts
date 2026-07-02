@@ -2,9 +2,9 @@ import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

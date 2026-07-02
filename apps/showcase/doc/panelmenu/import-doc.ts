@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { PanelMenuModule } from 'primeng/panelmenu';`
+        typescript: `import { PanelMenuModule } from '@libreng/ui/panelmenu';`
     };
 }

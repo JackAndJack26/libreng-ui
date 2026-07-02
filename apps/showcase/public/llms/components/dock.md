@@ -12,17 +12,17 @@ A mock desktop UI implemented with various components in addition to Dock.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { DialogModule } from 'primeng/dialog';
-import { DockModule } from 'primeng/dock';
-import { GalleriaModule } from 'primeng/galleria';
-import { MenubarModule } from 'primeng/menubar';
-import { TerminalModule } from 'primeng/terminal';
-import { ToastModule } from 'primeng/toast';
-import { TreeModule } from 'primeng/tree';
-import { TooltipModule } from 'primeng/tooltip';
+import { DialogModule } from '@libreng/ui/dialog';
+import { DockModule } from '@libreng/ui/dock';
+import { GalleriaModule } from '@libreng/ui/galleria';
+import { MenubarModule } from '@libreng/ui/menubar';
+import { TerminalModule } from '@libreng/ui/terminal';
+import { ToastModule } from '@libreng/ui/toast';
+import { TreeModule } from '@libreng/ui/tree';
+import { TooltipModule } from '@libreng/ui/tooltip';
 import { NodeService } from '@/service/nodeservice';
 import { PhotoService } from '@/service/photoservice';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -53,7 +53,7 @@ import { MenuItem, MessageService } from 'primeng/api';
                     <p-tree [value]="nodes" />
                 </p-dialog>
                 <p-dialog [maximizable]="true" [(visible)]="displayTerminal" [breakpoints]="{ '960px': '50vw' }" [style]="{ width: '30vw' }" [draggable]="false" [resizable]="false" header="Terminal">
-                    <p-terminal welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')" prompt="primeng $" />
+                    <p-terminal welcomeMessage="Welcome to LibreNG UI (cmd: 'date', 'greet {0}', 'random')" prompt="primeng $" />
                 </p-dialog>
                 <p-galleria
                     [(value)]="images"
@@ -169,7 +169,7 @@ export class DockAdvancedDemo implements OnInit {
                     showDelay: 1000
                 },
                 icon: 'https://primefaces.org/cdn/primeng/images/dock/github.svg',
-                url: 'https://github.com/primefaces/primeng'
+                url: 'https://github.com/capivaramu/orbia-ui'
             },
             {
                 label: 'Trash',
@@ -370,10 +370,10 @@ Dock requires a collection of menuitems as its model . Default location is botto
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DockModule } from 'primeng/dock';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { TooltipModule } from 'primeng/tooltip';
-import { MenuItem } from 'primeng/api';
+import { DockModule } from '@libreng/ui/dock';
+import { RadioButtonModule } from '@libreng/ui/radiobutton';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { MenuItem } from '@libreng/ui/api';
 
 @Component({
     template: `

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Input, ViewEncapsulation } from '@angular/core';
-import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+import { AnimateOnScrollModule } from '@libreng/ui/animateonscroll';
 
 @Component({
     selector: 'template-configuration',

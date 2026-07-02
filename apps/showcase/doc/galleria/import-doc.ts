@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { GalleriaModule } from 'primeng/galleria';`
+        typescript: `import { GalleriaModule } from '@libreng/ui/galleria';`
     };
 }

@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { InputTextModule } from 'primeng/inputtext';
-import { ButtonModule } from 'primeng/button';
-import { MenuModule } from 'primeng/menu';
+import { MenuItem } from '@libreng/ui/api';
+import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { InputGroupAddonModule } from '@libreng/ui/inputgroupaddon';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { ButtonModule } from '@libreng/ui/button';
+import { MenuModule } from '@libreng/ui/menu';
 import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

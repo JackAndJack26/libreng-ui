@@ -3,9 +3,9 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, inject, input, Input, model, OnInit } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { $dt } from '@primeuix/themes';
-import { AutoCompleteModule } from 'primeng/autocomplete';
-import { TooltipModule } from 'primeng/tooltip';
-import { UniqueComponentId } from 'primeng/utils';
+import { AutoCompleteModule } from '@libreng/ui/autocomplete';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { UniqueComponentId } from '@libreng/ui/utils';
 
 @Component({
     selector: 'design-token-field',

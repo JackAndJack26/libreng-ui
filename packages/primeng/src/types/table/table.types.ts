@@ -1,13 +1,13 @@
 import { TemplateRef } from '@angular/core';
-import type { FilterMetadata, LazyLoadMeta, PassThrough, PassThroughOption } from 'primeng/api';
-import type { ButtonPassThrough, ButtonProps } from 'primeng/types/button';
-import type { CheckboxPassThrough } from 'primeng/types/checkbox';
-import type { PaginatorPassThrough } from 'primeng/types/paginator';
-import type { VirtualScrollerPassThrough } from 'primeng/types/scroller';
-import type { InputTextPassThrough } from 'primeng/types/inputtext';
-import type { SelectPassThrough } from 'primeng/types/select';
-import type { InputNumberPassThrough } from 'primeng/types/inputnumber';
-import type { DatePickerPassThrough } from 'primeng/types/datepicker';
+import type { FilterMetadata, LazyLoadMeta, PassThrough, PassThroughOption } from '@libreng/ui/api';
+import type { ButtonPassThrough, ButtonProps } from '@libreng/ui/types/button';
+import type { CheckboxPassThrough } from '@libreng/ui/types/checkbox';
+import type { PaginatorPassThrough } from '@libreng/ui/types/paginator';
+import type { VirtualScrollerPassThrough } from '@libreng/ui/types/scroller';
+import type { InputTextPassThrough } from '@libreng/ui/types/inputtext';
+import type { SelectPassThrough } from '@libreng/ui/types/select';
+import type { InputNumberPassThrough } from '@libreng/ui/types/inputnumber';
+import type { DatePickerPassThrough } from '@libreng/ui/types/datepicker';
 import type { MotionOptions } from '@primeuix/motion';
 
 /**

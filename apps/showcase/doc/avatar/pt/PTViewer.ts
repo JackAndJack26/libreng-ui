@@ -1,8 +1,8 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
-import { AvatarGroupModule } from 'primeng/avatargroup';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { AvatarGroupModule } from '@libreng/ui/avatargroup';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

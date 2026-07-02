@@ -3,9 +3,9 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputMaskModule } from 'primeng/inputmask';
-import { InputTextModule } from 'primeng/inputtext';
-import { MessageModule } from 'primeng/message';
+import { InputMaskModule } from '@libreng/ui/inputmask';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

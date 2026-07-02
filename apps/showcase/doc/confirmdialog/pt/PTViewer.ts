@@ -1,8 +1,8 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { ConfirmationService } from 'primeng/api';
-import { ConfirmDialogModule } from 'primeng/confirmdialog';
+import { ConfirmationService } from '@libreng/ui/api';
+import { ConfirmDialogModule } from '@libreng/ui/confirmdialog';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

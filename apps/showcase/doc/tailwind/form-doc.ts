@@ -3,10 +3,10 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { DatePickerModule } from 'primeng/datepicker';
-import { InputTextModule } from 'primeng/inputtext';
-import { SelectModule } from 'primeng/select';
-import { TextareaModule } from 'primeng/textarea';
+import { DatePickerModule } from '@libreng/ui/datepicker';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { SelectModule } from '@libreng/ui/select';
+import { TextareaModule } from '@libreng/ui/textarea';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -15,7 +15,7 @@ import { TextareaModule } from 'primeng/textarea';
     imports: [CommonModule, FormsModule, AppDocSectionText, AppCode, InputTextModule, SelectModule, DatePickerModule, TextareaModule],
     template: `
         <app-docsectiontext>
-            <p>Using Tailwind utilities for the responsive layout of a form with PrimeNG components.</p>
+            <p>Using Tailwind utilities for the responsive layout of a form with LibreNG UI components.</p>
         </app-docsectiontext>
         <div class="card flex sm:justify-center">
             <div class="flex flex-col gap-6 w-full sm:w-auto">

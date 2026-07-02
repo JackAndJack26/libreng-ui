@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as listbox_style } from '@primeuix/styles/listbox';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${listbox_style}
 
-    /* For PrimeNG */
+    /* For LibreNG UI */
     .p-listbox.ng-invalid.ng-dirty {
         border-color: dt('listbox.invalid.border.color');
     }

@@ -127,7 +127,7 @@ function generateStackBlitzProject(demo, selector) {
 import { ${componentName} } from './app/${selector}';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 import Aura from '@primeuix/themes/aura';
 
 export const appConfig: ApplicationConfig = {
@@ -147,7 +147,7 @@ bootstrapApplication(${componentName}, appConfig).catch((err) =>
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>PrimeNG ${componentName}</title>
+    <title>LibreNG UI ${componentName}</title>
     <base href="/">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
@@ -197,11 +197,11 @@ function validateTypeScript(tsContent, filePath, selector) {
     }
 
     // Check for invalid imports
-    if (tsContent.includes("from 'primeng/") && tsContent.includes('ImportsModule')) {
+    if (tsContent.includes("from '@libreng/ui/") && tsContent.includes('ImportsModule')) {
         // Should not have direct primeng imports when using ImportsModule
         const directImports = tsContent.match(/import\s+\{[^}]*Module[^}]*\}\s+from\s+'primeng\/[^']+'/g);
         if (directImports) {
-            errors.push('Has direct PrimeNG module imports alongside ImportsModule');
+            errors.push('Has direct LibreNG UI module imports alongside ImportsModule');
         }
     }
 

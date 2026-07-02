@@ -12,9 +12,9 @@ Tree component requires an array of TreeNode objects as its value .
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { TreeModule } from 'primeng/tree';
+import { TreeModule } from '@libreng/ui/tree';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -44,9 +44,9 @@ Selection of multiple nodes via checkboxes is enabled by configuring selectionMo
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { TreeModule } from 'primeng/tree';
+import { TreeModule } from '@libreng/ui/tree';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -77,12 +77,12 @@ Tree has exclusive integration with ContextMenu using the contextMenu property a
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { ContextMenu, ContextMenuModule } from 'primeng/contextmenu';
-import { ToastModule } from 'primeng/toast';
-import { TreeModule } from 'primeng/tree';
+import { ContextMenu, ContextMenuModule } from '@libreng/ui/contextmenu';
+import { ToastModule } from '@libreng/ui/toast';
+import { TreeModule } from '@libreng/ui/tree';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode, MenuItem, MessageService } from 'primeng/api';
-import { ContextMenu } from 'primeng/contextmenu';
+import { TreeNode, MenuItem, MessageService } from '@libreng/ui/api';
+import { ContextMenu } from '@libreng/ui/contextmenu';
 
 @Component({
     template: `
@@ -144,10 +144,10 @@ Tree requires a collection of TreeNode instances as a value .
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { TreeModule } from 'primeng/tree';
+import { ButtonModule } from '@libreng/ui/button';
+import { TreeModule } from '@libreng/ui/tree';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -191,10 +191,10 @@ An event is provided for each type of user interaction such as expand, collapse 
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { ToastModule } from 'primeng/toast';
-import { TreeModule } from 'primeng/tree';
+import { ToastModule } from '@libreng/ui/toast';
+import { TreeModule } from '@libreng/ui/tree';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode, MessageService } from 'primeng/api';
+import { TreeNode, MessageService } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -252,9 +252,9 @@ Filtering is enabled by adding the filter property, by default label property of
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { TreeModule } from 'primeng/tree';
+import { TreeModule } from '@libreng/ui/tree';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -291,8 +291,8 @@ Lazy loading is useful when dealing with huge datasets, in this example nodes ar
 
 ```typescript
 import { Component, OnInit, signal } from '@angular/core';
-import { TreeModule } from 'primeng/tree';
-import { TreeNode } from 'primeng/api';
+import { TreeModule } from '@libreng/ui/tree';
+import { TreeNode } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -368,10 +368,10 @@ More than one node is selectable by setting selectionMode to multiple . By defau
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
-import { Tree, TreeModule } from 'primeng/tree';
+import { ToggleSwitchModule } from '@libreng/ui/toggleswitch';
+import { Tree, TreeModule } from '@libreng/ui/tree';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -407,9 +407,9 @@ Single node selection is configured by setting selectionMode as single along wit
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { TreeModule } from 'primeng/tree';
+import { TreeModule } from '@libreng/ui/tree';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -440,8 +440,8 @@ Custom node content instead of a node label is defined with the pTemplate proper
 
 ```typescript
 import { Component, OnInit, signal } from '@angular/core';
-import { TreeModule } from 'primeng/tree';
-import { TreeNode } from 'primeng/api';
+import { TreeModule } from '@libreng/ui/tree';
+import { TreeNode } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -495,9 +495,9 @@ VirtualScroller is a performance-approach to handle huge data efficiently. Setti
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { TreeModule } from 'primeng/tree';
+import { TreeModule } from '@libreng/ui/tree';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -525,9 +525,9 @@ VirtualScroller is a performance-approach to handle huge data efficiently. Setti
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { TreeModule } from 'primeng/tree';
+import { TreeModule } from '@libreng/ui/tree';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@libreng/ui/api';
 
 @Component({
     template: `

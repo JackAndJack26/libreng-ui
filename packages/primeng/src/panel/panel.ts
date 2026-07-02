@@ -21,14 +21,14 @@ import {
 } from '@angular/core';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { uuid } from '@primeuix/utils';
-import { BlockableUI, Footer, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { ButtonModule } from 'primeng/button';
-import { MinusIcon, PlusIcon } from 'primeng/icons';
-import { MotionModule } from 'primeng/motion';
-import { Nullable } from 'primeng/ts-helpers';
-import type { PanelAfterToggleEvent, PanelBeforeToggleEvent, PanelHeaderIconsTemplateContext, PanelPassThrough } from 'primeng/types/panel';
+import { BlockableUI, Footer, PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { ButtonModule } from '@libreng/ui/button';
+import { MinusIcon, PlusIcon } from '@libreng/ui/icons';
+import { MotionModule } from '@libreng/ui/motion';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import type { PanelAfterToggleEvent, PanelBeforeToggleEvent, PanelHeaderIconsTemplateContext, PanelPassThrough } from '@libreng/ui/types/panel';
 import { PanelStyle } from './style/panelstyle';
 
 const PANEL_INSTANCE = new InjectionToken<Panel>('PANEL_INSTANCE');

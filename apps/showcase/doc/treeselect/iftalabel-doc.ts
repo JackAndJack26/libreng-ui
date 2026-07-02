@@ -2,8 +2,8 @@ import { NodeService } from '@/service/nodeservice';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { TreeSelectModule } from 'primeng/treeselect';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { TreeSelectModule } from '@libreng/ui/treeselect';
+import { IftaLabelModule } from '@libreng/ui/iftalabel';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

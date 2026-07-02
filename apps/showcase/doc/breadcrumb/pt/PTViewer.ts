@@ -1,8 +1,8 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { BreadcrumbModule } from 'primeng/breadcrumb';
+import { MenuItem } from '@libreng/ui/api';
+import { BreadcrumbModule } from '@libreng/ui/breadcrumb';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

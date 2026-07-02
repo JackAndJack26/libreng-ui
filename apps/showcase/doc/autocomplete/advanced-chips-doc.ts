@@ -5,8 +5,8 @@ import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { AutoCompleteModule } from 'primeng/autocomplete';
-import { ChipModule } from 'primeng/chip';
+import { AutoCompleteModule } from '@libreng/ui/autocomplete';
+import { ChipModule } from '@libreng/ui/chip';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

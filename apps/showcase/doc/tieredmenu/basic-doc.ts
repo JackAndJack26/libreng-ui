@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MenuItem } from 'primeng/api';
+import { MenuItem } from '@libreng/ui/api';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
-import { TieredMenuModule } from 'primeng/tieredmenu';
+import { TieredMenuModule } from '@libreng/ui/tieredmenu';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TagModule } from 'primeng/tag';
+import { TagModule } from '@libreng/ui/tag';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

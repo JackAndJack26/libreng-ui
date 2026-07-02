@@ -11,6 +11,6 @@ import { AppCodeModule } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { IftaLabelModule } from 'primeng/iftalabel';`
+        typescript: `import { IftaLabelModule } from '@libreng/ui/iftalabel';`
     };
 }

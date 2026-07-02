@@ -3,8 +3,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { IftaLabelModule } from 'primeng/iftalabel';
-import { TextareaModule } from 'primeng/textarea';
+import { IftaLabelModule } from '@libreng/ui/iftalabel';
+import { TextareaModule } from '@libreng/ui/textarea';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -8,7 +8,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
-    template: `<app-doc docTitle="Unstyled Mode" header="Unstyled" description="Theming PrimeNG with alternative styling approaches." [docs]="docs" docType="page"></app-doc>`,
+    template: `<app-doc docTitle="Unstyled Mode" header="Unstyled" description="Theming LibreNG UI with alternative styling approaches." [docs]="docs" docType="page"></app-doc>`,
     imports: [AppDoc],
     standalone: true
 })

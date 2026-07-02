@@ -2,7 +2,7 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
-import { ClassNamesModule } from 'primeng/classnames';
+import { ClassNamesModule } from '@libreng/ui/classnames';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

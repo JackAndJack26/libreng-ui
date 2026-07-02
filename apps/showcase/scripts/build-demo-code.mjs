@@ -16,7 +16,7 @@ const SKIP_DIRS = ['apidoc', 'theming', 'icons', 'installation', 'configuration'
 // Known services that exist in StackBlitz templates
 const KNOWN_SERVICES = ['CarService', 'CountryService', 'CustomerService', 'EventService', 'NodeService', 'PhotoService', 'ProductService', 'TicketService'];
 
-// PrimeNG API services that should be included in providers
+// LibreNG UI API services that should be included in providers
 const PRIMENG_SERVICES = ['MessageService', 'ConfirmationService', 'DialogService', 'TreeDragDropService', 'FilterService'];
 
 // Known domain types and their paths
@@ -78,7 +78,7 @@ export interface Customer {
 }`
 };
 
-// PrimeNG named exports that can be used as types (not modules)
+// LibreNG UI named exports that can be used as types (not modules)
 const PRIMENG_NAMED_EXPORTS = {
     Table: 'table',
     Tree: 'tree',
@@ -98,7 +98,7 @@ const PRIMENG_NAMED_EXPORTS = {
     PanelMenu: 'panelmenu'
 };
 
-// PrimeNG API types that need to be imported from 'primeng/api'
+// LibreNG UI API types that need to be imported from '@libreng/ui/api'
 const PRIMENG_API_TYPES = [
     'TreeNode',
     'MenuItem',
@@ -117,7 +117,7 @@ const PRIMENG_API_TYPES = [
     'TableLazyLoadEvent'
 ];
 
-// PrimeNG selector to module mapping
+// LibreNG UI selector to module mapping
 const SELECTOR_TO_MODULE = {
     'p-accordion': 'AccordionModule',
     'p-autocomplete': 'AutoCompleteModule',
@@ -413,8 +413,8 @@ function extractConstructor(content, services = []) {
             if (services.some((s) => p.includes(s))) return true;
             // Keep common Angular services
             if (p.includes('MessageService') || p.includes('ConfirmationService')) return true;
-            // Keep PrimeNG config injection
-            if (p.includes('PrimeNG')) return true;
+            // Keep LibreNG UI config injection
+            if (p.includes('LibreNG UI')) return true;
             // Filter out doc-specific ones
             if (p.includes('ChangeDetectorRef') || p.includes('PLATFORM_ID') || p.includes('DOCUMENT')) return false;
             // Keep other services
@@ -745,7 +745,7 @@ function extractDivContent(html, classPattern) {
     return null;
 }
 
-// Extract basic code (just PrimeNG component without wrapper)
+// Extract basic code (just LibreNG UI component without wrapper)
 function extractBasicCode(htmlContent) {
     if (!htmlContent) return null;
 
@@ -757,7 +757,7 @@ function extractBasicCode(htmlContent) {
         basic = cardContent;
     }
 
-    // Only remove flex/grid wrapper if it's the ONLY top-level element wrapping PrimeNG components
+    // Only remove flex/grid wrapper if it's the ONLY top-level element wrapping LibreNG UI components
     // Don't remove flex divs that are inside ng-template or other components
     // Don't remove if there are sibling elements after the flex div
     const trimmed = basic.trim();
@@ -788,7 +788,7 @@ function extractBasicCode(htmlContent) {
 
                 // Only unwrap if there's nothing after the flex div
                 if (!afterFlexDiv) {
-                    // Only unwrap if the flex div directly contains PrimeNG components (not nested in templates)
+                    // Only unwrap if the flex div directly contains LibreNG UI components (not nested in templates)
                     const hasPrimeNGDirect = /^[\s\S]*?<p-[a-z]/.test(flexContent);
                     const hasNoTemplates = !flexContent.includes('<ng-template');
                     const isSimpleWrapper = flexContent.split('<div').length <= 3;
@@ -905,7 +905,7 @@ function detectDomainTypes(content) {
     return domainTypes;
 }
 
-// Detect PrimeNG named exports used as types in component
+// Detect LibreNG UI named exports used as types in component
 function detectPrimeNGNamedExports(content) {
     const namedExports = {};
 
@@ -973,7 +973,7 @@ function detectServices(content) {
             if (KNOWN_SERVICES.includes(name) && !services.includes(name)) {
                 services.push(name);
             }
-            // Also check for PrimeNG API services
+            // Also check for LibreNG UI API services
             if (PRIMENG_SERVICES.includes(name) && !primeNGServices.includes(name)) {
                 primeNGServices.push(name);
             }
@@ -983,7 +983,7 @@ function detectServices(content) {
     return { services, primeNGServices };
 }
 
-// Detect PrimeNG modules used in template
+// Detect LibreNG UI modules used in template
 function detectPrimeNGModules(template) {
     const modules = new Set();
 
@@ -1079,10 +1079,10 @@ function generateTypescript(componentName, template, services = [], fileContent 
         importStatements += `import { ReactiveFormsModule } from '@angular/forms';\n`;
     }
 
-    // Add PrimeNG modules (will be modified below to include named exports)
+    // Add LibreNG UI modules (will be modified below to include named exports)
     const primeNGImports = primeModules.filter((m) => !['CommonModule', 'FormsModule', 'ReactiveFormsModule'].includes(m));
 
-    // Detect PrimeNG named exports early so we can combine them with module imports
+    // Detect LibreNG UI named exports early so we can combine them with module imports
     const primeNGNamedExportsEarly = detectPrimeNGNamedExports(fileContent);
 
     for (const module of primeNGImports) {
@@ -1091,9 +1091,9 @@ function generateTypescript(componentName, template, services = [], fileContent 
         const namedExportsForModule = primeNGNamedExportsEarly[moduleLower] || [];
         if (namedExportsForModule.length > 0) {
             // Combine module with named exports
-            importStatements += `import { ${[...namedExportsForModule, module].join(', ')} } from 'primeng/${moduleLower}';\n`;
+            importStatements += `import { ${[...namedExportsForModule, module].join(', ')} } from '@libreng/ui/${moduleLower}';\n`;
         } else {
-            importStatements += `import { ${module} } from 'primeng/${moduleLower}';\n`;
+            importStatements += `import { ${module} } from '@libreng/ui/${moduleLower}';\n`;
         }
     }
 
@@ -1102,12 +1102,12 @@ function generateTypescript(componentName, template, services = [], fileContent 
         importStatements += `import { ${service} } from '@/service/${service.toLowerCase()}';\n`;
     }
 
-    // Add PrimeNG config import if used in constructor
-    if (constructor && constructor.params && constructor.params.includes('PrimeNG')) {
-        importStatements += `import { PrimeNG } from 'primeng/config';\n`;
+    // Add LibreNG UI config import if used in constructor
+    if (constructor && constructor.params && constructor.params.includes('LibreNG UI')) {
+        importStatements += `import { LibreNG UI } from '@libreng/ui/config';\n`;
     }
 
-    // Detect and add PrimeNG API types (TreeNode, MenuItem, etc.) and services
+    // Detect and add LibreNG UI API types (TreeNode, MenuItem, etc.) and services
     const usedApiTypes = [];
     const allContent = fileContent + (interfaces.length > 0 ? interfaces.join('\n') : '');
     for (const apiType of PRIMENG_API_TYPES) {
@@ -1117,10 +1117,10 @@ function generateTypescript(componentName, template, services = [], fileContent 
             usedApiTypes.push(apiType);
         }
     }
-    // Combine API types with PrimeNG services for import (avoid duplicates)
+    // Combine API types with LibreNG UI services for import (avoid duplicates)
     const apiImports = [...new Set([...usedApiTypes, ...primeNGServices])];
     if (apiImports.length > 0) {
-        importStatements += `import { ${apiImports.join(', ')} } from 'primeng/api';\n`;
+        importStatements += `import { ${apiImports.join(', ')} } from '@libreng/ui/api';\n`;
     }
 
     // Detect and add domain type imports (Customer, Product, etc.)
@@ -1129,20 +1129,20 @@ function generateTypescript(componentName, template, services = [], fileContent 
         importStatements += `import { ${types.join(', ')} } from '@/domain/${domainPath}';\n`;
     }
 
-    // Add PrimeNG named exports that weren't combined with module imports
+    // Add LibreNG UI named exports that weren't combined with module imports
     for (const [modulePath, exports] of Object.entries(primeNGNamedExportsEarly)) {
         const moduleNameBase = modulePath.charAt(0).toUpperCase() + modulePath.slice(1);
         const moduleName = moduleNameBase + 'Module';
         // Only add separate import if we don't already have the module imported
         if (!primeNGImports.includes(moduleName)) {
-            importStatements += `import { ${exports.join(', ')} } from 'primeng/${modulePath}';\n`;
+            importStatements += `import { ${exports.join(', ')} } from '@libreng/ui/${modulePath}';\n`;
         }
     }
 
     // Build imports array for decorator (actual modules, not ImportsModule)
     const decoratorImports = primeModules.filter((m) => m !== 'CommonModule');
 
-    // Build providers if services exist (include both custom services and PrimeNG API services)
+    // Build providers if services exist (include both custom services and LibreNG UI API services)
     const allProviders = [...services, ...primeNGServices];
     const providersLine = allProviders.length > 0 ? `,\n    providers: [${allProviders.join(', ')}]` : '';
 
@@ -1293,7 +1293,7 @@ function parseDocFile(filePath, componentDir) {
         },
         metadata: {
             services,
-            primeNGServices, // Add PrimeNG API services to metadata
+            primeNGServices, // Add LibreNG UI API services to metadata
             extFiles,
             imports: detectPrimeNGModules(demoContent)
         }

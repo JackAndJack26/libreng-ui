@@ -1,6 +1,6 @@
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TagModule } from 'primeng/tag';
+import { TagModule } from '@libreng/ui/tag';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -23,7 +23,7 @@ import { TagModule } from 'primeng/tag';
                     </thead>
                     <tbody>
                         <tr>
-                            <td>@primeng/themes</td>
+                            <td>@libreng/themes</td>
                             <td>v20</td>
                             <td>@primeuix/themes</td>
                             <td>v22</td>

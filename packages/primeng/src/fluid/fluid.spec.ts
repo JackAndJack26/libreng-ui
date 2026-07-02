@@ -365,7 +365,7 @@ describe('Fluid', () => {
         });
     });
 
-    describe('PrimeNG Components Integration', () => {
+    describe('LibreNG UI Components Integration', () => {
         let fixture: ComponentFixture<TestFluidWithPrimeNGComponentsComponent>;
         let element: HTMLElement;
 
@@ -375,7 +375,7 @@ describe('Fluid', () => {
             element = fixture.debugElement.query(By.directive(Fluid)).nativeElement;
         });
 
-        it('should work with PrimeNG styled components', () => {
+        it('should work with LibreNG UI styled components', () => {
             const button = element.querySelector('.p-button');
             const input = element.querySelector('.p-inputtext');
             const dropdown = element.querySelector('.p-dropdown');

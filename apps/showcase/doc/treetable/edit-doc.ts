@@ -1,13 +1,13 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TreeTableModule } from 'primeng/treetable';
-import { InputTextModule } from 'primeng/inputtext';
+import { TreeTableModule } from '@libreng/ui/treetable';
+import { InputTextModule } from '@libreng/ui/inputtext';
 import { AppCodeComponent } from '@/components/doc/app.code.component';
 import { AppDocSectionTextComponent } from '@/components/doc/app.docsectiontext.component';
 import { DeferredDemo } from '@/components/demo/deferreddemo';
 import { NodeService } from '@/service/nodeservice';
-import { TreeNode } from 'primeng/api';
+import { TreeNode } from '@libreng/ui/api';
 
 interface Column {
     field: string;

@@ -1,6 +1,6 @@
-import type { PassThrough, PassThroughOption } from 'primeng/api';
+import type { PassThrough, PassThroughOption } from '@libreng/ui/api';
 import { TemplateRef } from '@angular/core';
-import { PaginatorPassThrough } from 'primeng/types/paginator';
+import { PaginatorPassThrough } from '@libreng/ui/types/paginator';
 
 /**
  * Custom pass-through(pt) options.

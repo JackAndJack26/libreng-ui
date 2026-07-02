@@ -2,9 +2,9 @@ import { DOCUMENT, isPlatformServer } from '@angular/common';
 import { ChangeDetectorRef, computed, Directive, effect, ElementRef, inject, InjectionToken, Injector, input, PLATFORM_ID, Renderer2, signal, SimpleChanges } from '@angular/core';
 import { Theme, ThemeService } from '@primeuix/styled';
 import { cn, getKeyValue, isArray, isFunction, isNotEmpty, isString, mergeProps, resolve, toFlatCase, uuid } from '@primeuix/utils';
-import type { Lifecycle, PassThroughOptions } from 'primeng/api';
-import { Base, BaseStyle } from 'primeng/base';
-import { PrimeNG } from 'primeng/config';
+import type { Lifecycle, PassThroughOptions } from '@libreng/ui/api';
+import { Base, BaseStyle } from '@libreng/ui/base';
+import { PrimeNG } from '@libreng/ui/config';
 import { BaseComponentStyle } from './style/basecomponentstyle';
 
 export const PARENT_INSTANCE = new InjectionToken<BaseComponent>('PARENT_INSTANCE');

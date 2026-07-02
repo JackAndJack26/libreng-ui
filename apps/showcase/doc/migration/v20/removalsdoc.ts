@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TagModule } from 'primeng/tag';
+import { TagModule } from '@libreng/ui/tag';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 
 @Component({

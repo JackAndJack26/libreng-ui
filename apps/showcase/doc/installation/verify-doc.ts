@@ -2,7 +2,7 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { Code } from '@/domain/code';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@libreng/ui/button';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -26,7 +26,7 @@ import { ButtonModule } from 'primeng/button';
 export class VerifyDoc {
     code1: Code = {
         typescript: `import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@libreng/ui/button';
 
 @Component({
     selector: 'button-demo',

@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
-import { SharedModule } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
+import { SharedModule } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
 import { Inplace, InplaceContent, InplaceDisplay, InplaceModule } from './inplace';
 
 @Component({
@@ -179,7 +179,7 @@ class TestInplaceTemplatesComponent {}
     template: `
         <p-inplace>
             <ng-template pTemplate="display">
-                <span class="p-template-display">PrimeNG Template Display</span>
+                <span class="p-template-display">LibreNG UI Template Display</span>
             </ng-template>
             <ng-template pTemplate="content" let-closeCallback="closeCallback">
                 <div class="p-template-content">
@@ -858,7 +858,7 @@ describe('Inplace', () => {
         });
     });
 
-    describe('PrimeNG Templates', () => {
+    describe('LibreNG UI Templates', () => {
         let fixture: ComponentFixture<TestInplacePrimeNGTemplatesComponent>;
         let inplaceComponent: Inplace;
         let element: HTMLElement;
@@ -881,7 +881,7 @@ describe('Inplace', () => {
         it('should render pTemplate display', () => {
             const pTemplateDisplay = element.querySelector('.p-template-display');
             expect(pTemplateDisplay).toBeTruthy();
-            expect(pTemplateDisplay?.textContent?.trim()).toBe('PrimeNG Template Display');
+            expect(pTemplateDisplay?.textContent?.trim()).toBe('LibreNG UI Template Display');
         });
 
         it('should render pTemplate content when activated', async () => {

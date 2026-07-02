@@ -2,11 +2,11 @@ import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
-import { MessageService } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { KnobModule } from 'primeng/knob';
-import { MessageModule } from 'primeng/message';
-import { ToastModule } from 'primeng/toast';
+import { MessageService } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { KnobModule } from '@libreng/ui/knob';
+import { MessageModule } from '@libreng/ui/message';
+import { ToastModule } from '@libreng/ui/toast';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

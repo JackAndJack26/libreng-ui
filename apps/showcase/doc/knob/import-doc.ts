@@ -11,6 +11,6 @@ import { AppCodeModule } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { KnobModule } from 'primeng/knob';`
+        typescript: `import { KnobModule } from '@libreng/ui/knob';`
     };
 }

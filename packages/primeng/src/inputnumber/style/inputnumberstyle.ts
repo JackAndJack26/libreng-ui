@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as inputnumber_style } from '@primeuix/styles/inputnumber';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${inputnumber_style}
 
-    /* For PrimeNG */
+    /* For LibreNG UI */
     p-inputNumber.ng-invalid.ng-dirty > .p-inputtext,
     p-input-number.ng-invalid.ng-dirty > .p-inputtext,
     p-inputnumber.ng-invalid.ng-dirty > .p-inputtext {

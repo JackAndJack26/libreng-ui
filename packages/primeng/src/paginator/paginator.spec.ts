@@ -4,11 +4,11 @@ import { By } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { CommonModule } from '@angular/common';
 import { Paginator, PaginatorModule } from './paginator';
-import { Select } from 'primeng/select';
-import { InputNumber } from 'primeng/inputnumber';
-import { Ripple } from 'primeng/ripple';
-import { SharedModule } from 'primeng/api';
-import { PaginatorState } from 'primeng/types/paginator';
+import { Select } from '@libreng/ui/select';
+import { InputNumber } from '@libreng/ui/inputnumber';
+import { Ripple } from '@libreng/ui/ripple';
+import { SharedModule } from '@libreng/ui/api';
+import { PaginatorState } from '@libreng/ui/types/paginator';
 
 // Test component for basic paginator functionality
 @Component({

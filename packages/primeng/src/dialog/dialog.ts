@@ -28,17 +28,17 @@ import {
 } from '@angular/core';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { addStyle, appendChild, getOuterHeight, getOuterWidth, getViewport, hasClass, removeClass, setAttribute, uuid } from '@primeuix/utils';
-import { OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { Button, ButtonProps } from 'primeng/button';
-import { blockBodyScroll, DomHandler, unblockBodyScroll } from 'primeng/dom';
-import { FocusTrap } from 'primeng/focustrap';
-import { TimesIcon, WindowMaximizeIcon, WindowMinimizeIcon } from 'primeng/icons';
-import { MotionModule } from 'primeng/motion';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { DialogPassThrough } from 'primeng/types/dialog';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { Button, ButtonProps } from '@libreng/ui/button';
+import { blockBodyScroll, DomHandler, unblockBodyScroll } from '@libreng/ui/dom';
+import { FocusTrap } from '@libreng/ui/focustrap';
+import { TimesIcon, WindowMaximizeIcon, WindowMinimizeIcon } from '@libreng/ui/icons';
+import { MotionModule } from '@libreng/ui/motion';
+import { Nullable, VoidListener } from '@libreng/ui/ts-helpers';
+import { DialogPassThrough } from '@libreng/ui/types/dialog';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { DialogStyle } from './style/dialogstyle';
 
 const DIALOG_INSTANCE = new InjectionToken<Dialog>('DIALOG_INSTANCE');

@@ -1,7 +1,7 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
-import { OrderListModule } from 'primeng/orderlist';
+import { OrderListModule } from '@libreng/ui/orderlist';
 import { ProductService } from '@/service/productservice';
 
 interface Product {

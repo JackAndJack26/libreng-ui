@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@libreng/ui/api';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
-import { Toast } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
+import { Toast } from '@libreng/ui/toast';
+import { ButtonModule } from '@libreng/ui/button';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

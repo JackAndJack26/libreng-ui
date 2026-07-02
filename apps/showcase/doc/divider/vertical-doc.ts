@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { DividerModule } from 'primeng/divider';
+import { DividerModule } from '@libreng/ui/divider';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

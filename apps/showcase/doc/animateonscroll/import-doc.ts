@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { AnimateOnScrollModule } from 'primeng/animateonscroll';`
+        typescript: `import { AnimateOnScrollModule } from '@libreng/ui/animateonscroll';`
     };
 }

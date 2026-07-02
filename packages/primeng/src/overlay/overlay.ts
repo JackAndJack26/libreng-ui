@@ -22,21 +22,21 @@ import {
 } from '@angular/core';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { absolutePosition, addClass, appendChild, focus, getOuterWidth, getTargetElement, isTouchDevice, relativePosition, removeClass } from '@primeuix/utils';
-import { OverlayModeType, OverlayOnBeforeHideEvent, OverlayOnBeforeShowEvent, OverlayOnHideEvent, OverlayOnShowEvent, OverlayOptions, OverlayService, PrimeTemplate, ResponsiveOverlayOptions, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { MotionModule } from 'primeng/motion';
+import { OverlayModeType, OverlayOnBeforeHideEvent, OverlayOnBeforeShowEvent, OverlayOnHideEvent, OverlayOnShowEvent, OverlayOptions, OverlayService, PrimeTemplate, ResponsiveOverlayOptions, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { ConnectedOverlayScrollHandler } from '@libreng/ui/dom';
+import { MotionModule } from '@libreng/ui/motion';
 import { Subscription } from 'rxjs';
-import { VoidListener } from 'primeng/ts-helpers';
-import { ObjectUtils, ZIndexUtils } from 'primeng/utils';
-import { OverlayContentTemplateContext } from 'primeng/types/overlay';
+import { VoidListener } from '@libreng/ui/ts-helpers';
+import { ObjectUtils, ZIndexUtils } from '@libreng/ui/utils';
+import { OverlayContentTemplateContext } from '@libreng/ui/types/overlay';
 import { OverlayStyle } from './style/overlaystyle';
 
 const OVERLAY_INSTANCE = new InjectionToken<Overlay>('OVERLAY_INSTANCE');
 
 /**
- * This API allows overlay components to be controlled from the PrimeNG. In this way, all overlay components in the application can have the same behavior.
+ * This API allows overlay components to be controlled from the LibreNG UI. In this way, all overlay components in the application can have the same behavior.
  * @group Components
  */
 @Component({

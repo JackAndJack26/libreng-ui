@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as togglebutton_style } from '@primeuix/styles/togglebutton';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${togglebutton_style}
 
-    /* For PrimeNG (iconPos) */
+    /* For LibreNG UI (iconPos) */
     .p-togglebutton-icon-right {
         order: 1;
     }

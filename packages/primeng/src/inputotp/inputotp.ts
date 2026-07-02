@@ -21,14 +21,14 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BaseEditableHolder } from 'primeng/baseeditableholder';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { InputText } from 'primeng/inputtext';
-import { Nullable } from 'primeng/ts-helpers';
-import { InputOtpChangeEvent, InputOtpInputTemplateContext, InputOtpPassThrough } from 'primeng/types/inputotp';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { InputText } from '@libreng/ui/inputtext';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import { InputOtpChangeEvent, InputOtpInputTemplateContext, InputOtpPassThrough } from '@libreng/ui/types/inputotp';
 import { InputOtpStyle } from './style/inputotpstyle';
 
 const INPUTOTP_INSTANCE = new InjectionToken<InputOtp>('INPUTOTP_INSTANCE');
@@ -40,7 +40,7 @@ export const INPUT_OTP_VALUE_ACCESSOR: any = {
 };
 
 // Re-export interfaces from types for backwards compatibility
-export { InputOtpChangeEvent, InputOtpInputTemplateContext, InputOtpTemplateEvents } from 'primeng/types/inputotp';
+export { InputOtpChangeEvent, InputOtpInputTemplateContext, InputOtpTemplateEvents } from '@libreng/ui/types/inputotp';
 
 /**
  * Input Otp is used to enter one time passwords.

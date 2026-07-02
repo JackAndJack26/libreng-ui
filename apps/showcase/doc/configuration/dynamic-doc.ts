@@ -10,7 +10,7 @@ import { AppCode } from '@/components/doc/app.code';
     imports: [AppDocSectionText, AppCode],
     template: `
         <app-docsectiontext>
-            <p>Inject the <i>PrimeNG</i> to your application to update the initial configuration at runtime.</p>
+            <p>Inject the <i>LibreNG UI</i> to your application to update the initial configuration at runtime.</p>
         </app-docsectiontext>
         <app-code [code]="code" [hideToggleCode]="true"></app-code>
     `
@@ -18,7 +18,7 @@ import { AppCode } from '@/components/doc/app.code';
 export class DynamicDoc {
     code: Code = {
         typescript: `import { Component, OnInit } from '@angular/core';
-import { PrimeNG } from 'primeng/config';
+import { PrimeNG } from '@libreng/ui/config';
 
 @Component({
     selector: 'app-root',

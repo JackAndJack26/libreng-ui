@@ -12,7 +12,7 @@ export class TemplatesComponent {
         private titleService: Title,
         private metaService: Meta
     ) {
-        this.titleService.setTitle('Angular Application Templates - PrimeNG');
-        this.metaService.updateTag({ name: 'description', content: 'PrimeNG Angular application templates.' });
+        this.titleService.setTitle('Angular Application Templates - LibreNG UI');
+        this.metaService.updateTag({ name: 'description', content: 'LibreNG UI Angular application templates.' });
     }
 }

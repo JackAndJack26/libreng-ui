@@ -21,7 +21,7 @@ import { CIPipelineDoc } from '@/doc/uikit/v3/workflow/cipipeline-doc';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { RippleModule } from 'primeng/ripple';
+import { RippleModule } from '@libreng/ui/ripple';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

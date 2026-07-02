@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
-import { TabsModule } from 'primeng/tabs';
-import { AvatarModule } from 'primeng/avatar';
-import { BadgeModule } from 'primeng/badge';
+import { TabsModule } from '@libreng/ui/tabs';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { BadgeModule } from '@libreng/ui/badge';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

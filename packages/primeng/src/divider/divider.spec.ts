@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, DebugElement, provideZonelessChange
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 import { Divider, DividerModule } from './divider';
 
 @Component({
@@ -1155,7 +1155,7 @@ describe('Divider', () => {
                 });
             });
 
-            it('should apply global PT configuration from PrimeNG config', async () => {
+            it('should apply global PT configuration from LibreNG UI config', async () => {
                 const globalFixture = TestBed.createComponent(TestGlobalPTComponent);
                 globalFixture.changeDetectorRef.markForCheck();
                 await globalFixture.whenStable();

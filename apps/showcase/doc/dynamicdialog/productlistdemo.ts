@@ -1,10 +1,10 @@
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DialogService, DynamicDialogRef } from '@libreng/ui/dynamicdialog';
 import { InfoDemo } from './infodemo';
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
+import { ButtonModule } from '@libreng/ui/button';
+import { TableModule } from '@libreng/ui/table';
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,

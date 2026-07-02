@@ -6,9 +6,9 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { DataViewModule } from 'primeng/dataview';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { SkeletonModule } from 'primeng/skeleton';
+import { DataViewModule } from '@libreng/ui/dataview';
+import { SelectButtonModule } from '@libreng/ui/selectbutton';
+import { SkeletonModule } from '@libreng/ui/skeleton';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

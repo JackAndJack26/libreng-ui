@@ -11,7 +11,7 @@ import { AppCodeModule } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';`
+        typescript: `import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { InputGroupAddonModule } from '@libreng/ui/inputgroupaddon';`
     };
 }

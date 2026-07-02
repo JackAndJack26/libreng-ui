@@ -11,7 +11,7 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { AvatarModule } from 'primeng/avatar';
-import { AvatarGroupModule } from 'primeng/avatargroup';`
+        typescript: `import { AvatarModule } from '@libreng/ui/avatar';
+import { AvatarGroupModule } from '@libreng/ui/avatargroup';`
     };
 }

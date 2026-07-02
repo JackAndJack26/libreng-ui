@@ -2,8 +2,8 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, computed, signal } from '@angular/core';
-import { BindModule } from 'primeng/bind';
-import { TooltipModule } from 'primeng/tooltip';
+import { BindModule } from '@libreng/ui/bind';
+import { TooltipModule } from '@libreng/ui/tooltip';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

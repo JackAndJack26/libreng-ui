@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, EventEmitter, HostBinding, inject, InjectionToken, Input, NgModule, Output, ViewEncapsulation } from '@angular/core';
-import { SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { AvatarPassThrough } from 'primeng/types/avatar';
+import { SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { AvatarPassThrough } from '@libreng/ui/types/avatar';
 import { AvatarStyle } from './style/avatarstyle';
 
 const AVATAR_INSTANCE = new InjectionToken<Avatar>('AVATAR_INSTANCE');

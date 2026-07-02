@@ -2,7 +2,7 @@
 
 The MIT License (MIT)
 
-Copyright (c) 2026 Orbia
+Copyright (c) 2026 LibreNG UI Contributors
 Copyright (c) 2016-2026 PrimeTek
 
 Permission is hereby granted, free of charge, to any person obtaining a copy

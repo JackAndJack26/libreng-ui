@@ -391,10 +391,10 @@ import Aura from '@primeuix/themes/aura';
 import Lara from '@primeuix/themes/lara';
 import Material from '@primeuix/themes/material';
 import Nora from '@primeuix/themes/nora';
-import { PrimeNG } from 'primeng/config';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { StyleClassModule } from 'primeng/styleclass';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
+import { PrimeNG } from '@libreng/ui/config';
+import { SelectButtonModule } from '@libreng/ui/selectbutton';
+import { StyleClassModule } from '@libreng/ui/styleclass';
+import { ToggleSwitchModule } from '@libreng/ui/toggleswitch';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 
 const presets = {
@@ -996,7 +996,7 @@ const getAngularApp = (props: Props = {}) => {
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title>PrimeNG ${componentName}</title>
+        <title>LibreNG UI ${componentName}</title>
         <base href="/">
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1013,7 +1013,7 @@ const getAngularApp = (props: Props = {}) => {
 import { ${componentName} } from './app/${selector}';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { ApplicationConfig } from '@angular/core';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 import Aura from '@primeuix/themes/aura';
 
   export const appConfig: ApplicationConfig = {
@@ -1049,7 +1049,7 @@ import Aura from '@primeuix/themes/aura';
         'package.json': {
             content: {
                 name: `primeng-${selector}`,
-                description: `PrimeNG ${componentName}`,
+                description: `LibreNG UI ${componentName}`,
                 license: 'MIT',
                 keywords: [],
                 scripts: {
@@ -1081,7 +1081,7 @@ import Aura from '@primeuix/themes/aura';
         });
     }
 
-    return { files, title: `PrimeNG ${componentName}` };
+    return { files, title: `LibreNG UI ${componentName}` };
 };
 
 export { getAngularApp };

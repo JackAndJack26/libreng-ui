@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component, DebugElement, PLATFORM_ID, provideZ
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { BaseComponent } from 'primeng/basecomponent';
-import { Button } from 'primeng/button';
-import { ZIndexUtils } from 'primeng/utils';
+import { BaseComponent } from '@libreng/ui/basecomponent';
+import { Button } from '@libreng/ui/button';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { ScrollTop, ScrollTopModule } from './scrolltop';
 
 @Component({
@@ -1244,7 +1244,7 @@ describe('ScrollTop', () => {
 
     describe('PassThrough - Case 7: Test from PrimeNGConfig', () => {
         it('should apply global pt configuration from PrimeNGConfig', () => {
-            const { providePrimeNG } = require('primeng/config');
+            const { providePrimeNG } = require('@libreng/ui/config');
 
             @Component({
                 changeDetection: ChangeDetectionStrategy.Eager,
@@ -1288,7 +1288,7 @@ describe('ScrollTop', () => {
         });
 
         it('should merge local pt with global pt configuration', () => {
-            const { providePrimeNG } = require('primeng/config');
+            const { providePrimeNG } = require('@libreng/ui/config');
 
             @Component({
                 changeDetection: ChangeDetectionStrategy.Eager,

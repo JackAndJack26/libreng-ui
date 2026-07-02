@@ -1,16 +1,16 @@
 import { NodeService } from '@/service/nodeservice';
 import { PhotoService } from '@/service/photoservice';
 import { ChangeDetectionStrategy, Component, OnDestroy, OnInit } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { TerminalModule, TerminalService } from 'primeng/terminal';
+import { MenuItem, MessageService } from '@libreng/ui/api';
+import { TerminalModule, TerminalService } from '@libreng/ui/terminal';
 import { Subscription } from 'rxjs';
-import { Dock } from 'primeng/dock';
-import { DialogModule } from 'primeng/dialog';
-import { GalleriaModule } from 'primeng/galleria';
-import { MenubarModule } from 'primeng/menubar';
-import { ToastModule } from 'primeng/toast';
-import { TooltipModule } from 'primeng/tooltip';
-import { TreeModule } from 'primeng/tree';
+import { Dock } from '@libreng/ui/dock';
+import { DialogModule } from '@libreng/ui/dialog';
+import { GalleriaModule } from '@libreng/ui/galleria';
+import { MenubarModule } from '@libreng/ui/menubar';
+import { ToastModule } from '@libreng/ui/toast';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { TreeModule } from '@libreng/ui/tree';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 
@@ -53,7 +53,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
                 </p-dialog>
 
                 <p-dialog [maximizable]="true" [(visible)]="displayTerminal" [breakpoints]="{ '960px': '50vw' }" [style]="{ width: '30vw' }" [draggable]="false" [resizable]="false" header="Terminal">
-                    <p-terminal welcomeMessage="Welcome to PrimeNG (cmd: 'date', 'greet {0}', 'random')" prompt="primeng $" />
+                    <p-terminal welcomeMessage="Welcome to LibreNG UI (cmd: 'date', 'greet {0}', 'random')" prompt="primeng $" />
                 </p-dialog>
 
                 <p-galleria
@@ -200,7 +200,7 @@ export class AdvancedDoc implements OnInit, OnDestroy {
                     showDelay: 1000
                 },
                 icon: 'https://primefaces.org/cdn/primeng/images/dock/github.svg',
-                url: 'https://github.com/primefaces/primeng'
+                url: 'https://github.com/capivaramu/orbia-ui'
             },
             {
                 label: 'Trash',

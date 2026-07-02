@@ -5,8 +5,8 @@ import Noir from '@/themes/app-theme';
 import { provideHttpClient, withFetch } from '@angular/common/http';
 import { APP_INITIALIZER, ApplicationConfig, provideZonelessChangeDetection } from '@angular/core';
 import { provideRouter, withInMemoryScrolling } from '@angular/router';
-import { ConfirmationService, MessageService } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
+import { ConfirmationService, MessageService } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
 
 function initializeDemoCode(demoCodeService: DemoCodeService) {
     return () => demoCodeService.loadDemos();

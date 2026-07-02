@@ -4,10 +4,10 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { NodeService } from '@/service/nodeservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MenuItem, MessageService, TreeNode } from 'primeng/api';
-import { ContextMenuModule } from 'primeng/contextmenu';
-import { ToastModule } from 'primeng/toast';
-import { TreeTableModule } from 'primeng/treetable';
+import { MenuItem, MessageService, TreeNode } from '@libreng/ui/api';
+import { ContextMenuModule } from '@libreng/ui/contextmenu';
+import { ToastModule } from '@libreng/ui/toast';
+import { TreeTableModule } from '@libreng/ui/treetable';
 
 interface Column {
     field: string;

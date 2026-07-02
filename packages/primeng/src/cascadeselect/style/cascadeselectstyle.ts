@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as cascadeselect_style } from '@primeuix/styles/cascadeselect';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${cascadeselect_style}
 
-    /* For PrimeNG */
+    /* For LibreNG UI */
     .p-cascadeselect.ng-invalid.ng-dirty:not(.ng-untouched):not(.ng-pristine) {
         border-color: dt('cascadeselect.invalid.border.color');
     }

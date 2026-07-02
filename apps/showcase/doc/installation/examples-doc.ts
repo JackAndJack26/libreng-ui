@@ -8,7 +8,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
     imports: [AppDocSectionText],
     template: `
         <app-docsectiontext>
-            <p>An example starter with Angular CLI is available at <a href="https://github.com/primefaces/primeng-examples">GitHub</a>.</p>
+            <p>An example starter with Angular CLI is available at <a href="https://github.com/capivaramu/orbia-ui-examples">GitHub</a>.</p>
         </app-docsectiontext>
     `
 })

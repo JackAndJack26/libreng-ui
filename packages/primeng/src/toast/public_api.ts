@@ -1,3 +1,3 @@
-export * from 'primeng/types/toast';
+export * from '@libreng/ui/types/toast';
 export * from './toast';
 export * from './style/toaststyle';

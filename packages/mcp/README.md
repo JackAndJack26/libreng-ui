@@ -1,29 +1,29 @@
-# @primeng/mcp
+# @libreng/mcp
 
-Model Context Protocol (MCP) server for PrimeNG component library. Provides AI assistants with comprehensive access to PrimeNG component documentation, props, events, templates, theming, and code examples.
+Model Context Protocol (MCP) server for LibreNG UI component library. Provides AI assistants with comprehensive access to LibreNG UI component documentation, props, events, templates, theming, and code examples.
 
 ## What is MCP?
 
-[Model Context Protocol (MCP)](https://modelcontextprotocol.io/) is an open standard that enables AI models to connect with external tools and data sources. By installing this MCP server, your AI assistant gains deep knowledge of PrimeNG components and can provide accurate, up-to-date information while helping you build Angular applications.
+[Model Context Protocol (MCP)](https://modelcontextprotocol.io/) is an open standard that enables AI models to connect with external tools and data sources. By installing this MCP server, your AI assistant gains deep knowledge of LibreNG UI components and can provide accurate, up-to-date information while helping you build Angular applications.
 
 ## Installation
 
 ### Claude Code
 
-Add the PrimeNG MCP server using the CLI:
+Add the LibreNG UI MCP server using the CLI:
 
 ```bash
 # Add to your user config (available in all projects)
-claude mcp add primeng -s user -- npx -y @primeng/mcp
+claude mcp add primeng -s user -- npx -y @libreng/mcp
 
 # Or add to current project only
-claude mcp add primeng -- npx -y @primeng/mcp
+claude mcp add primeng -- npx -y @libreng/mcp
 ```
 
 Alternatively, use the JSON format for more control:
 
 ```bash
-claude mcp add-json primeng '{"command":"npx","args":["-y","@primeng/mcp"]}' -s user
+claude mcp add-json primeng '{"command":"npx","args":["-y","@libreng/mcp"]}' -s user
 ```
 
 **Useful commands:**
@@ -49,9 +49,9 @@ Create `.vscode/mcp.json` in your project:
 ```json
 {
     "servers": {
-        "primeng": {
+        "@libreng/ui": {
             "command": "npx",
-            "args": ["-y", "@primeng/mcp"]
+            "args": ["-y", "@libreng/mcp"]
         }
     }
 }
@@ -64,9 +64,9 @@ Create or edit `~/Library/Application Support/Code/User/mcp.json` (macOS) or `~/
 ```json
 {
     "servers": {
-        "primeng": {
+        "@libreng/ui": {
             "command": "npx",
-            "args": ["-y", "@primeng/mcp"]
+            "args": ["-y", "@libreng/mcp"]
         }
     }
 }
@@ -87,9 +87,9 @@ Create `.cursor/mcp.json` in your project:
 ```json
 {
     "mcpServers": {
-        "primeng": {
+        "@libreng/ui": {
             "command": "npx",
-            "args": ["-y", "@primeng/mcp"]
+            "args": ["-y", "@libreng/mcp"]
         }
     }
 }
@@ -102,9 +102,9 @@ Create or edit `~/.cursor/mcp.json` in your home directory:
 ```json
 {
     "mcpServers": {
-        "primeng": {
+        "@libreng/ui": {
             "command": "npx",
-            "args": ["-y", "@primeng/mcp"]
+            "args": ["-y", "@libreng/mcp"]
         }
     }
 }
@@ -115,7 +115,7 @@ Create or edit `~/.cursor/mcp.json` in your home directory:
 2. Click **New MCP Server**
 3. Add the configuration above
 
-After adding, go to **Settings > MCP** and click the refresh button. The Composer Agent will automatically use PrimeNG tools when relevant.
+After adding, go to **Settings > MCP** and click the refresh button. The Composer Agent will automatically use LibreNG UI tools when relevant.
 
 > **Reference:** [Cursor MCP Documentation](https://docs.cursor.com/context/model-context-protocol)
 
@@ -126,7 +126,7 @@ After adding, go to **Settings > MCP** and click the refresh button. The Compose
 **Option 1: Using the CLI**
 
 ```bash
-codex mcp add primeng -- npx -y @primeng/mcp
+codex mcp add primeng -- npx -y @libreng/mcp
 ```
 
 **Option 2: Direct Configuration**
@@ -136,7 +136,7 @@ Edit `~/.codex/config.toml`:
 ```toml
 [mcp_servers.primeng]
 command = "npx"
-args = ["-y", "@primeng/mcp"]
+args = ["-y", "@libreng/mcp"]
 ```
 
 After adding, the MCP server will be available in both the Codex CLI and VS Code extension.
@@ -160,9 +160,9 @@ Edit `~/.codeium/windsurf/mcp_config.json`:
 ```json
 {
     "mcpServers": {
-        "primeng": {
+        "@libreng/ui": {
             "command": "npx",
-            "args": ["-y", "@primeng/mcp"]
+            "args": ["-y", "@libreng/mcp"]
         }
     }
 }
@@ -181,10 +181,10 @@ Add to your Zed settings (`~/.config/zed/settings.json` on Linux, `~/Library/App
 ```json
 {
     "context_servers": {
-        "primeng": {
+        "@libreng/ui": {
             "command": {
                 "path": "npx",
-                "args": ["-y", "@primeng/mcp"]
+                "args": ["-y", "@libreng/mcp"]
             }
         }
     }
@@ -203,7 +203,7 @@ After adding, restart Zed. Check the Agent Panel's settings view - a green indic
 
 | Tool | Description |
 |------|-------------|
-| `list_components` | List all PrimeNG components with categories |
+| `list_components` | List all LibreNG UI components with categories |
 | `get_component` | Get detailed info about a specific component |
 | `search_components` | Search components by name or description |
 | `get_component_props` | Get all props for a component |
@@ -240,7 +240,7 @@ After adding, restart Zed. Check the Agent Panel's settings view - a green indic
 |------|-------------|
 | `list_guides` | List all guides and documentation pages |
 | `get_guide` | Get a specific guide by name |
-| `get_configuration` | Get PrimeNG configuration options |
+| `get_configuration` | Get LibreNG UI configuration options |
 | `get_installation` | Get installation instructions |
 | `get_icons_guide` | Get icons usage guide |
 | `get_accessibility_guide` | Get accessibility guide |
@@ -290,7 +290,7 @@ Once installed, try asking your AI assistant:
 - "How do I customize the Dialog component styling with Pass Through?"
 - "Compare the Select and Listbox components"
 - "What's the best component for a date picker?"
-- "How do I migrate from PrimeNG v20 to v21?"
+- "How do I migrate from LibreNG UI v20 to v21?"
 
 ## Requirements
 
@@ -299,10 +299,10 @@ Once installed, try asking your AI assistant:
 
 ## Links
 
-- [PrimeNG Documentation](https://primeng.org/)
+- [LibreNG UI Documentation](https://github.com/capivaramu/orbia-ui/)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
-- [GitHub Repository](https://github.com/primefaces/primeng)
-- [Report Issues](https://github.com/primefaces/primeng/issues)
+- [GitHub Repository](https://github.com/capivaramu/orbia-ui)
+- [Report Issues](https://github.com/capivaramu/orbia-ui/issues)
 
 ## License
 

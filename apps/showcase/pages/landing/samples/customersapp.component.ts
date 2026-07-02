@@ -3,20 +3,20 @@ import { ChangeDetectionStrategy, Component, Inject, PLATFORM_ID } from '@angula
 import { FormsModule } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { ChartModule } from 'primeng/chart';
-import { DividerModule } from 'primeng/divider';
-import { DrawerModule } from 'primeng/drawer';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
-import { PopoverModule } from 'primeng/popover';
-import { TableModule } from 'primeng/table';
-import { Tag } from 'primeng/tag';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
-import { TooltipModule } from 'primeng/tooltip';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { ButtonModule } from '@libreng/ui/button';
+import { ChartModule } from '@libreng/ui/chart';
+import { DividerModule } from '@libreng/ui/divider';
+import { DrawerModule } from '@libreng/ui/drawer';
+import { IconField } from '@libreng/ui/iconfield';
+import { InputIcon } from '@libreng/ui/inputicon';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { OverlayBadgeModule } from '@libreng/ui/overlaybadge';
+import { PopoverModule } from '@libreng/ui/popover';
+import { TableModule } from '@libreng/ui/table';
+import { Tag } from '@libreng/ui/tag';
+import { ToggleSwitchModule } from '@libreng/ui/toggleswitch';
+import { TooltipModule } from '@libreng/ui/tooltip';
 
 @Component({
     selector: 'customers-app',

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { TimelineModule } from 'primeng/timeline';
+import { TimelineModule } from '@libreng/ui/timeline';
 
 interface EventItem {
     status?: string;

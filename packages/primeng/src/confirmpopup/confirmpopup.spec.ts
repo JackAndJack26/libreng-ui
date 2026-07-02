@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { ConfirmationService, OverlayService } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { FocusTrap } from 'primeng/focustrap';
+import { ConfirmationService, OverlayService } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { FocusTrap } from '@libreng/ui/focustrap';
 import { ConfirmPopup } from './confirmpopup';
 
 // Basic ConfirmPopup Component Test

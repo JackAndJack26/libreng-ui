@@ -4,9 +4,9 @@ import { By } from '@angular/platform-browser';
 
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
-import { MenuItem } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
-import { Tooltip } from 'primeng/tooltip';
+import { MenuItem } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
+import { Tooltip } from '@libreng/ui/tooltip';
 import { TieredMenu } from './tieredmenu';
 
 @Component({

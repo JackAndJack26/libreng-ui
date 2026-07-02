@@ -4,9 +4,9 @@ import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { DragDropModule } from 'primeng/dragdrop';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { DragDropModule } from '@libreng/ui/dragdrop';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

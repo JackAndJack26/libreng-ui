@@ -1,10 +1,10 @@
 import { HttpEvent } from '@angular/common/http';
 import { TemplateRef } from '@angular/core';
-import type { PassThrough, PassThroughOption } from 'primeng/api';
-import type { BadgePassThrough } from 'primeng/types/badge';
-import type { ButtonPassThrough } from 'primeng/types/button';
-import type { MessagePassThrough } from 'primeng/types/message';
-import type { ProgressBarPassThrough } from 'primeng/types/progressbar';
+import type { PassThrough, PassThroughOption } from '@libreng/ui/api';
+import type { BadgePassThrough } from '@libreng/ui/types/badge';
+import type { ButtonPassThrough } from '@libreng/ui/types/button';
+import type { MessagePassThrough } from '@libreng/ui/types/message';
+import type { ProgressBarPassThrough } from '@libreng/ui/types/progressbar';
 
 /**
  * Custom pass-through(pt) options.

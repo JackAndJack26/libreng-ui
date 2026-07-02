@@ -4,11 +4,11 @@ import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, OnInit, signal, ViewChild } from '@angular/core';
-import { MessageService } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { Popover, PopoverModule } from 'primeng/popover';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { MessageService } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { Popover, PopoverModule } from '@libreng/ui/popover';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -20,14 +20,14 @@ import {
 } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
 import { find, findSingle, resolve, uuid } from '@primeuix/utils';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { Badge } from 'primeng/badge';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable } from 'primeng/ts-helpers';
-import { DockItemTemplateContext, DockPassThrough } from 'primeng/types/dock';
+import { MenuItem, PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { Badge } from '@libreng/ui/badge';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { Ripple } from '@libreng/ui/ripple';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import { DockItemTemplateContext, DockPassThrough } from '@libreng/ui/types/dock';
 import { DockStyle } from './style/dockstyle';
 
 const DOCK_INSTANCE = new InjectionToken<Dock>('DOCK_INSTANCE');

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { DrawerModule } from 'primeng/drawer';
-import { ButtonModule } from 'primeng/button';
+import { DrawerModule } from '@libreng/ui/drawer';
+import { ButtonModule } from '@libreng/ui/button';
 import { FormsModule } from '@angular/forms';
 
 @Component({

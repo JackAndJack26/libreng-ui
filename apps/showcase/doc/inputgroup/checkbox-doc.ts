@@ -1,10 +1,10 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputGroupAddonModule } from 'primeng/inputgroupaddon';
-import { InputTextModule } from 'primeng/inputtext';
-import { CheckboxModule } from 'primeng/checkbox';
-import { RadioButtonModule } from 'primeng/radiobutton';
+import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { InputGroupAddonModule } from '@libreng/ui/inputgroupaddon';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { CheckboxModule } from '@libreng/ui/checkbox';
+import { RadioButtonModule } from '@libreng/ui/radiobutton';
 import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

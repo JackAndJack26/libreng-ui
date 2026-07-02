@@ -9,11 +9,11 @@ FocusTrap is applied to a container element with the pFocusTrap directive.
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { CheckboxModule } from 'primeng/checkbox';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from '@libreng/ui/button';
+import { CheckboxModule } from '@libreng/ui/checkbox';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     template: `

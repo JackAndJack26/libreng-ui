@@ -24,17 +24,17 @@ import {
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MotionOptions } from '@primeuix/motion';
 import { focus, getFirstFocusableElement, getFocusableElements, getLastFocusableElement, isNotEmpty, uuid } from '@primeuix/utils';
-import { OverlayOptions, PrimeTemplate, ScrollerOptions, SharedModule, TreeNode } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseEditableHolder } from 'primeng/baseeditableholder';
-import { Bind } from 'primeng/bind';
-import { Chip } from 'primeng/chip';
-import { Fluid } from 'primeng/fluid';
-import { ChevronDownIcon, TimesIcon } from 'primeng/icons';
-import { Overlay } from 'primeng/overlay';
-import { Tree, TreeFilterEvent, TreeNodeSelectEvent, TreeNodeUnSelectEvent } from 'primeng/tree';
-import { Nullable } from 'primeng/ts-helpers';
+import { OverlayOptions, PrimeTemplate, ScrollerOptions, SharedModule, TreeNode } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';
+import { Bind } from '@libreng/ui/bind';
+import { Chip } from '@libreng/ui/chip';
+import { Fluid } from '@libreng/ui/fluid';
+import { ChevronDownIcon, TimesIcon } from '@libreng/ui/icons';
+import { Overlay } from '@libreng/ui/overlay';
+import { Tree, TreeFilterEvent, TreeNodeSelectEvent, TreeNodeUnSelectEvent } from '@libreng/ui/tree';
+import { Nullable } from '@libreng/ui/ts-helpers';
 import {
     TreeSelectHeaderTemplateContext,
     TreeSelectItemCheckboxIconTemplateContext,
@@ -43,7 +43,7 @@ import {
     TreeSelectNodeExpandEvent,
     TreeSelectPassThrough,
     TreeSelectValueTemplateContext
-} from 'primeng/types/treeselect';
+} from '@libreng/ui/types/treeselect';
 import { TreeSelectStyle } from './style/treeselectstyle';
 
 export const TREESELECT_VALUE_ACCESSOR: any = {
@@ -329,7 +329,7 @@ export class TreeSelect extends BaseEditableHolder<TreeSelectPassThrough> {
      */
     @Input() overlayOptions: OverlayOptions | undefined;
     /**
-     * Text to display when there are no options available. Defaults to value from PrimeNG locale configuration.
+     * Text to display when there are no options available. Defaults to value from LibreNG UI locale configuration.
      * @group Props
      */
     @Input() emptyMessage: string = '';

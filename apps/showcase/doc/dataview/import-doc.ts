@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { DataViewModule } from 'primeng/dataview';`
+        typescript: `import { DataViewModule } from '@libreng/ui/dataview';`
     };
 }

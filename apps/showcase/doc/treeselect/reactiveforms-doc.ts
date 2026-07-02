@@ -1,11 +1,11 @@
 import { NodeService } from '@/service/nodeservice';
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { MessageService } from 'primeng/api';
-import { TreeSelectModule } from 'primeng/treeselect';
-import { ButtonModule } from 'primeng/button';
-import { ToastModule } from 'primeng/toast';
-import { MessageModule } from 'primeng/message';
+import { MessageService } from '@libreng/ui/api';
+import { TreeSelectModule } from '@libreng/ui/treeselect';
+import { ButtonModule } from '@libreng/ui/button';
+import { ToastModule } from '@libreng/ui/toast';
+import { MessageModule } from '@libreng/ui/message';
 import { CommonModule } from '@angular/common';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';

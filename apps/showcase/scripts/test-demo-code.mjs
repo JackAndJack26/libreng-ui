@@ -139,9 +139,9 @@ function testStackBlitzFileGeneration(demos) {
             // Test: theme-switcher added to template
             allPassed &= logTest('theme-switcher added to template', modified.includes('<theme-switcher />'));
 
-            // Test: PrimeNG module imports removed
-            const hasNoDirectModuleImport = !modified.includes("from 'primeng/select';") || modified.includes('ImportsModule');
-            allPassed &= logTest('PrimeNG direct imports removed', !modified.match(/import\s+\{[^}]*Module[^}]*\}\s+from\s+'primeng\//));
+            // Test: LibreNG UI module imports removed
+            const hasNoDirectModuleImport = !modified.includes("from '@libreng/ui/select';") || modified.includes('ImportsModule');
+            allPassed &= logTest('LibreNG UI direct imports removed', !modified.match(/import\s+\{[^}]*Module[^}]*\}\s+from\s+'primeng\//));
         }
 
         // Test: Metadata has services if needed
@@ -296,14 +296,14 @@ function testContentMatching(demos) {
 
         const { typescript } = demo.code;
 
-        // Test: TypeScript has inline template with PrimeNG components
+        // Test: TypeScript has inline template with LibreNG UI components
         if (typescript) {
             const hasTemplate = typescript.includes('template:') && typescript.includes('`');
             allPassed &= logTest('TypeScript has inline template', hasTemplate);
 
-            // Check for PrimeNG component in template
+            // Check for LibreNG UI component in template
             const hasPrimeNGComponent = /p-[\w-]+/.test(typescript);
-            allPassed &= logTest('Template contains PrimeNG component', hasPrimeNGComponent);
+            allPassed &= logTest('Template contains LibreNG UI component', hasPrimeNGComponent);
         }
 
         // Test: Component class name matches selector

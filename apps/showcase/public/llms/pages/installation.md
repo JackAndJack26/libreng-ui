@@ -1,10 +1,10 @@
 # Installation
 
-Setting up PrimeNG in an Angular CLI project.
+Setting up LibreNG UI in an Angular CLI project.
 
 ## Download-
 
-PrimeNG is available for download on the npm registry .
+LibreNG UI is available for download on the npm registry .
 
 ```bash
 # Using npm
@@ -23,7 +23,7 @@ An example starter with Angular CLI is available at GitHub .
 
 ## Nextsteps-
 
-Welcome to the Prime UI Ecosystem! Once you have PrimeNG up and running, we recommend exploring the following resources to gain a deeper understanding of the library. Global configuration Customization of styles Getting support
+Welcome to the Prime UI Ecosystem! Once you have LibreNG UI up and running, we recommend exploring the following resources to gain a deeper understanding of the library. Global configuration Customization of styles Getting support
 
 ## Provider-
 
@@ -31,7 +31,7 @@ Add providePrimeNG to the list of providers in your app.config.ts and use the th
 
 ```typescript
 import { ApplicationConfig } from '@angular/core';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 import Aura from '@primeuix/themes/aura';
 
 export const appConfig: ApplicationConfig = {
@@ -47,12 +47,12 @@ export const appConfig: ApplicationConfig = {
 
 ## Theme-
 
-Configure PrimeNG to use a theme like Aura.
+Configure LibreNG UI to use a theme like Aura.
 
 ```typescript
 import { ApplicationConfig } from '@angular/core';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 import Aura from '@primeuix/themes/aura';
 
 export const appConfig: ApplicationConfig = {
@@ -71,5 +71,5 @@ Verify your setup by adding a component such as Button. Each component can be im
 
 ## Videos
 
-Angular CLI is the recommended way to build Angular applications with PrimeNG.
+Angular CLI is the recommended way to build Angular applications with LibreNG UI.
 

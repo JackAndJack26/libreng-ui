@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
 import { style as panelmenu_style } from '@primeuix/styles/panelmenu';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${panelmenu_style}
-    /*For PrimeNG*/
+    /*For LibreNG UI*/
 
 
     .p-panelmenu-root-list,

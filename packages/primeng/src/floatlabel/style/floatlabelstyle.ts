@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as floatlabel_style } from '@primeuix/styles/floatlabel';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${floatlabel_style}
 
-    /* For PrimeNG */
+    /* For LibreNG UI */
     .p-floatlabel:has(.ng-invalid.ng-dirty) label {
         color: dt('floatlabel.invalid.color');
     }

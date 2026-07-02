@@ -1,13 +1,13 @@
 import { ChangeDetectionStrategy, Component, ViewChild } from '@angular/core';
-import { Drawer } from 'primeng/drawer';
+import { Drawer } from '@libreng/ui/drawer';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { DrawerModule } from 'primeng/drawer';
-import { ButtonModule } from 'primeng/button';
+import { DrawerModule } from '@libreng/ui/drawer';
+import { ButtonModule } from '@libreng/ui/button';
 import { FormsModule } from '@angular/forms';
-import { AvatarModule } from 'primeng/avatar';
-import { RippleModule } from 'primeng/ripple';
-import { StyleClassModule } from 'primeng/styleclass';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { RippleModule } from '@libreng/ui/ripple';
+import { StyleClassModule } from '@libreng/ui/styleclass';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

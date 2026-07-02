@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as textarea_style } from '@primeuix/styles/textarea';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${textarea_style}
 
-    /* For PrimeNG */
+    /* For LibreNG UI */
     .p-textarea.ng-invalid.ng-dirty {
         border-color: dt('textarea.invalid.border.color');
     }

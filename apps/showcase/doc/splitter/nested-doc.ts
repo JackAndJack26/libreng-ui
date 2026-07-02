@@ -1,7 +1,7 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { SplitterModule } from 'primeng/splitter';
+import { SplitterModule } from '@libreng/ui/splitter';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -2,9 +2,9 @@ import { PhotoService } from '@/service/photoservice';
 import { ChangeDetectionStrategy, Component, inject, model, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { GalleriaModule } from 'primeng/galleria';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { CheckboxModule } from 'primeng/checkbox';
+import { GalleriaModule } from '@libreng/ui/galleria';
+import { RadioButtonModule } from '@libreng/ui/radiobutton';
+import { CheckboxModule } from '@libreng/ui/checkbox';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { FloatLabelModule } from 'primeng/floatlabel';`
+        typescript: `import { FloatLabelModule } from '@libreng/ui/floatlabel';`
     };
 }

@@ -25,14 +25,14 @@ import {
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { $dt } from '@primeuix/styled';
 import { absolutePosition, addClass, appendChild, findSingle, getOffset, isIOS, isTouchDevice } from '@primeuix/utils';
-import { OverlayService, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { MotionModule } from 'primeng/motion';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { PopoverContentTemplateContext, PopoverPassThrough } from 'primeng/types/popover';
-import { ZIndexUtils } from 'primeng/utils';
+import { OverlayService, PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { ConnectedOverlayScrollHandler } from '@libreng/ui/dom';
+import { MotionModule } from '@libreng/ui/motion';
+import { Nullable, VoidListener } from '@libreng/ui/ts-helpers';
+import { PopoverContentTemplateContext, PopoverPassThrough } from '@libreng/ui/types/popover';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { Subscription } from 'rxjs';
 import { PopoverStyle } from './style/popoverstyle';
 

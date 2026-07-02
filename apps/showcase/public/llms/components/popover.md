@@ -12,10 +12,10 @@ Popover is accessed via its reference and visibility is controlled using toggle 
 
 ```typescript
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { PopoverModule } from 'primeng/popover';
-import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from '@libreng/ui/button';
+import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { PopoverModule } from '@libreng/ui/popover';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     template: `
@@ -26,7 +26,7 @@ import { InputTextModule } from 'primeng/inputtext';
                     <div>
                         <span class="font-medium text-surface-900 dark:text-surface-0 block mb-2">Share this document</span>
                         <p-inputgroup>
-                            <input pInputText value="https://primeng.org/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-[25rem]" />
+                            <input pInputText value="https://github.com/capivaramu/orbia-ui/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-[25rem]" />
                             <p-inputgroup-addon>
                                 <i class="pi pi-copy"></i>
                             </p-inputgroup-addon>
@@ -77,12 +77,12 @@ Place the Popover outside of the data iteration components to avoid rendering it
 
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { Popover, PopoverModule } from 'primeng/popover';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { ButtonModule } from '@libreng/ui/button';
+import { Popover, PopoverModule } from '@libreng/ui/popover';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
 import { ProductService } from '@/service/productservice';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@libreng/ui/api';
 import { Product } from '@/domain/product';
 
 @Component({
@@ -211,8 +211,8 @@ In this sample, data is retrieved from the content inside the popover.
 
 ```typescript
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { Popover, PopoverModule } from 'primeng/popover';
+import { ButtonModule } from '@libreng/ui/button';
+import { Popover, PopoverModule } from '@libreng/ui/popover';
 
 @Component({
     template: `
@@ -260,8 +260,8 @@ show method takes two parameters, first one is the event and it is mandatory. By
 
 ```typescript
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { PopoverModule } from 'primeng/popover';
+import { ButtonModule } from '@libreng/ui/button';
+import { PopoverModule } from '@libreng/ui/popover';
 
 @Component({
     template: `
@@ -287,9 +287,9 @@ Content of the OverlayPanel is defined by content template.
 
 ```typescript
 import { Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { PopoverModule } from 'primeng/popover';
-import { OverlayPanel } from 'primeng/overlaypanel';
+import { ButtonModule } from '@libreng/ui/button';
+import { PopoverModule } from '@libreng/ui/popover';
+import { OverlayPanel } from '@libreng/ui/overlaypanel';
 
 @Component({
     template: `

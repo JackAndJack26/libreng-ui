@@ -5,10 +5,10 @@ import { Customer } from '@/domain/customer';
 import { CustomerService } from '@/service/customerservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { ButtonModule } from '@libreng/ui/button';
+import { RippleModule } from '@libreng/ui/ripple';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
 
 @Component({
     selector: 'expandablerowgroup-doc',

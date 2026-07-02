@@ -1,20 +1,20 @@
 {
-    "name": "@primeng/mcp",
+    "name": "@libreng/mcp",
     "version": "22.0.0",
-    "author": "PrimeTek Informatics",
-    "description": "Model Context Protocol (MCP) server for PrimeNg component library",
-    "homepage": "https://primeng.org/",
+    "author": "LibreNG UI Contributors",
+    "description": "Model Context Protocol (MCP) server for the LibreNG UI component library",
+    "homepage": "https://github.com/capivaramu/orbia-ui/",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/primefaces/primeng.git",
+        "url": "https://github.com/capivaramu/orbia-ui.git",
         "directory": "packages/mcp"
     },
     "bugs": {
-        "url": "https://github.com/primefaces/primeng/issues"
+        "url": "https://github.com/capivaramu/orbia-ui/issues"
     },
     "keywords": [
-        "primeng",
+        "libreng-ui",
         "mcp",
         "model-context-protocol",
         "ai",
@@ -23,7 +23,7 @@
         "components"
     ],
     "bin": {
-        "primeng-mcp": "./dist/index.js"
+        "libreng-mcp": "./dist/index.js"
     },
     "type": "module",
     "main": "./dist/index.js",

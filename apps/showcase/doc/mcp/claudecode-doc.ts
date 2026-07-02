@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     imports: [AppCodeModule, AppDocSectionText],
     template: `
         <app-docsectiontext>
-            <p>Add the PrimeNG MCP server using the CLI. After adding, start a new session and use <i>/mcp</i> to verify the connection.</p>
+            <p>Add the LibreNG UI MCP server using the CLI. After adding, start a new session and use <i>/mcp</i> to verify the connection.</p>
         </app-docsectiontext>
         <app-code [code]="code" [hideToggleCode]="true"></app-code>
         <p class="doc-section-description">
@@ -21,9 +21,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class ClaudeCodeDoc {
     code: Code = {
         command: `# Add to user config (available in all projects)
-claude mcp add primeng -s user -- npx -y @primeng/mcp
+claude mcp add primeng -s user -- npx -y @libreng/mcp
 
 # Or add to current project only
-claude mcp add primeng -- npx -y @primeng/mcp`
+claude mcp add primeng -- npx -y @libreng/mcp`
     };
 }

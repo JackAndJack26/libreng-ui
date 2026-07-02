@@ -1,7 +1,7 @@
 import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { AnimateOnScrollModule } from 'primeng/animateonscroll';
+import { AnimateOnScrollModule } from '@libreng/ui/animateonscroll';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -11,7 +11,7 @@ import { AnimateOnScrollModule } from 'primeng/animateonscroll';
     template: `
         <section class="landing-features py-20">
             <div class="section-header">Features</div>
-            <p class="section-detail">PrimeNG is the most complete solution for your UI requirements.</p>
+            <p class="section-detail">LibreNG UI is the most complete solution for your UI requirements.</p>
             <div class="mt-16 px-8 lg:px-20">
                 <div class="features-container">
                     <div class="grid grid-cols-12 gap-4">

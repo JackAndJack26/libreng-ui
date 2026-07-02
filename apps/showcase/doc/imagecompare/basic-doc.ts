@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ImageCompareModule } from 'primeng/imagecompare';
+import { ImageCompareModule } from '@libreng/ui/imagecompare';
 import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

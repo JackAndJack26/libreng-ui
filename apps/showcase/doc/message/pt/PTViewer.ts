@@ -1,7 +1,7 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { MessageModule } from 'primeng/message';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

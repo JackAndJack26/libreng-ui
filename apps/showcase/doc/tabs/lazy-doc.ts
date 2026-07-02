@@ -1,7 +1,7 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { TabsModule } from 'primeng/tabs';
+import { TabsModule } from '@libreng/ui/tabs';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

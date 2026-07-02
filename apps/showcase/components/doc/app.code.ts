@@ -4,8 +4,8 @@ import { DemoCodeService } from '@/service/democodeservice';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, afterNextRender, Component, computed, effect, ElementRef, inject, input, NgModule, PLATFORM_ID, signal, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { ButtonModule } from 'primeng/button';
-import { TooltipModule } from 'primeng/tooltip';
+import { ButtonModule } from '@libreng/ui/button';
+import { TooltipModule } from '@libreng/ui/tooltip';
 import { useCodeSandbox, useStackBlitz } from './codeeditor';
 
 @Component({

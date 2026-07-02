@@ -2,8 +2,8 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectItem } from 'primeng/api';
-import { SelectModule } from 'primeng/select';
+import { SelectItem } from '@libreng/ui/api';
+import { SelectModule } from '@libreng/ui/select';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

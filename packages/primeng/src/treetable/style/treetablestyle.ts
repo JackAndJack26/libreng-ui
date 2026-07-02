@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
-/* For PrimeNG */
+/* For LibreNG UI */
 .p-treetable {
     position: relative;
 }

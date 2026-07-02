@@ -4,21 +4,21 @@ import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, effect, inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { MenuItem } from 'primeng/api';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { ChartModule } from 'primeng/chart';
-import { DatePickerModule } from 'primeng/datepicker';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
-import { MenuModule } from 'primeng/menu';
-import { MeterGroupModule } from 'primeng/metergroup';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { TooltipModule } from 'primeng/tooltip';
+import { MenuItem } from '@libreng/ui/api';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { ButtonModule } from '@libreng/ui/button';
+import { ChartModule } from '@libreng/ui/chart';
+import { DatePickerModule } from '@libreng/ui/datepicker';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { MenuModule } from '@libreng/ui/menu';
+import { MeterGroupModule } from '@libreng/ui/metergroup';
+import { OverlayBadgeModule } from '@libreng/ui/overlaybadge';
+import { SelectButtonModule } from '@libreng/ui/selectbutton';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { TooltipModule } from '@libreng/ui/tooltip';
 
 @Component({
     selector: 'overview-app',
@@ -48,7 +48,7 @@ import { TooltipModule } from 'primeng/tooltip';
             <div class="flex flex-wrap gap-4 items-start justify-between p-1">
                 <div class="flex-1">
                     <div class="text-muted-color font-medium leading-normal">Overview</div>
-                    <div class="text-color text-3xl font-semibold leading-normal">Welcome to PrimeNG</div>
+                    <div class="text-color text-3xl font-semibold leading-normal">Welcome to LibreNG UI</div>
                 </div>
                 <div class="flex gap-2 whitespace-nowrap flex-nowrap">
                     <p-iconfield iconPosition="left">

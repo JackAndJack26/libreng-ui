@@ -42,7 +42,7 @@ export class FreyaPage {
         patternClass: 'select-none absolute z-[6] w-[58rem] md:w-[50rem] h-auto top-12 md:top-32 -left-24 md:-left-12 opacity-75',
         dashboard1: 'https://primefaces.org/cdn/primeng/images/templates/freya/freya-hero-dashboard1.png',
         dashboard2: 'https://primefaces.org/cdn/primeng/images/templates/freya/freya-hero-dashboard2.png',
-        description: 'Freya is a modern and clean application template for PrimeNG featuring a dark mode, attractive themes, customizable menu orientations, widgets, apps and template pages.',
+        description: 'Freya is a modern and clean application template for LibreNG UI featuring a dark mode, attractive themes, customizable menu orientations, widgets, apps and template pages.',
         liveHref: 'https://freya.primeng.org/',
         docHref: 'https://freya.primeng.org/documentation',
         storeHref: 'https://primeui.store/templates/angular/freya'
@@ -108,7 +108,7 @@ export class FreyaPage {
             id: 4,
             title: 'Figma File',
             description: `Freya uses Figma as the design tool. It will be possible to download the Figma file after your purchase. You can
-                <a href="https://www.figma.com/design/Mv0xRaU4gDrWAY6uW2vhim/Preview-%7C-Freya-%7C%C2%A03.0.0?node-id=1303-749&t=7vBqlx6EvhdjJgec-1" target="_blank" rel="noopener noreferrer">preview the Figma file</a> before the purchase. Note that PrimeNG UI components are excluded from the Freya Figma
+                <a href="https://www.figma.com/design/Mv0xRaU4gDrWAY6uW2vhim/Preview-%7C-Freya-%7C%C2%A03.0.0?node-id=1303-749&t=7vBqlx6EvhdjJgec-1" target="_blank" rel="noopener noreferrer">preview the Figma file</a> before the purchase. Note that LibreNG UI UI components are excluded from the Freya Figma
                 file as they are available in <a hrefo="/uikit">PrimeOne for Figma</a> only.`,
             src: 'https://primefaces.org/cdn/primeng/images/templates/freya/features-animation-figma.png'
         }

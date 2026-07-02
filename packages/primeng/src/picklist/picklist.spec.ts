@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 import {
     PickListMoveAllToSourceEvent,
     PickListMoveAllToTargetEvent,
@@ -14,7 +14,7 @@ import {
     PickListSourceSelectEvent,
     PickListTargetReorderEvent,
     PickListTargetSelectEvent
-} from 'primeng/types/picklist';
+} from '@libreng/ui/types/picklist';
 import { PickList } from './picklist';
 
 @Component({

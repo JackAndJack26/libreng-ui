@@ -1,3 +1,3 @@
-export * from 'primeng/types/scrollpanel';
+export * from '@libreng/ui/types/scrollpanel';
 export * from './scrollpanel';
 export * from './style/scrollpanelstyle';

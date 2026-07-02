@@ -4,8 +4,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
-import { providePrimeNG } from 'primeng/config';
-import type { InputNumberInputEvent } from 'primeng/types/inputnumber';
+import { providePrimeNG } from '@libreng/ui/config';
+import type { InputNumberInputEvent } from '@libreng/ui/types/inputnumber';
 import { InputNumber, InputNumberModule } from './inputnumber';
 
 // Test Components

@@ -27,19 +27,19 @@ import {
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MotionOptions } from '@primeuix/motion';
 import { equals, findLastIndex, findSingle, focus, isEmpty, isNotEmpty, resolveFieldData, uuid } from '@primeuix/utils';
-import { OverlayOptions, OverlayService, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseInput } from 'primeng/baseinput';
-import { Bind, BindModule } from 'primeng/bind';
-import { Chip } from 'primeng/chip';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { ChevronDownIcon, SpinnerIcon, TimesCircleIcon, TimesIcon } from 'primeng/icons';
-import { InputText } from 'primeng/inputtext';
-import { Overlay } from 'primeng/overlay';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Nullable } from 'primeng/ts-helpers';
+import { OverlayOptions, OverlayService, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseInput } from '@libreng/ui/baseinput';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { Chip } from '@libreng/ui/chip';
+import { ConnectedOverlayScrollHandler } from '@libreng/ui/dom';
+import { ChevronDownIcon, SpinnerIcon, TimesCircleIcon, TimesIcon } from '@libreng/ui/icons';
+import { InputText } from '@libreng/ui/inputtext';
+import { Overlay } from '@libreng/ui/overlay';
+import { Ripple } from '@libreng/ui/ripple';
+import { Scroller } from '@libreng/ui/scroller';
+import { Nullable } from '@libreng/ui/ts-helpers';
 import {
     AutoCompleteAddEvent,
     AutoCompleteCompleteEvent,
@@ -53,7 +53,7 @@ import {
     AutoCompleteSelectedItemTemplateContext,
     AutoCompleteSelectEvent,
     AutoCompleteUnselectEvent
-} from 'primeng/types/autocomplete';
+} from '@libreng/ui/types/autocomplete';
 import { AutoCompleteStyle } from './style/autocompletestyle';
 
 const AUTOCOMPLETE_INSTANCE = new InjectionToken<AutoComplete>('AUTOCOMPLETE_INSTANCE');

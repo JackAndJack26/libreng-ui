@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@libreng/ui/button';
 import { RouterModule } from '@angular/router';
 import { CommonModule } from '@angular/common';
 

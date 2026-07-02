@@ -11,7 +11,7 @@ import { RouterModule } from '@angular/router';
     imports: [RouterModule, AppDocSectionText, AppCode],
     template: `
         <app-docsectiontext>
-            <p>PrimeNG provides 4 predefined themes out of the box; Aura, Material, Lara and Nora. See the <a routerLink="/theming">theming</a> documentation for details.</p>
+            <p>LibreNG UI provides 4 predefined themes out of the box; Aura, Material, Lara and Nora. See the <a routerLink="/theming">theming</a> documentation for details.</p>
         </app-docsectiontext>
         <app-code [code]="code" [hideToggleCode]="true"></app-code>
     `
@@ -20,7 +20,7 @@ export class ThemeDoc {
     code: Code = {
         typescript: `import { ApplicationConfig } from '@angular/core';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 
 import Aura from '@primeuix/themes/aura';
 

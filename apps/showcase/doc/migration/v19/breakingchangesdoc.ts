@@ -11,7 +11,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
         <app-docsectiontext>
             <h4>Configuration</h4>
             <p>
-                The <i>PrimeNGConfig</i> has been replaced by <i>PrimeNG</i> and the initial configuration is now done via the <i>providePrimeNG</i> provider during startup. See the <a href="/installation" class="">installation</a> section for an
+                The <i>PrimeNGConfig</i> has been replaced by <i>LibreNG UI</i> and the initial configuration is now done via the <i>providePrimeNG</i> provider during startup. See the <a href="/installation" class="">installation</a> section for an
                 example.
             </p>
 
@@ -47,7 +47,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
                 <li><i class="mark">.p-fluid</i>, use the new built-in <i class="mark">fluid</i> property of the supported components or the <i class="mark">Fluid</i> component.</li>
             </ul>
             <h4>PrimeFlex CSS</h4>
-            <p>In case you are using PrimeFlex CSS library, upgrade to PrimeFlex v4 since PrimeFlex v3 is not compatible with PrimeNG v18+</p>
+            <p>In case you are using PrimeFlex CSS library, upgrade to PrimeFlex v4 since PrimeFlex v3 is not compatible with LibreNG UI v18+</p>
         </app-docsectiontext>
     `
 })

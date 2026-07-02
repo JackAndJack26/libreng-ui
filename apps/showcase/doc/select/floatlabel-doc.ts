@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
 import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
-import { FloatLabelModule } from 'primeng/floatlabel';
+import { SelectModule } from '@libreng/ui/select';
+import { FloatLabelModule } from '@libreng/ui/floatlabel';
 import { RouterModule } from '@angular/router';
 
 interface City {

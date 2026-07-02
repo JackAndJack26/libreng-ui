@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { AnimateOnScrollModule } from 'primeng/animateonscroll';
-import { AvatarModule } from 'primeng/avatar';
+import { AnimateOnScrollModule } from '@libreng/ui/animateonscroll';
+import { AvatarModule } from '@libreng/ui/avatar';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

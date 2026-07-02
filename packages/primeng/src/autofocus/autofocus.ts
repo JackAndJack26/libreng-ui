@@ -1,7 +1,7 @@
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { Directive, ElementRef, inject, Input, NgModule, PLATFORM_ID } from '@angular/core';
-import { BaseComponent } from 'primeng/basecomponent';
-import { DomHandler } from 'primeng/dom';
+import { BaseComponent } from '@libreng/ui/basecomponent';
+import { DomHandler } from '@libreng/ui/dom';
 
 /**
  * AutoFocus manages focus on focusable element on load.

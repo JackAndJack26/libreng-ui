@@ -1,7 +1,7 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { InplaceModule } from 'primeng/inplace';
+import { InplaceModule } from '@libreng/ui/inplace';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

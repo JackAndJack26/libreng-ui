@@ -2,17 +2,17 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { SelectButton } from 'primeng/selectbutton';
-import { Slider } from 'primeng/slider';
-import { AvatarModule } from 'primeng/avatar';
-import { TooltipModule } from 'primeng/tooltip';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { ProgressBar } from 'primeng/progressbar';
-import { Carousel } from 'primeng/carousel';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
+import { SelectButton } from '@libreng/ui/selectbutton';
+import { Slider } from '@libreng/ui/slider';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { IconField } from '@libreng/ui/iconfield';
+import { InputIcon } from '@libreng/ui/inputicon';
+import { ButtonModule } from '@libreng/ui/button';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { ProgressBar } from '@libreng/ui/progressbar';
+import { Carousel } from '@libreng/ui/carousel';
+import { OverlayBadgeModule } from '@libreng/ui/overlaybadge';
 
 @Component({
     selector: 'movies-app',

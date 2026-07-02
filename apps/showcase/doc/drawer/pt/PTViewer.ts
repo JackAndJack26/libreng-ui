@@ -1,8 +1,8 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { DrawerModule } from 'primeng/drawer';
-import { TimesIcon } from 'primeng/icons';
+import { DrawerModule } from '@libreng/ui/drawer';
+import { TimesIcon } from '@libreng/ui/icons';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

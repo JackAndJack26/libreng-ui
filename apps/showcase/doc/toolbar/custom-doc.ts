@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
-import { ToolbarModule } from 'primeng/toolbar';
-import { ButtonModule } from 'primeng/button';
-import { AvatarModule } from 'primeng/avatar';
+import { ToolbarModule } from '@libreng/ui/toolbar';
+import { ButtonModule } from '@libreng/ui/button';
+import { AvatarModule } from '@libreng/ui/avatar';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

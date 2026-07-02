@@ -1,9 +1,9 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, inject, InjectionToken, input, model, numberAttribute, signal, ViewEncapsulation } from '@angular/core';
 import { uuid } from '@primeuix/utils';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { TabsPassThrough } from 'primeng/types/tabs';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { TabsPassThrough } from '@libreng/ui/types/tabs';
 import { TabsStyle } from './style/tabsstyle';
 
 const TABS_INSTANCE = new InjectionToken<Tabs>('TABS_INSTANCE');

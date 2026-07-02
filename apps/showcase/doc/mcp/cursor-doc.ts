@@ -22,9 +22,9 @@ export class CursorDoc {
     code: Code = {
         typescript: `{
     "mcpServers": {
-        "primeng": {
+        "@libreng/ui": {
             "command": "npx",
-            "args": ["-y", "@primeng/mcp"]
+            "args": ["-y", "@libreng/mcp"]
         }
     }
 }`

@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { DynamicDialogModule } from 'primeng/dynamicdialog';`
+        typescript: `import { DynamicDialogModule } from '@libreng/ui/dynamicdialog';`
     };
 }

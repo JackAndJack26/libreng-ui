@@ -1,8 +1,8 @@
 import { AppCode } from '@/components/doc/app.code';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ScrollerOptions, SelectItem } from 'primeng/api';
-import { SelectModule } from 'primeng/select';
+import { ScrollerOptions, SelectItem } from '@libreng/ui/api';
+import { SelectModule } from '@libreng/ui/select';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -6,8 +6,8 @@ import { CustomerService } from '@/service/customerservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TableModule } from 'primeng/table';
-import { ToggleButtonModule } from 'primeng/togglebutton';
+import { TableModule } from '@libreng/ui/table';
+import { ToggleButtonModule } from '@libreng/ui/togglebutton';
 
 @Component({
     selector: 'frozencolumns-doc',

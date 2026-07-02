@@ -4,7 +4,7 @@ import { DesignerService } from '@/service/designerservice';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, effect, inject, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from '@libreng/ui/chart';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

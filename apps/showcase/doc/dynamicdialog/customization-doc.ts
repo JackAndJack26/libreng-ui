@@ -1,6 +1,6 @@
 import { Code } from '@/domain/code';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DialogService, DynamicDialogRef } from '@libreng/ui/dynamicdialog';
 import { ProductListDemo } from './productlistdemo';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
@@ -39,9 +39,9 @@ export class CustomizationDoc {
     code: Code = {
         typescript: `
 import { Component } from '@angular/core';
-import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
+import { DialogService, DynamicDialogRef } from '@libreng/ui/dynamicdialog';
 import { ProductListDemo } from './productlistdemo';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@libreng/ui/button';
 
 @Component({
     template: \`<p-button (click)="show()" label="Show" />\`,

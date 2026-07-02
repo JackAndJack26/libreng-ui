@@ -5,9 +5,9 @@ import { NodeService } from '@/service/nodeservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TreeNode } from 'primeng/api';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { TreeTableModule } from 'primeng/treetable';
+import { TreeNode } from '@libreng/ui/api';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
+import { TreeTableModule } from '@libreng/ui/treetable';
 
 interface Column {
     field: string;

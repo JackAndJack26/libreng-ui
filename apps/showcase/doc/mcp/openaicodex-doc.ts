@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     imports: [AppCodeModule, AppDocSectionText],
     template: `
         <app-docsectiontext>
-            <p>Add the PrimeNG MCP server using the CLI or edit <i>~/.codex/config.toml</i> directly.</p>
+            <p>Add the LibreNG UI MCP server using the CLI or edit <i>~/.codex/config.toml</i> directly.</p>
         </app-docsectiontext>
         <app-code [code]="code" [hideToggleCode]="true"></app-code>
         <p class="doc-section-description">See <a href="https://developers.openai.com/codex/mcp/" class="font-medium hover:underline text-primary" target="_blank" rel="noopener noreferrer">OpenAI Codex MCP Documentation</a> for more details.</p>
@@ -19,11 +19,11 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class OpenAICodexDoc {
     code: Code = {
         command: `# Using the CLI
-codex mcp add primeng -- npx -y @primeng/mcp
+codex mcp add primeng -- npx -y @libreng/mcp
 
 # Or edit ~/.codex/config.toml
 [mcp_servers.primeng]
 command = "npx"
-args = ["-y", "@primeng/mcp"]`
+args = ["-y", "@libreng/mcp"]`
     };
 }

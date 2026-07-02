@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { PasswordModule } from 'primeng/password';`
+        typescript: `import { PasswordModule } from '@libreng/ui/password';`
     };
 }

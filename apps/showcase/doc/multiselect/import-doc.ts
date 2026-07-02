@@ -11,6 +11,6 @@ import { AppCodeModule } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { MultiSelectModule } from 'primeng/multiselect';`
+        typescript: `import { MultiSelectModule } from '@libreng/ui/multiselect';`
     };
 }

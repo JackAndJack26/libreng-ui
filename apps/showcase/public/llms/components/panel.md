@@ -12,7 +12,7 @@ A simple Panel is created with a header property along with the content as child
 
 ```typescript
 import { Component } from '@angular/core';
-import { PanelModule } from 'primeng/panel';
+import { PanelModule } from '@libreng/ui/panel';
 
 @Component({
     template: `
@@ -37,10 +37,10 @@ Header and Footers sections can be customized using header and footer templates.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { MenuModule } from 'primeng/menu';
-import { PanelModule } from 'primeng/panel';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { ButtonModule } from '@libreng/ui/button';
+import { MenuModule } from '@libreng/ui/menu';
+import { PanelModule } from '@libreng/ui/panel';
 
 @Component({
     template: `
@@ -104,7 +104,7 @@ Content of the panel can be expanded and collapsed using toggleable option, defa
 
 ```typescript
 import { Component } from '@angular/core';
-import { PanelModule } from 'primeng/panel';
+import { PanelModule } from '@libreng/ui/panel';
 
 @Component({
     template: `

@@ -4,8 +4,8 @@ import { By } from '@angular/platform-browser';
 
 import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
-import { MenuItem } from 'primeng/api';
-import { BreadcrumbItemClickEvent } from 'primeng/types/breadcrumb';
+import { MenuItem } from '@libreng/ui/api';
+import { BreadcrumbItemClickEvent } from '@libreng/ui/types/breadcrumb';
 import { Breadcrumb } from './breadcrumb';
 
 @Component({

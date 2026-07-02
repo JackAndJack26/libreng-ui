@@ -2,10 +2,10 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit, ViewChild } from '@angular/core';
-import { MenuItem } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { ContextMenu, ContextMenuModule } from 'primeng/contextmenu';
-import { Ripple } from 'primeng/ripple';
+import { MenuItem } from '@libreng/ui/api';
+import { BadgeModule } from '@libreng/ui/badge';
+import { ContextMenu, ContextMenuModule } from '@libreng/ui/contextmenu';
+import { Ripple } from '@libreng/ui/ripple';
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'template-doc',

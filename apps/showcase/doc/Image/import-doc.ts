@@ -11,6 +11,6 @@ import { AppCodeModule } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ImageModule } from 'primeng/image';`
+        typescript: `import { ImageModule } from '@libreng/ui/image';`
     };
 }

@@ -1,11 +1,11 @@
 import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { FormBuilder, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@libreng/ui/api';
 import { CommonModule } from '@angular/common';
-import { AutoCompleteModule } from 'primeng/autocomplete';
-import { ToastModule } from 'primeng/toast';
-import { MessageModule } from 'primeng/message';
-import { ButtonModule } from 'primeng/button';
+import { AutoCompleteModule } from '@libreng/ui/autocomplete';
+import { ToastModule } from '@libreng/ui/toast';
+import { MessageModule } from '@libreng/ui/message';
+import { ButtonModule } from '@libreng/ui/button';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
 

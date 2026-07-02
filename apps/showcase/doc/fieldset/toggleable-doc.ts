@@ -1,7 +1,7 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FieldsetModule } from 'primeng/fieldset';
+import { FieldsetModule } from '@libreng/ui/fieldset';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -12,7 +12,7 @@ Message component requires a content to display.
 
 ```typescript
 import { Component } from '@angular/core';
-import { MessageModule } from 'primeng/message';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     template: `
@@ -32,7 +32,7 @@ Enable closable option to display an icon to remove a message.
 
 ```typescript
 import { Component } from '@angular/core';
-import { MessageModule } from 'primeng/message';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     template: `
@@ -52,8 +52,8 @@ Multiple messages can be displayed using the standard for block.
 
 ```typescript
 import { Component, signal } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { MessageModule } from 'primeng/message';
+import { ButtonModule } from '@libreng/ui/button';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     template: `
@@ -96,9 +96,9 @@ Validation errors in a form are displayed with the error severity.
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { InputMaskModule } from 'primeng/inputmask';
-import { MessageModule } from 'primeng/message';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputMaskModule } from '@libreng/ui/inputmask';
+import { MessageModule } from '@libreng/ui/message';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     template: `
@@ -135,8 +135,8 @@ The icon of a message is specified with the icon property.
 
 ```typescript
 import { Component } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
-import { MessageModule } from 'primeng/message';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     template: `
@@ -162,8 +162,8 @@ Messages can disappear automatically by defined the life in milliseconds.
 
 ```typescript
 import { Component, signal } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { MessageModule } from 'primeng/message';
+import { ButtonModule } from '@libreng/ui/button';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     template: `
@@ -196,7 +196,7 @@ Configure the variant value as outlined for messages with borders and no backgro
 
 ```typescript
 import { Component } from '@angular/core';
-import { MessageModule } from 'primeng/message';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     template: `
@@ -221,7 +221,7 @@ The severity option specifies the type of the message.
 
 ```typescript
 import { Component } from '@angular/core';
-import { MessageModule } from 'primeng/message';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     template: `
@@ -246,7 +246,7 @@ Configure the variant value as simple for messages without borders and backgroun
 
 ```typescript
 import { Component } from '@angular/core';
-import { MessageModule } from 'primeng/message';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     template: `
@@ -271,7 +271,7 @@ Message provides small and large sizes as alternatives to the base.
 
 ```typescript
 import { Component } from '@angular/core';
-import { MessageModule } from 'primeng/message';
+import { MessageModule } from '@libreng/ui/message';
 
 @Component({
     template: `

@@ -1,7 +1,7 @@
 import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { AccordionModule } from 'primeng/accordion';
+import { AccordionModule } from '@libreng/ui/accordion';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

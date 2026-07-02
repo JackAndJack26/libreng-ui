@@ -21,15 +21,15 @@ import {
     ViewChild
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
-import { SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseEditableHolder } from 'primeng/baseeditableholder';
-import { Bind } from 'primeng/bind';
-import { BindModule } from 'primeng/bind';
-import { Nullable } from 'primeng/ts-helpers';
-import { RadioButtonPassThrough } from 'primeng/types/radiobutton';
-import type { RadioButtonClickEvent } from 'primeng/types/radiobutton';
+import { SharedModule } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';
+import { Bind } from '@libreng/ui/bind';
+import { BindModule } from '@libreng/ui/bind';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import { RadioButtonPassThrough } from '@libreng/ui/types/radiobutton';
+import type { RadioButtonClickEvent } from '@libreng/ui/types/radiobutton';
 import { RadioButtonStyle } from './style/radiobuttonstyle';
 
 const RADIOBUTTON_INSTANCE = new InjectionToken<RadioButton>('RADIOBUTTON_INSTANCE');

@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as inputtext_style } from '@primeuix/styles/inputtext';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${inputtext_style}
 
-    /* For PrimeNG */
+    /* For LibreNG UI */
    .p-inputtext.ng-invalid.ng-dirty {
         border-color: dt('inputtext.invalid.border.color');
     }

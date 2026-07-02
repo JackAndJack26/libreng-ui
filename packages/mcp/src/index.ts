@@ -7,21 +7,21 @@ const migrationGuides = {
     v18_to_v19: {
         version: 'v19',
         from: 'v18',
-        breaking: ['PrimeNG v19 requires Angular 17+', 'New theming architecture with design tokens', 'Component API changes for better tree-shaking'],
+        breaking: ['LibreNG UI v19 requires Angular 17+', 'New theming architecture with design tokens', 'Component API changes for better tree-shaking'],
         deprecations: ['Legacy theming system deprecated in favor of design tokens', 'Some component-specific CSS classes renamed for consistency'],
         whatsnew: ['New design token system for theming', 'Improved accessibility across all components', 'Better Angular 17+ integration with signals support']
     },
     v19_to_v20: {
         version: 'v20',
         from: 'v19',
-        breaking: ['PrimeNG v20 requires Angular 18+', 'Updated Pass Through (PT) API', 'Some deprecated APIs removed'],
+        breaking: ['LibreNG UI v20 requires Angular 18+', 'Updated Pass Through (PT) API', 'Some deprecated APIs removed'],
         deprecations: ['Some legacy component APIs deprecated', 'Old theming presets being phased out'],
         whatsnew: ['Full Angular 18 compatibility', 'Enhanced signal support', 'New components and features']
     },
     v20_to_v21: {
         version: 'v21',
         from: 'v20',
-        breaking: ['PrimeNG v21 requires Angular 19+', 'Standalone components are now the default', 'Updated module structure'],
+        breaking: ['LibreNG UI v21 requires Angular 19+', 'Standalone components are now the default', 'Updated module structure'],
         deprecations: ['NgModule-based imports deprecated in favor of standalone'],
         whatsnew: ['Full Angular 19 compatibility', 'Standalone components by default', 'Improved performance with zoneless support', 'New animation system']
     }
@@ -55,16 +55,16 @@ function formatMigrationContent(guide: (typeof migrationGuides)[keyof typeof mig
         content += '\n';
     }
 
-    content += `For detailed migration guide, visit: https://primeng.org/installation`;
+    content += `For detailed migration guide, visit: https://github.com/capivaramu/orbia-ui/installation`;
     return content;
 }
 
-// Run PrimeNG MCP server with core + Angular-specific tools
+// Run LibreNG UI MCP server with core + Angular-specific tools
 runPrimeMcpServer({
-    name: '@primeng/mcp',
+    name: '@libreng/mcp',
     version: pkg.version,
-    baseUrl: 'https://primeng.org',
-    frameworkName: 'PrimeNG',
+    baseUrl: 'https://github.com/capivaramu/orbia-ui',
+    frameworkName: 'LibreNG UI',
     slotKey: 'templates',
     codeLanguage: 'typescript',
     compatibility: 'Angular 17+',
@@ -73,7 +73,7 @@ runPrimeMcpServer({
         // Angular-specific: get_migration_guide
         {
             name: 'get_migration_guide',
-            description: 'Get migration guide for upgrading PrimeNG versions (v19, v20, v21)',
+            description: 'Get migration guide for upgrading LibreNG UI versions (v19, v20, v21)',
             parameters: {
                 version: {
                     type: 'string',
@@ -133,7 +133,7 @@ runPrimeMcpServer({
         // Angular-specific: migrate_v18_to_v19
         {
             name: 'migrate_v18_to_v19',
-            description: 'Migration guide for upgrading PrimeNG from v18 to v19. Covers breaking changes, deprecations, and new features.',
+            description: 'Migration guide for upgrading LibreNG UI from v18 to v19. Covers breaking changes, deprecations, and new features.',
             parameters: {
                 section: {
                     type: 'string',
@@ -154,7 +154,7 @@ runPrimeMcpServer({
         // Angular-specific: migrate_v19_to_v20
         {
             name: 'migrate_v19_to_v20',
-            description: 'Migration guide for upgrading PrimeNG from v19 to v20. Covers breaking changes, deprecations, and new features.',
+            description: 'Migration guide for upgrading LibreNG UI from v19 to v20. Covers breaking changes, deprecations, and new features.',
             parameters: {
                 section: {
                     type: 'string',
@@ -175,7 +175,7 @@ runPrimeMcpServer({
         // Angular-specific: migrate_v20_to_v21
         {
             name: 'migrate_v20_to_v21',
-            description: 'Migration guide for upgrading PrimeNG from v20 to v21. Covers breaking changes, deprecations, and new features.',
+            description: 'Migration guide for upgrading LibreNG UI from v20 to v21. Covers breaking changes, deprecations, and new features.',
             parameters: {
                 section: {
                     type: 'string',

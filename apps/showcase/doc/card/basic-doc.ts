@@ -1,7 +1,7 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { CardModule } from 'primeng/card';
+import { CardModule } from '@libreng/ui/card';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

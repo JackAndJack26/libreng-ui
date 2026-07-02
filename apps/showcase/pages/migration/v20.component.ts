@@ -9,7 +9,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     changeDetection: ChangeDetectionStrategy.Eager,
     imports: [AppDoc],
     standalone: true,
-    template: `<app-doc docTitle="Migration - PrimeNG v20" header="Migration to v20" description="Migration guide to PrimeNG v20." [docs]="docs" docType="page"></app-doc>`
+    template: `<app-doc docTitle="Migration - LibreNG UI v20" header="Migration to v20" description="Migration guide to LibreNG UI v20." [docs]="docs" docType="page"></app-doc>`
 })
 export class v20MigrationDemoComponent {
     docs = [

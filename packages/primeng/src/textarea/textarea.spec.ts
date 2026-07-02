@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
-import { providePrimeNG } from 'primeng/config';
-import { TextareaPassThrough } from 'primeng/types/textarea';
+import { providePrimeNG } from '@libreng/ui/config';
+import { TextareaPassThrough } from '@libreng/ui/types/textarea';
 import { Textarea } from './textarea';
 
 @Component({

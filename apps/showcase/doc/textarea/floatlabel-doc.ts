@@ -3,8 +3,8 @@ import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { FloatLabelModule } from 'primeng/floatlabel';
-import { TextareaModule } from 'primeng/textarea';
+import { FloatLabelModule } from '@libreng/ui/floatlabel';
+import { TextareaModule } from '@libreng/ui/textarea';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

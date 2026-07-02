@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, booleanAttribute, Component, Input } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
-import { StyleClass } from 'primeng/styleclass';
-import { Tag } from 'primeng/tag';
+import { StyleClass } from '@libreng/ui/styleclass';
+import { Tag } from '@libreng/ui/tag';
 import { MenuItem } from './app.menu.component';
 
 @Component({

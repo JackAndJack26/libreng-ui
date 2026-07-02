@@ -4,10 +4,10 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { By } from '@angular/platform-browser';
 
 import { CommonModule } from '@angular/common';
-import { SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { providePrimeNG } from 'primeng/config';
-import { ToggleSwitchChangeEvent } from 'primeng/types/toggleswitch';
+import { SharedModule } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { providePrimeNG } from '@libreng/ui/config';
+import { ToggleSwitchChangeEvent } from '@libreng/ui/types/toggleswitch';
 import { ToggleSwitch, ToggleSwitchModule } from './toggleswitch';
 
 describe('ToggleSwitch', () => {

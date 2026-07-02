@@ -1,7 +1,7 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { PanelModule } from 'primeng/panel';
+import { PanelModule } from '@libreng/ui/panel';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

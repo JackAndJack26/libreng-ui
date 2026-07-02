@@ -25,18 +25,18 @@ import {
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { absolutePosition, addClass, addStyle, appendChild, find, findSingle, getFocusableElements, getIndex, getOuterWidth, hasClass, isDate, isNotEmpty, isTouchDevice, relativePosition, setAttribute, uuid } from '@primeuix/utils';
-import { OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseInput } from 'primeng/baseinput';
-import { Bind, BindModule } from 'primeng/bind';
-import { Button } from 'primeng/button';
-import { blockBodyScroll, ConnectedOverlayScrollHandler, unblockBodyScroll } from 'primeng/dom';
-import { CalendarIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, TimesIcon } from 'primeng/icons';
-import { InputText } from 'primeng/inputtext';
-import { MotionModule } from 'primeng/motion';
-import { Ripple } from 'primeng/ripple';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseInput } from '@libreng/ui/baseinput';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { Button } from '@libreng/ui/button';
+import { blockBodyScroll, ConnectedOverlayScrollHandler, unblockBodyScroll } from '@libreng/ui/dom';
+import { CalendarIcon, ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, TimesIcon } from '@libreng/ui/icons';
+import { InputText } from '@libreng/ui/inputtext';
+import { MotionModule } from '@libreng/ui/motion';
+import { Ripple } from '@libreng/ui/ripple';
+import { Nullable, VoidListener } from '@libreng/ui/ts-helpers';
 import {
     DatePickerButtonBarTemplateContext,
     DatePickerDateTemplateContext,
@@ -51,8 +51,8 @@ import {
     LocaleSettings,
     Month,
     NavigationState
-} from 'primeng/types/datepicker';
-import { ZIndexUtils } from 'primeng/utils';
+} from '@libreng/ui/types/datepicker';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { Subscription } from 'rxjs';
 import { DatePickerStyle } from './style/datepickerstyle';
 
@@ -3020,7 +3020,7 @@ export class DatePicker extends BaseInput<DatePickerPassThrough> {
     }
 
     onUserInput(event: KeyboardEvent | any) {
-        // IE 11 Workaround for input placeholder : https://github.com/primefaces/primeng/issues/2026
+        // IE 11 Workaround for input placeholder : https://github.com/capivaramu/orbia-ui/issues/2026
 
         if (!this.isKeydown) {
             return;

@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, ViewChild, signal, provideZonelessC
 import { By } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { DataView } from './dataview';
-import { PaginatorModule } from 'primeng/paginator';
+import { PaginatorModule } from '@libreng/ui/paginator';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

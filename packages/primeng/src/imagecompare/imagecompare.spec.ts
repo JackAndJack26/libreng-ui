@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { ChangeDetectionStrategy, Component, DebugElement, provideZonelessChangeDetection } from '@angular/core';
 import { ImageCompare, ImageCompareModule } from './imagecompare';
-import { SharedModule } from 'primeng/api';
+import { SharedModule } from '@libreng/ui/api';
 
 // Using image paths from photoservice.ts to ensure consistency
 const mockImages = {
@@ -752,7 +752,7 @@ describe('ImageCompare', () => {
         });
 
         describe('Case 7: PrimeNGConfig', () => {
-            // Skipping this test as PrimeNG config PT requires specific configuration
+            // Skipping this test as LibreNG UI config PT requires specific configuration
             // that conflicts with the existing TestBed setup
             it('should be able to configure global PT (skipped)', () => {
                 // This test would require a separate test file or different setup

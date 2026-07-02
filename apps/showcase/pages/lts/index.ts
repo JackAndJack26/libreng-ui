@@ -4,8 +4,8 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
-import { RippleModule } from 'primeng/ripple';
-import { TagModule } from 'primeng/tag';
+import { RippleModule } from '@libreng/ui/ripple';
+import { TagModule } from '@libreng/ui/tag';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -18,17 +18,17 @@ import { TagModule } from 'primeng/tag';
                     <i class="pi pi-github absolute text-surface-200 dark:text-surface-600" style="bottom: -50px; right: -50px; font-size: 200px; transform: rotateX(45deg) rotateY(0deg) rotateZ(-45deg)"></i>
                     <div class="text-2xl text-surface-900 dark:text-surface-0 font-semibold mb-4 relative">Community Versions</div>
                     <p class="m-0 leading-normal relative text-lg text-surface-800 dark:text-surface-50">
-                        Angular is a fast paced technology with a new major version every 6 months. PrimeNG release cycle is aligned with Angular and every 6 months a new major PrimeNG version is released as open source that is compatible with the
-                        latest Angular core. The maintenance releases of the latest PrimeNG version are provided as free and open source for the following 6 months until the new major Angular version is ready.
+                        Angular is a fast paced technology with a new major version every 6 months. LibreNG UI release cycle is aligned with Angular and every 6 months a new major LibreNG UI version is released as open source that is compatible with
+                        the latest Angular core. The maintenance releases of the latest LibreNG UI version are provided as free and open source for the following 6 months until the new major Angular version is ready.
                     </p>
                 </div>
                 <div class="card m-0 xl:w-9/12 text-white bg-cover" style="background-image: url('https://primefaces.org/cdn/primeng/images/lts/card-lts.jpg')">
                     <div class="text-2xl font-semibold mb-4">LTS Versions</div>
                     <p class="m-0 leading-normal text-lg">
-                        Majority of the existing applications prefer to remain at a previous version due to stability requirements instead of upgrading to the latest version immediately. PrimeNG LTS is a support service to provide a license for the
-                        finest compatible version suited to you. LTS covers the prior two versions from the latest release, this means up to 18 months of almost bi-weekly releases to bring the latest defect fixes and security updates to your project.
-                        As an example, when PrimeNG moves to Angular 20, v19 and v18 will move to LTS support whereas STS (short term support) versions of PrimeNG 20 will be open source under MIT license for at least 6 months until Angular/PrimeNG 21
-                        is released.
+                        Majority of the existing applications prefer to remain at a previous version due to stability requirements instead of upgrading to the latest version immediately. LibreNG UI LTS is a support service to provide a license for
+                        the finest compatible version suited to you. LTS covers the prior two versions from the latest release, this means up to 18 months of almost bi-weekly releases to bring the latest defect fixes and security updates to your
+                        project. As an example, when LibreNG UI moves to Angular 20, v19 and v18 will move to LTS support whereas STS (short term support) versions of LibreNG UI 20 will be open source under MIT license for at least 6 months until
+                        Angular/LibreNG UI 21 is released.
                     </p>
                 </div>
             </div>
@@ -36,7 +36,7 @@ import { TagModule } from 'primeng/tag';
                 <div class="text-2xl text-surface-900 dark:text-surface-0 font-semibold mb-4">Version Support</div>
                 <p class="m-0 leading-normal mb-8 text-secondary text-lg text-surface-800 dark:text-surface-50">
                     <b>STS</b> means open source short term support whereas <b>LTS</b> stands for commercial long term support. Legacy versions are only supported by
-                    <a [routerLink]="['/support']" class="text-primary font-medium hover:underline">PrimeNG PRO.</a>
+                    <a [routerLink]="['/support']" class="text-primary font-medium hover:underline">LibreNG UI PRO.</a>
                 </p>
 
                 <div class="doc-tablewrapper">
@@ -58,7 +58,7 @@ import { TagModule } from 'primeng/tag';
                                 <td class="p-2">STS</td>
                                 <td class="p-2">After v21 release</td>
                                 <td class="p-2">After v23 release</td>
-                                <td class="p-2"><a href="https://github.com/primefaces/primeng/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a></td>
+                                <td class="p-2"><a href="https://github.com/capivaramu/orbia-ui/blob/master/CHANGELOG.md" target="_blank" rel="noopener noreferrer">Changelog</a></td>
                             </tr>
                             <tr class="text-lg text-surface-800 dark:text-surface-50">
                                 <td class="p-2">
@@ -67,7 +67,7 @@ import { TagModule } from 'primeng/tag';
                                 <td class="p-2">LTS</td>
                                 <td class="p-2">After v20 release</td>
                                 <td class="p-2">After v22 release</td>
-                                <td class="p-2"><a href="https://github.com/primefaces/primeng/blob/master/changelog-lts/v19-LTS.md" target="_blank" rel="noopener noreferrer">Changelog</a></td>
+                                <td class="p-2"><a href="https://github.com/capivaramu/orbia-ui/blob/master/changelog-lts/v19-LTS.md" target="_blank" rel="noopener noreferrer">Changelog</a></td>
                             </tr>
                             <tr class="text-lg text-surface-800 dark:text-surface-50">
                                 <td class="p-2">
@@ -76,7 +76,7 @@ import { TagModule } from 'primeng/tag';
                                 <td class="p-2">LTS</td>
                                 <td class="p-2">After v19 release</td>
                                 <td class="p-2">After v21 release</td>
-                                <td class="p-2"><a href="https://github.com/primefaces/primeng/blob/master/changelog-lts/v18-LTS.md" target="_blank" rel="noopener noreferrer">Changelog</a></td>
+                                <td class="p-2"><a href="https://github.com/capivaramu/orbia-ui/blob/master/changelog-lts/v18-LTS.md" target="_blank" rel="noopener noreferrer">Changelog</a></td>
                             </tr>
 
                             <tr class="text-lg text-surface-800 dark:text-surface-50">
@@ -147,7 +147,7 @@ import { TagModule } from 'primeng/tag';
                             <span class="text-surface-900 dark:text-surface-0 font-semibold text-xl">Security</span>
                         </div>
                         <p class="m-0 leading-normal mb-4 text-secondary text-lg text-surface-800 dark:text-surface-50">
-                            PrimeNG comes with a commitment to provide long-term support, including regular security updates to keep your system protected against emerging threats.
+                            LibreNG UI comes with a commitment to provide long-term support, including regular security updates to keep your system protected against emerging threats.
                         </p>
                     </div>
                     <div class="flex-1">
@@ -165,7 +165,7 @@ import { TagModule } from 'primeng/tag';
                             <span class="text-surface-900 dark:text-surface-0 font-semibold text-xl">Enhancements</span>
                         </div>
                         <p class="m-0 leading-normal mb-4 text-secondary text-lg text-surface-800 dark:text-surface-50">
-                            We are dedicated to continuously improving PrimeNG to meet the evolving needs of our users. As part of our long-term support, we will provide regular updates and enhancements to add new features and functionality.
+                            We are dedicated to continuously improving LibreNG UI to meet the evolving needs of our users. As part of our long-term support, we will provide regular updates and enhancements to add new features and functionality.
                         </p>
                     </div>
                 </div>
@@ -270,10 +270,10 @@ import { TagModule } from 'primeng/tag';
                 <div class="text-2xl text-surface-900 dark:text-surface-0 font-semibold mb-8">Frequently Asked Questions</div>
                 <div class="flex flex-wrap text-lg -ml-8 -mt-8">
                     <div class="w-full lg:w-4/12 p-8">
-                        <div class="text-surface-900 dark:text-surface-0 leading-normal mb-2 font-medium">Do I have to purchase a license for PrimeNG?</div>
+                        <div class="text-surface-900 dark:text-surface-0 leading-normal mb-2 font-medium">Do I have to purchase a license for LibreNG UI?</div>
                         <p class="mt-0 mb-8 p-0 leading-normal text-surface-800 dark:text-surface-50">No, only the versions that have the <b>-lts</b> suffix required a paid license. Any other version is open source under MIT license.</p>
 
-                        <div class="text-surface-900 dark:text-surface-0 leading-normal mb-2 font-medium">Is LTS License mandatory to use PrimeNG?</div>
+                        <div class="text-surface-900 dark:text-surface-0 leading-normal mb-2 font-medium">Is LTS License mandatory to use LibreNG UI?</div>
                         <p class="mt-0 mb-8 p-0 leading-normal text-surface-800 dark:text-surface-50">No, LTS is totally optional if you cannot update to latest Angular immediately and still would like to receive updates for your version.</p>
 
                         <div class="text-surface-900 dark:text-surface-0 leading-normal mb-2 font-medium">How long is the duration of the LTS license?</div>
@@ -304,7 +304,7 @@ import { TagModule } from 'primeng/tag';
                         <p class="mt-0 mb-8 p-0 leading-normal text-surface-800 dark:text-surface-50">No, license owner needs to be a separate entity as a result each company requires a separate license.</p>
 
                         <div class="text-surface-900 dark:text-surface-0 leading-normal mb-2 font-medium">Does LTS provide a support contact?</div>
-                        <p class="mt-0 p-0 leading-normal text-surface-800 dark:text-surface-50">No, PrimeNG PRO is the service where response of PrimeTek engineers is secured within 1 business day.</p>
+                        <p class="mt-0 p-0 leading-normal text-surface-800 dark:text-surface-50">No, LibreNG UI PRO is the service where response of PrimeTek engineers is secured within 1 business day.</p>
                     </div>
                     <div class="w-full lg:w-4/12 p-8">
                         <div class="text-surface-900 dark:text-surface-0 leading-normal mb-2 font-medium">Can LTS releases be used in open source projects?</div>
@@ -315,8 +315,8 @@ import { TagModule } from 'primeng/tag';
 
                         <div class="text-surface-900 dark:text-surface-0 leading-normal mb-2 font-medium">What is the difference between LTS and PRO?</div>
                         <p class="mt-0 p-0 leading-normal text-surface-800 dark:text-surface-50">
-                            PrimeNG PRO is a premium support service delivered via an exclusive JIRA instance where support engineers of PrimeTek provide assistance within 1 business day to the raised tickets. LTS on the other hand provides a license
-                            to utilize the long term support versions.
+                            LibreNG UI PRO is a premium support service delivered via an exclusive JIRA instance where support engineers of PrimeTek provide assistance within 1 business day to the raised tickets. LTS on the other hand provides a
+                            license to utilize the long term support versions.
                         </p>
                     </div>
                 </div>
@@ -327,7 +327,7 @@ import { TagModule } from 'primeng/tag';
 export class LTSDemo {
     code: Code = {
         typescript: `import { Component } from '@angular/core';
-import { LicenseManager } from 'primeng/api';
+import { LicenseManager } from '@libreng/ui/api';
 
 @Component({
     selector: 'app-root',
@@ -346,7 +346,7 @@ export class AppComponent implements OnInit {
         private titleService: Title,
         private metaService: Meta
     ) {
-        this.titleService.setTitle('Long Term Support - PrimeNG');
+        this.titleService.setTitle('Long Term Support - LibreNG UI');
         this.metaService.updateTag({ name: 'description', content: 'Long Term Support' });
     }
 }

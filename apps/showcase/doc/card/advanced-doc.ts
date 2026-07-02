@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { ButtonModule } from 'primeng/button';
-import { CardModule } from 'primeng/card';
+import { ButtonModule } from '@libreng/ui/button';
+import { CardModule } from '@libreng/ui/card';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

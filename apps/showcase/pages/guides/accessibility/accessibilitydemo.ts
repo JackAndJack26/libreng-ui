@@ -13,9 +13,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     standalone: true,
     imports: [AppDoc],
     template: `<app-doc
-        docTitle="Accessibility - PrimeNG"
+        docTitle="Accessibility - LibreNG UI"
         header="Accessibility"
-        description="PrimeNG targets AA level compliance on WCAG specification, refer to the accessibility documentation of each component for detailed information."
+        description="LibreNG UI targets AA level compliance on WCAG specification, refer to the accessibility documentation of each component for detailed information."
         [docs]="docs"
         docType="page"
     ></app-doc>`

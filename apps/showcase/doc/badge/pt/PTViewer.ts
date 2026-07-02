@@ -1,8 +1,8 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { BadgeModule } from 'primeng/badge';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
+import { BadgeModule } from '@libreng/ui/badge';
+import { OverlayBadgeModule } from '@libreng/ui/overlaybadge';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

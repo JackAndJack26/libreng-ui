@@ -1,17 +1,17 @@
 {
-    "name": "@primeng/themes",
+    "name": "@libreng/themes",
     "version": "22.0.0",
-    "author": "PrimeTek Informatics",
+    "author": "LibreNG UI Contributors",
     "description": "",
-    "homepage": "https://primeng.org/",
+    "homepage": "https://github.com/capivaramu/orbia-ui/",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/primefaces/primeng.git",
+        "url": "https://github.com/capivaramu/orbia-ui.git",
         "directory": "packages/themes"
     },
     "bugs": {
-        "url": "https://github.com/primefaces/primeng/issues"
+        "url": "https://github.com/capivaramu/orbia-ui/issues"
     },
     "private": true,
     "main": "./src/index.ts",

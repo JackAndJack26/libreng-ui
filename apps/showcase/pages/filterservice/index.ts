@@ -11,7 +11,7 @@ import { AppDoc } from '@/components/doc/app.doc';
     changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDoc],
-    template: ` <app-doc docTitle="FilterService - PrimeNG" header="FilterService" description="FilterService is a helper utility to filter collections against constraints." [docs]="docs"></app-doc>`
+    template: ` <app-doc docTitle="FilterService - LibreNG UI" header="FilterService" description="FilterService is a helper utility to filter collections against constraints." [docs]="docs"></app-doc>`
 })
 export class FilterServiceDemo {
     docs = [

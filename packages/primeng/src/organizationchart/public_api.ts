@@ -1,3 +1,3 @@
-export * from 'primeng/types/organizationchart';
+export * from '@libreng/ui/types/organizationchart';
 export * from './organizationchart';
 export * from './style/organizationchartstyle';

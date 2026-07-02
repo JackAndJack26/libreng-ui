@@ -20,10 +20,10 @@ export class ZedDoc {
     code: Code = {
         typescript: `{
     "context_servers": {
-        "primeng": {
+        "@libreng/ui": {
             "command": {
                 "path": "npx",
-                "args": ["-y", "@primeng/mcp"]
+                "args": ["-y", "@libreng/mcp"]
             }
         }
     }

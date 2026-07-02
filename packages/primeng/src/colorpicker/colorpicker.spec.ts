@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { By } from '@angular/platform-browser';
-import { providePrimeNG } from 'primeng/config';
-import { ColorPickerChangeEvent } from 'primeng/types/colorpicker';
+import { providePrimeNG } from '@libreng/ui/config';
+import { ColorPickerChangeEvent } from '@libreng/ui/types/colorpicker';
 import { ColorPicker } from './colorpicker';
 
 @Component({

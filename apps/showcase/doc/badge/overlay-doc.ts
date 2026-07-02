@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
+import { OverlayBadgeModule } from '@libreng/ui/overlaybadge';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

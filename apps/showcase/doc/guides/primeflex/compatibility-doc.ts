@@ -13,11 +13,11 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
                 <table class="doc-table">
                     <tbody>
                         <tr>
-                            <td>PrimeNG v18 and newer</td>
+                            <td>LibreNG UI v18 and newer</td>
                             <td>PrimeFlex v4</td>
                         </tr>
                         <tr>
-                            <td>PrimeNG v17 and older</td>
+                            <td>LibreNG UI v17 and older</td>
                             <td>PrimeFlex v3</td>
                         </tr>
                     </tbody>

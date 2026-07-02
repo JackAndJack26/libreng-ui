@@ -4,7 +4,7 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { By } from '@angular/platform-browser';
 
 import { CommonModule } from '@angular/common';
-import type { DatePickerMonthChangeEvent, DatePickerYearChangeEvent } from 'primeng/types/datepicker';
+import type { DatePickerMonthChangeEvent, DatePickerYearChangeEvent } from '@libreng/ui/types/datepicker';
 import { DatePicker } from './datepicker';
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -816,7 +816,7 @@ describe('DatePicker', () => {
 
     describe('Locale and Internationalization', () => {
         it('should handle locale via configuration service', () => {
-            // Locale is handled via PrimeNG config service, not direct input
+            // Locale is handled via LibreNG UI config service, not direct input
             expect(true).toBe(true);
         });
 

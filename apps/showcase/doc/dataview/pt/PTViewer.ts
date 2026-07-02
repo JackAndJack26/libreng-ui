@@ -1,9 +1,9 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
-import { DataViewModule } from 'primeng/dataview';
-import { TagModule } from 'primeng/tag';
-import { ButtonModule } from 'primeng/button';
+import { DataViewModule } from '@libreng/ui/dataview';
+import { TagModule } from '@libreng/ui/tag';
+import { ButtonModule } from '@libreng/ui/button';
 import { ProductService } from '@/service/productservice';
 
 interface Product {

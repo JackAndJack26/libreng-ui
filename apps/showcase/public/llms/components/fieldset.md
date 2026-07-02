@@ -12,7 +12,7 @@ A simple Fieldset is created with a legend property along with the content as ch
 
 ```typescript
 import { Component } from '@angular/core';
-import { FieldsetModule } from 'primeng/fieldset';
+import { FieldsetModule } from '@libreng/ui/fieldset';
 
 @Component({
     template: `
@@ -37,8 +37,8 @@ Header section can also be defined with custom content instead of primitive valu
 
 ```typescript
 import { Component } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
-import { FieldsetModule } from 'primeng/fieldset';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { FieldsetModule } from '@libreng/ui/fieldset';
 
 @Component({
     template: `
@@ -69,7 +69,7 @@ Content of the fieldset can be expanded and collapsed using toggleable option, d
 
 ```typescript
 import { Component } from '@angular/core';
-import { FieldsetModule } from 'primeng/fieldset';
+import { FieldsetModule } from '@libreng/ui/fieldset';
 
 @Component({
     template: `

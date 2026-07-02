@@ -27,18 +27,18 @@ import {
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { find, findSingle, focus, getOuterHeight, getOuterWidth, removeAccents, resolveFieldData } from '@primeuix/utils';
-import { BlockableUI, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from 'primeng/api';
-import { AutoFocusModule } from 'primeng/autofocus';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { Checkbox } from 'primeng/checkbox';
-import { IconField } from 'primeng/iconfield';
-import { ChevronDownIcon, ChevronRightIcon, SearchIcon, SpinnerIcon } from 'primeng/icons';
-import { InputIcon } from 'primeng/inputicon';
-import { InputText } from 'primeng/inputtext';
-import { Ripple } from 'primeng/ripple';
-import { Scroller } from 'primeng/scroller';
-import { Nullable } from 'primeng/ts-helpers';
+import { BlockableUI, PrimeTemplate, ScrollerOptions, SharedModule, TranslationKeys, TreeDragDropService, TreeNode } from '@libreng/ui/api';
+import { AutoFocusModule } from '@libreng/ui/autofocus';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { Checkbox } from '@libreng/ui/checkbox';
+import { IconField } from '@libreng/ui/iconfield';
+import { ChevronDownIcon, ChevronRightIcon, SearchIcon, SpinnerIcon } from '@libreng/ui/icons';
+import { InputIcon } from '@libreng/ui/inputicon';
+import { InputText } from '@libreng/ui/inputtext';
+import { Ripple } from '@libreng/ui/ripple';
+import { Scroller } from '@libreng/ui/scroller';
+import { Nullable } from '@libreng/ui/ts-helpers';
 import {
     TreeCheckboxIconTemplateContext,
     TreeFilterEvent,
@@ -56,7 +56,7 @@ import {
     TreeScrollEvent,
     TreeScrollIndexChangeEvent,
     TreeTogglerIconTemplateContext
-} from 'primeng/types/tree';
+} from '@libreng/ui/types/tree';
 import { Subscription } from 'rxjs';
 import { TreeStyle } from './style/treestyle';
 

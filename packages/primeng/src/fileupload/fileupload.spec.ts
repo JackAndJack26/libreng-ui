@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@libreng/ui/api';
 import { BehaviorSubject, delay, of, timer } from 'rxjs';
 import { FileUpload } from './fileupload';
 

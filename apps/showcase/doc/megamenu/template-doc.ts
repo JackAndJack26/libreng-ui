@@ -2,11 +2,11 @@ import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MegaMenuItem } from 'primeng/api';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { MegaMenuModule } from 'primeng/megamenu';
-import { RippleModule } from 'primeng/ripple';
+import { MegaMenuItem } from '@libreng/ui/api';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { ButtonModule } from '@libreng/ui/button';
+import { MegaMenuModule } from '@libreng/ui/megamenu';
+import { RippleModule } from '@libreng/ui/ripple';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

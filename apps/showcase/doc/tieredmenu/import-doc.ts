@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { TieredMenuModule } from 'primeng/tieredmenu';`
+        typescript: `import { TieredMenuModule } from '@libreng/ui/tieredmenu';`
     };
 }

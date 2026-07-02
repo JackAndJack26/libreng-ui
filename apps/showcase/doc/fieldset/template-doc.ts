@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FieldsetModule } from 'primeng/fieldset';
-import { AvatarModule } from 'primeng/avatar';
+import { FieldsetModule } from '@libreng/ui/fieldset';
+import { AvatarModule } from '@libreng/ui/avatar';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

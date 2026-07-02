@@ -22,17 +22,17 @@ import {
 } from '@angular/core';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { addClass, appendChild, removeClass, setAttribute } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { Button, ButtonProps } from 'primeng/button';
-import { blockBodyScroll, unblockBodyScroll } from 'primeng/dom';
-import { FocusTrapModule } from 'primeng/focustrap';
-import { TimesIcon } from 'primeng/icons';
-import { MotionModule } from 'primeng/motion';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { DrawerPassThrough } from 'primeng/types/drawer';
-import { ZIndexUtils } from 'primeng/utils';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { Button, ButtonProps } from '@libreng/ui/button';
+import { blockBodyScroll, unblockBodyScroll } from '@libreng/ui/dom';
+import { FocusTrapModule } from '@libreng/ui/focustrap';
+import { TimesIcon } from '@libreng/ui/icons';
+import { MotionModule } from '@libreng/ui/motion';
+import { Nullable, VoidListener } from '@libreng/ui/ts-helpers';
+import { DrawerPassThrough } from '@libreng/ui/types/drawer';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { DrawerStyle } from './style/drawerstyle';
 
 const DRAWER_INSTANCE = new InjectionToken<Drawer>('DRAWER_INSTANCE');

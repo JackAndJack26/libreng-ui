@@ -4,9 +4,9 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { Customer } from '@/domain/customer';
 import { CustomerService } from '@/service/customerservice';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { DialogModule } from 'primeng/dialog';
-import { TableModule } from 'primeng/table';
+import { ButtonModule } from '@libreng/ui/button';
+import { DialogModule } from '@libreng/ui/dialog';
+import { TableModule } from '@libreng/ui/table';
 
 @Component({
     selector: 'flexiblescroll-doc',

@@ -4,8 +4,8 @@ import { Car } from '@/domain/car';
 import { CarService } from '@/service/carservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
-import { FilterMatchMode, FilterService, SelectItem } from 'primeng/api';
-import { TableModule } from 'primeng/table';
+import { FilterMatchMode, FilterService, SelectItem } from '@libreng/ui/api';
+import { TableModule } from '@libreng/ui/table';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

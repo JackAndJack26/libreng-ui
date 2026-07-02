@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { RatingModule } from 'primeng/rating';`
+        typescript: `import { RatingModule } from '@libreng/ui/rating';`
     };
 }

@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
-import { SkeletonModule } from 'primeng/skeleton';
+import { SkeletonModule } from '@libreng/ui/skeleton';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

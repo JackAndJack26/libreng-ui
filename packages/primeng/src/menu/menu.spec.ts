@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { provideNoopAnimations } from '@angular/platform-browser/animations';
 import { RouterTestingModule } from '@angular/router/testing';
-import { MenuItem, OverlayService, SharedModule } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
+import { MenuItem, OverlayService, SharedModule } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
 import { Menu } from './menu';
 
 @Component({
@@ -1752,7 +1752,7 @@ describe('Menu', () => {
                 });
             });
 
-            it('should apply global PT configuration from PrimeNG config', () => {
+            it('should apply global PT configuration from LibreNG UI config', () => {
                 const globalFixture = TestBed.createComponent(TestGlobalPTComponent);
                 globalFixture.detectChanges();
 

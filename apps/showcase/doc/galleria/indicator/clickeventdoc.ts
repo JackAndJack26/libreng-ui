@@ -3,7 +3,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { PhotoService } from '@/service/photoservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit, model } from '@angular/core';
-import { GalleriaModule } from 'primeng/galleria';
+import { GalleriaModule } from '@libreng/ui/galleria';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

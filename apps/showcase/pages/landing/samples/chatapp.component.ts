@@ -2,18 +2,18 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { MenuItem } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { ChartModule } from 'primeng/chart';
-import { SelectButton } from 'primeng/selectbutton';
-import { AvatarModule } from 'primeng/avatar';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { MenuModule } from 'primeng/menu';
-import { Textarea } from 'primeng/textarea';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
+import { MenuItem } from '@libreng/ui/api';
+import { BadgeModule } from '@libreng/ui/badge';
+import { ChartModule } from '@libreng/ui/chart';
+import { SelectButton } from '@libreng/ui/selectbutton';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { IconField } from '@libreng/ui/iconfield';
+import { InputIcon } from '@libreng/ui/inputicon';
+import { ButtonModule } from '@libreng/ui/button';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { MenuModule } from '@libreng/ui/menu';
+import { Textarea } from '@libreng/ui/textarea';
+import { ToggleSwitchModule } from '@libreng/ui/toggleswitch';
 
 @Component({
     selector: 'chat-app',
@@ -274,7 +274,7 @@ export class ChatApp {
                 active: undefined,
                 unreadMessageCount: 0,
                 time: '11.15',
-                lastMessage: "Let's implement PrimeNG. Elevating our UI game! 🚀"
+                lastMessage: "Let's implement LibreNG UI. Elevating our UI game! 🚀"
             },
             {
                 image: 'https://www.primefaces.org/cdn/primevue/images/landing/apps/avatar2.png',
@@ -283,7 +283,7 @@ export class ChatApp {
                 active: true,
                 unreadMessageCount: 4,
                 time: '11.15',
-                lastMessage: "Absolutely! PrimeNG's documentation is gold—simplifies our UI work."
+                lastMessage: "Absolutely! LibreNG UI's documentation is gold—simplifies our UI work."
             },
             {
                 image: 'https://www.primefaces.org/cdn/primevue/images/landing/apps/avatar12.jpg',
@@ -292,7 +292,7 @@ export class ChatApp {
                 active: false,
                 unreadMessageCount: 0,
                 time: '11.15',
-                lastMessage: "Interesting! PrimeNG sounds amazing. What's your favorite feature?"
+                lastMessage: "Interesting! LibreNG UI sounds amazing. What's your favorite feature?"
             },
             {
                 image: 'https://www.primefaces.org/cdn/primevue/images/landing/apps/avatar13.jpg',
@@ -301,7 +301,7 @@ export class ChatApp {
                 active: true,
                 unreadMessageCount: 9,
                 time: '11.15',
-                lastMessage: 'Quick one, team! Anyone using PrimeNG for mobile app development?'
+                lastMessage: 'Quick one, team! Anyone using LibreNG UI for mobile app development?'
             },
             {
                 image: 'https://www.primefaces.org/cdn/primevue/images/landing/apps/avatar9.jpg',
@@ -310,7 +310,7 @@ export class ChatApp {
                 active: false,
                 unreadMessageCount: 0,
                 time: '11.15',
-                lastMessage: "Just explored PrimeNG's themes. Can we talk about those stunning designs? 😍"
+                lastMessage: "Just explored LibreNG UI's themes. Can we talk about those stunning designs? 😍"
             },
             {
                 image: 'https://www.primefaces.org/cdn/primevue/images/landing/apps/avatar6.png',
@@ -319,7 +319,7 @@ export class ChatApp {
                 active: false,
                 unreadMessageCount: 0,
                 time: '11.15',
-                lastMessage: 'PrimeNG is a game-changer, right? What are your thoughts, folks?'
+                lastMessage: 'LibreNG UI is a game-changer, right? What are your thoughts, folks?'
             },
             {
                 image: '',
@@ -328,7 +328,7 @@ export class ChatApp {
                 active: false,
                 unreadMessageCount: 0,
                 time: '11.15',
-                lastMessage: "Jumping in! PrimeNG's community forum is buzzing. Any engaging discussions?"
+                lastMessage: "Jumping in! LibreNG UI's community forum is buzzing. Any engaging discussions?"
             },
             {
                 image: '',
@@ -337,7 +337,7 @@ export class ChatApp {
                 active: false,
                 unreadMessageCount: 0,
                 time: '11.15',
-                lastMessage: 'Sharing a quick win-PrimeNG tutorials are leveling up my UI skills. 👩‍💻'
+                lastMessage: 'Sharing a quick win-LibreNG UI tutorials are leveling up my UI skills. 👩‍💻'
             },
             {
                 image: 'https://www.primefaces.org/cdn/primevue/images/landing/apps/avatar7.png',
@@ -346,7 +346,7 @@ export class ChatApp {
                 active: false,
                 unreadMessageCount: 0,
                 time: '11.15',
-                lastMessage: "Reflecting on PrimeNG's impact on our workflow. What's your take?"
+                lastMessage: "Reflecting on LibreNG UI's impact on our workflow. What's your take?"
             }
         ];
         this.chatMessages = [
@@ -366,7 +366,7 @@ export class ChatApp {
                 image: 'https://www.primefaces.org/cdn/primevue/images/landing/apps/avatar8.png',
                 capName: 'A',
                 type: 'received',
-                message: 'PrimeNG rocks! Simplifies UI dev with versatile components.'
+                message: 'LibreNG UI rocks! Simplifies UI dev with versatile components.'
             },
             {
                 id: 3,
@@ -483,7 +483,7 @@ export class ChatApp {
                 image: 'https://www.primefaces.org/cdn/primevue/images/landing/apps/avatar5.png',
                 capName: 'H',
                 type: 'sent',
-                message: "That's great advice. It's amazing how much detail and thought has gone into making PrimeNG such a powerful tool for developers."
+                message: "That's great advice. It's amazing how much detail and thought has gone into making LibreNG UI such a powerful tool for developers."
             }
         ];
         this.chatMedia = [

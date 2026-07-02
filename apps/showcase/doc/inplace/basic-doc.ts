@@ -1,7 +1,7 @@
 import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { InplaceModule } from 'primeng/inplace';
+import { InplaceModule } from '@libreng/ui/inplace';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -4,7 +4,7 @@ import { isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, effect, inject, OnInit, PLATFORM_ID } from '@angular/core';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { ChartModule } from 'primeng/chart';
+import { ChartModule } from '@libreng/ui/chart';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

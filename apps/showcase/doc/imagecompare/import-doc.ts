@@ -11,6 +11,6 @@ import { AppCodeModule } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ImageCompareModule } from 'primeng/imagecompare';`
+        typescript: `import { ImageCompareModule } from '@libreng/ui/imagecompare';`
     };
 }

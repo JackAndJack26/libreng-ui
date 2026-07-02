@@ -2,9 +2,9 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection, sig
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { By } from '@angular/platform-browser';
-import { SharedModule, TreeNode } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
-import { TreeSelectNodeCollapseEvent, TreeSelectNodeExpandEvent } from 'primeng/types/treeselect';
+import { SharedModule, TreeNode } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
+import { TreeSelectNodeCollapseEvent, TreeSelectNodeExpandEvent } from '@libreng/ui/types/treeselect';
 import { BehaviorSubject } from 'rxjs';
 import { TreeSelect, TreeSelectModule } from './treeselect';
 

@@ -22,15 +22,15 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { addClass, createElement, findSingle, isEmpty } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { Fluid } from 'primeng/fluid';
-import { SpinnerIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import type { ButtonIconTemplateContext, ButtonLoadingIconTemplateContext, ButtonPassThrough, ButtonProps, ButtonSeverity } from 'primeng/types/button';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { BadgeModule } from '@libreng/ui/badge';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { Fluid } from '@libreng/ui/fluid';
+import { SpinnerIcon } from '@libreng/ui/icons';
+import { Ripple } from '@libreng/ui/ripple';
+import type { ButtonIconTemplateContext, ButtonLoadingIconTemplateContext, ButtonPassThrough, ButtonProps, ButtonSeverity } from '@libreng/ui/types/button';
 import { ButtonStyle } from './style/buttonstyle';
 
 const BUTTON_INSTANCE = new InjectionToken<Button>('BUTTON_INSTANCE');

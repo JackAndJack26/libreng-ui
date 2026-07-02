@@ -1,8 +1,8 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, InjectionToken, NgModule, ViewEncapsulation } from '@angular/core';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { FluidPassThrough } from 'primeng/types/fluid';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { FluidPassThrough } from '@libreng/ui/types/fluid';
 import { FluidStyle } from './style/fluidstyle';
 
 const FLUID_INSTANCE = new InjectionToken<Fluid>('FLUID_INSTANCE');

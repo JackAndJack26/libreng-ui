@@ -1,9 +1,9 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { InputMaskModule } from 'primeng/inputmask';
-import { InputText } from 'primeng/inputtext';
-import { FloatLabelModule } from 'primeng/floatlabel';
+import { InputMaskModule } from '@libreng/ui/inputmask';
+import { InputText } from '@libreng/ui/inputtext';
+import { FloatLabelModule } from '@libreng/ui/floatlabel';
 import { AppCodeModule } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

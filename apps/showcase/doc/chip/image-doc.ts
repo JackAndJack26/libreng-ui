@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { ChipModule } from 'primeng/chip';
+import { ChipModule } from '@libreng/ui/chip';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

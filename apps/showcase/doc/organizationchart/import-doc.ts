@@ -11,6 +11,6 @@ import { AppCodeModule } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { OrganizationChartModule } from 'primeng/organizationchart';`
+        typescript: `import { OrganizationChartModule } from '@libreng/ui/organizationchart';`
     };
 }

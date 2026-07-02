@@ -4,8 +4,8 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { Customer } from '@/domain/customer';
 import { CustomerService } from '@/service/customerservice';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
+import { ButtonModule } from '@libreng/ui/button';
+import { TableModule } from '@libreng/ui/table';
 
 @Component({
     selector: 'paginatorprogrammatic-doc',

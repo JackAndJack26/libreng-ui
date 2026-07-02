@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
-import { ScrollTop, ScrollTopModule } from 'primeng/scrolltop';
+import { ScrollTop, ScrollTopModule } from '@libreng/ui/scrolltop';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

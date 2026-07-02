@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ScrollTopModule } from 'primeng/scrolltop';`
+        typescript: `import { ScrollTopModule } from '@libreng/ui/scrolltop';`
     };
 }

@@ -1,15 +1,15 @@
 {
-    "name": "@primeng/monorepo",
+    "name": "@libreng/monorepo",
     "version": "22.0.0",
-    "author": "PrimeTek Informatics",
-    "homepage": "https://primeng.org/",
+    "author": "LibreNG UI Contributors",
+    "homepage": "https://github.com/capivaramu/orbia-ui/",
     "repository": {
         "type": "git",
-        "url": "https://github.com/primefaces/primeng.git"
+        "url": "https://github.com/capivaramu/orbia-ui.git"
     },
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/primefaces/primeng/issues"
+        "url": "https://github.com/capivaramu/orbia-ui/issues"
     },
     "scripts": {
         "setup": "pnpm run clean && pnpm run init",
@@ -22,9 +22,9 @@
         "build": "cross-env NODE_ENV=production pnpm run build:check && pnpm run build:packages",
         "build:check": "pnpm run format:check && pnpm run security:check",
         "build:packages": "pnpm run build:lib && pnpm run build:themes && pnpm run build:mcp && pnpm run build:docs && pnpm run build:showcase",
-        "build:lib": "pnpm --filter primeng build",
-        "build:themes": "pnpm --filter themes build",
-        "build:mcp": "pnpm --filter mcp build",
+        "build:lib": "pnpm --filter @libreng/ui build",
+        "build:themes": "pnpm --filter @libreng/themes build",
+        "build:mcp": "pnpm --filter @libreng/mcp build",
         "build:showcase": "pnpm --filter showcase build",
         "build:docs": "pnpm --filter showcase build:docs",
         "dev": "pnpm --filter showcase start",
@@ -34,8 +34,8 @@
         "format:check": "prettier --check \"packages/**/*.{js,mjs,ts,mts,d.ts,html}\" \"apps/**/*.{js,mjs,ts,mts,d.ts,html}\"",
         "lint": "eslint --ext \".js,.mjs,.ts,.mts\" --ignore-path .gitignore . --cache",
         "lint:fix": "eslint --fix --ext \".js,.mjs,.ts,.mts\" --ignore-path .gitignore .",
-        "test:unit": "pnpm --filter primeng test:unit",
-        "test:coverage": "pnpm --filter primeng test:unit --code-coverage"
+        "test:unit": "pnpm --filter @libreng/ui test:unit",
+        "test:coverage": "pnpm --filter @libreng/ui test:unit --code-coverage"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "catalog:angular22",

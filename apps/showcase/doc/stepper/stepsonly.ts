@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
-import { StepperModule } from 'primeng/stepper';
+import { StepperModule } from '@libreng/ui/stepper';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

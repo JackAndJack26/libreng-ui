@@ -24,13 +24,13 @@ import {
 } from '@angular/core';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { isEmpty, setAttribute, uuid } from '@primeuix/utils';
-import { MessageService, PrimeTemplate, SharedModule, ToastMessageOptions } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesCircleIcon, TimesIcon } from 'primeng/icons';
-import { MotionModule } from 'primeng/motion';
-import { ToastCloseEvent, ToastHeadlessTemplateContext, ToastItemCloseEvent, ToastMessageTemplateContext, ToastPassThrough, ToastPositionType } from 'primeng/types/toast';
-import { ZIndexUtils } from 'primeng/utils';
+import { MessageService, PrimeTemplate, SharedModule, ToastMessageOptions } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { CheckIcon, ExclamationTriangleIcon, InfoCircleIcon, TimesCircleIcon, TimesIcon } from '@libreng/ui/icons';
+import { MotionModule } from '@libreng/ui/motion';
+import { ToastCloseEvent, ToastHeadlessTemplateContext, ToastItemCloseEvent, ToastMessageTemplateContext, ToastPassThrough, ToastPositionType } from '@libreng/ui/types/toast';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { Subscription } from 'rxjs';
 import { ToastStyle } from './style/toaststyle';
 

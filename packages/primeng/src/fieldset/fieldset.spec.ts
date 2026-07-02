@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, DebugElement, provideZonelessChange
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { providePrimeNG } from 'primeng/config';
-import { FieldsetAfterToggleEvent, FieldsetBeforeToggleEvent } from 'primeng/types/fieldset';
+import { providePrimeNG } from '@libreng/ui/config';
+import { FieldsetAfterToggleEvent, FieldsetBeforeToggleEvent } from '@libreng/ui/types/fieldset';
 import { Fieldset } from './fieldset';
 
 @Component({
@@ -1107,7 +1107,7 @@ describe('Fieldset', () => {
                 });
             });
 
-            it('should apply global PT configuration from PrimeNG config', () => {
+            it('should apply global PT configuration from LibreNG UI config', () => {
                 const globalFixture = TestBed.createComponent(TestGlobalPTComponent);
                 globalFixture.detectChanges();
 

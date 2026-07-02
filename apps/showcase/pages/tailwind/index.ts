@@ -12,7 +12,7 @@ import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
-    template: `<app-doc docTitle="Tailwind CSS - PrimeNG" header="Tailwind CSS" description="Integration between PrimeNG and Tailwind CSS." [docs]="docs" docType="page"></app-doc>`,
+    template: `<app-doc docTitle="Tailwind CSS - LibreNG UI" header="Tailwind CSS" description="Integration between LibreNG UI and Tailwind CSS." [docs]="docs" docType="page"></app-doc>`,
     standalone: true,
     imports: [AppDoc]
 })
@@ -46,7 +46,7 @@ export class TailwindDemo {
         {
             id: 'samples',
             label: 'Samples',
-            description: 'Example uses cases with PrimeNG and Tailwind CSS.',
+            description: 'Example uses cases with LibreNG UI and Tailwind CSS.',
             children: [
                 {
                     id: 'color-palette',

@@ -14,7 +14,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
                     is a world renowned vendor of popular UI Component suites including
                     <a href="https://primefaces.org" class="text-primary font-medium hover:underline"> PrimeFaces </a>
                     ,
-                    <a href="https://primeng.org" class="text-primary font-medium hover:underline"> PrimeNG </a>
+                    <a href="https://github.com/capivaramu/orbia-ui" class="text-primary font-medium hover:underline"> LibreNG UI </a>
                     ,
                     <a href="https://primereact.org" class="text-primary font-medium hover:underline"> PrimeReact </a>
                     and

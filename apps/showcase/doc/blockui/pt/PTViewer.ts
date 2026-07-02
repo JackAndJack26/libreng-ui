@@ -1,9 +1,9 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { BlockUIModule } from 'primeng/blockui';
-import { ButtonModule } from 'primeng/button';
-import { PanelModule } from 'primeng/panel';
+import { BlockUIModule } from '@libreng/ui/blockui';
+import { ButtonModule } from '@libreng/ui/button';
+import { PanelModule } from '@libreng/ui/panel';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

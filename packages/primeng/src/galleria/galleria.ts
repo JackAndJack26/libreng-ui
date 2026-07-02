@@ -26,17 +26,17 @@ import {
 } from '@angular/core';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { addClass, find, findSingle, focus, getAttribute, removeClass, setAttribute, uuid } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { blockBodyScroll, unblockBodyScroll } from 'primeng/dom';
-import { FocusTrap } from 'primeng/focustrap';
-import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, TimesIcon } from 'primeng/icons';
-import { MotionModule } from 'primeng/motion';
-import { Ripple } from 'primeng/ripple';
-import { VoidListener } from 'primeng/ts-helpers';
-import { GalleriaCaptionTemplateContext, GalleriaIndicatorTemplateContext, GalleriaItemTemplateContext, GalleriaPassThrough, GalleriaResponsiveOptions, GalleriaThumbnailTemplateContext } from 'primeng/types/galleria';
-import { ZIndexUtils } from 'primeng/utils';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { blockBodyScroll, unblockBodyScroll } from '@libreng/ui/dom';
+import { FocusTrap } from '@libreng/ui/focustrap';
+import { ChevronDownIcon, ChevronLeftIcon, ChevronRightIcon, ChevronUpIcon, TimesIcon } from '@libreng/ui/icons';
+import { MotionModule } from '@libreng/ui/motion';
+import { Ripple } from '@libreng/ui/ripple';
+import { VoidListener } from '@libreng/ui/ts-helpers';
+import { GalleriaCaptionTemplateContext, GalleriaIndicatorTemplateContext, GalleriaItemTemplateContext, GalleriaPassThrough, GalleriaResponsiveOptions, GalleriaThumbnailTemplateContext } from '@libreng/ui/types/galleria';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { GalleriaStyle } from './style/galleriastyle';
 
 const GALLERIA_INSTANCE = new InjectionToken<Galleria>('GALLERIA_INSTANCE');

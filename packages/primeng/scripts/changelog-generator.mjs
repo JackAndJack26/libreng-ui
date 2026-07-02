@@ -70,8 +70,8 @@ fs.readFile(tsvFilePath, 'utf8', (err, data) => {
 
     let changelogContent = '';
 
-    changelogContent += `## [${version}](https://github.com/primefaces/primeng/tree/${version}) (${today})\n`;
-    changelogContent += `[Full Changelog](https://github.com/primefaces/primeng/compare/${previousVersion}...${version})\n\n`;
+    changelogContent += `## [${version}](https://github.com/capivaramu/orbia-ui/tree/${version}) (${today})\n`;
+    changelogContent += `[Full Changelog](https://github.com/capivaramu/orbia-ui/compare/${previousVersion}...${version})\n\n`;
 
     if (changelogData[version].bugs.length > 0) {
         changelogContent += `**Fixed bugs:**\n`;

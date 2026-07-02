@@ -4,7 +4,7 @@ import { Code } from '@/domain/code';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@libreng/ui/button';
 
 interface City {
     name: string;
@@ -20,7 +20,7 @@ interface City {
         <app-docsectiontext>
             <p>
                 Unstyled components require styling using your preferred approach. We recommend using Tailwind CSS with PassThrough attributes, a combination that works seamlessly together. The <i>tailwindcss-primeui</i> even provides special
-                variants such as <i>p-outlined:</i>, <i>p-vertical</i> for the PrimeNG components.
+                variants such as <i>p-outlined:</i>, <i>p-vertical</i> for the LibreNG UI components.
             </p>
             <p>
                 The example below demonstrates how to style a button component with Tailwind CSS using PassThrough attributes. Before you begin, refer to the

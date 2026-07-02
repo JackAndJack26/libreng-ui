@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { KeyFilterModule } from 'primeng/keyfilter';
-import { TextareaModule } from 'primeng/textarea';
+import { KeyFilterModule } from '@libreng/ui/keyfilter';
+import { TextareaModule } from '@libreng/ui/textarea';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

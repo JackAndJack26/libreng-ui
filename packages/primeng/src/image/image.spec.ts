@@ -2,7 +2,7 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { SharedModule } from 'primeng/api';
+import { SharedModule } from '@libreng/ui/api';
 import { Image, ImageModule } from './image';
 
 // Using image paths from photoservice.ts to ensure consistency
@@ -971,7 +971,7 @@ describe('Image', () => {
             });
 
             it('should apply global PT configuration from PrimeNGConfig', async () => {
-                const { providePrimeNG } = await import('primeng/config');
+                const { providePrimeNG } = await import('@libreng/ui/config');
 
                 @Component({
                     changeDetection: ChangeDetectionStrategy.Eager,

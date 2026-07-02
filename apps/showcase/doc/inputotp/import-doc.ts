@@ -11,6 +11,6 @@ import { AppCodeModule } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { InputOtpModule } from 'primeng/inputotp';`
+        typescript: `import { InputOtpModule } from '@libreng/ui/inputotp';`
     };
 }

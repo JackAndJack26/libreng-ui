@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { style } from '@primeuix/styles/timeline';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const classes = {
     root: ({ instance }) => ['p-timeline p-component', 'p-timeline-' + instance.align, 'p-timeline-' + instance.layout],
@@ -25,7 +25,7 @@ export class TimelineStyle extends BaseStyle {
  *
  * Timeline visualizes a series of chained events.
  *
- * [Live Demo](https://primeng.org/timeline)
+ * [Live Demo](https://github.com/capivaramu/orbia-ui/timeline)
  *
  * @module timelinestyle
  *

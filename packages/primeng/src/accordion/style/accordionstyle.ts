@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as accordion_style } from '@primeuix/styles/accordion';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
 ${accordion_style}
 
-/* For PrimeNG */
+/* For LibreNG UI */
 .p-accordionheader-toggle-icon.icon-start {
     order: -1;
 }

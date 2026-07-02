@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, DebugElement, provideZonelessChange
 import { FormsModule, ReactiveFormsModule, FormControl, Validators } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { InputOtp, InputOtpChangeEvent } from './inputotp';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 
 // Temel test component'i
 @Component({

@@ -1,10 +1,10 @@
 import { booleanAttribute, computed, Directive, effect, HostListener, inject, InjectionToken, input, Input, NgModule } from '@angular/core';
 import { NgControl } from '@angular/forms';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseModelHolder } from 'primeng/basemodelholder';
-import { Bind } from 'primeng/bind';
-import { Fluid } from 'primeng/fluid';
-import { InputTextPassThrough } from 'primeng/types/inputtext';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseModelHolder } from '@libreng/ui/basemodelholder';
+import { Bind } from '@libreng/ui/bind';
+import { Fluid } from '@libreng/ui/fluid';
+import { InputTextPassThrough } from '@libreng/ui/types/inputtext';
 import { InputTextStyle } from './style/inputtextstyle';
 
 const INPUTTEXT_INSTANCE = new InjectionToken<InputText>('INPUTTEXT_INSTANCE');

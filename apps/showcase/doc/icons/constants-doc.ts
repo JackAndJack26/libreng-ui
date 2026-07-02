@@ -1,9 +1,9 @@
 import { Code } from '@/domain/code';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { MenuItem, PrimeIcons } from 'primeng/api';
+import { MenuItem, PrimeIcons } from '@libreng/ui/api';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
-import { MenuModule } from 'primeng/menu';
+import { MenuModule } from '@libreng/ui/menu';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -39,7 +39,7 @@ export class ConstantsDoc implements OnInit {
     code: Code = {
         typescript: `
 import { Component } from '@angular/core';
-import { PrimeIcons, MenuItem } from 'primeng/api';
+import { PrimeIcons, MenuItem } from '@libreng/ui/api';
 
 @Component({
     selector: 'prime-icons-constants-demo',

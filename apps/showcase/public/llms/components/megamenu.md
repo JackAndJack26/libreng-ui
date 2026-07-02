@@ -12,9 +12,9 @@ MegaMenu requires a collection of menuitems as its model .
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { MegaMenuModule } from 'primeng/megamenu';
-import { MegaMenuItem } from 'primeng/api';
-import { Table } from 'primeng/table';
+import { MegaMenuModule } from '@libreng/ui/megamenu';
+import { MegaMenuItem } from '@libreng/ui/api';
+import { Table } from '@libreng/ui/table';
 
 @Component({
     template: `
@@ -139,8 +139,8 @@ Menu items support navigation via routerLink, programmatic routing using command
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { MegaMenuModule } from 'primeng/megamenu';
-import { MegaMenuItem } from 'primeng/api';
+import { MegaMenuModule } from '@libreng/ui/megamenu';
+import { MegaMenuItem } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -207,11 +207,11 @@ Custom content can be placed between p-megamenu tags. Megamenu should be horizon
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { MegaMenuModule } from 'primeng/megamenu';
-import { RippleModule } from 'primeng/ripple';
-import { MegaMenuItem } from 'primeng/api';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { ButtonModule } from '@libreng/ui/button';
+import { MegaMenuModule } from '@libreng/ui/megamenu';
+import { RippleModule } from '@libreng/ui/ripple';
+import { MegaMenuItem } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -345,10 +345,10 @@ Layout of the MegaMenu is changed with the orientation property that accepts hor
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { MegaMenu, MegaMenuModule } from 'primeng/megamenu';
-import { MegaMenuItem } from 'primeng/api';
-import { Table } from 'primeng/table';
-import { MegaMenu } from 'primeng/megamenu';
+import { MegaMenu, MegaMenuModule } from '@libreng/ui/megamenu';
+import { MegaMenuItem } from '@libreng/ui/api';
+import { Table } from '@libreng/ui/table';
+import { MegaMenu } from '@libreng/ui/megamenu';
 
 @Component({
     template: `

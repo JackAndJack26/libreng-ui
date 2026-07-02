@@ -4,13 +4,13 @@ import { AppConfigService } from '@/service/appconfigservice';
 import { CustomerService } from '@/service/customerservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, Inject, PLATFORM_ID, ViewChild } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
-import { ProgressBar } from 'primeng/progressbar';
-import { Table, TableModule } from 'primeng/table';
-import { Tag } from 'primeng/tag';
+import { ButtonModule } from '@libreng/ui/button';
+import { IconField } from '@libreng/ui/iconfield';
+import { InputIcon } from '@libreng/ui/inputicon';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { ProgressBar } from '@libreng/ui/progressbar';
+import { Table, TableModule } from '@libreng/ui/table';
+import { Tag } from '@libreng/ui/tag';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -3,10 +3,10 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { NodeService } from '@/service/nodeservice';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { TreeNode } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { DialogModule } from 'primeng/dialog';
-import { TreeTableModule } from 'primeng/treetable';
+import { TreeNode } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { DialogModule } from '@libreng/ui/dialog';
+import { TreeTableModule } from '@libreng/ui/treetable';
 
 @Component({
     selector: 'flexiblescroll-doc',

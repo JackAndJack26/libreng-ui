@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { SelectButtonModule } from 'primeng/selectbutton';`
+        typescript: `import { SelectButtonModule } from '@libreng/ui/selectbutton';`
     };
 }

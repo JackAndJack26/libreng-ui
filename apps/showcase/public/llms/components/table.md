@@ -12,7 +12,7 @@ DataTable requires a collection to display along with column components for the 
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { Table, TableModule } from 'primeng/table';
+import { Table, TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -62,8 +62,8 @@ In-cell editing is enabled by adding pEditableColumn directive to an editable ce
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TableModule } from 'primeng/table';
-import { InputTextModule } from 'primeng/inputtext';
+import { TableModule } from '@libreng/ui/table';
+import { InputTextModule } from '@libreng/ui/inputtext';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -148,7 +148,7 @@ Multiple selection can also be handled using checkboxes by enabling the selectio
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -204,7 +204,7 @@ Columns can be grouped using rowspan and colspan properties.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { Product } from '@/domain/product';
 
 @Component({
@@ -342,7 +342,7 @@ Setting columnResizeMode as expand changes the table width as well.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -391,7 +391,7 @@ Columns can be resized using drag drop by setting the resizableColumns to true .
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -438,7 +438,7 @@ export class TableColumnresizefitmodeDemo implements OnInit {
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -487,11 +487,11 @@ Row selection with an element inside a column is implemented with templating.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
-import { ToastModule } from 'primeng/toast';
+import { ButtonModule } from '@libreng/ui/button';
+import { TableModule } from '@libreng/ui/table';
+import { ToastModule } from '@libreng/ui/toast';
 import { ProductService } from '@/service/productservice';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@libreng/ui/api';
 import { Product } from '@/domain/product';
 
 @Component({
@@ -551,8 +551,8 @@ This demo uses a multiselect component to implement toggleable columns.
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { TableModule } from 'primeng/table';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -617,11 +617,11 @@ Table has exclusive integration with contextmenu component. In order to attach a
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { ContextMenuModule } from 'primeng/contextmenu';
-import { Table, TableModule } from 'primeng/table';
-import { ToastModule } from 'primeng/toast';
+import { ContextMenuModule } from '@libreng/ui/contextmenu';
+import { Table, TableModule } from '@libreng/ui/table';
+import { ToastModule } from '@libreng/ui/toast';
 import { ProductService } from '@/service/productservice';
-import { MenuItem, MessageService } from 'primeng/api';
+import { MenuItem, MessageService } from '@libreng/ui/api';
 import { Product } from '@/domain/product';
 
 @Component({
@@ -689,16 +689,16 @@ DataTable with selection, pagination, filtering, sorting and templating.
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { SelectModule } from 'primeng/select';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { SliderModule } from 'primeng/slider';
-import { Table, TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from '@libreng/ui/button';
+import { SelectModule } from '@libreng/ui/select';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
+import { ProgressBarModule } from '@libreng/ui/progressbar';
+import { SliderModule } from '@libreng/ui/slider';
+import { Table, TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { InputTextModule } from '@libreng/ui/inputtext';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -934,7 +934,7 @@ Columns can be defined dynamically using the *ngFor directive.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -997,10 +997,10 @@ When expandableRowGroups is present in subheader based row grouping, groups can 
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { ButtonModule } from '@libreng/ui/button';
+import { RippleModule } from '@libreng/ui/ripple';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Country } from '@/domain/customer';
 
@@ -1112,8 +1112,8 @@ Table can export its data to CSV format.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
+import { ButtonModule } from '@libreng/ui/button';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -1185,16 +1185,16 @@ Filters are displayed in an overlay.
 ```typescript
 import { Component, OnInit, inject, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { SelectModule } from 'primeng/select';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { ProgressBarModule } from 'primeng/progressbar';
-import { SliderModule } from 'primeng/slider';
-import { Table, TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from '@libreng/ui/button';
+import { SelectModule } from '@libreng/ui/select';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
+import { ProgressBarModule } from '@libreng/ui/progressbar';
+import { SliderModule } from '@libreng/ui/slider';
+import { Table, TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { InputTextModule } from '@libreng/ui/inputtext';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -1415,13 +1415,13 @@ Data filtering is enabled by defining the filters property referring to a DataTa
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { Table, TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { InputTextModule } from 'primeng/inputtext';
+import { SelectModule } from '@libreng/ui/select';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
+import { Table, TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { InputTextModule } from '@libreng/ui/inputtext';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -1604,9 +1604,9 @@ Flex scroll feature makes the scrollable viewport section dynamic instead of a f
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { Dialog, DialogModule } from 'primeng/dialog';
-import { TableModule } from 'primeng/table';
+import { ButtonModule } from '@libreng/ui/button';
+import { Dialog, DialogModule } from '@libreng/ui/dialog';
+import { TableModule } from '@libreng/ui/table';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -1669,8 +1669,8 @@ Certain columns can be frozen by using the pFrozenColumn directive of the table 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TableModule } from 'primeng/table';
-import { ToggleButtonModule } from 'primeng/togglebutton';
+import { TableModule } from '@libreng/ui/table';
+import { ToggleButtonModule } from '@libreng/ui/togglebutton';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -1737,9 +1737,9 @@ Frozen rows are used to fix certain rows while scrolling, this data is defined w
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
-import { ButtonModule } from 'primeng/button';
-import { RippleModule } from 'primeng/ripple';
+import { TableModule } from '@libreng/ui/table';
+import { ButtonModule } from '@libreng/ui/button';
+import { RippleModule } from '@libreng/ui/ripple';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -1836,7 +1836,7 @@ Enabling showGridlines displays borders between cells.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -1885,7 +1885,7 @@ Horizontal scrollbar is displayed when table width exceeds the parent width.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -1961,7 +1961,7 @@ The loading property displays a mask layer to indicate busy state. Use the pagin
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -2010,8 +2010,8 @@ Skeleton component can be used as a placeholder during the loading process.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { SkeletonModule } from 'primeng/skeleton';
-import { TableModule } from 'primeng/table';
+import { SkeletonModule } from '@libreng/ui/skeleton';
+import { TableModule } from '@libreng/ui/table';
 import { Product } from '@/domain/product';
 
 @Component({
@@ -2055,7 +2055,7 @@ Multiple columns can be sorted by defining sortMode as multiple . This mode requ
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -2125,8 +2125,8 @@ More than one row is selectable by setting selectionMode to multiple . By defaul
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TableModule } from 'primeng/table';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
+import { TableModule } from '@libreng/ui/table';
+import { ToggleSwitchModule } from '@libreng/ui/toggleswitch';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -2181,7 +2181,7 @@ Pagination is enabled by setting paginator property to true and defining a rows 
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -2230,8 +2230,8 @@ Paginator can also be controlled via model using a binding to the first property
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { TableModule } from 'primeng/table';
+import { ButtonModule } from '@libreng/ui/button';
+import { TableModule } from '@libreng/ui/table';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -2322,7 +2322,7 @@ Defining a default sortField and sortOrder displays data as sorted initially in 
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -2399,23 +2399,23 @@ CRUD implementation example with a Dialog.
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { ConfirmDialogModule } from 'primeng/confirmdialog';
-import { Dialog, DialogModule } from 'primeng/dialog';
-import { SelectModule } from 'primeng/select';
-import { FileUploadModule } from 'primeng/fileupload';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { RatingModule } from 'primeng/rating';
-import { Table, TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { ToastModule } from 'primeng/toast';
-import { ToolbarModule } from 'primeng/toolbar';
-import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from '@libreng/ui/button';
+import { ConfirmDialogModule } from '@libreng/ui/confirmdialog';
+import { Dialog, DialogModule } from '@libreng/ui/dialog';
+import { SelectModule } from '@libreng/ui/select';
+import { FileUploadModule } from '@libreng/ui/fileupload';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { InputNumberModule } from '@libreng/ui/inputnumber';
+import { RadioButtonModule } from '@libreng/ui/radiobutton';
+import { RatingModule } from '@libreng/ui/rating';
+import { Table, TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { ToastModule } from '@libreng/ui/toast';
+import { ToolbarModule } from '@libreng/ui/toolbar';
+import { InputTextModule } from '@libreng/ui/inputtext';
 import { ProductService } from '@/service/productservice';
-import { MessageService, ConfirmationService } from 'primeng/api';
+import { MessageService, ConfirmationService } from '@libreng/ui/api';
 import { Product } from '@/domain/product';
 
 interface Column {
@@ -2766,7 +2766,7 @@ Single selection can also be handled using radio buttons.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -2820,9 +2820,9 @@ The removable sort can be implemented using the customSort property.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { Table, TableModule } from 'primeng/table';
+import { Table, TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
-import { SortEvent } from 'primeng/api';
+import { SortEvent } from '@libreng/ui/api';
 import { Product } from '@/domain/product';
 
 @Component({
@@ -2922,7 +2922,7 @@ Order of the columns and rows can be changed using drag and drop. Column reorder
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -2986,15 +2986,15 @@ Row editing toggles the visibility of all the editors in the row at once and pro
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { InputTextModule } from 'primeng/inputtext';
-import { RippleModule } from 'primeng/ripple';
+import { SelectModule } from '@libreng/ui/select';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { ToastModule } from '@libreng/ui/toast';
+import { ButtonModule } from '@libreng/ui/button';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { RippleModule } from '@libreng/ui/ripple';
 import { ProductService } from '@/service/productservice';
-import { SelectItem, MessageService } from 'primeng/api';
+import { SelectItem, MessageService } from '@libreng/ui/api';
 import { Product } from '@/domain/product';
 
 @Component({
@@ -3124,14 +3124,14 @@ Row expansion allows displaying detailed content for a particular row. To use th
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { RatingModule } from 'primeng/rating';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { ToastModule } from 'primeng/toast';
-import { RippleModule } from 'primeng/ripple';
+import { ButtonModule } from '@libreng/ui/button';
+import { RatingModule } from '@libreng/ui/rating';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { ToastModule } from '@libreng/ui/toast';
+import { RippleModule } from '@libreng/ui/ripple';
 import { ProductService } from '@/service/productservice';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@libreng/ui/api';
 import { Product } from '@/domain/product';
 import { Customer } from '@/domain/customer';
 
@@ -3311,8 +3311,8 @@ When rowGroupMode is configured to be rowspan , the grouping column spans multip
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -3414,10 +3414,10 @@ Table provides onRowSelect and onRowUnselect events to listen selection events.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
-import { ToastModule } from 'primeng/toast';
+import { TableModule } from '@libreng/ui/table';
+import { ToastModule } from '@libreng/ui/toast';
 import { ProductService } from '@/service/productservice';
-import { MessageService } from 'primeng/api';
+import { MessageService } from '@libreng/ui/api';
 import { Product } from '@/domain/product';
 
 @Component({
@@ -3476,7 +3476,7 @@ A column can be made sortable by adding the pSortableColumn directive whose valu
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -3546,8 +3546,8 @@ Single row selection is enabled by defining selectionMode as single along with a
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TableModule } from 'primeng/table';
-import { ToggleSwitchModule } from 'primeng/toggleswitch';
+import { TableModule } from '@libreng/ui/table';
+import { ToggleSwitchModule } from '@libreng/ui/toggleswitch';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -3603,8 +3603,8 @@ In addition to a regular table, alternatives with alternative sizes are availabl
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { TableModule } from 'primeng/table';
+import { SelectButtonModule } from '@libreng/ui/selectbutton';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -3663,11 +3663,11 @@ Stateful table allows keeping the state such as page, sort and filtering either 
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { IconFieldModule } from 'primeng/iconfield';
-import { InputIconModule } from 'primeng/inputicon';
-import { Table, TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { InputTextModule } from 'primeng/inputtext';
+import { IconFieldModule } from '@libreng/ui/iconfield';
+import { InputIconModule } from '@libreng/ui/inputicon';
+import { Table, TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { InputTextModule } from '@libreng/ui/inputtext';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -3794,7 +3794,7 @@ Alternating rows are displayed when stripedRows property is present.
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -3941,8 +3941,8 @@ Rows are grouped with the groupRowsBy property. When rowGroupMode is set as subh
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Country } from '@/domain/customer';
 
@@ -4057,10 +4057,10 @@ Custom content at header , body and footer sections are supported via templating
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { RatingModule } from 'primeng/rating';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { ButtonModule } from '@libreng/ui/button';
+import { RatingModule } from '@libreng/ui/rating';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
 import { ProductService } from '@/service/productservice';
 import { Product } from '@/domain/product';
 
@@ -4149,7 +4149,7 @@ export class TableTemplateDemo implements OnInit {
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { TableModule } from 'primeng/table';
+import { TableModule } from '@libreng/ui/table';
 import { CustomerService } from '@/service/customerservice';
 import { Customer, Representative, Country } from '@/domain/customer';
 
@@ -4198,7 +4198,7 @@ Virtual Scrolling is an efficient way to render large amount data. Usage is simi
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { Table, TableModule } from 'primeng/table';
+import { Table, TableModule } from '@libreng/ui/table';
 import { CarService } from '@/service/carservice';
 import { Car } from '@/domain/car';
 
@@ -4258,10 +4258,10 @@ VirtualScroller is a performance-approach to handle huge data efficiently. Setti
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { SkeletonModule } from 'primeng/skeleton';
-import { TableModule } from 'primeng/table';
+import { SkeletonModule } from '@libreng/ui/skeleton';
+import { TableModule } from '@libreng/ui/table';
 import { CarService } from '@/service/carservice';
-import { TableLazyLoadEvent } from 'primeng/api';
+import { TableLazyLoadEvent } from '@libreng/ui/api';
 import { Car } from '@/domain/car';
 
 interface Column {

@@ -5,9 +5,9 @@ import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { RatingModule } from 'primeng/rating';
-import { TableModule } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
+import { RatingModule } from '@libreng/ui/rating';
+import { TableModule } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
 
 interface Column {
     field: string;

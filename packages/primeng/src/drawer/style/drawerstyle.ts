@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as drawer_style } from '@primeuix/styles/drawer';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
 ${drawer_style}
 
-/** For PrimeNG **/
+/** For LibreNG UI **/
 .p-drawer {
     position: fixed;
 }

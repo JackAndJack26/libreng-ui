@@ -31,34 +31,34 @@ import {
 import { FormsModule } from '@angular/forms';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { absolutePosition, addStyle, appendChild, find, findSingle, getAttribute, isClickable, setAttribute } from '@primeuix/utils';
-import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, LazyLoadMeta, OverlayService, PrimeTemplate, ScrollerOptions, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from 'primeng/api';
-import { BadgeModule } from 'primeng/badge';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { Button, ButtonModule } from 'primeng/button';
-import { CheckboxChangeEvent, CheckboxModule } from 'primeng/checkbox';
-import { DatePickerModule } from 'primeng/datepicker';
-import { ConnectedOverlayScrollHandler, DomHandler } from 'primeng/dom';
-import { ArrowDownIcon } from 'primeng/icons/arrowdown';
-import { ArrowUpIcon } from 'primeng/icons/arrowup';
-import { FilterIcon } from 'primeng/icons/filter';
-import { FilterFillIcon } from 'primeng/icons/filterfill';
-import { FilterSlashIcon } from 'primeng/icons/filterslash';
-import { PlusIcon } from 'primeng/icons/plus';
-import { SortAltIcon } from 'primeng/icons/sortalt';
-import { SortAmountDownIcon } from 'primeng/icons/sortamountdown';
-import { SortAmountUpAltIcon } from 'primeng/icons/sortamountupalt';
-import { SpinnerIcon } from 'primeng/icons/spinner';
-import { TrashIcon } from 'primeng/icons/trash';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { InputTextModule } from 'primeng/inputtext';
-import { MotionModule } from 'primeng/motion';
-import { PaginatorModule } from 'primeng/paginator';
-import { RadioButton, RadioButtonClickEvent, RadioButtonModule } from 'primeng/radiobutton';
-import { Scroller, ScrollerModule } from 'primeng/scroller';
-import { SelectModule } from 'primeng/select';
-import { SelectButtonModule } from 'primeng/selectbutton';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
+import { BlockableUI, FilterMatchMode, FilterMetadata, FilterOperator, FilterService, LazyLoadMeta, OverlayService, PrimeTemplate, ScrollerOptions, SelectItem, SharedModule, SortMeta, TableState, TranslationKeys } from '@libreng/ui/api';
+import { BadgeModule } from '@libreng/ui/badge';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { Button, ButtonModule } from '@libreng/ui/button';
+import { CheckboxChangeEvent, CheckboxModule } from '@libreng/ui/checkbox';
+import { DatePickerModule } from '@libreng/ui/datepicker';
+import { ConnectedOverlayScrollHandler, DomHandler } from '@libreng/ui/dom';
+import { ArrowDownIcon } from '@libreng/ui/icons/arrowdown';
+import { ArrowUpIcon } from '@libreng/ui/icons/arrowup';
+import { FilterIcon } from '@libreng/ui/icons/filter';
+import { FilterFillIcon } from '@libreng/ui/icons/filterfill';
+import { FilterSlashIcon } from '@libreng/ui/icons/filterslash';
+import { PlusIcon } from '@libreng/ui/icons/plus';
+import { SortAltIcon } from '@libreng/ui/icons/sortalt';
+import { SortAmountDownIcon } from '@libreng/ui/icons/sortamountdown';
+import { SortAmountUpAltIcon } from '@libreng/ui/icons/sortamountupalt';
+import { SpinnerIcon } from '@libreng/ui/icons/spinner';
+import { TrashIcon } from '@libreng/ui/icons/trash';
+import { InputNumberModule } from '@libreng/ui/inputnumber';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { MotionModule } from '@libreng/ui/motion';
+import { PaginatorModule } from '@libreng/ui/paginator';
+import { RadioButton, RadioButtonClickEvent, RadioButtonModule } from '@libreng/ui/radiobutton';
+import { Scroller, ScrollerModule } from '@libreng/ui/scroller';
+import { SelectModule } from '@libreng/ui/select';
+import { SelectButtonModule } from '@libreng/ui/selectbutton';
+import { Nullable, VoidListener } from '@libreng/ui/ts-helpers';
 import {
     ColumnFilterPassThrough,
     ExportCSVOptions,
@@ -80,8 +80,8 @@ import {
     TableRowSelectEvent,
     TableRowUnSelectEvent,
     TableSelectAllChangeEvent
-} from 'primeng/types/table';
-import { ObjectUtils, UniqueComponentId, ZIndexUtils } from 'primeng/utils';
+} from '@libreng/ui/types/table';
+import { ObjectUtils, UniqueComponentId, ZIndexUtils } from '@libreng/ui/utils';
 import { Subject, Subscription } from 'rxjs';
 import { TableStyle } from './style/tablestyle';
 

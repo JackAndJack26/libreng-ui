@@ -1,15 +1,15 @@
 import { isPlatformBrowser } from '@angular/common';
 import { booleanAttribute, computed, Directive, effect, ElementRef, inject, InjectionToken, input, Input, NgModule, NgZone, numberAttribute, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
 import { appendChild, createElement, fadeIn, findSingle, getOuterHeight, getOuterWidth, getViewport, getWindowScrollLeft, getWindowScrollTop, hasClass, removeChild, uuid } from '@primeuix/utils';
-import { TooltipOptions } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BindModule } from 'primeng/bind';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { Nullable } from 'primeng/ts-helpers';
-import { TooltipPassThroughOptions } from 'primeng/types/tooltip';
-import { ZIndexUtils } from 'primeng/utils';
+import { TooltipOptions } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BindModule } from '@libreng/ui/bind';
+import { ConnectedOverlayScrollHandler } from '@libreng/ui/dom';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import { TooltipPassThroughOptions } from '@libreng/ui/types/tooltip';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { TooltipStyle } from './style/tooltipstyle';
-import type { TooltipPassThrough } from 'primeng/types/tooltip';
+import type { TooltipPassThrough } from '@libreng/ui/types/tooltip';
 
 const TOOLTIP_INSTANCE = new InjectionToken<Tooltip>('TOOLTIP_INSTANCE');
 

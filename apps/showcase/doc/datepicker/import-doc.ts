@@ -11,6 +11,6 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { DatePickerModule } from 'primeng/datepicker';`
+        typescript: `import { DatePickerModule } from '@libreng/ui/datepicker';`
     };
 }

@@ -20,16 +20,16 @@ import {
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { focus, getFirstFocusableElement, uuid } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseEditableHolder } from 'primeng/baseeditableholder';
-import { Bind } from 'primeng/bind';
-import { BindModule } from 'primeng/bind';
-import { StarFillIcon, StarIcon } from 'primeng/icons';
-import { Nullable } from 'primeng/ts-helpers';
-import { RatingIconTemplateContext, RatingPassThrough } from 'primeng/types/rating';
-import type { RatingRateEvent } from 'primeng/types/rating';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';
+import { Bind } from '@libreng/ui/bind';
+import { BindModule } from '@libreng/ui/bind';
+import { StarFillIcon, StarIcon } from '@libreng/ui/icons';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import { RatingIconTemplateContext, RatingPassThrough } from '@libreng/ui/types/rating';
+import type { RatingRateEvent } from '@libreng/ui/types/rating';
 import { RatingStyle } from './style/ratingstyle';
 
 const RATING_INSTANCE = new InjectionToken<Rating>('RATING_INSTANCE');

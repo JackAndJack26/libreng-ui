@@ -1,7 +1,7 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { FileUploadModule } from 'primeng/fileupload';
+import { FileUploadModule } from '@libreng/ui/fileupload';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

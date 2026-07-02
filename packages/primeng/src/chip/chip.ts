@@ -17,11 +17,11 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { TimesCircleIcon } from 'primeng/icons';
-import { ChipProps, ChipPassThrough } from 'primeng/types/chip';
+import { PrimeTemplate, SharedModule, TranslationKeys } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { TimesCircleIcon } from '@libreng/ui/icons';
+import { ChipProps, ChipPassThrough } from '@libreng/ui/types/chip';
 import { ChipStyle } from './style/chipstyle';
 
 const CHIP_INSTANCE = new InjectionToken<Chip>('CHIP_INSTANCE');

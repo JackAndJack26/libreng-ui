@@ -28,16 +28,16 @@ import {
 } from '@angular/core';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { absolutePosition, addClass, appendChild, findSingle, focus, getOffset, isIOS, isTouchDevice } from '@primeuix/utils';
-import { Confirmation, ConfirmationService, OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { ButtonModule } from 'primeng/button';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { FocusTrap } from 'primeng/focustrap';
-import { MotionModule } from 'primeng/motion';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { ConfirmPopupContentTemplateContext, ConfirmPopupHeadlessTemplateContext, ConfirmPopupPassThrough } from 'primeng/types/confirmpopup';
-import { ZIndexUtils } from 'primeng/utils';
+import { Confirmation, ConfirmationService, OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { ButtonModule } from '@libreng/ui/button';
+import { ConnectedOverlayScrollHandler } from '@libreng/ui/dom';
+import { FocusTrap } from '@libreng/ui/focustrap';
+import { MotionModule } from '@libreng/ui/motion';
+import { Nullable, VoidListener } from '@libreng/ui/ts-helpers';
+import { ConfirmPopupContentTemplateContext, ConfirmPopupHeadlessTemplateContext, ConfirmPopupPassThrough } from '@libreng/ui/types/confirmpopup';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { Subscription } from 'rxjs';
 import { ConfirmPopupStyle } from './style/confirmpopupstyle';
 

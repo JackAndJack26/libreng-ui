@@ -1,9 +1,9 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { BlockUIModule } from 'primeng/blockui';
-import { ButtonModule } from 'primeng/button';
-import { PanelModule } from 'primeng/panel';
+import { BlockUIModule } from '@libreng/ui/blockui';
+import { ButtonModule } from '@libreng/ui/button';
+import { PanelModule } from '@libreng/ui/panel';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

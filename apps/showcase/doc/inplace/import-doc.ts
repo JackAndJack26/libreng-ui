@@ -11,6 +11,6 @@ import { AppCodeModule } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { InplaceModule } from 'primeng/inplace';`
+        typescript: `import { InplaceModule } from '@libreng/ui/inplace';`
     };
 }

@@ -3,7 +3,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { Product } from '@/domain/product';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { DragDropModule } from 'primeng/dragdrop';
+import { DragDropModule } from '@libreng/ui/dragdrop';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

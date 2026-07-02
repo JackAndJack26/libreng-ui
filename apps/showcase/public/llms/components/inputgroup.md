@@ -13,10 +13,10 @@ A group is created by wrapping the input and add-ons with the p-inputgroup compo
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { SelectModule } from 'primeng/select';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputNumberModule } from 'primeng/inputnumber';
-import { InputTextModule } from 'primeng/inputtext';
+import { SelectModule } from '@libreng/ui/select';
+import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { InputNumberModule } from '@libreng/ui/inputnumber';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 interface City {
     name: string;
@@ -67,11 +67,11 @@ Buttons can be placed at either side of an input element.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { MenuModule } from 'primeng/menu';
-import { InputTextModule } from 'primeng/inputtext';
-import { MenuItem } from 'primeng/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { MenuModule } from '@libreng/ui/menu';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { MenuItem } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -117,10 +117,10 @@ Checkbox and RadioButton components can be combined with an input element under 
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CheckboxModule } from 'primeng/checkbox';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { RadioButtonModule } from 'primeng/radiobutton';
-import { InputTextModule } from 'primeng/inputtext';
+import { CheckboxModule } from '@libreng/ui/checkbox';
+import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { RadioButtonModule } from '@libreng/ui/radiobutton';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     template: `
@@ -158,9 +158,9 @@ FloatLabel visually integrates a label with its form element. Visit FloatLabel d
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { FloatLabelModule } from 'primeng/floatlabel';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputTextModule } from 'primeng/inputtext';
+import { FloatLabelModule } from '@libreng/ui/floatlabel';
+import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     template: `
@@ -208,9 +208,9 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { IftaLabelModule } from 'primeng/iftalabel';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputNumberModule } from 'primeng/inputnumber';
+import { IftaLabelModule } from '@libreng/ui/iftalabel';
+import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { InputNumberModule } from '@libreng/ui/inputnumber';
 
 @Component({
     template: `
@@ -240,8 +240,8 @@ Multiple add-ons can be placed inside the same group.
 
 ```typescript
 import { Component } from '@angular/core';
-import { InputGroupModule } from 'primeng/inputgroup';
-import { InputTextModule } from 'primeng/inputtext';
+import { InputGroupModule } from '@libreng/ui/inputgroup';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     template: `

@@ -26,13 +26,13 @@ import {
 import { RouterModule } from '@angular/router';
 import { MotionOptions } from '@primeuix/motion';
 import { equals, findLast, findSingle, focus, getAttribute, isEmpty, isNotEmpty, isPrintableCharacter, resolve, uuid } from '@primeuix/utils';
-import { MenuItem, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { ChevronDownIcon, ChevronRightIcon } from 'primeng/icons';
-import { MotionModule } from 'primeng/motion';
-import { TooltipModule } from 'primeng/tooltip';
-import { PanelMenuItemTemplateContext, PanelMenuPassThrough } from 'primeng/types/panelmenu';
+import { MenuItem, PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { ChevronDownIcon, ChevronRightIcon } from '@libreng/ui/icons';
+import { MotionModule } from '@libreng/ui/motion';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { PanelMenuItemTemplateContext, PanelMenuPassThrough } from '@libreng/ui/types/panelmenu';
 import { PanelMenuStyle } from './style/panelmenustyle';
 
 const PANELMENU_INSTANCE = new InjectionToken<PanelMenu>('PANELMENU_INSTANCE');

@@ -23,15 +23,15 @@ import {
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
 import { getSelection } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { AutoFocus } from 'primeng/autofocus';
-import { PARENT_INSTANCE } from 'primeng/basecomponent';
-import { BaseInput } from 'primeng/baseinput';
-import { Bind, BindModule } from 'primeng/bind';
-import { AngleDownIcon, AngleUpIcon, TimesIcon } from 'primeng/icons';
-import { InputText } from 'primeng/inputtext';
-import { Nullable } from 'primeng/ts-helpers';
-import type { InputNumberInputEvent, InputNumberPassThrough } from 'primeng/types/inputnumber';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { AutoFocus } from '@libreng/ui/autofocus';
+import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { BaseInput } from '@libreng/ui/baseinput';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { AngleDownIcon, AngleUpIcon, TimesIcon } from '@libreng/ui/icons';
+import { InputText } from '@libreng/ui/inputtext';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import type { InputNumberInputEvent, InputNumberPassThrough } from '@libreng/ui/types/inputnumber';
 import { InputNumberStyle } from './style/inputnumberstyle';
 
 const INPUTNUMBER_INSTANCE = new InjectionToken<InputNumber>('INPUTNUMBER_INSTANCE');

@@ -24,16 +24,16 @@ import {
 import { SafeUrl } from '@angular/platform-browser';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { appendChild, focus } from '@primeuix/utils';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { blockBodyScroll, unblockBodyScroll } from 'primeng/dom';
-import { FocusTrap } from 'primeng/focustrap';
-import { EyeIcon, RefreshIcon, SearchMinusIcon, SearchPlusIcon, TimesIcon, UndoIcon } from 'primeng/icons';
-import { MotionModule } from 'primeng/motion';
-import { Nullable } from 'primeng/ts-helpers';
-import { ImageImageTemplateContext, ImagePassThrough, ImagePreviewTemplateContext } from 'primeng/types/image';
-import { ZIndexUtils } from 'primeng/utils';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { blockBodyScroll, unblockBodyScroll } from '@libreng/ui/dom';
+import { FocusTrap } from '@libreng/ui/focustrap';
+import { EyeIcon, RefreshIcon, SearchMinusIcon, SearchPlusIcon, TimesIcon, UndoIcon } from '@libreng/ui/icons';
+import { MotionModule } from '@libreng/ui/motion';
+import { Nullable } from '@libreng/ui/ts-helpers';
+import { ImageImageTemplateContext, ImagePassThrough, ImagePreviewTemplateContext } from '@libreng/ui/types/image';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { ImageStyle } from './style/imagestyle';
 
 const IMAGE_INSTANCE = new InjectionToken<Image>('IMAGE_INSTANCE');

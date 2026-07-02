@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { FormsModule, FormControl, FormGroup, Validators, ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { InputMask, InputMaskModule, InputMaskDirective } from './inputmask';
-import { SharedModule } from 'primeng/api';
+import { SharedModule } from '@libreng/ui/api';
 import { CommonModule } from '@angular/common';
 
 // Test Components

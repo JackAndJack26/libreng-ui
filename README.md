@@ -1,27 +1,39 @@
-# PrimeNG
+# LibreNG UI
 
-### The next chapter has begun.
+**LibreNG UI** is an open source (MIT) UI component library for Angular — 80+ rich components, themes, and a documentation showcase.
 
-After years as an open source library, PrimeNG enters its next chapter as part of **PrimeUI**,  a sustainable foundation for the libraries you rely on.
+It is a community-maintained fork of [PrimeNG](https://github.com/primefaces/primeng) v21, the last version released by PrimeTek under the MIT license, migrated to **Angular 22** and **TypeScript 6**. PrimeNG and the Prime brand belong to PrimeTek Informatics; this project is not affiliated with or endorsed by PrimeTek.
 
-This repository is now **archived**. It remains available, as a record of everything built here together.
+## Packages
 
-## What this means
+| Package | Description |
+|---|---|
+| `@libreng/ui` | The component library (80+ Angular components) |
+| `@libreng/themes` | Theme presets (Aura, Lara, Nora, Material) |
+| `@libreng/mcp` | Model Context Protocol server for the library |
 
-**Existing MIT versions remain MIT, forever.**
-Every release published under the MIT license stays exactly as it is. Your existing projects are unaffected. Nothing is taken away.
+## Requirements
 
-**Development continues at a new home.**
-Active development, new releases, and everything ahead now live under PrimeUI.
+- Node.js `>= 22.22.3`
+- pnpm `9.x` (this is a pnpm workspace — npm/yarn will not work)
 
-➡️ **Read the announcement:** [primeui.dev/nextchapter](https://primeui.dev/nextchapter)
+## Development
 
-➡️ **The journey continues at:** [primeng.dev](https://primeng.dev)
+```bash
+pnpm install          # install all workspace dependencies
+pnpm dev              # run the showcase at http://localhost:4200
+pnpm run build:lib    # build @libreng/ui into packages/primeng/dist
+pnpm run test:unit    # run the unit test suite
+```
 
-## Thank you
+## Usage
 
-To everyone who used PrimeNG, filed an issue, opened a pull request, answered a question, or simply built something with it,  thank you. This library reached hundreds of millions of downloads because of you.
+```ts
+import { ButtonModule } from '@libreng/ui/button';
+```
 
-This archive stays here as a thank you and a milestone. The next chapter is just beginning, and we hope you'll be part of it.
+Component selectors and APIs are unchanged from PrimeNG v21 (`p-button`, `providePrimeNG`, ...), so migrating an existing PrimeNG v21 app is a matter of swapping the package name and import paths.
 
-— The PrimeTek Team
+## License
+
+MIT — see [LICENSE.md](./LICENSE.md). Based on PrimeNG, Copyright (c) 2016-2026 PrimeTek.

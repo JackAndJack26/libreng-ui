@@ -17,7 +17,7 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class FilterModeDoc {
     code: Code = {
-        typescript: `import { PrimeNGConfig } from 'primeng/api';
+        typescript: `import { PrimeNGConfig } from '@libreng/ui/api';
 
 @Component({
     selector: 'app-root',

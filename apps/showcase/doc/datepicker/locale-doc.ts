@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
         <app-docsectiontext>
             <p>
                 Locale for different languages and formats is defined globally, refer to the
-                <a href="/configuration/#locale">PrimeNG Locale</a> configuration for more information.
+                <a href="/configuration/#locale">LibreNG UI Locale</a> configuration for more information.
             </p>
         </app-docsectiontext>
     `

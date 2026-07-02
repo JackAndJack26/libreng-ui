@@ -112,7 +112,7 @@ export class PoseidonPage {
             height: 1788,
             description: `Poseidon uses Figma as the design tool. It will be possible to download the Figma file after your purchase.
                     You can <a href="https://www.figma.com/design/lRgoOE0jsHoL20okFMM5xT/Preview-%7C-Poseidon-%7C%C2%A02.0.0?node-id=0-1&t=Co2AkDgjOnN425Tz-1" target="_blank" rel="noopener noreferrer">preview the Figma file</a> the Figma file before the purchase.
-                    Note that PrimeNG UI components are excluded from the
+                    Note that LibreNG UI UI components are excluded from the
                     Avalon Figma file as they are available in <a href="/uikit">PrimeOne for Figma</a> only.`,
             src: 'https://primefaces.org/cdn/primeng/images/templates/poseidon/nextgen/poseidon-figma.png'
         }

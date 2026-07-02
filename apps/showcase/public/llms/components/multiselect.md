@@ -13,7 +13,7 @@ MultiSelect is used as a controlled component with ngModel property along with a
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -52,7 +52,7 @@ Selected values are displayed as a comma separated list by default, setting disp
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -91,7 +91,7 @@ When showClear is enabled, a clear icon is displayed to clear the value.
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -130,7 +130,7 @@ When disabled is present, the element cannot be edited and focused.
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -169,7 +169,7 @@ Specify the variant property as filled to display the component with a higher vi
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -208,7 +208,7 @@ MultiSelect provides built-in filtering that is enabled by adding the filter pro
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -247,8 +247,8 @@ A floating label appears on top of the input field when focused. Visit FloatLabe
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { FloatLabelModule } from 'primeng/floatlabel';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { FloatLabelModule } from '@libreng/ui/floatlabel';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -300,7 +300,7 @@ The fluid prop makes the component take up the full width of its container when 
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -339,8 +339,8 @@ Options can be grouped when a nested data structures is provided.
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { SelectItemGroup } from 'primeng/api';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
+import { SelectItemGroup } from '@libreng/ui/api';
 
 interface City {
     name: string;
@@ -411,8 +411,8 @@ IftaLabel is used to create infield top aligned labels. Visit IftaLabel document
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { IftaLabelModule } from 'primeng/iftalabel';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { IftaLabelModule } from '@libreng/ui/iftalabel';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -454,7 +454,7 @@ The invalid state is applied using the ⁠invalid property to indicate failed va
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -487,7 +487,7 @@ Loading state can be used loading property.
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -526,11 +526,11 @@ MultiSelect can also be used with reactive forms. In this case, the formControlN
 ```typescript
 import { Component, inject } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { MessageModule } from 'primeng/message';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { MessageService } from 'primeng/api';
+import { MessageModule } from '@libreng/ui/message';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
+import { ToastModule } from '@libreng/ui/toast';
+import { ButtonModule } from '@libreng/ui/button';
+import { MessageService } from '@libreng/ui/api';
 
 interface City {
     name: string;
@@ -592,7 +592,7 @@ MultiSelect provides small and large sizes as alternatives to the base.
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 interface City {
     name: string;
@@ -635,8 +635,8 @@ Available options and the selected options support customization with item and s
 ```typescript
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { ButtonModule } from 'primeng/button';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { ButtonModule } from '@libreng/ui/button';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 import { Country } from '@/domain/customer';
 
 interface Country {
@@ -701,11 +701,11 @@ export class MultiselectTemplateDemo implements OnInit {
 ```typescript
 import { Component, inject } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MessageModule } from 'primeng/message';
-import { MultiSelectModule } from 'primeng/multiselect';
-import { ToastModule } from 'primeng/toast';
-import { ButtonModule } from 'primeng/button';
-import { MessageService } from 'primeng/api';
+import { MessageModule } from '@libreng/ui/message';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
+import { ToastModule } from '@libreng/ui/toast';
+import { ButtonModule } from '@libreng/ui/button';
+import { MessageService } from '@libreng/ui/api';
 
 interface City {
     name: string;
@@ -764,7 +764,7 @@ VirtualScrolling is an efficient way of rendering the options by displaying a sm
 ```typescript
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MultiSelectModule } from 'primeng/multiselect';
+import { MultiSelectModule } from '@libreng/ui/multiselect';
 
 @Component({
     template: `

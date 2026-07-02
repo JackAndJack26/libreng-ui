@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ScrollerModule } from 'primeng/scroller';`
+        typescript: `import { ScrollerModule } from '@libreng/ui/scroller';`
     };
 }

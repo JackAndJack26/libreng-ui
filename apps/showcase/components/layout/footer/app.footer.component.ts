@@ -7,7 +7,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     template: `
         <div class="layout-footer">
             <div>
-                <span>PrimeNG {{ version }} by </span>
+                <span>LibreNG UI {{ version }} by </span>
                 <a href="https://www.primetek.com.tr">PrimeTek</a>
             </div>
         </div>

@@ -2,8 +2,8 @@ import { CountryService } from '@/service/countryservice';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
-import { AutoCompleteModule } from 'primeng/autocomplete';
-import { ButtonModule } from 'primeng/button';
+import { AutoCompleteModule } from '@libreng/ui/autocomplete';
+import { ButtonModule } from '@libreng/ui/button';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
 

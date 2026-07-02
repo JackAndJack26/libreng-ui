@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
 import { RouterTestingModule } from '@angular/router/testing';
-import { MenuItem, SharedModule } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
+import { MenuItem, SharedModule } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
 import { Dock } from './dock';
 
 @Component({
@@ -1328,7 +1328,7 @@ describe('Dock', () => {
                 });
             });
 
-            it('should apply global PT configuration from PrimeNG config', async () => {
+            it('should apply global PT configuration from LibreNG UI config', async () => {
                 const globalFixture = TestBed.createComponent(TestGlobalPTComponent);
                 globalFixture.changeDetectorRef.markForCheck();
                 await globalFixture.whenStable();

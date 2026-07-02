@@ -3,8 +3,8 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { IconField } from './iconfield';
-import { InputIcon } from 'primeng/inputicon';
-import { providePrimeNG } from 'primeng/config';
+import { InputIcon } from '@libreng/ui/inputicon';
+import { providePrimeNG } from '@libreng/ui/config';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

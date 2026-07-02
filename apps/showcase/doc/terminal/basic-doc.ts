@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
-import { TerminalService } from 'primeng/terminal';
-import { TerminalModule } from 'primeng/terminal';
+import { TerminalService } from '@libreng/ui/terminal';
+import { TerminalModule } from '@libreng/ui/terminal';
 import { Subscription } from 'rxjs';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
@@ -16,7 +16,7 @@ import { AppCode } from '@/components/doc/app.code';
         </app-docsectiontext>
         <div class="card">
             <p>Enter "<strong>date</strong>" to display the current date, "<strong>greet &#123;0&#125;</strong>" for a message and "<strong>random</strong>" to get a random number.</p>
-            <p-terminal welcomeMessage="Welcome to PrimeNG" prompt="primeng $" />
+            <p-terminal welcomeMessage="Welcome to LibreNG UI" prompt="primeng $" />
         </div>
         <app-code></app-code>
     `,

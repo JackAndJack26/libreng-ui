@@ -16,8 +16,8 @@
         "enableI18nLegacyMessageIdFormat": false,
         "strictInjectionParameters": true,
         "strictInputAccessModifiers": true,
-        "flatModuleOutFile": "primeng.js",
-        "flatModuleId": "primeng",
+        "flatModuleOutFile": "libreng-ui.js",
+        "flatModuleId": "@libreng/ui",
         "compilationMode": "partial"
     }
 }

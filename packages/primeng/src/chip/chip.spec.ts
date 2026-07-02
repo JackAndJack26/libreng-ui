@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, input, provideZonelessChangeDetecti
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { SharedModule } from 'primeng/api';
-import { ChipProps } from 'primeng/types/chip';
+import { SharedModule } from '@libreng/ui/api';
+import { ChipProps } from '@libreng/ui/types/chip';
 import { Chip, ChipModule } from './chip';
 
 @Component({

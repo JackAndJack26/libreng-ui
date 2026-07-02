@@ -1,9 +1,9 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { DialogModule } from 'primeng/dialog';
-import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from '@libreng/ui/button';
+import { DialogModule } from '@libreng/ui/dialog';
+import { InputTextModule } from '@libreng/ui/inputtext';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -12,7 +12,7 @@ import { InputTextModule } from 'primeng/inputtext';
     imports: [AppDocSectionText, AppCode, ButtonModule, DialogModule, InputTextModule],
     template: `
         <app-docsectiontext>
-            <p>A headless PrimeNG dialog with a custom UI.</p>
+            <p>A headless LibreNG UI dialog with a custom UI.</p>
         </app-docsectiontext>
         <div class="card flex justify-center">
             <p-button (click)="showDialog()" icon="pi pi-user" label="Login" />

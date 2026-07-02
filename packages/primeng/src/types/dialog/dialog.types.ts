@@ -1,5 +1,5 @@
-import type { PassThrough, PassThroughOption } from 'primeng/api';
-import type { ButtonPassThrough } from 'primeng/types/button';
+import type { PassThrough, PassThroughOption } from '@libreng/ui/api';
+import type { ButtonPassThrough } from '@libreng/ui/types/button';
 import { TemplateRef } from '@angular/core';
 import type { MotionOptions } from '@primeuix/motion';
 

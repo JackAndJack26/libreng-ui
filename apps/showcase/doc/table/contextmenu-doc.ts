@@ -5,10 +5,10 @@ import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
-import { MenuItem, MessageService } from 'primeng/api';
-import { ContextMenuModule } from 'primeng/contextmenu';
-import { TableModule } from 'primeng/table';
-import { ToastModule } from 'primeng/toast';
+import { MenuItem, MessageService } from '@libreng/ui/api';
+import { ContextMenuModule } from '@libreng/ui/contextmenu';
+import { TableModule } from '@libreng/ui/table';
+import { ToastModule } from '@libreng/ui/toast';
 
 @Component({
     selector: 'contextmenu-doc',

@@ -1,12 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { AfterContentInit, booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, ContentChildren, EventEmitter, inject, InjectionToken, Input, NgModule, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { ButtonModule } from 'primeng/button';
-import { TimesIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { InplaceContentTemplateContext, InplacePassThrough } from 'primeng/types/inplace';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { ButtonModule } from '@libreng/ui/button';
+import { TimesIcon } from '@libreng/ui/icons';
+import { Ripple } from '@libreng/ui/ripple';
+import { InplaceContentTemplateContext, InplacePassThrough } from '@libreng/ui/types/inplace';
 import { InplaceStyle } from './style/inplacestyle';
 
 const INPLACE_INSTANCE = new InjectionToken<Inplace>('INPLACE_INSTANCE');

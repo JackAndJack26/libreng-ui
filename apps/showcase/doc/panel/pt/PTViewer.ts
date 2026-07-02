@@ -1,7 +1,7 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { PanelModule } from 'primeng/panel';
+import { PanelModule } from '@libreng/ui/panel';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

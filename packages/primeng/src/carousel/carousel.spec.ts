@@ -3,10 +3,10 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { providePrimeNG } from 'primeng/config';
-import type { CarouselPageEvent, CarouselResponsiveOptions } from 'primeng/types/carousel';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { providePrimeNG } from '@libreng/ui/config';
+import type { CarouselPageEvent, CarouselResponsiveOptions } from '@libreng/ui/types/carousel';
 import { Carousel } from './carousel';
 
 // Mock data for testing

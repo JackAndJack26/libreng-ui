@@ -12,7 +12,7 @@ Image is used as the native img element and supports all properties that the nat
 
 ```typescript
 import { Component } from '@angular/core';
-import { ImageModule } from 'primeng/image';
+import { ImageModule } from '@libreng/ui/image';
 
 @Component({
     template: `
@@ -32,7 +32,7 @@ Preview mode displays a modal layer when the image is clicked that provides tran
 
 ```typescript
 import { Component } from '@angular/core';
-import { ImageModule } from 'primeng/image';
+import { ImageModule } from '@libreng/ui/image';
 
 @Component({
     template: `
@@ -52,7 +52,7 @@ In case that you want to show different image on preview, you can set previewIma
 
 ```typescript
 import { Component } from '@angular/core';
-import { ImageModule } from 'primeng/image';
+import { ImageModule } from '@libreng/ui/image';
 
 @Component({
     template: `
@@ -72,7 +72,7 @@ An eye icon is displayed by default when the image is hovered in preview mode. U
 
 ```typescript
 import { Component } from '@angular/core';
-import { ImageModule } from 'primeng/image';
+import { ImageModule } from '@libreng/ui/image';
 
 @Component({
     template: `

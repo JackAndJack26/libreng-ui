@@ -1,3 +1,3 @@
 export * from './inputnumber';
-export * from 'primeng/types/inputnumber';
+export * from '@libreng/ui/types/inputnumber';
 export * from './style/inputnumberstyle';

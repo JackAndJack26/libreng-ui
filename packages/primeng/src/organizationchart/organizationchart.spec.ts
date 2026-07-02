@@ -2,8 +2,8 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection, Tem
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { TreeNode } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
+import { TreeNode } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
 import { OrganizationChart, OrganizationChartNode } from './organizationchart';
 
 // Test component for basic use cases

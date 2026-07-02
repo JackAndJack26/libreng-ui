@@ -24,15 +24,15 @@ import {
 } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { addClass, removeClass } from '@primeuix/utils';
-import { BlockableUI, PrimeTemplate, SharedModule, TranslationKeys } from 'primeng/api';
-import { Badge } from 'primeng/badge';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { Button, ButtonProps } from 'primeng/button';
-import { PlusIcon, TimesIcon, UploadIcon } from 'primeng/icons';
-import { Message } from 'primeng/message';
-import { ProgressBar } from 'primeng/progressbar';
-import { VoidListener } from 'primeng/ts-helpers';
+import { BlockableUI, PrimeTemplate, SharedModule, TranslationKeys } from '@libreng/ui/api';
+import { Badge } from '@libreng/ui/badge';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { Button, ButtonProps } from '@libreng/ui/button';
+import { PlusIcon, TimesIcon, UploadIcon } from '@libreng/ui/icons';
+import { Message } from '@libreng/ui/message';
+import { ProgressBar } from '@libreng/ui/progressbar';
+import { VoidListener } from '@libreng/ui/ts-helpers';
 import {
     FileBeforeUploadEvent,
     FileProgressEvent,
@@ -47,7 +47,7 @@ import {
     FileUploadHeaderTemplateContext,
     FileUploadPassThrough,
     RemoveUploadedFileEvent
-} from 'primeng/types/fileupload';
+} from '@libreng/ui/types/fileupload';
 import { Subscription } from 'rxjs';
 import { FileUploadStyle } from './style/fileuploadstyle';
 
@@ -434,17 +434,17 @@ export class FileUpload extends BaseComponent<FileUploadPassThrough> implements 
      */
     @Input({ transform: numberAttribute }) previewWidth: number = 50;
     /**
-     * Label of the choose button. Defaults to PrimeNG Locale configuration.
+     * Label of the choose button. Defaults to LibreNG UI Locale configuration.
      * @group Props
      */
     @Input() chooseLabel: string | undefined;
     /**
-     * Label of the upload button. Defaults to PrimeNG Locale configuration.
+     * Label of the upload button. Defaults to LibreNG UI Locale configuration.
      * @group Props
      */
     @Input() uploadLabel: string | undefined;
     /**
-     * Label of the cancel button. Defaults to PrimeNG Locale configuration.
+     * Label of the cancel button. Defaults to LibreNG UI Locale configuration.
      * @group Props
      */
     @Input() cancelLabel: string | undefined;
@@ -484,7 +484,7 @@ export class FileUpload extends BaseComponent<FileUploadPassThrough> implements 
      */
     @Input() headers: HttpHeaders | undefined;
     /**
-     * Whether to use the default upload or a manual implementation defined in uploadHandler callback. Defaults to PrimeNG Locale configuration.
+     * Whether to use the default upload or a manual implementation defined in uploadHandler callback. Defaults to LibreNG UI Locale configuration.
      * @group Props
      */
     @Input({ transform: booleanAttribute }) customUpload: boolean | undefined;

@@ -2,18 +2,18 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { AvatarModule } from 'primeng/avatar';
-import { ButtonModule } from 'primeng/button';
-import { Checkbox } from 'primeng/checkbox';
-import { DividerModule } from 'primeng/divider';
-import { IconField } from 'primeng/iconfield';
-import { InputIcon } from 'primeng/inputicon';
-import { InputTextModule } from 'primeng/inputtext';
-import { MenuModule } from 'primeng/menu';
-import { OverlayBadgeModule } from 'primeng/overlaybadge';
-import { ProgressBar } from 'primeng/progressbar';
-import { TableModule } from 'primeng/table';
-import { Tag } from 'primeng/tag';
+import { AvatarModule } from '@libreng/ui/avatar';
+import { ButtonModule } from '@libreng/ui/button';
+import { Checkbox } from '@libreng/ui/checkbox';
+import { DividerModule } from '@libreng/ui/divider';
+import { IconField } from '@libreng/ui/iconfield';
+import { InputIcon } from '@libreng/ui/inputicon';
+import { InputTextModule } from '@libreng/ui/inputtext';
+import { MenuModule } from '@libreng/ui/menu';
+import { OverlayBadgeModule } from '@libreng/ui/overlaybadge';
+import { ProgressBar } from '@libreng/ui/progressbar';
+import { TableModule } from '@libreng/ui/table';
+import { Tag } from '@libreng/ui/tag';
 
 @Component({
     selector: 'inbox-app',

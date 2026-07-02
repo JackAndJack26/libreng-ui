@@ -21,14 +21,14 @@ import {
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { find, findSingle, focus, hasClass, uuid } from '@primeuix/utils';
-import { MenuItem, PrimeTemplate, SharedModule, TooltipOptions } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind } from 'primeng/bind';
-import { ButtonModule, ButtonProps } from 'primeng/button';
-import { PlusIcon } from 'primeng/icons';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { SpeedDialButtonTemplateContext, SpeedDialItemTemplateContext, SpeedDialPassThrough } from 'primeng/types/speeddial';
+import { MenuItem, PrimeTemplate, SharedModule, TooltipOptions } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind } from '@libreng/ui/bind';
+import { ButtonModule, ButtonProps } from '@libreng/ui/button';
+import { PlusIcon } from '@libreng/ui/icons';
+import { Ripple } from '@libreng/ui/ripple';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { SpeedDialButtonTemplateContext, SpeedDialItemTemplateContext, SpeedDialPassThrough } from '@libreng/ui/types/speeddial';
 import { asapScheduler } from 'rxjs';
 import { SpeedDialStyle } from './style/speeddialstyle';
 

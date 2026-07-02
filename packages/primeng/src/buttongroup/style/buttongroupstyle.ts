@@ -1,11 +1,11 @@
 import { Injectable } from '@angular/core';
 import { style as buttongroup_style } from '@primeuix/styles/buttongroup';
-import { BaseStyle } from 'primeng/base';
+import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `
     ${buttongroup_style}
 
-    /* For PrimeNG */
+    /* For LibreNG UI */
     .p-buttongroup p-button:focus .p-button {
         position: relative;
         z-index: 1;

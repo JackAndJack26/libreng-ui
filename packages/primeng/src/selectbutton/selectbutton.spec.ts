@@ -4,8 +4,8 @@ import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } 
 import { By } from '@angular/platform-browser';
 
 import { CommonModule } from '@angular/common';
-import { SharedModule } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
+import { SharedModule } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
 import { SelectButton, SelectButtonModule } from './selectbutton';
 
 describe('SelectButton', () => {

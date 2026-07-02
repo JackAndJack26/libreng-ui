@@ -41,7 +41,7 @@ export class VeronaPage {
     templateHeroData = {
         pattern: 'https://primefaces.org/cdn/primeng/images/templates/verona/verona-hero-pattern.png',
         patternClass: 'select-none absolute z-[6] opacity-90 w-[110rem] h-auto bottom-80 left-0 md:-bottom-8 md:-left-4',
-        description: 'Prepare to be amazed by the remastered Verona for PrimeNG featuring a gorgeous dark mode for the entire layout, 4 menu modes, reusable css widgets, utilities, modern icons and many more.',
+        description: 'Prepare to be amazed by the remastered Verona for LibreNG UI featuring a gorgeous dark mode for the entire layout, 4 menu modes, reusable css widgets, utilities, modern icons and many more.',
         dashboard1: 'https://primefaces.org/cdn/primeng/images/templates/verona/verona-hero-dashboard1.png',
         dashboard2: 'https://primefaces.org/cdn/primeng/images/templates/verona/verona-hero-dashboard2.png',
         liveHref: 'https://verona.primeng.org/',
@@ -109,7 +109,7 @@ export class VeronaPage {
             id: 4,
             title: 'Figma File',
             description: `Verona uses Figma as the design tool. It will be possible to download the Figma file after your purchase. You can
-                <a href="https://www.figma.com/design/9V43wXgKud8vXF9ZkbF83s/Preview-%7C-Verona-%7C%C2%A02.0.0?node-id=1303-749&t=0tlndOYlFeA9OaVc-1" target="_blank" rel="noopener noreferrer">preview the Figma file</a> before the purchase. Note that PrimeNG UI components are excluded from the Verona Figma file as they
+                <a href="https://www.figma.com/design/9V43wXgKud8vXF9ZkbF83s/Preview-%7C-Verona-%7C%C2%A02.0.0?node-id=1303-749&t=0tlndOYlFeA9OaVc-1" target="_blank" rel="noopener noreferrer">preview the Figma file</a> before the purchase. Note that LibreNG UI UI components are excluded from the Verona Figma file as they
                 are available in <a href="/uikit">PrimeOne for Figma</a> only.`,
             src: 'https://primefaces.org/cdn/primeng/images/templates/verona/features-animation-figma.png'
         }

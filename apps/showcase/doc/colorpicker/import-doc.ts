@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ColorPickerModule } from 'primeng/colorpicker';`
+        typescript: `import { ColorPickerModule } from '@libreng/ui/colorpicker';`
     };
 }

@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ScrollerModule } from 'primeng/scroller';
-import { Skeleton } from 'primeng/skeleton';
+import { ScrollerModule } from '@libreng/ui/scroller';
+import { Skeleton } from '@libreng/ui/skeleton';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { CommonModule } from '@angular/common';

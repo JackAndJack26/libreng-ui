@@ -29,17 +29,17 @@ import {
 import { RouterModule } from '@angular/router';
 import { MotionEvent, MotionOptions } from '@primeuix/motion';
 import { absolutePosition, addStyle, appendChild, findLastIndex, findSingle, focus, getOuterWidth, isEmpty, isNotEmpty, isPrintableCharacter, isTouchDevice, nestedPosition, relativePosition, resolve, uuid } from '@primeuix/utils';
-import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from 'primeng/api';
-import { BaseComponent, PARENT_INSTANCE } from 'primeng/basecomponent';
-import { Bind, BindModule } from 'primeng/bind';
-import { ConnectedOverlayScrollHandler } from 'primeng/dom';
-import { AngleRightIcon } from 'primeng/icons';
-import { MotionModule } from 'primeng/motion';
-import { Ripple } from 'primeng/ripple';
-import { TooltipModule } from 'primeng/tooltip';
-import { Nullable, VoidListener } from 'primeng/ts-helpers';
-import { TieredMenuItemTemplateContext, TieredMenuPassThrough } from 'primeng/types/tieredmenu';
-import { ZIndexUtils } from 'primeng/utils';
+import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
+import { Bind, BindModule } from '@libreng/ui/bind';
+import { ConnectedOverlayScrollHandler } from '@libreng/ui/dom';
+import { AngleRightIcon } from '@libreng/ui/icons';
+import { MotionModule } from '@libreng/ui/motion';
+import { Ripple } from '@libreng/ui/ripple';
+import { TooltipModule } from '@libreng/ui/tooltip';
+import { Nullable, VoidListener } from '@libreng/ui/ts-helpers';
+import { TieredMenuItemTemplateContext, TieredMenuPassThrough } from '@libreng/ui/types/tieredmenu';
+import { ZIndexUtils } from '@libreng/ui/utils';
 import { TieredMenuStyle } from './style/tieredmenustyle';
 
 const TIEREDMENU_INSTANCE = new InjectionToken<TieredMenu>('TIEREDMENU_INSTANCE');

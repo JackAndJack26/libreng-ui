@@ -1,4 +1,4 @@
-import type { PassThrough, PassThroughOption } from 'primeng/api';
+import type { PassThrough, PassThroughOption } from '@libreng/ui/api';
 
 /**
  * Custom passthrough(pt) options.

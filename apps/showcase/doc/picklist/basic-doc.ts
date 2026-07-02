@@ -3,7 +3,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { ChangeDetectionStrategy, Component, inject, OnInit, signal } from '@angular/core';
-import { PickListModule } from 'primeng/picklist';
+import { PickListModule } from '@libreng/ui/picklist';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

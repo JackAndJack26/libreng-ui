@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
-import { TreeNode } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
+import { TreeNode } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
 import { of } from 'rxjs';
 import { TreeTable, TreeTableModule } from './treetable';
 

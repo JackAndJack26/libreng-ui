@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { EditorModule } from 'primeng/editor';
+import { EditorModule } from '@libreng/ui/editor';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 
@@ -28,5 +28,5 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
     `
 })
 export class CustomToolbarDoc {
-    text: string = '<div>Hello World!</div><div>PrimeNG <b>Editor</b> Rocks</div><div><br></div>';
+    text: string = '<div>Hello World!</div><div>LibreNG UI <b>Editor</b> Rocks</div><div><br></div>';
 }

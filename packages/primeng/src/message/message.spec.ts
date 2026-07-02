@@ -2,8 +2,8 @@ import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, DebugElement, provideZonelessChangeDetection } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
 import { Message } from './message';
 
 @Component({

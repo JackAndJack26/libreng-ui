@@ -3,8 +3,8 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { PrimeTemplate, SharedModule } from 'primeng/api';
-import { GalleriaResponsiveOptions } from 'primeng/types/galleria';
+import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
+import { GalleriaResponsiveOptions } from '@libreng/ui/types/galleria';
 import { Galleria, GalleriaModule } from './galleria';
 
 // Mock data for testing

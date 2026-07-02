@@ -6,7 +6,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
     selector: 'theme-doc',
     template: `
         <app-docsectiontext>
-            <p>Configure PrimeNG to use a theme like Aura.</p>
+            <p>Configure LibreNG UI to use a theme like Aura.</p>
             <app-code [code]="code" [hideToggleCode]="true"></app-code>
         </app-docsectiontext>
     `
@@ -15,7 +15,7 @@ export class ThemeDoc {
     code: Code = {
         typescript: `import { ApplicationConfig } from '@angular/core';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
-import { providePrimeNG } from 'primeng/config';
+import { providePrimeNG } from '@libreng/ui/config';
 import Aura from '@primeuix/themes/aura';
 
 export const appConfig: ApplicationConfig = {

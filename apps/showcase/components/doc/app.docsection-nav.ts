@@ -3,9 +3,9 @@ import { CommonModule, DOCUMENT, isPlatformBrowser, Location } from '@angular/co
 import { ChangeDetectionStrategy, Component, DestroyRef, ElementRef, inject, input, OnInit, PLATFORM_ID, signal, ViewChild } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
 import { RouterLink } from '@angular/router';
-import { ButtonModule } from 'primeng/button';
-import { DomHandler } from 'primeng/dom';
-import { ObjectUtils } from 'primeng/utils';
+import { ButtonModule } from '@libreng/ui/button';
+import { DomHandler } from '@libreng/ui/dom';
+import { ObjectUtils } from '@libreng/ui/utils';
 import { fromEvent } from 'rxjs';
 
 @Component({
@@ -91,7 +91,7 @@ export class AppDocSectionNav implements OnInit {
             lightImage: 'https://fqjltiegiezfetthbags.supabase.co/storage/v1/object/public/common.images/ads/primeblocks-menu-light.jpg',
             darkImage: 'https://fqjltiegiezfetthbags.supabase.co/storage/v1/object/public/common.images/ads/primeblocks-menu-dark.jpg',
             title: 'PrimeBlocks',
-            details: '490+ ready to use UI blocks crafted with PrimeNG and Tailwind CSS.',
+            details: '490+ ready to use UI blocks crafted with LibreNG UI and Tailwind CSS.',
             href: 'https://primeblocks.org'
         },
         {

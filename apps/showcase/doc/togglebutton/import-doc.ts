@@ -11,6 +11,6 @@ import { AppCode } from '@/components/doc/app.code';
 })
 export class ImportDoc {
     code: Code = {
-        typescript: `import { ToggleButtonModule } from 'primeng/togglebutton';`
+        typescript: `import { ToggleButtonModule } from '@libreng/ui/togglebutton';`
     };
 }

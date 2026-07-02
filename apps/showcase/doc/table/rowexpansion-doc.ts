@@ -6,13 +6,13 @@ import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { MessageService } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
-import { RatingModule } from 'primeng/rating';
-import { RippleModule } from 'primeng/ripple';
-import { TableModule, TableRowCollapseEvent, TableRowExpandEvent } from 'primeng/table';
-import { TagModule } from 'primeng/tag';
-import { ToastModule } from 'primeng/toast';
+import { MessageService } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
+import { RatingModule } from '@libreng/ui/rating';
+import { RippleModule } from '@libreng/ui/ripple';
+import { TableModule, TableRowCollapseEvent, TableRowExpandEvent } from '@libreng/ui/table';
+import { TagModule } from '@libreng/ui/tag';
+import { ToastModule } from '@libreng/ui/toast';
 
 @Component({
     selector: 'rowexpansion-doc',

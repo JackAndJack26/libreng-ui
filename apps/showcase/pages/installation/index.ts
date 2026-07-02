@@ -11,7 +11,7 @@ import { AppDoc } from '@/components/doc/app.doc';
     changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [CommonModule, AppDoc],
-    template: `<app-doc docTitle="Getting Started - PrimeNG" header="Installation" description="Setting up PrimeNG in an Angular CLI project." [docs]="docs" docType="page"></app-doc>`
+    template: `<app-doc docTitle="Getting Started - LibreNG UI" header="Installation" description="Setting up LibreNG UI in an Angular CLI project." [docs]="docs" docType="page"></app-doc>`
 })
 export class InstallationDemo {
     docs = [

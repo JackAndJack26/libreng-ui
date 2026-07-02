@@ -12,9 +12,9 @@ ContextMenu can be attached to a particular element whose local template variabl
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { ContextMenu, ContextMenuModule } from 'primeng/contextmenu';
-import { MenuItem } from 'primeng/api';
-import { ContextMenu } from 'primeng/contextmenu';
+import { ContextMenu, ContextMenuModule } from '@libreng/ui/contextmenu';
+import { MenuItem } from '@libreng/ui/api';
+import { ContextMenu } from '@libreng/ui/contextmenu';
 
 @Component({
     template: `
@@ -44,11 +44,11 @@ The function to invoke when an item is clicked is defined using the command prop
 
 ```typescript
 import { Component, OnInit, inject } from '@angular/core';
-import { ContextMenu, ContextMenuModule } from 'primeng/contextmenu';
-import { TagModule } from 'primeng/tag';
-import { ToastModule } from 'primeng/toast';
-import { MenuItem, MessageService } from 'primeng/api';
-import { ContextMenu } from 'primeng/contextmenu';
+import { ContextMenu, ContextMenuModule } from '@libreng/ui/contextmenu';
+import { TagModule } from '@libreng/ui/tag';
+import { ToastModule } from '@libreng/ui/toast';
+import { MenuItem, MessageService } from '@libreng/ui/api';
+import { ContextMenu } from '@libreng/ui/contextmenu';
 
 interface Users {
     id: number;
@@ -159,9 +159,9 @@ Setting global property to true attaches the context menu to the document.
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { ContextMenu, ContextMenuModule } from 'primeng/contextmenu';
-import { MenuItem } from 'primeng/api';
-import { ContextMenu } from 'primeng/contextmenu';
+import { ContextMenu, ContextMenuModule } from '@libreng/ui/contextmenu';
+import { MenuItem } from '@libreng/ui/api';
+import { ContextMenu } from '@libreng/ui/contextmenu';
 
 @Component({
     template: `
@@ -214,8 +214,8 @@ Menu items support navigation via routerLink, programmatic routing using command
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { ContextMenuModule } from 'primeng/contextmenu';
-import { MenuItem } from 'primeng/api';
+import { ContextMenuModule } from '@libreng/ui/contextmenu';
+import { MenuItem } from '@libreng/ui/api';
 
 @Component({
     template: `
@@ -289,12 +289,12 @@ ContextMenu offers item customization with the item template that receives the m
 
 ```typescript
 import { Component, OnInit } from '@angular/core';
-import { BadgeModule } from 'primeng/badge';
-import { ContextMenu, ContextMenuModule } from 'primeng/contextmenu';
-import { RippleModule } from 'primeng/ripple';
-import { MenuItem } from 'primeng/api';
+import { BadgeModule } from '@libreng/ui/badge';
+import { ContextMenu, ContextMenuModule } from '@libreng/ui/contextmenu';
+import { RippleModule } from '@libreng/ui/ripple';
+import { MenuItem } from '@libreng/ui/api';
 import { Product } from '@/domain/product';
-import { ContextMenu } from 'primeng/contextmenu';
+import { ContextMenu } from '@libreng/ui/contextmenu';
 
 @Component({
     template: `

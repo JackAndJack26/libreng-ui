@@ -1,3 +1,3 @@
-export * from 'primeng/types/progressbar';
+export * from '@libreng/ui/types/progressbar';
 export * from './progressbar';
 export * from './style/progressbarstyle';

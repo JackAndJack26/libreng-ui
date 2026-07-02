@@ -1,8 +1,8 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { ButtonModule } from 'primeng/button';
-import { OverlayModule } from 'primeng/overlay';
+import { ButtonModule } from '@libreng/ui/button';
+import { OverlayModule } from '@libreng/ui/overlay';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

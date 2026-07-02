@@ -3,8 +3,8 @@ import { ChangeDetectionStrategy, Component, provideZonelessChangeDetection } fr
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
-import { MessageService, PrimeTemplate, SharedModule, ToastMessageOptions } from 'primeng/api';
-import { providePrimeNG } from 'primeng/config';
+import { MessageService, PrimeTemplate, SharedModule, ToastMessageOptions } from '@libreng/ui/api';
+import { providePrimeNG } from '@libreng/ui/config';
 import { Toast, ToastItem } from './toast';
 
 // Test Components for different scenarios

@@ -1,9 +1,9 @@
 import { CommonModule, DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { ChangeDetectionStrategy, Component, inject, input, OnInit, PLATFORM_ID } from '@angular/core';
 import { Router } from '@angular/router';
-import { MenuItem, MessageService } from 'primeng/api';
-import { SplitButtonModule } from 'primeng/splitbutton';
-import { ToastModule } from 'primeng/toast';
+import { MenuItem, MessageService } from '@libreng/ui/api';
+import { SplitButtonModule } from '@libreng/ui/splitbutton';
+import { ToastModule } from '@libreng/ui/toast';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -33,7 +33,7 @@ export class AppDocCopyMarkdown implements OnInit {
         if (isPlatformBrowser(this.platformId)) {
             return this.document.location.origin;
         }
-        return 'https://primeng.org';
+        return 'https://github.com/capivaramu/orbia-ui';
     }
 
     get currentComponentName(): string {
@@ -63,12 +63,12 @@ export class AppDocCopyMarkdown implements OnInit {
         if (this.docType() === 'page') {
             // For pages, use the full route path for nested pages like theming/styled
             const docPath = this.routePath || this.currentComponentName;
-            return `https://github.com/primefaces/primeng/tree/master/apps/showcase/doc/${docPath}/`;
+            return `https://github.com/capivaramu/orbia-ui/tree/master/apps/showcase/doc/${docPath}/`;
         }
         if (this.currentComponentName) {
-            return `https://github.com/primefaces/primeng/tree/master/apps/showcase/doc/${this.currentComponentName}/`;
+            return `https://github.com/capivaramu/orbia-ui/tree/master/apps/showcase/doc/${this.currentComponentName}/`;
         }
-        return 'https://github.com/primefaces/primeng/tree/master/apps/showcase/';
+        return 'https://github.com/capivaramu/orbia-ui/tree/master/apps/showcase/';
     }
 
     get chatGPTLink(): string {

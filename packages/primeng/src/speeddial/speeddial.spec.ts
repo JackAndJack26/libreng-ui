@@ -3,8 +3,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
 import { RouterTestingModule } from '@angular/router/testing';
-import { MenuItem } from 'primeng/api';
-import { ButtonModule } from 'primeng/button';
+import { MenuItem } from '@libreng/ui/api';
+import { ButtonModule } from '@libreng/ui/button';
 import { SpeedDial } from './speeddial';
 
 // Basic SpeedDial Test Component
@@ -1927,7 +1927,7 @@ describe('SpeedDial', () => {
 
         describe('Case 7: Test from PrimeNGConfig', () => {
             it('should apply global PT configuration from PrimeNGConfig', async () => {
-                // Create a new test module with PrimeNG config
+                // Create a new test module with LibreNG UI config
                 await TestBed.resetTestingModule();
                 await TestBed.configureTestingModule({
                     declarations: [TestPTSpeedDialComponent],
@@ -1952,7 +1952,7 @@ describe('SpeedDial', () => {
                 configFixture.detectChanges();
 
                 // Note: This test verifies the configuration structure
-                // Actual global PT merging depends on PrimeNG configuration implementation
+                // Actual global PT merging depends on LibreNG UI configuration implementation
                 expect(configFixture.componentInstance).toBeTruthy();
             });
         });

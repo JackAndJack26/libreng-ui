@@ -1,6 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { uuid } from '@primeuix/utils';
-import { BaseIcon } from 'primeng/icons/baseicon';
+import { BaseIcon } from '@libreng/ui/icons/baseicon';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

@@ -1,8 +1,8 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import { CascadeSelectModule } from 'primeng/cascadeselect';
-import { IftaLabelModule } from 'primeng/iftalabel';
+import { CascadeSelectModule } from '@libreng/ui/cascadeselect';
+import { IftaLabelModule } from '@libreng/ui/iftalabel';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 

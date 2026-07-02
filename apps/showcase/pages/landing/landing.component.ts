@@ -12,7 +12,7 @@ import { HeroSectionComponent } from './herosection.component';
 import { TemplateSectionComponent } from './templatesection.component';
 import { ThemeSectionComponent } from './themesection.component';
 import { UsersSectionComponent } from './userssection.component';
-import { ButtonModule } from 'primeng/button';
+import { ButtonModule } from '@libreng/ui/button';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
@@ -43,7 +43,7 @@ export class LandingComponent implements OnInit {
     ) {}
 
     ngOnInit() {
-        this.titleService.setTitle('PrimeNG - Angular UI Component Library');
+        this.titleService.setTitle('LibreNG UI - Angular UI Component Library');
         this.metaService.updateTag({
             name: 'description',
             content: 'The ultimate collection of design-agnostic, flexible and accessible Angular UI Components.'

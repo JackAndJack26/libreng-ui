@@ -2,8 +2,8 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { TreeNode } from 'primeng/api';
-import { TreeSelectModule } from 'primeng/treeselect';
+import { TreeNode } from '@libreng/ui/api';
+import { TreeSelectModule } from '@libreng/ui/treeselect';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,

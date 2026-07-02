@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
-import { DividerModule } from 'primeng/divider';
+import { DividerModule } from '@libreng/ui/divider';
 
 @Component({
     selector: 'template-separator',
