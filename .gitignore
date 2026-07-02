@@ -56,3 +56,4 @@ packages/primeng/src/package.json
 !packages/utils/dist/
 !packages/styles/dist/
 !packages/motion/dist/
+!vendor/*/dist/
