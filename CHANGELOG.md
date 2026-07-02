@@ -2,6 +2,37 @@
 
 Long Term Support releases: [CHANGELOG-LTS](./changelog-lts/CHANGELOG-LTS.md)
 
+## [22.0.0](https://github.com/JackAndJack26/libreng-ui/tree/v22.0.0) (2026-07-02)
+
+First release of **LibreNG UI**, a community-maintained MIT fork of PrimeNG 21.1.9 (the last version published by PrimeTek under the MIT license), migrated to Angular 22.
+
+**Breaking changes:**
+
+- Packages renamed: `primeng` -> `@libreng/ui`, `@primeng/themes` -> `@libreng/themes`, `@primeng/mcp` -> `@libreng/mcp` (bin `libreng-mcp`). Import paths change accordingly (`primeng/button` -> `@libreng/ui/button`); component selectors, CSS classes and the `providePrimeNG` API are unchanged, so migration from PrimeNG v21 is a find-and-replace
+- Angular 22 and TypeScript 6.0 are now required (Node.js >= 22.22.3)
+- Theme presets are imported from `@libreng/themes/aura` (lara/nora/material) instead of `@primeuix/themes`
+
+**Implemented changes:**
+
+- Migrated the toolchain to Angular 22.0.x, TypeScript 6.0.3 and ng-packagr 22 (pnpm catalog `angular22`); CI runs on Node 22
+- Applied the Angular v22 migrations: `ChangeDetectionStrategy.Eager` added to every component without an explicit strategy (OnPush is the new framework default) and the duplicate `model()` output removed from the designer token field (NG1054)
+- Added `ignoreDeprecations: "6.0"` for the TypeScript 6 `baseUrl` deprecation and a dedicated `tsconfig.spec.json` scoping test types to jasmine; fixed spec typings for the TS 6 DOM lib (`IntersectionObserver.scrollMargin`, `spyOnProperty` for `window.scrollX/Y`)
+- Made `@libreng/themes` fully self-contained: the real token sources of all four presets (Aura, Lara, Nora, Material), the tokens data module and the full types tree now live in the package — the `@primeuix/themes` dependency was removed
+- Vendored the last MIT versions of the runtime engine into `vendor/` (`@primeuix/styled` 0.7.4, `utils` 0.7.2, `styles` 2.0.3, `motion` 0.0.10, `themes` 2.0.3, `primeicons` 7.0.0) with recorded tarball URLs and sha1 checksums, plus their original TypeScript sources reconstructed from the published sourcemaps (615 files)
+- Publish hardening: the build materializes pnpm `catalog:` references into concrete semver ranges in the published manifests, so the packages install with any npm client
+- New LibreNG UI brand: logo and wordmark, favicon, social card, rewritten READMEs with a getting-started and PrimeNG v21 migration guide; pure MIT license with dual copyright (LibreNG UI Contributors + PrimeTek)
+
+**Removed (PrimeTek commercial content):**
+
+- Theme Designer (client for the paid primeui.store backend: license sign-in, cloud storage, server-generated downloads), its sales page and license docs
+- Templates, Figma UI Kit, PrimeBlocks, LTS and PRO Support pages, ads in the documentation sidebar, the "Who Uses" marketing section and the PrimeTek Google Analytics tag
+- PrimeTek-specific CI automation (triage/label bots); Support links now point to this repository's issues and discussions
+
+**Fixed bugs:**
+
+- Empty route object left by the designer removal crashed bootstrap with NG04014
+- Showcase declared its direct `@primeuix/styled`/`@primeuix/utils` imports explicitly (hoisting broke on Windows mapped drives)
+
 ## [21.1.9](https://github.com/primefaces/primeng/tree/21.1.9) (2026-06-04)
 [Full Changelog](https://github.com/primefaces/primeng/compare/21.1.8...21.1.9)
 
