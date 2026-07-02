@@ -19,10 +19,10 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class OpenAICodexDoc {
     code: Code = {
         command: `# Using the CLI
-codex mcp add primeng -- npx -y @libreng/mcp
+codex mcp add libreng -- npx -y @libreng/mcp
 
 # Or edit ~/.codex/config.toml
-[mcp_servers.primeng]
+[mcp_servers.libreng]
 command = "npx"
 args = ["-y", "@libreng/mcp"]`
     };

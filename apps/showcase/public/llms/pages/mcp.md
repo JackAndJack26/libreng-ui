@@ -8,10 +8,10 @@ Add the LibreNG UI MCP server using the CLI. After adding, start a new session a
 
 ```bash
 # Add to user config (available in all projects)
-claude mcp add primeng -s user -- npx -y @libreng/mcp
+claude mcp add libreng -s user -- npx -y @libreng/mcp
 
 # Or add to current project only
-claude mcp add primeng -- npx -y @libreng/mcp
+claude mcp add libreng -- npx -y @libreng/mcp
 ```
 
 ## Cursor-
@@ -52,10 +52,10 @@ Add the LibreNG UI MCP server using the CLI or edit ~/.codex/config.toml directl
 
 ```bash
 # Using the CLI
-codex mcp add primeng -- npx -y @libreng/mcp
+codex mcp add libreng -- npx -y @libreng/mcp
 
 # Or edit ~/.codex/config.toml
-[mcp_servers.primeng]
+[mcp_servers.libreng]
 command = "npx"
 args = ["-y", "@libreng/mcp"]
 ```

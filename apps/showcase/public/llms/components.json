@@ -44524,7 +44524,7 @@
           "label": "Download-",
           "description": "LibreNG UI is available for download on the npm registry .",
           "examples": {
-            "command": "# Using npm\nnpm install primeng @primeuix/themes\n\n# Using yarn\nyarn add primeng @primeuix/themes\n\n# Using pnpm\npnpm add primeng @primeuix/themes"
+            "command": "# Using npm\nnpm install @libreng/ui @primeuix/themes\n\n# Using yarn\nyarn add @libreng/ui @primeuix/themes\n\n# Using pnpm\npnpm add @libreng/ui @primeuix/themes"
           }
         },
         {
@@ -45140,7 +45140,7 @@
           "label": "Claudecode-",
           "description": "Add the LibreNG UI MCP server using the CLI. After adding, start a new session and use /mcp to verify the connection.",
           "examples": {
-            "command": "# Add to user config (available in all projects)\nclaude mcp add primeng -s user -- npx -y @libreng/mcp\n\n# Or add to current project only\nclaude mcp add primeng -- npx -y @libreng/mcp"
+            "command": "# Add to user config (available in all projects)\nclaude mcp add libreng -s user -- npx -y @libreng/mcp\n\n# Or add to current project only\nclaude mcp add libreng -- npx -y @libreng/mcp"
           }
         },
         {
@@ -45170,7 +45170,7 @@
           "label": "Openaicodex-",
           "description": "Add the LibreNG UI MCP server using the CLI or edit ~/.codex/config.toml directly.",
           "examples": {
-            "command": "# Using the CLI\ncodex mcp add primeng -- npx -y @libreng/mcp\n\n# Or edit ~/.codex/config.toml\n[mcp_servers.primeng]\ncommand = \"npx\"\nargs = [\"-y\", \"@libreng/mcp\"]"
+            "command": "# Using the CLI\ncodex mcp add libreng -- npx -y @libreng/mcp\n\n# Or edit ~/.codex/config.toml\n[mcp_servers.libreng]\ncommand = \"npx\"\nargs = [\"-y\", \"@libreng/mcp\"]"
           }
         },
         {

@@ -21,9 +21,9 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 export class ClaudeCodeDoc {
     code: Code = {
         command: `# Add to user config (available in all projects)
-claude mcp add primeng -s user -- npx -y @libreng/mcp
+claude mcp add libreng -s user -- npx -y @libreng/mcp
 
 # Or add to current project only
-claude mcp add primeng -- npx -y @libreng/mcp`
+claude mcp add libreng -- npx -y @libreng/mcp`
     };
 }
