@@ -51,3 +51,8 @@ api-generator/themedoc.json
 
 # primeng packages
 packages/primeng/src/package.json
+# engine dists are deterministic copies of the vendored MIT artifacts — committed
+!packages/styled/dist/
+!packages/utils/dist/
+!packages/styles/dist/
+!packages/motion/dist/

@@ -1,7 +1,7 @@
 {
     "$schema": "https://openapi.vercel.sh/vercel.json",
     "installCommand": "corepack enable && pnpm install --no-frozen-lockfile",
-    "buildCommand": "pnpm run build:lib && pnpm --filter showcase build",
+    "buildCommand": "pnpm run build:engine && pnpm run build:lib && pnpm --filter showcase build",
     "outputDirectory": "apps/showcase/dist/showcase/browser",
     "trailingSlash": false,
     "rewrites": [{ "source": "/((?!.*\\.).*)", "destination": "/index.html" }]
