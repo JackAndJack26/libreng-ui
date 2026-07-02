@@ -49,12 +49,7 @@ import { StyleClass } from '@libreng/ui/styleclass';
                     </a>
                 </li>
                 <li>
-                    <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" class="topbar-item">
-                        <i class="pi pi-discord text-surface-700 dark:text-surface-100"></i>
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/orgs/primefaces/discussions" target="_blank" rel="noopener noreferrer" class="topbar-item">
+                    <a href="https://github.com/JackAndJack26/libreng-ui/discussions" target="_blank" rel="noopener noreferrer" class="topbar-item">
                         <i class="pi pi-comments text-surface-700 dark:text-surface-100"></i>
                     </a>
                 </li>

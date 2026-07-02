@@ -80,7 +80,14 @@
     },
     "packageManager": "pnpm@9.6.0",
     "lint-staged": {
-        "packages/**/*.{js,mjs,ts,mts,d.ts,html}": ["prettier --write"],
-        "apps/**/*.{js,mjs,ts,mts,d.ts,html}": ["prettier --write"]
+        "packages/**/*.{js,mjs,ts,mts,d.ts,html}": [
+            "prettier --write"
+        ],
+        "apps/**/*.{js,mjs,ts,mts,d.ts,html}": [
+            "prettier --write"
+        ]
+    },
+    "engines": {
+        "node": ">=22.22.3"
     }
 }

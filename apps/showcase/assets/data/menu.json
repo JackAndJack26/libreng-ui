@@ -595,22 +595,6 @@
                     "name": "Contribution",
                     "routerLink": "/contribution",
                     "icon": "pi pi-users"
-                },
-                {
-                    "name": "Store",
-                    "href": "https://primeui.store"
-                },
-                {
-                    "name": "Twitter",
-                    "href": "https://twitter.com/prime_ng"
-                },
-                {
-                    "name": "Newsletter",
-                    "href": "https://www.primefaces.org/newsletter"
-                },
-                {
-                    "name": "PrimeGear",
-                    "href": "https://gear.primefaces.org"
                 }
             ]
         }
