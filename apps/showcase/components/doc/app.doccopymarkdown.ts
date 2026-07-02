@@ -33,7 +33,7 @@ export class AppDocCopyMarkdown implements OnInit {
         if (isPlatformBrowser(this.platformId)) {
             return this.document.location.origin;
         }
-        return 'https://github.com/capivaramu/orbia-ui';
+        return 'https://github.com/JackAndJack26/libreng-ui';
     }
 
     get currentComponentName(): string {
@@ -63,12 +63,12 @@ export class AppDocCopyMarkdown implements OnInit {
         if (this.docType() === 'page') {
             // For pages, use the full route path for nested pages like theming/styled
             const docPath = this.routePath || this.currentComponentName;
-            return `https://github.com/capivaramu/orbia-ui/tree/master/apps/showcase/doc/${docPath}/`;
+            return `https://github.com/JackAndJack26/libreng-ui/tree/master/apps/showcase/doc/${docPath}/`;
         }
         if (this.currentComponentName) {
-            return `https://github.com/capivaramu/orbia-ui/tree/master/apps/showcase/doc/${this.currentComponentName}/`;
+            return `https://github.com/JackAndJack26/libreng-ui/tree/master/apps/showcase/doc/${this.currentComponentName}/`;
         }
-        return 'https://github.com/capivaramu/orbia-ui/tree/master/apps/showcase/';
+        return 'https://github.com/JackAndJack26/libreng-ui/tree/master/apps/showcase/';
     }
 
     get chatGPTLink(): string {

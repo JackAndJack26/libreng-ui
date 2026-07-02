@@ -29,7 +29,7 @@ export class OrderListStyle extends BaseStyle {
  *
  * OrderList is used to maneged the order of a collection.
  *
- * [Live Demo](https://github.com/capivaramu/orbia-ui/orderlist)
+ * [Live Demo](https://github.com/JackAndJack26/libreng-ui/orderlist)
  *
  * @module orderliststyle
  *

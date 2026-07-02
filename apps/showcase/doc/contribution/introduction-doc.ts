@@ -27,7 +27,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 })
 export class IntroductionDoc {
     code1: Code = {
-        typescript: `git clone https://github.com/capivaramu/orbia-ui.git
+        typescript: `git clone https://github.com/JackAndJack26/libreng-ui.git
 cd primeng`
     };
     code2: Code = {

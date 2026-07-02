@@ -26,7 +26,7 @@ import { InputTextModule } from '@libreng/ui/inputtext';
                     <div>
                         <span class="font-medium text-surface-900 dark:text-surface-0 block mb-2">Share this document</span>
                         <p-inputgroup>
-                            <input pInputText value="https://github.com/capivaramu/orbia-ui/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-[25rem]" />
+                            <input pInputText value="https://github.com/JackAndJack26/libreng-ui/12323ff26t2g243g423g234gg52hy25XADXAG3" readonly class="w-[25rem]" />
                             <p-inputgroup-addon>
                                 <i class="pi pi-copy"></i>
                             </p-inputgroup-addon>

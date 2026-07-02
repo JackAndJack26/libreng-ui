@@ -571,11 +571,11 @@
             "children": [
                 {
                     "name": "GitHub Issues",
-                    "href": "https://github.com/capivaramu/orbia-ui/issues"
+                    "href": "https://github.com/JackAndJack26/libreng-ui/issues"
                 },
                 {
                     "name": "Discussions",
-                    "href": "https://github.com/capivaramu/orbia-ui/discussions"
+                    "href": "https://github.com/JackAndJack26/libreng-ui/discussions"
                 }
             ]
         },
@@ -585,11 +585,11 @@
             "children": [
                 {
                     "name": "Source Code",
-                    "href": "https://github.com/capivaramu/orbia-ui"
+                    "href": "https://github.com/JackAndJack26/libreng-ui"
                 },
                 {
                     "name": "Changelog",
-                    "href": "https://github.com/capivaramu/orbia-ui/blob/master/CHANGELOG.md"
+                    "href": "https://github.com/JackAndJack26/libreng-ui/blob/main/CHANGELOG.md"
                 },
                 {
                     "name": "Contribution",

@@ -44,7 +44,7 @@ import { StyleClass } from '@libreng/ui/styleclass';
                     <div id="docsearch"></div>
                 </li>
                 <li>
-                    <a href="https://github.com/capivaramu/orbia-ui" target="_blank" rel="noopener noreferrer" class="topbar-item">
+                    <a href="https://github.com/JackAndJack26/libreng-ui" target="_blank" rel="noopener noreferrer" class="topbar-item">
                         <i class="pi pi-github text-surface-700 dark:text-surface-100"></i>
                     </a>
                 </li>

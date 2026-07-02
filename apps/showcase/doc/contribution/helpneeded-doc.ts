@@ -22,7 +22,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 
             <h3>Community Support</h3>
             <p>
-                Assist other users by participating in the issue tracker, <a href="https://github.com/capivaramu/orbia-ui/discussions" target="_blank" rel="noopener noreferrer">GitHub discussions</a>. Your expertise can help others solve problems and
+                Assist other users by participating in the issue tracker, <a href="https://github.com/JackAndJack26/libreng-ui/discussions" target="_blank" rel="noopener noreferrer">GitHub discussions</a>. Your expertise can help others solve problems and
                 improve their experience with LibreNG UI.
             </p>
         </app-docsectiontext>

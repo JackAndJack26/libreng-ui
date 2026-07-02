@@ -299,10 +299,10 @@ Once installed, try asking your AI assistant:
 
 ## Links
 
-- [LibreNG UI Documentation](https://github.com/capivaramu/orbia-ui/)
+- [LibreNG UI Documentation](https://github.com/JackAndJack26/libreng-ui/)
 - [Model Context Protocol](https://modelcontextprotocol.io/)
-- [GitHub Repository](https://github.com/capivaramu/orbia-ui)
-- [Report Issues](https://github.com/capivaramu/orbia-ui/issues)
+- [GitHub Repository](https://github.com/JackAndJack26/libreng-ui)
+- [Report Issues](https://github.com/JackAndJack26/libreng-ui/issues)
 
 ## License
 

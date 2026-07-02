@@ -55,7 +55,7 @@ function formatMigrationContent(guide: (typeof migrationGuides)[keyof typeof mig
         content += '\n';
     }
 
-    content += `For detailed migration guide, visit: https://github.com/capivaramu/orbia-ui/installation`;
+    content += `For detailed migration guide, visit: https://github.com/JackAndJack26/libreng-ui/installation`;
     return content;
 }
 
@@ -63,7 +63,7 @@ function formatMigrationContent(guide: (typeof migrationGuides)[keyof typeof mig
 runPrimeMcpServer({
     name: '@libreng/mcp',
     version: pkg.version,
-    baseUrl: 'https://github.com/capivaramu/orbia-ui',
+    baseUrl: 'https://github.com/JackAndJack26/libreng-ui',
     frameworkName: 'LibreNG UI',
     slotKey: 'templates',
     codeLanguage: 'typescript',

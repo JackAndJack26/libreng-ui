@@ -1042,7 +1042,7 @@ function generateLlmsTxt(components, pages = []) {
         content += '## Guides\n\n';
 
         for (const page of pages) {
-            content += `- [${page.title}](https://github.com/capivaramu/orbia-ui/${page.route}): ${page.description}\n`;
+            content += `- [${page.title}](https://github.com/JackAndJack26/libreng-ui/${page.route}): ${page.description}\n`;
         }
 
         content += '\n';
@@ -1054,7 +1054,7 @@ function generateLlmsTxt(components, pages = []) {
     const sorted = [...components].sort((a, b) => a.title.localeCompare(b.title));
 
     for (const comp of sorted) {
-        content += `- [${comp.title}](https://github.com/capivaramu/orbia-ui/${comp.name}): ${comp.description}\n`;
+        content += `- [${comp.title}](https://github.com/JackAndJack26/libreng-ui/${comp.name}): ${comp.description}\n`;
     }
 
     const outputPath = path.join(OUTPUT_DIR, 'llms.txt');

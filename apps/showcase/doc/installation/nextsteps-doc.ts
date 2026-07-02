@@ -13,7 +13,7 @@ import { RouterModule } from '@angular/router';
             <ul class="leading-relaxed">
                 <li><a [routerLink]="'/configuration'" class="doc-link">Global configuration</a></li>
                 <li><a [routerLink]="'/theming'" class="doc-link">Customization of styles</a></li>
-                <li><a href="https://github.com/capivaramu/orbia-ui/issues" class="doc-link">Getting support</a></li>
+                <li><a href="https://github.com/JackAndJack26/libreng-ui/issues" class="doc-link">Getting support</a></li>
             </ul>
         </app-docsectiontext>
     `

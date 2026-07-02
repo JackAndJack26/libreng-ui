@@ -67,7 +67,7 @@ npm install primeicons
 
 ## Documentation & Source
 
-https://github.com/capivaramu/orbia-ui — the showcase app in `apps/showcase` documents all 80+ components with live demos.
+https://github.com/JackAndJack26/libreng-ui — the showcase app in `apps/showcase` documents all 80+ components with live demos.
 
 ## License
 

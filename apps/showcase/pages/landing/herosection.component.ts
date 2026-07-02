@@ -61,7 +61,7 @@ import { OverviewApp } from './samples/overviewapp.component';
                         <span>Get Started</span>
                         <i class="pi pi-arrow-right ms-4"></i>
                     </a>
-                    <a href="https://github.com/capivaramu/orbia-ui" target="_blank" rel="noopener noreferrer" class="linkbox">
+                    <a href="https://github.com/JackAndJack26/libreng-ui" target="_blank" rel="noopener noreferrer" class="linkbox">
                         <span>Give a Star</span>
                         <i class="pi pi-star-fill ms-4 text-yellow-500"></i>
                     </a>

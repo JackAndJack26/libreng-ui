@@ -3,15 +3,15 @@
     "version": "22.0.0",
     "author": "LibreNG UI Contributors",
     "description": "LibreNG UI is an open source UI library for Angular featuring a rich set of 80+ components, based on the MIT-licensed PrimeNG v21 by PrimeTek.",
-    "homepage": "https://github.com/capivaramu/orbia-ui/",
+    "homepage": "https://github.com/JackAndJack26/libreng-ui/",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/capivaramu/orbia-ui.git",
+        "url": "https://github.com/JackAndJack26/libreng-ui.git",
         "directory": "packages/primeng"
     },
     "bugs": {
-        "url": "https://github.com/capivaramu/orbia-ui/issues"
+        "url": "https://github.com/JackAndJack26/libreng-ui/issues"
     },
     "keywords": [
         "libreng-ui",

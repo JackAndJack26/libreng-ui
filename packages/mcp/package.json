@@ -3,15 +3,15 @@
     "version": "22.0.0",
     "author": "LibreNG UI Contributors",
     "description": "Model Context Protocol (MCP) server for the LibreNG UI component library",
-    "homepage": "https://github.com/capivaramu/orbia-ui/",
+    "homepage": "https://github.com/JackAndJack26/libreng-ui/",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url": "https://github.com/capivaramu/orbia-ui.git",
+        "url": "https://github.com/JackAndJack26/libreng-ui.git",
         "directory": "packages/mcp"
     },
     "bugs": {
-        "url": "https://github.com/capivaramu/orbia-ui/issues"
+        "url": "https://github.com/JackAndJack26/libreng-ui/issues"
     },
     "keywords": [
         "libreng-ui",

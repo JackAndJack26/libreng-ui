@@ -8,7 +8,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
     imports: [AppDocSectionText],
     template: `
         <app-docsectiontext>
-            <p>The showcase application in this repository is a complete reference implementation. Browse its source at <a href="https://github.com/capivaramu/orbia-ui/tree/main/apps/showcase">GitHub</a>.</p>
+            <p>The showcase application in this repository is a complete reference implementation. Browse its source at <a href="https://github.com/JackAndJack26/libreng-ui/tree/main/apps/showcase">GitHub</a>.</p>
         </app-docsectiontext>
     `
 })

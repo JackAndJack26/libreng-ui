@@ -29,7 +29,7 @@ export class AvatarStyle extends BaseStyle {
  *
  * Avatar represents people using icons, labels and images.
  *
- * - [Live Demo](https://github.com/capivaramu/orbia-ui/avatar)
+ * - [Live Demo](https://github.com/JackAndJack26/libreng-ui/avatar)
  *
  * @module avatarstyle
  *

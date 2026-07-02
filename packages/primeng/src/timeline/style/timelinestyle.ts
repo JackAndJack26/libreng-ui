@@ -25,7 +25,7 @@ export class TimelineStyle extends BaseStyle {
  *
  * Timeline visualizes a series of chained events.
  *
- * [Live Demo](https://github.com/capivaramu/orbia-ui/timeline)
+ * [Live Demo](https://github.com/JackAndJack26/libreng-ui/timeline)
  *
  * @module timelinestyle
  *

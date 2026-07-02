@@ -40,7 +40,7 @@ export class DividerStyle extends BaseStyle {
  *
  * Divider is used to separate contents.
  *
- * [Live Demo](https://github.com/capivaramu/orbia-ui/divider)
+ * [Live Demo](https://github.com/JackAndJack26/libreng-ui/divider)
  *
  * @module dividerstyle
  *

@@ -18,7 +18,7 @@ import { RouterModule } from '@angular/router';
                                 <a [routerLink]="['installation']" class="text-surface-500 dark:text-surface-400 font-medium hover:text-primary rounded transition-all duration-300"> Get Started </a>
                             </li>
                             <li class="mb-6">
-                                <a href="https://github.com/capivaramu/orbia-ui-examples" target="_blank" rel="noopener noreferrer" class="text-surface-500 dark:text-surface-400 font-medium hover:text-primary rounded transition-all duration-300"
+                                <a href="https://github.com/JackAndJack26/libreng-ui-examples" target="_blank" rel="noopener noreferrer" class="text-surface-500 dark:text-surface-400 font-medium hover:text-primary rounded transition-all duration-300"
                                     >Examples</a
                                 >
                             </li>
@@ -64,7 +64,7 @@ import { RouterModule } from '@angular/router';
                                 <a href="https://primeui.store" target="_blank" rel="noopener noreferrer" class="text-surface-500 dark:text-surface-400 font-medium hover:text-primary rounded transition-all duration-300">Store</a>
                             </li>
                             <li class="mb-6">
-                                <a href="https://github.com/capivaramu/orbia-ui" target="_blank" rel="noopener noreferrer" class="text-surface-500 dark:text-surface-400 font-medium hover:text-primary rounded transition-all duration-300"
+                                <a href="https://github.com/JackAndJack26/libreng-ui" target="_blank" rel="noopener noreferrer" class="text-surface-500 dark:text-surface-400 font-medium hover:text-primary rounded transition-all duration-300"
                                     >Source Code</a
                                 >
                             </li>
@@ -102,7 +102,7 @@ import { RouterModule } from '@angular/router';
                         <a href="https://twitter.com/prime_ng" target="_blank" rel="noopener noreferrer" class="linkbox linkbox-icon">
                             <i class="pi pi-twitter"></i>
                         </a>
-                        <a href="https://github.com/capivaramu/orbia-ui" target="_blank" rel="noopener noreferrer" class="linkbox linkbox-icon">
+                        <a href="https://github.com/JackAndJack26/libreng-ui" target="_blank" rel="noopener noreferrer" class="linkbox linkbox-icon">
                             <i class="pi pi-github"></i>
                         </a>
                         <a href="https://discord.gg/gzKFYnpmCY" target="_blank" rel="noopener noreferrer" class="linkbox linkbox-icon">

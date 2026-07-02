@@ -3020,7 +3020,7 @@ export class DatePicker extends BaseInput<DatePickerPassThrough> {
     }
 
     onUserInput(event: KeyboardEvent | any) {
-        // IE 11 Workaround for input placeholder : https://github.com/capivaramu/orbia-ui/issues/2026
+        // IE 11 Workaround for input placeholder : https://github.com/JackAndJack26/libreng-ui/issues/2026
 
         if (!this.isKeydown) {
             return;
