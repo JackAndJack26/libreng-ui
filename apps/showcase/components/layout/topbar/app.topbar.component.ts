@@ -18,19 +18,23 @@ import { StyleClass } from '@libreng/ui/styleclass';
         <div class="layout-topbar-inner">
             <div class="layout-topbar-logo-container">
                 <a [routerLink]="['/']" class="layout-topbar-logo" aria-label="LibreNG UI Logo">
-                    <svg width="150" height="32" viewBox="0 0 150 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LibreNG UI">
-                        <rect x="1" y="3" width="26" height="26" rx="7" fill="var(--p-primary-color)" />
-                        <path d="M9 9v14h11v-3.4h-7.2V9H9Z" fill="var(--ground-background)" />
-                        <text x="34" y="22.5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="16" font-weight="700" fill="var(--high-contrast-text-color)">
+                    <svg width="158" height="32" viewBox="0 0 158 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LibreNG UI">
+                        <g transform="translate(0,1.4) scale(0.453)">
+                            <rect x="2" y="2" width="60" height="60" rx="16" fill="var(--p-primary-color)" />
+                            <path d="M20 14h9v27h13v9H20V14z" fill="var(--ground-background)" />
+                            <rect x="45" y="41" width="9" height="9" rx="2" fill="var(--ground-background)" opacity="0.85" />
+                        </g>
+                        <text x="38" y="22.5" font-family="Inter, ui-sans-serif, system-ui, sans-serif" font-size="17" font-weight="800" letter-spacing="-0.4" fill="var(--high-contrast-text-color)">
                             LibreNG
                             <tspan fill="var(--p-primary-color)">UI</tspan>
                         </text>
                     </svg>
                 </a>
                 <a [routerLink]="['/']" class="layout-topbar-icon" aria-label="LibreNG UI Logo">
-                    <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LibreNG UI">
-                        <rect x="2" y="2" width="28" height="28" rx="8" fill="var(--p-primary-color)" />
-                        <path d="M10 8v16h13v-3.8h-8.6V8H10Z" fill="var(--ground-background)" />
+                    <svg width="32" height="32" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="LibreNG UI">
+                        <rect x="2" y="2" width="60" height="60" rx="16" fill="var(--p-primary-color)" />
+                        <path d="M20 14h9v27h13v9H20V14z" fill="var(--ground-background)" />
+                        <rect x="45" y="41" width="9" height="9" rx="2" fill="var(--ground-background)" opacity="0.85" />
                     </svg>
                 </a>
             </div>
