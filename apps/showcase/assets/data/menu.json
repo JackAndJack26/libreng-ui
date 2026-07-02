@@ -552,16 +552,8 @@
             "icon": "pi pi-sparkles",
             "children": [
                 {
-                    "name": "Overview",
-                    "routerLink": "/designer"
-                },
-                {
                     "name": "Guide",
-                    "routerLink": "/designer/guide"
-                },
-                {
-                    "name": "CI Pipeline",
-                    "routerLink": "/designer/ci"
+                    "routerLink": "/designer"
                 }
             ]
         },

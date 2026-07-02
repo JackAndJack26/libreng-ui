@@ -10,7 +10,7 @@ import { AppCode } from '@/components/doc/app.code';
     imports: [AppDocSectionText, AppCode],
     template: `
         <app-docsectiontext>
-            <p>LibreNG UI is available for download on the <a href="https://www.npmjs.com/package/primeng">npm registry</a>.</p>
+            <p>LibreNG UI is available for download on the <a href="https://www.npmjs.com/package/@libreng/ui">npm registry</a>.</p>
         </app-docsectiontext>
         <app-code [code]="code" [hideToggleCode]="true"></app-code>
     `

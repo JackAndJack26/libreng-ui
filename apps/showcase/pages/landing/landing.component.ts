@@ -9,7 +9,6 @@ import { FeaturesSectionComponent } from './featuressection.component';
 import { FooterSectionComponent } from './footersection.component';
 import { HeroSectionComponent } from './herosection.component';
 import { ThemeSectionComponent } from './themesection.component';
-import { UsersSectionComponent } from './userssection.component';
 import { ButtonModule } from '@libreng/ui/button';
 
 @Component({
@@ -17,7 +16,7 @@ import { ButtonModule } from '@libreng/ui/button';
     selector: 'landing',
     standalone: true,
     templateUrl: './landing.component.html',
-    imports: [CommonModule, AppNewsComponent, AppTopBarComponent, ButtonModule, HeroSectionComponent, FeaturesSectionComponent, UsersSectionComponent, ThemeSectionComponent, FooterSectionComponent]
+    imports: [CommonModule, AppNewsComponent, AppTopBarComponent, ButtonModule, HeroSectionComponent, FeaturesSectionComponent, ThemeSectionComponent, FooterSectionComponent]
 })
 export class LandingComponent implements OnInit {
     subscription!: Subscription;

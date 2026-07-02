@@ -7,7 +7,6 @@ import { CustomTokensDoc } from '@/doc/designer/editor/customtokens-doc';
 import { IntelligentCompletionDoc } from '@/doc/designer/editor/intelligentcompletion-doc';
 import { TokenCollectionsDoc } from '@/doc/designer/editor/tokencollections-doc';
 import { TypographyDoc } from '@/doc/designer/editor/typography-doc';
-import { LicenseDoc } from '@/doc/designer/license-doc';
 import { LimitationsDoc } from '@/doc/designer/limitations-doc';
 import { MigrationAssistantDoc } from '@/doc/designer/migrationassistant-doc';
 import { OverviewDoc } from '@/doc/designer/overview-doc';
@@ -34,11 +33,6 @@ export class GuideDemo {
             id: 'overview',
             label: 'Overview',
             component: OverviewDoc
-        },
-        {
-            id: 'license',
-            label: 'License',
-            component: LicenseDoc
         },
         {
             id: 'dashboard',
