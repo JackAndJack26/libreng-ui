@@ -46,7 +46,7 @@
         "@libreng/styled": "workspace:*"
     },
     "scripts": {
-        "build": "node ../../scripts/engine-dist.mjs packages/styles/x"
+        "build": "node ../../scripts/engine-dist.mjs"
     },
     "homepage": "https://github.com/JackAndJack26/libreng-ui/",
     "publishConfig": {

@@ -45,7 +45,7 @@
         "node": ">=12.11.0"
     },
     "scripts": {
-        "build": "node ../../scripts/engine-dist.mjs packages/motion/x"
+        "build": "node ../../scripts/engine-dist.mjs"
     },
     "homepage": "https://github.com/JackAndJack26/libreng-ui/",
     "publishConfig": {

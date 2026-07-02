@@ -3,9 +3,9 @@
 // reconstructed sources in each package's src/ are the base for future changes.
 import fs from 'fs-extra';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
-const pkgDir = path.dirname(fileURLToPath(process.argv[1] ? new URL(`file://${path.resolve(process.argv[2])}`) : import.meta.url));
+// pnpm runs package scripts with cwd = the package directory
+const pkgDir = process.cwd();
 const name = path.basename(pkgDir);
 const workspace = path.resolve(pkgDir, '../..');
 const vendorDist = path.join(workspace, 'vendor', `primeuix-${name}`, 'dist');
