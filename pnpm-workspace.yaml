@@ -1,7 +1,6 @@
 packages:
     - 'packages/*'
     - 'apps/*'
-    - 'vendor/*'
 
 catalog:
     '@primeuix/styled': ^0.7.4

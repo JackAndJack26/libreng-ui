@@ -237,7 +237,7 @@ importers:
         version: link:../../packages/primeng
       '@primeuix/themes':
         specifier: 'catalog:'
-        version: link:../../vendor/primeuix-themes
+        version: 2.0.3
       '@stackblitz/sdk':
         specifier: 1.9.0
         version: 1.9.0
@@ -285,7 +285,7 @@ importers:
         version: 3.8.4(jspdf@4.2.1)
       primeicons:
         specifier: 'catalog:'
-        version: link:../../vendor/primeicons
+        version: 7.0.0
       prismjs:
         specifier: ^1.29.0
         version: 1.30.0
@@ -337,16 +337,16 @@ importers:
         version: 22.0.5(@angular/common@22.0.5(@angular/core@22.0.5(@angular/compiler@22.0.5)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.5(@angular/compiler@22.0.5)(rxjs@7.8.2))(@angular/platform-browser@22.0.5(@angular/animations@22.0.5(@angular/core@22.0.5(@angular/compiler@22.0.5)(rxjs@7.8.2)))(@angular/common@22.0.5(@angular/core@22.0.5(@angular/compiler@22.0.5)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.5(@angular/compiler@22.0.5)(rxjs@7.8.2)))(rxjs@7.8.2)
       '@primeuix/motion':
         specifier: 'catalog:'
-        version: link:../../vendor/primeuix-motion
+        version: 0.0.10
       '@primeuix/styled':
         specifier: 'catalog:'
-        version: link:../../vendor/primeuix-styled
+        version: 0.7.4
       '@primeuix/styles':
         specifier: 'catalog:'
-        version: link:../../vendor/primeuix-styles
+        version: 2.0.3
       '@primeuix/utils':
         specifier: 'catalog:'
-        version: link:../../vendor/primeuix-utils
+        version: 0.7.2
       rxjs:
         specifier: ^6.0.0 || ^7.8.1
         version: 7.8.2
@@ -375,39 +375,11 @@ importers:
     dependencies:
       '@primeuix/styled':
         specifier: 'catalog:'
-        version: link:../../vendor/primeuix-styled
+        version: 0.7.4
       '@primeuix/themes':
         specifier: 'catalog:'
-        version: link:../../vendor/primeuix-themes
+        version: 2.0.3
     publishDirectory: dist
-
-  vendor/primeicons: {}
-
-  vendor/primeuix-motion:
-    dependencies:
-      '@primeuix/utils':
-        specifier: ^0.6.3
-        version: 0.6.4
-
-  vendor/primeuix-styled:
-    dependencies:
-      '@primeuix/utils':
-        specifier: ^0.6.1
-        version: 0.6.4
-
-  vendor/primeuix-styles:
-    dependencies:
-      '@primeuix/styled':
-        specifier: ^0.7.4
-        version: link:../primeuix-styled
-
-  vendor/primeuix-themes:
-    dependencies:
-      '@primeuix/styled':
-        specifier: ^0.7.4
-        version: link:../primeuix-styled
-
-  vendor/primeuix-utils: {}
 
 packages:
 
@@ -2744,8 +2716,26 @@ packages:
     resolution: {integrity: sha512-TSaakkktu2Yt5HnD2q9HucxpXt6LawodBntjsXlhgZlMSLK1vo647A7lgW1hztsZuzQl1zlk8A+6OMmGY8Xnfg==}
     engines: {node: '>=12.11.0'}
 
+  '@primeuix/motion@0.0.10':
+    resolution: {integrity: sha512-PsZwOPq79Scp7/ionshRcQ5xKVf9+zuLcyY5mf6onK8chHT5C9JGphmcIZ4CzcqxuGEpsm8AIbTGy+zS3RtzLA==}
+    engines: {node: '>=12.11.0'}
+
+  '@primeuix/styled@0.7.4':
+    resolution: {integrity: sha512-QSO/NpOQg8e9BONWRBx9y8VGMCMYz0J/uKfNJEya/RGEu7ARx0oYW0ugI1N3/KB1AAvyGxzKBzGImbwg0KUiOQ==}
+    engines: {node: '>=12.11.0'}
+
+  '@primeuix/styles@2.0.3':
+    resolution: {integrity: sha512-2ykAB6BaHzR/6TwF8ShpJTsZrid6cVIEBVlookSdvOdmlWuevGu5vWOScgIwqWwlZcvkFYAGR/SUV3OHCTBMdw==}
+
+  '@primeuix/themes@2.0.3':
+    resolution: {integrity: sha512-3fS1883mtCWhgUgNf/feiaaDSOND4EBIOu9tZnzJlJ8QtYyL6eFLcA6V3ymCWqLVXQ1+lTVEZv1gl47FIdXReg==}
+
   '@primeuix/utils@0.6.4':
     resolution: {integrity: sha512-pZ5f+vj7wSzRhC7KoEQRU5fvYAe+RP9+m39CTscZ3UywCD1Y2o6Fe1rRgklMPSkzUcty2jzkA0zMYkiJBD1hgg==}
+    engines: {node: '>=12.11.0'}
+
+  '@primeuix/utils@0.7.2':
+    resolution: {integrity: sha512-pmEbSfP0Phf9W9RweiM66zXnkn73ZeKyYINElbX3uZ2+stzzaba2svLAl3B1pHVcRw5t43O0VciaGe4ye2EXKw==}
     engines: {node: '>=12.11.0'}
 
   '@rollup/plugin-json@6.1.0':
@@ -6186,6 +6176,9 @@ packages:
   pretty-format@29.7.0:
     resolution: {integrity: sha512-Pdlw/oPxN+aXdmM9R00JVC9WVFoCLTKJvDVLgmJ+qAffBMxsV85l/Lu7sNx4zSzPyoL2euImuEwHhOXdEgNFZQ==}
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
+
+  primeicons@7.0.0:
+    resolution: {integrity: sha512-jK3Et9UzwzTsd6tzl2RmwrVY/b8raJ3QZLzoDACj+oTJ0oX7L9Hy+XnVwgo4QVKlKpnP/Ur13SXV/pVh4LzaDw==}
 
   prismjs@1.30.0:
     resolution: {integrity: sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw==}
@@ -9977,7 +9970,25 @@ snapshots:
       - '@cfworker/json-schema'
       - supports-color
 
+  '@primeuix/motion@0.0.10':
+    dependencies:
+      '@primeuix/utils': 0.6.4
+
+  '@primeuix/styled@0.7.4':
+    dependencies:
+      '@primeuix/utils': 0.6.4
+
+  '@primeuix/styles@2.0.3':
+    dependencies:
+      '@primeuix/styled': 0.7.4
+
+  '@primeuix/themes@2.0.3':
+    dependencies:
+      '@primeuix/styled': 0.7.4
+
   '@primeuix/utils@0.6.4': {}
+
+  '@primeuix/utils@0.7.2': {}
 
   '@rollup/plugin-json@6.1.0(rollup@4.60.4)':
     dependencies:
@@ -13804,6 +13815,8 @@ snapshots:
       '@jest/schemas': 29.6.3
       ansi-styles: 5.2.0
       react-is: 18.3.1
+
+  primeicons@7.0.0: {}
 
   prismjs@1.30.0: {}
 

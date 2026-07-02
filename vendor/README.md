@@ -7,10 +7,17 @@ so no newer MIT releases will exist. These copies guarantee the monorepo builds
 forever, independently of the npm registry, and serve as the base if we ever
 need to fork and patch them (as `@libreng/styled`, `@libreng/utils`, ...).
 
-They are wired as pnpm workspace packages (`vendor/*` in `pnpm-workspace.yaml`
-with `link-workspace-packages=true`), so local development resolves them from
-here. Published packages keep normal semver ranges, which npm resolves to the
-same immutable versions.
+These directories are an **archival snapshot only** — day-to-day installs
+resolve the same immutable versions from the npm registry (published versions
+cannot be removed from npm). Do not wire them as workspace links: pnpm
+workspace links break on Windows network/mapped drives.
+
+If the registry ever becomes unavailable, activate the snapshot explicitly
+with pnpm overrides in the root package.json, e.g.:
+
+```json
+"pnpm": { "overrides": { "@primeuix/utils": "file:./vendor/primeuix-utils" } }
+```
 
 ## Provenance
 
