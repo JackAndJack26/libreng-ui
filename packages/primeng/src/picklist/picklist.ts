@@ -21,7 +21,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { find, findIndexInList, isEmpty, setAttribute, uuid } from '@primeuix/utils';
+import { find, findIndexInList, isEmpty, setAttribute, uuid } from '@libreng/utils';
 import { FilterService, PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind, BindModule } from '@libreng/ui/bind';

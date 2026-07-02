@@ -1,6 +1,6 @@
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { booleanAttribute, Directive, inject, Input, NgModule, PLATFORM_ID, SimpleChanges } from '@angular/core';
-import { createElement, focus, getFirstFocusableElement, getLastFocusableElement } from '@primeuix/utils';
+import { createElement, focus, getFirstFocusableElement, getLastFocusableElement } from '@libreng/utils';
 import { BaseComponent } from '@libreng/ui/basecomponent';
 
 /**

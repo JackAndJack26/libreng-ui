@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, computed, ContentChild, ContentChildren, EventEmitter, inject, InjectionToken, input, Input, NgModule, Output, QueryList, signal, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { MotionOptions } from '@primeuix/motion';
+import { MotionOptions } from '@libreng/motion';
 import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind } from '@libreng/ui/bind';

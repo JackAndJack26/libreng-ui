@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style as select_style } from '@primeuix/styles/select';
+import { style as select_style } from '@libreng/styles/select';
 import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `

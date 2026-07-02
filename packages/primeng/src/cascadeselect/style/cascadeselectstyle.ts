@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style as cascadeselect_style } from '@primeuix/styles/cascadeselect';
+import { style as cascadeselect_style } from '@libreng/styles/cascadeselect';
 import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, afterRenderEffect, Component, computed, effect, inject, InjectionToken, input, output, signal, untracked } from '@angular/core';
-import { type ClassNameOptions, createMotion, resolveDuration, type MotionEvent, type MotionInstance, type MotionOptions, type MotionPhase } from '@primeuix/motion';
-import { nextFrame } from '@primeuix/utils';
+import { type ClassNameOptions, createMotion, resolveDuration, type MotionEvent, type MotionInstance, type MotionOptions, type MotionPhase } from '@libreng/motion';
+import { nextFrame } from '@libreng/utils';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind, BindModule } from '@libreng/ui/bind';
 import type { MotionPassThrough } from '@libreng/ui/types/motion';

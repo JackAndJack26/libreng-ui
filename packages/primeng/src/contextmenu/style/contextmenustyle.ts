@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style } from '@primeuix/styles/contextmenu';
+import { style } from '@libreng/styles/contextmenu';
 import { BaseStyle } from '@libreng/ui/base';
 
 const inlineStyles = {

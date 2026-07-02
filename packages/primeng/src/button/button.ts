@@ -21,7 +21,7 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { addClass, createElement, findSingle, isEmpty } from '@primeuix/utils';
+import { addClass, createElement, findSingle, isEmpty } from '@libreng/utils';
 import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { AutoFocus } from '@libreng/ui/autofocus';
 import { BadgeModule } from '@libreng/ui/badge';

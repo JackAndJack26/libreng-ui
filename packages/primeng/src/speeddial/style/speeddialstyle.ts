@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style } from '@primeuix/styles/speeddial';
+import { style } from '@libreng/styles/speeddial';
 import { BaseStyle } from '@libreng/ui/base';
 
 /* Direction */

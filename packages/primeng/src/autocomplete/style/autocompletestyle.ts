@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style as autocomplete_style } from '@primeuix/styles/autocomplete';
+import { style as autocomplete_style } from '@libreng/styles/autocomplete';
 import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `

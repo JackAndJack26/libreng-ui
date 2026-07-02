@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style as floatlabel_style } from '@primeuix/styles/floatlabel';
+import { style as floatlabel_style } from '@libreng/styles/floatlabel';
 import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `

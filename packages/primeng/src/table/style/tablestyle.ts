@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style as datatable_style } from '@primeuix/styles/datatable';
+import { style as datatable_style } from '@libreng/styles/datatable';
 import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `

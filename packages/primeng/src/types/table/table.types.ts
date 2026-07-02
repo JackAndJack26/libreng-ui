@@ -8,7 +8,7 @@ import type { InputTextPassThrough } from '@libreng/ui/types/inputtext';
 import type { SelectPassThrough } from '@libreng/ui/types/select';
 import type { InputNumberPassThrough } from '@libreng/ui/types/inputnumber';
 import type { DatePickerPassThrough } from '@libreng/ui/types/datepicker';
-import type { MotionOptions } from '@primeuix/motion';
+import type { MotionOptions } from '@libreng/motion';
 
 /**
  * Custom pass-through(pt) options for ColumnFilter.

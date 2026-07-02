@@ -1,6 +1,6 @@
 import { NgTemplateOutlet } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, computed, contentChild, forwardRef, inject, InjectionToken, input, model, ViewEncapsulation } from '@angular/core';
-import { equals } from '@primeuix/utils';
+import { equals } from '@libreng/utils';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind, BindModule } from '@libreng/ui/bind';
 import { TabPanelStyle } from './style/tabpanelstyle';

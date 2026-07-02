@@ -19,7 +19,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { focus, getFirstFocusableElement, uuid } from '@primeuix/utils';
+import { focus, getFirstFocusableElement, uuid } from '@libreng/utils';
 import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { AutoFocus } from '@libreng/ui/autofocus';
 import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';

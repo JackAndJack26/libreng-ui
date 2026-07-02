@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style } from '@primeuix/styles/orderlist';
+import { style } from '@libreng/styles/orderlist';
 import { BaseStyle } from '@libreng/ui/base';
 
 const theme = /*css*/ `

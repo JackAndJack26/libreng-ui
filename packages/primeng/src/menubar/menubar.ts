@@ -26,7 +26,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { findLastIndex, findSingle, focus, isEmpty, isNotEmpty, isPrintableCharacter, isTouchDevice, resolve, uuid } from '@primeuix/utils';
+import { findLastIndex, findSingle, focus, isEmpty, isNotEmpty, isPrintableCharacter, isTouchDevice, resolve, uuid } from '@libreng/utils';
 import { MenuItem, PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { BadgeModule } from '@libreng/ui/badge';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';

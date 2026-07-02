@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, ComponentRef, inject, InjectionToken, NgModule, Type, ViewChild, ViewEncapsulation } from '@angular/core';
-import { uuid } from '@primeuix/utils';
+import { uuid } from '@libreng/utils';
 import { SharedModule, TranslationKeys } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind, BindModule } from '@libreng/ui/bind';

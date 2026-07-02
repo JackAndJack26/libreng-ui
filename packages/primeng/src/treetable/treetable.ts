@@ -47,7 +47,7 @@ import {
     removeClass,
     reorderArray,
     resolveFieldData
-} from '@primeuix/utils';
+} from '@libreng/utils';
 import { BlockableUI, FilterMetadata, FilterService, PrimeTemplate, ScrollerOptions, SharedModule, SortMeta, TreeNode, TreeTableNode } from '@libreng/ui/api';
 import { BadgeModule } from '@libreng/ui/badge';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';

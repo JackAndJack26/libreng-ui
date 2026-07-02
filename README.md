@@ -11,6 +11,7 @@ It is a community-maintained fork of [PrimeNG](https://github.com/primefaces/pri
 | [`@libreng/ui`](https://www.npmjs.com/package/@libreng/ui) | The component library (80+ Angular components) |
 | [`@libreng/themes`](https://www.npmjs.com/package/@libreng/themes) | Theme presets — Aura, Lara, Nora, Material — fully self-contained |
 | [`@libreng/mcp`](https://www.npmjs.com/package/@libreng/mcp) | Model Context Protocol server for AI-assisted development |
+| `@libreng/styled` / `@libreng/utils` / `@libreng/styles` / `@libreng/motion` | The theming/styling engine (forked from the MIT `@primeuix` v2 line, fully in-repo) |
 
 ## Requirements
 

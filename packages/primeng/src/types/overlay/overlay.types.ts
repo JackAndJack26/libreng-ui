@@ -1,5 +1,5 @@
 import type { TemplateRef } from '@angular/core';
-import type { MotionOptions } from '@primeuix/motion';
+import type { MotionOptions } from '@libreng/motion';
 import type { OverlayModeType, PassThrough, PassThroughOption } from '@libreng/ui/api';
 
 /**

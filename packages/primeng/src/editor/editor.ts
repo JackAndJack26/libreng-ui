@@ -1,7 +1,7 @@
 import { CommonModule, isPlatformServer } from '@angular/common';
 import { afterNextRender, ChangeDetectionStrategy, Component, ContentChild, ContentChildren, EventEmitter, forwardRef, inject, InjectionToken, Input, NgModule, Output, QueryList, TemplateRef, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { findSingle } from '@primeuix/utils';
+import { findSingle } from '@libreng/utils';
 import { Header, PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';

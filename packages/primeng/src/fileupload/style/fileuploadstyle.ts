@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style } from '@primeuix/styles/fileupload';
+import { style } from '@libreng/styles/fileupload';
 import { BaseStyle } from '@libreng/ui/base';
 
 const classes = {

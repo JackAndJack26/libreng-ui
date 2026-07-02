@@ -2,6 +2,13 @@
 
 Long Term Support releases: [CHANGELOG-LTS](./changelog-lts/CHANGELOG-LTS.md)
 
+## [22.0.1](https://github.com/JackAndJack26/libreng-ui/tree/v22.0.1) (2026-07-02)
+
+**Implemented changes:**
+
+- The runtime engine is now first-party: `@libreng/styled`, `@libreng/utils`, `@libreng/styles` and `@libreng/motion` (forked from the last MIT `@primeuix` v2 releases, artifacts and sources fully in-repo). `@libreng/ui` and `@libreng/themes` no longer depend on any `@primeuix` package
+- Fix the `@libreng/mcp` build on Windows (missing cross-env)
+
 ## [22.0.0](https://github.com/JackAndJack26/libreng-ui/tree/v22.0.0) (2026-07-02)
 
 First release of **LibreNG UI**, a community-maintained MIT fork of PrimeNG 21.1.9 (the last version published by PrimeTek under the MIT license), migrated to Angular 22.

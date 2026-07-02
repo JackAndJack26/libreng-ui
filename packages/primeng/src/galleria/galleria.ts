@@ -24,8 +24,8 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { MotionEvent, MotionOptions } from '@primeuix/motion';
-import { addClass, find, findSingle, focus, getAttribute, removeClass, setAttribute, uuid } from '@primeuix/utils';
+import { MotionEvent, MotionOptions } from '@libreng/motion';
+import { addClass, find, findSingle, focus, getAttribute, removeClass, setAttribute, uuid } from '@libreng/utils';
 import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind, BindModule } from '@libreng/ui/bind';

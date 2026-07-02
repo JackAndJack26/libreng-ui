@@ -1,5 +1,5 @@
 import { booleanAttribute, ChangeDetectionStrategy, Component, inject, Input, ViewEncapsulation } from '@angular/core';
-import { cn } from '@primeuix/utils';
+import { cn } from '@libreng/utils';
 import { BaseComponent } from '@libreng/ui/basecomponent';
 import { BaseIconStyle } from './style/baseiconstyle';
 

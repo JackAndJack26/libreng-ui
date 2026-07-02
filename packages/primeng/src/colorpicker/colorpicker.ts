@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { AfterViewChecked, booleanAttribute, ChangeDetectionStrategy, Component, computed, ElementRef, EventEmitter, forwardRef, inject, InjectionToken, input, Input, NgModule, Output, TemplateRef, ViewChild, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { MotionOptions } from '@primeuix/motion';
+import { MotionOptions } from '@libreng/motion';
 import { OverlayOptions, OverlayService, SharedModule, TranslationKeys } from '@libreng/ui/api';
 import { AutoFocusModule } from '@libreng/ui/autofocus';
 import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';

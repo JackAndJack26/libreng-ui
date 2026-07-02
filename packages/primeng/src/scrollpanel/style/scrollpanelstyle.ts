@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style as scrollpanel_style } from '@primeuix/styles/scrollpanel';
+import { style as scrollpanel_style } from '@libreng/styles/scrollpanel';
 import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `

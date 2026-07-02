@@ -1,0 +1,55 @@
+{
+    "name": "@libreng/utils",
+    "version": "22.0.1",
+    "author": "LibreNG UI Contributors",
+    "description": "Utility functions and helpers for PrimeUI Libraries (LibreNG UI fork of the MIT @primeuix/utils)",
+    "keywords": [
+        "utilities",
+        "helpers",
+        "primeng",
+        "primereact",
+        "primevue",
+        "primeuix"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JackAndJack26/libreng-ui.git",
+        "directory": "packages/utils"
+    },
+    "bugs": {
+        "url": "https://github.com/JackAndJack26/libreng-ui/issues"
+    },
+    "main": "./dist/index.mjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.mts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.mts",
+            "import": "./dist/index.mjs",
+            "default": "./dist/index.mjs"
+        },
+        "./*": {
+            "types": "./dist/*/index.d.mts",
+            "import": "./dist/*/index.mjs",
+            "default": "./dist/*/index.mjs"
+        }
+    },
+    "sideEffects": false,
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "engines": {
+        "node": ">=12.11.0"
+    },
+    "scripts": {
+        "build": "node ../../scripts/engine-dist.mjs packages/utils/x"
+    },
+    "homepage": "https://github.com/JackAndJack26/libreng-ui/",
+    "dependencies": {},
+    "publishConfig": {
+        "access": "public"
+    }
+}

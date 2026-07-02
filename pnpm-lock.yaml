@@ -67,18 +67,6 @@ catalogs:
     '@primeuix/mcp':
       specifier: ^1.0.0
       version: 1.0.1
-    '@primeuix/motion':
-      specifier: ^0.0.10
-      version: 0.0.10
-    '@primeuix/styled':
-      specifier: ^0.7.4
-      version: 0.7.4
-    '@primeuix/styles':
-      specifier: ^2.0.3
-      version: 2.0.3
-    '@primeuix/utils':
-      specifier: ^0.7.2
-      version: 0.7.2
     primeicons:
       specifier: ^7.0.0
       version: 7.0.0
@@ -229,18 +217,18 @@ importers:
       '@docsearch/js':
         specifier: ^3.3.4
         version: 3.9.0(@algolia/client-search@4.27.0)(@types/react@18.3.28)(search-insights@2.17.3)
+      '@libreng/styled':
+        specifier: workspace:*
+        version: link:../../packages/styled
       '@libreng/themes':
         specifier: workspace:*
         version: link:../../packages/themes
       '@libreng/ui':
         specifier: workspace:*
         version: link:../../packages/primeng
-      '@primeuix/styled':
-        specifier: 'catalog:'
-        version: 0.7.4
-      '@primeuix/utils':
-        specifier: 'catalog:'
-        version: 0.7.2
+      '@libreng/utils':
+        specifier: workspace:*
+        version: link:../../packages/utils
       '@stackblitz/sdk':
         specifier: 1.9.0
         version: 1.9.0
@@ -318,6 +306,12 @@ importers:
         specifier: ^8.1.0
         version: 8.5.1(jiti@2.7.0)(postcss@8.5.14)(typescript@6.0.3)(yaml@2.9.0)
 
+  packages/motion:
+    dependencies:
+      '@libreng/utils':
+        specifier: workspace:*
+        version: link:../utils
+
   packages/primeng:
     dependencies:
       '@angular/cdk':
@@ -338,18 +332,18 @@ importers:
       '@angular/router':
         specifier: catalog:angular22
         version: 22.0.5(@angular/common@22.0.5(@angular/core@22.0.5(@angular/compiler@22.0.5)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.5(@angular/compiler@22.0.5)(rxjs@7.8.2))(@angular/platform-browser@22.0.5(@angular/animations@22.0.5(@angular/core@22.0.5(@angular/compiler@22.0.5)(rxjs@7.8.2)))(@angular/common@22.0.5(@angular/core@22.0.5(@angular/compiler@22.0.5)(rxjs@7.8.2))(rxjs@7.8.2))(@angular/core@22.0.5(@angular/compiler@22.0.5)(rxjs@7.8.2)))(rxjs@7.8.2)
-      '@primeuix/motion':
-        specifier: 'catalog:'
-        version: 0.0.10
-      '@primeuix/styled':
-        specifier: 'catalog:'
-        version: 0.7.4
-      '@primeuix/styles':
-        specifier: 'catalog:'
-        version: 2.0.3
-      '@primeuix/utils':
-        specifier: 'catalog:'
-        version: 0.7.2
+      '@libreng/motion':
+        specifier: workspace:*
+        version: link:../motion
+      '@libreng/styled':
+        specifier: workspace:*
+        version: link:../styled
+      '@libreng/styles':
+        specifier: workspace:*
+        version: link:../styles
+      '@libreng/utils':
+        specifier: workspace:*
+        version: link:../utils
       rxjs:
         specifier: ^6.0.0 || ^7.8.1
         version: 7.8.2
@@ -374,12 +368,26 @@ importers:
         version: 2.8.1
     publishDirectory: dist
 
+  packages/styled:
+    dependencies:
+      '@libreng/utils':
+        specifier: workspace:*
+        version: link:../utils
+
+  packages/styles:
+    dependencies:
+      '@libreng/styled':
+        specifier: workspace:*
+        version: link:../styled
+
   packages/themes:
     dependencies:
-      '@primeuix/styled':
-        specifier: 'catalog:'
-        version: 0.7.4
+      '@libreng/styled':
+        specifier: workspace:*
+        version: link:../styled
     publishDirectory: dist
+
+  packages/utils: {}
 
 packages:
 
@@ -2714,25 +2722,6 @@ packages:
 
   '@primeuix/mcp@1.0.1':
     resolution: {integrity: sha512-TSaakkktu2Yt5HnD2q9HucxpXt6LawodBntjsXlhgZlMSLK1vo647A7lgW1hztsZuzQl1zlk8A+6OMmGY8Xnfg==}
-    engines: {node: '>=12.11.0'}
-
-  '@primeuix/motion@0.0.10':
-    resolution: {integrity: sha512-PsZwOPq79Scp7/ionshRcQ5xKVf9+zuLcyY5mf6onK8chHT5C9JGphmcIZ4CzcqxuGEpsm8AIbTGy+zS3RtzLA==}
-    engines: {node: '>=12.11.0'}
-
-  '@primeuix/styled@0.7.4':
-    resolution: {integrity: sha512-QSO/NpOQg8e9BONWRBx9y8VGMCMYz0J/uKfNJEya/RGEu7ARx0oYW0ugI1N3/KB1AAvyGxzKBzGImbwg0KUiOQ==}
-    engines: {node: '>=12.11.0'}
-
-  '@primeuix/styles@2.0.3':
-    resolution: {integrity: sha512-2ykAB6BaHzR/6TwF8ShpJTsZrid6cVIEBVlookSdvOdmlWuevGu5vWOScgIwqWwlZcvkFYAGR/SUV3OHCTBMdw==}
-
-  '@primeuix/utils@0.6.4':
-    resolution: {integrity: sha512-pZ5f+vj7wSzRhC7KoEQRU5fvYAe+RP9+m39CTscZ3UywCD1Y2o6Fe1rRgklMPSkzUcty2jzkA0zMYkiJBD1hgg==}
-    engines: {node: '>=12.11.0'}
-
-  '@primeuix/utils@0.7.2':
-    resolution: {integrity: sha512-pmEbSfP0Phf9W9RweiM66zXnkn73ZeKyYINElbX3uZ2+stzzaba2svLAl3B1pHVcRw5t43O0VciaGe4ye2EXKw==}
     engines: {node: '>=12.11.0'}
 
   '@rollup/plugin-json@6.1.0':
@@ -9966,22 +9955,6 @@ snapshots:
     transitivePeerDependencies:
       - '@cfworker/json-schema'
       - supports-color
-
-  '@primeuix/motion@0.0.10':
-    dependencies:
-      '@primeuix/utils': 0.6.4
-
-  '@primeuix/styled@0.7.4':
-    dependencies:
-      '@primeuix/utils': 0.6.4
-
-  '@primeuix/styles@2.0.3':
-    dependencies:
-      '@primeuix/styled': 0.7.4
-
-  '@primeuix/utils@0.6.4': {}
-
-  '@primeuix/utils@0.7.2': {}
 
   '@rollup/plugin-json@6.1.0(rollup@4.60.4)':
     dependencies:

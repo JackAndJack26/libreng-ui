@@ -1,7 +1,7 @@
 import type { Confirmation, PassThrough, PassThroughOption } from '@libreng/ui/api';
 import type { ButtonPassThrough } from '@libreng/ui/types/button';
 import { TemplateRef } from '@angular/core';
-import type { MotionOptions } from '@primeuix/motion';
+import type { MotionOptions } from '@libreng/motion';
 
 /**
  * Custom pass-through(pt) options.

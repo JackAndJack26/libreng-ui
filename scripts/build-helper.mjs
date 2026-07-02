@@ -160,7 +160,15 @@ export function materializeCatalogVersions(pkgJsonPath) {
     const pkg = JSON.parse(fs.readFileSync(pkgJsonPath, 'utf8'));
     for (const field of ['dependencies', 'peerDependencies', 'devDependencies']) {
         for (const [name, range] of Object.entries(pkg[field] ?? {})) {
-            const m = typeof range === 'string' && range.match(/^catalog:(.*)$/);
+            if (typeof range !== 'string') continue;
+            if (range.startsWith('workspace:')) {
+                const short = name.startsWith('@libreng/') ? name.slice('@libreng/'.length) : name;
+                const local = path.resolve(__workspace, 'packages', short === 'ui' ? 'primeng' : short, 'package.json');
+                if (!fs.existsSync(local)) throw new Error(`No workspace package for ${name} while materializing ${pkgJsonPath}`);
+                pkg[field][name] = `^${JSON.parse(fs.readFileSync(local, 'utf8')).version}`;
+                continue;
+            }
+            const m = range.match(/^catalog:(.*)$/);
             if (!m) continue;
             const cat = m[1] ? catalogs[m[1]] : catalogs.default;
             if (cat?.[name]) pkg[field][name] = cat[name];

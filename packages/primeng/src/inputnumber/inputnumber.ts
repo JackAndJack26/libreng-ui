@@ -22,7 +22,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
-import { getSelection } from '@primeuix/utils';
+import { getSelection } from '@libreng/utils';
 import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { AutoFocus } from '@libreng/ui/autofocus';
 import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';

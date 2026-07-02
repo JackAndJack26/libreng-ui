@@ -29,8 +29,8 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { MotionOptions } from '@primeuix/motion';
-import { absolutePosition, addClass, hasClass, isTouchDevice, removeClass } from '@primeuix/utils';
+import { MotionOptions } from '@libreng/motion';
+import { absolutePosition, addClass, hasClass, isTouchDevice, removeClass } from '@libreng/utils';
 import { OverlayOptions, OverlayService, PrimeTemplate, SharedModule, TranslationKeys } from '@libreng/ui/api';
 import { AutoFocus } from '@libreng/ui/autofocus';
 import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';

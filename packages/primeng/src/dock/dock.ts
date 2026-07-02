@@ -19,7 +19,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { RouterLink, RouterLinkActive, RouterModule } from '@angular/router';
-import { find, findSingle, resolve, uuid } from '@primeuix/utils';
+import { find, findSingle, resolve, uuid } from '@libreng/utils';
 import { MenuItem, PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { Badge } from '@libreng/ui/badge';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';

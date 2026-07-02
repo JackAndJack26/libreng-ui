@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, ContentChild, ElementRef, EventEmitter, inject, InjectionToken, Input, NgModule, numberAttribute, Output, SimpleChanges, TemplateRef, ViewEncapsulation } from '@angular/core';
-import { resolveFieldData } from '@primeuix/utils';
+import { resolveFieldData } from '@libreng/utils';
 import { BlockableUI, FilterService, Footer, Header, SharedModule, TranslationKeys } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind } from '@libreng/ui/bind';

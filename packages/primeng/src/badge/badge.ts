@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, Directive, effect, inject, InjectionToken, Input, input, NgModule, SimpleChanges, ViewEncapsulation } from '@angular/core';
-import { addClass, createElement, hasClass, isNotEmpty, removeClass, uuid } from '@primeuix/utils';
+import { addClass, createElement, hasClass, isNotEmpty, removeClass, uuid } from '@libreng/utils';
 import { SharedModule } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind, BindModule } from '@libreng/ui/bind';

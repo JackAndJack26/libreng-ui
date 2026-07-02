@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style as multiselect_style } from '@primeuix/styles/multiselect';
+import { style as multiselect_style } from '@libreng/styles/multiselect';
 import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `

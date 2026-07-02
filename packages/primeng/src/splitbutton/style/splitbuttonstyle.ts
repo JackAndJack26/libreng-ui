@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style } from '@primeuix/styles/splitbutton';
+import { style } from '@libreng/styles/splitbutton';
 import { BaseStyle } from '@libreng/ui/base';
 
 const classes = {

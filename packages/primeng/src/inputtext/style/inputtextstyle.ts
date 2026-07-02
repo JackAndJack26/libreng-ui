@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style as inputtext_style } from '@primeuix/styles/inputtext';
+import { style as inputtext_style } from '@libreng/styles/inputtext';
 import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `

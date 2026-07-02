@@ -1,5 +1,5 @@
 import { AfterViewInit, booleanAttribute, Directive, ElementRef, EventEmitter, HostListener, Input, NgModule, NgZone, OnDestroy, Output, Renderer2 } from '@angular/core';
-import { addClass, removeClass } from '@primeuix/utils';
+import { addClass, removeClass } from '@libreng/utils';
 import { DomHandler } from '@libreng/ui/dom';
 import { VoidListener } from '@libreng/ui/ts-helpers';
 

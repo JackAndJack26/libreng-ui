@@ -20,7 +20,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { findIndexInList, setAttribute, uuid } from '@primeuix/utils';
+import { findIndexInList, setAttribute, uuid } from '@libreng/utils';
 import { FilterService, PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind } from '@libreng/ui/bind';

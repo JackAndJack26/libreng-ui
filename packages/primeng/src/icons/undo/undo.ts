@@ -1,5 +1,5 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
-import { uuid } from '@primeuix/utils';
+import { uuid } from '@libreng/utils';
 import { BaseIcon } from '@libreng/ui/icons/baseicon';
 
 @Component({

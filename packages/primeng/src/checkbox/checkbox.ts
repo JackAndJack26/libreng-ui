@@ -24,7 +24,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { FormControl, NG_VALUE_ACCESSOR, NgControl } from '@angular/forms';
-import { contains, equals } from '@primeuix/utils';
+import { contains, equals } from '@libreng/utils';
 import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';

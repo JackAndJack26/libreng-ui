@@ -23,8 +23,8 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 
-import { MotionOptions } from '@primeuix/motion';
-import { find, findIndexInList, uuid } from '@primeuix/utils';
+import { MotionOptions } from '@libreng/motion';
+import { find, findIndexInList, uuid } from '@libreng/utils';
 import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind, BindModule } from '@libreng/ui/bind';

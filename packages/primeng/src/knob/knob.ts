@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { booleanAttribute, ChangeDetectionStrategy, Component, EventEmitter, forwardRef, inject, InjectionToken, Input, NgModule, numberAttribute, Output, signal, ViewEncapsulation } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
-import { $dt } from '@primeuix/styled';
+import { $dt } from '@libreng/styled';
 import { SharedModule } from '@libreng/ui/api';
 import { PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { BaseEditableHolder } from '@libreng/ui/baseeditableholder';

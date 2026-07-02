@@ -23,7 +23,7 @@ import {
     TemplateRef,
     ViewEncapsulation
 } from '@angular/core';
-import { findSingle, setAttribute, uuid } from '@primeuix/utils';
+import { findSingle, setAttribute, uuid } from '@libreng/utils';
 import { Confirmation, ConfirmationService, ConfirmEventType, Footer, PrimeTemplate, SharedModule, TranslationKeys } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind } from '@libreng/ui/bind';

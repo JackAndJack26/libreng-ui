@@ -19,8 +19,8 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { MotionEvent, MotionOptions } from '@primeuix/motion';
-import { uuid } from '@primeuix/utils';
+import { MotionEvent, MotionOptions } from '@libreng/motion';
+import { uuid } from '@libreng/utils';
 import { BlockableUI, Footer, PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind, BindModule } from '@libreng/ui/bind';

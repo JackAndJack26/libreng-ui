@@ -5,5 +5,5 @@
     "lib": {
         "entryFile": "public_api.ts"
     },
-    "allowedNonPeerDependencies": ["@primeuix/styled", "@primeuix/utils", "@primeuix/styles", "@primeuix/motion"]
+    "allowedNonPeerDependencies": ["@libreng/styled", "@libreng/utils", "@libreng/styles", "@libreng/motion"]
 }

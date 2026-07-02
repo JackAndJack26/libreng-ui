@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style } from '@primeuix/styles/dialog';
+import { style } from '@libreng/styles/dialog';
 import { BaseStyle } from '@libreng/ui/base';
 
 /* Position */

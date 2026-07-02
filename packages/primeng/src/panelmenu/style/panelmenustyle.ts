@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style as panelmenu_style } from '@primeuix/styles/panelmenu';
+import { style as panelmenu_style } from '@libreng/styles/panelmenu';
 import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `

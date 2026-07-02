@@ -1,0 +1,53 @@
+{
+    "name": "@libreng/styled",
+    "version": "22.0.1",
+    "author": "LibreNG UI Contributors",
+    "description": "Styled utilities for PrimeUI Libraries (LibreNG UI fork of the MIT @primeuix/styled)",
+    "keywords": [
+        "styled",
+        "css",
+        "style utilities",
+        "primeng",
+        "primereact",
+        "primevue",
+        "primeuix"
+    ],
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/JackAndJack26/libreng-ui.git",
+        "directory": "packages/styled"
+    },
+    "bugs": {
+        "url": "https://github.com/JackAndJack26/libreng-ui/issues"
+    },
+    "main": "./dist/index.mjs",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.mts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.mts",
+            "import": "./dist/index.mjs",
+            "default": "./dist/index.mjs"
+        }
+    },
+    "sideEffects": false,
+    "files": [
+        "dist",
+        "LICENSE",
+        "README.md"
+    ],
+    "dependencies": {
+        "@libreng/utils": "workspace:*"
+    },
+    "engines": {
+        "node": ">=12.11.0"
+    },
+    "scripts": {
+        "build": "node ../../scripts/engine-dist.mjs packages/styled/x"
+    },
+    "homepage": "https://github.com/JackAndJack26/libreng-ui/",
+    "publishConfig": {
+        "access": "public"
+    }
+}

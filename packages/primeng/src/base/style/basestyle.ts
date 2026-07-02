@@ -1,7 +1,7 @@
 import { inject, Injectable } from '@angular/core';
-import { css as Css, dt, Theme } from '@primeuix/styled';
-import { style as base_style } from '@primeuix/styles/base';
-import { minifyCSS, resolve } from '@primeuix/utils';
+import { css as Css, dt, Theme } from '@libreng/styled';
+import { style as base_style } from '@libreng/styles/base';
+import { minifyCSS, resolve } from '@libreng/utils';
 import { UseStyle } from '@libreng/ui/usestyle';
 
 const css = /*css*/ `

@@ -2,7 +2,7 @@ import APIDoc from '@/doc/apidoc/index.json';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, ChangeDetectorRef, Component, computed, ElementRef, inject, input, InputSignal, viewChild } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { addClass, find, removeClass } from '@primeuix/utils/dom';
+import { addClass, find, removeClass } from '@libreng/utils/dom';
 import { PrimeNG } from '@libreng/ui/config';
 import { AppDocSectionText } from './app.docsectiontext';
 

@@ -23,7 +23,7 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import { addClass, removeClass } from '@primeuix/utils';
+import { addClass, removeClass } from '@libreng/utils';
 import { BlockableUI, PrimeTemplate, SharedModule, TranslationKeys } from '@libreng/ui/api';
 import { Badge } from '@libreng/ui/badge';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';

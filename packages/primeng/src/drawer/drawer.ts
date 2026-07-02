@@ -20,8 +20,8 @@ import {
     ViewChild,
     ViewEncapsulation
 } from '@angular/core';
-import { MotionEvent, MotionOptions } from '@primeuix/motion';
-import { addClass, appendChild, removeClass, setAttribute } from '@primeuix/utils';
+import { MotionEvent, MotionOptions } from '@libreng/motion';
+import { addClass, appendChild, removeClass, setAttribute } from '@libreng/utils';
 import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind } from '@libreng/ui/bind';

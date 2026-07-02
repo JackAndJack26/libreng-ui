@@ -22,8 +22,8 @@ import {
     ViewEncapsulation
 } from '@angular/core';
 import { SafeUrl } from '@angular/platform-browser';
-import { MotionEvent, MotionOptions } from '@primeuix/motion';
-import { appendChild, focus } from '@primeuix/utils';
+import { MotionEvent, MotionOptions } from '@libreng/motion';
+import { appendChild, focus } from '@libreng/utils';
 import { PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';
 import { Bind, BindModule } from '@libreng/ui/bind';

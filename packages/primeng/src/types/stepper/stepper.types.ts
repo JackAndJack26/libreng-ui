@@ -1,4 +1,4 @@
-import type { MotionOptions } from '@primeuix/motion';
+import type { MotionOptions } from '@libreng/motion';
 import type { PassThrough, PassThroughOption } from '@libreng/ui/api';
 
 /**

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { style as badge_style } from '@primeuix/styles/badge';
-import { isEmpty, isNotEmpty } from '@primeuix/utils';
+import { style as badge_style } from '@libreng/styles/badge';
+import { isEmpty, isNotEmpty } from '@libreng/utils';
 import { BaseStyle } from '@libreng/ui/base';
 
 const style = /*css*/ `

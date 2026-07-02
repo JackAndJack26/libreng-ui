@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style } from '@primeuix/styles/confirmdialog';
+import { style } from '@libreng/styles/confirmdialog';
 import { BaseStyle } from '@libreng/ui/base';
 
 const classes = {

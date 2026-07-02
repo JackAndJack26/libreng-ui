@@ -28,7 +28,7 @@ import {
     ViewRef
 } from '@angular/core';
 import { RouterModule } from '@angular/router';
-import { MotionEvent, MotionOptions } from '@primeuix/motion';
+import { MotionEvent, MotionOptions } from '@libreng/motion';
 import {
     appendChild,
     calculateScrollbarWidth,
@@ -47,7 +47,7 @@ import {
     isPrintableCharacter,
     resolve,
     uuid
-} from '@primeuix/utils';
+} from '@libreng/utils';
 import { MenuItem, OverlayService, PrimeTemplate, SharedModule } from '@libreng/ui/api';
 import { BadgeModule } from '@libreng/ui/badge';
 import { BaseComponent, PARENT_INSTANCE } from '@libreng/ui/basecomponent';

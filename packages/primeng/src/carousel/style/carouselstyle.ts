@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { style } from '@primeuix/styles/carousel';
+import { style } from '@libreng/styles/carousel';
 import { BaseStyle } from '@libreng/ui/base';
 
 const classes = {

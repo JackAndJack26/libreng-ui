@@ -1,5 +1,5 @@
 import { TemplateRef } from '@angular/core';
-import type { MotionOptions } from '@primeuix/motion';
+import type { MotionOptions } from '@libreng/motion';
 import type { MenuItem, PassThrough, PassThroughOption } from '@libreng/ui/api';
 
 /**
