@@ -1,5 +1,4 @@
 export const environment = {
     production: false,
-    apiUrl: 'https://www.primefaces.org/data/customers',
-    baseUrl: 'http://localhost:4000/api/designer'
+    apiUrl: 'https://www.primefaces.org/data/customers'
 };

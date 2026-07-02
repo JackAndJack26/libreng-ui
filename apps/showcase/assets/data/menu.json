@@ -548,16 +548,6 @@
             ]
         },
         {
-            "name": "Theme Designer",
-            "icon": "pi pi-sparkles",
-            "children": [
-                {
-                    "name": "Guide",
-                    "routerLink": "/designer"
-                }
-            ]
-        },
-        {
             "name": "Migration",
             "icon": "pi pi-arrow-up",
             "children": [

@@ -1,4 +1,3 @@
-import { AppDesigner } from '@/components/layout/designer/app.designer';
 import { AppConfigService } from '@/service/appconfigservice';
 import { CarService } from '@/service/carservice';
 import { CountryService } from '@/service/countryservice';
@@ -7,18 +6,18 @@ import { EventService } from '@/service/eventservice';
 import { NodeService } from '@/service/nodeservice';
 import { PhotoService } from '@/service/photoservice';
 import { ProductService } from '@/service/productservice';
-import { DOCUMENT, IMAGE_CONFIG } from '@angular/common';
+import { IMAGE_CONFIG } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
-import { ChangeDetectionStrategy, afterNextRender, Component, Inject, PLATFORM_ID, Renderer2 } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
+import { RouterOutlet } from '@angular/router';
 
 @Component({
     changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'app-root',
-    template: `<router-outlet></router-outlet> <app-designer />`,
+    template: `<router-outlet></router-outlet>`,
     standalone: true,
-    imports: [RouterOutlet, FormsModule, ReactiveFormsModule, HttpClientModule, AppDesigner],
+    imports: [RouterOutlet, FormsModule, ReactiveFormsModule, HttpClientModule],
     providers: [
         CarService,
         CountryService,
@@ -37,49 +36,4 @@ import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
         }
     ]
 })
-export class AppComponent {
-    constructor(
-        @Inject(DOCUMENT) private document: Document,
-        private renderer: Renderer2,
-        private router: Router,
-        @Inject(PLATFORM_ID) private platformId: any
-    ) {
-        afterNextRender(() => {
-            if (process.env.NODE_ENV === 'production') {
-                this.injectScripts();
-            }
-
-            this.bindRouteEvents();
-        });
-    }
-
-    injectScripts() {
-        const script = this.renderer.createElement('script');
-        script.type = 'text/javascript';
-        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-W297P962XH';
-        this.renderer.appendChild(this.document.body, script);
-
-        const scriptBody = this.renderer.createElement('script');
-        scriptBody.type = 'text/javascript';
-        scriptBody.text = `
-          window.dataLayer = window.dataLayer || [];
-          function gtag() { dataLayer.push(arguments); }
-          gtag('js', new Date());
-
-          gtag('config', 'G-W297P962XH');
-        `;
-        this.renderer.appendChild(this.document.body, scriptBody);
-    }
-
-    bindRouteEvents() {
-        this.router.events.subscribe((event) => {
-            if (event instanceof NavigationEnd) {
-                if (typeof window['gtag'] === 'function') {
-                    window['gtag']('event', 'page_view', {
-                        page_path: event.urlAfterRedirects
-                    });
-                }
-            }
-        });
-    }
-}
+export class AppComponent {}
