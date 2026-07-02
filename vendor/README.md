@@ -35,3 +35,19 @@ Each directory is the unmodified content of the official npm tarball:
 Copyright (c) PrimeTek Informatics — each package retains its original MIT
 `LICENSE` file. Do not edit these directories in place; fork them into
 `packages/` under a new name if changes are needed.
+
+## Reconstructed TypeScript sources (`source/`)
+
+`source/<package>/src/**` contains the original TypeScript sources of each
+package, reconstructed from the `sourcesContent` embedded in the published
+sourcemaps of the MIT tarballs above (615 files, byte-identical to what
+PrimeTek compiled). This is the starting point for forking any of these
+packages into `packages/` under the `@libreng` scope if a bug fix or feature
+is ever needed.
+
+Caveats: type-only declaration sources are not embedded in JS sourcemaps —
+the full public type surface is preserved by the published `.d.ts`/`.d.mts`
+files in each `dist/`. Build configs (tsup/vite) are not included either;
+recreate them like the ones used by `packages/themes`/`packages/mcp`.
+`primeicons` needs no reconstruction: its npm package already ships the
+sources (SVGs, fonts, CSS).
