@@ -2,7 +2,7 @@ import { Doc } from '@/domain/doc';
 import { CommonModule, DOCUMENT, isPlatformBrowser, Location } from '@angular/common';
 import { ChangeDetectionStrategy, Component, DestroyRef, ElementRef, inject, input, OnInit, PLATFORM_ID, signal, ViewChild } from '@angular/core';
 import { takeUntilDestroyed } from '@angular/core/rxjs-interop';
-import { RouterLink } from '@angular/router';
+
 import { ButtonModule } from '@libreng/ui/button';
 import { DomHandler } from '@libreng/ui/dom';
 import { ObjectUtils } from '@libreng/ui/utils';
@@ -12,7 +12,7 @@ import { fromEvent } from 'rxjs';
     changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'app-docsection-nav',
     standalone: true,
-    imports: [CommonModule, ButtonModule, RouterLink],
+    imports: [CommonModule, ButtonModule],
     template: `
         <div class="doc-section-nav-container">
             <ul #nav class="doc-section-nav">
