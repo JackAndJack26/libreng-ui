@@ -1,2 +1,13 @@
-export * from '@primeuix/themes/nora/virtualscroller';
-export { default } from '@primeuix/themes/nora/virtualscroller';
+export const loader = {
+    mask: {
+        background: '{content.background}',
+        color: '{text.muted.color}'
+    },
+    icon: {
+        size: '2rem'
+    }
+};
+
+export default {
+    loader
+};

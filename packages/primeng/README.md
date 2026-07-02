@@ -7,7 +7,7 @@ Migrating from PrimeNG v21? Replace the package and swap `primeng/*` imports for
 ## Installation
 
 ```bash
-npm install @libreng/ui @primeuix/themes
+npm install @libreng/ui @libreng/themes
 # or: pnpm add / yarn add
 ```
 
@@ -18,7 +18,7 @@ Add the provider and a theme preset to your `app.config.ts`:
 ```ts
 import { ApplicationConfig } from '@angular/core';
 import { providePrimeNG } from '@libreng/ui/config';
-import Aura from '@primeuix/themes/aura';
+import Aura from '@libreng/themes/aura';
 
 export const appConfig: ApplicationConfig = {
     providers: [
@@ -31,7 +31,7 @@ export const appConfig: ApplicationConfig = {
 };
 ```
 
-Available presets: `@primeuix/themes/aura`, `/lara`, `/nora`, `/material`.
+Available presets: `@libreng/themes/aura`, `/lara`, `/nora`, `/material`.
 
 ## Usage
 

@@ -1,2 +1,12 @@
-export * from '@primeuix/themes/aura/inputgroup';
-export { default } from '@primeuix/themes/aura/inputgroup';
+export const addon = {
+    background: '{form.field.background}',
+    borderColor: '{form.field.border.color}',
+    color: '{form.field.icon.color}',
+    borderRadius: '{form.field.border.radius}',
+    padding: '0.5rem',
+    minWidth: '2.5rem'
+};
+
+export default {
+    addon
+};

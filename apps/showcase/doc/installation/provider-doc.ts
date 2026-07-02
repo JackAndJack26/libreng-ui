@@ -19,7 +19,7 @@ export class ProviderDoc {
     code: Code = {
         typescript: `import { ApplicationConfig } from '@angular/core';
 import { providePrimeNG } from '@libreng/ui/config';
-import Aura from '@primeuix/themes/aura';
+import Aura from '@libreng/themes/aura';
 
 export const appConfig: ApplicationConfig = {
     providers: [

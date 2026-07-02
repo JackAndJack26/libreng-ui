@@ -33,6 +33,9 @@
         "paths": {                                           /* (UPDATED) Specify a set of entries that re-map imports to additional lookup locations. */
             "@libreng/ui/types/*": ["./packages/primeng/src/types/*/public_api"],
             "@libreng/ui/*": ["./packages/primeng/src/*/public_api"],
+            "@libreng/themes/types": ["./packages/themes/types/index.d.ts"],
+            "@libreng/themes/types/*": ["./packages/themes/types/*/index.d.ts"],
+            "@libreng/themes/tokens": ["./packages/themes/src/tokens/index"],
             "@libreng/themes/*": ["./packages/themes/src/presets/*/index"],
             "@libreng/themes": ["./packages/themes/src/index"]
         },

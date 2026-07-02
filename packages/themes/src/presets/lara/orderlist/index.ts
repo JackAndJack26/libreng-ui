@@ -1,2 +1,12 @@
-export * from '@primeuix/themes/lara/orderlist';
-export { default } from '@primeuix/themes/lara/orderlist';
+export const root = {
+    gap: '1.125rem'
+};
+
+export const controls = {
+    gap: '0.5rem'
+};
+
+export default {
+    root,
+    controls
+};

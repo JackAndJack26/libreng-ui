@@ -1,2 +1,7 @@
-export * from '@primeuix/themes/lara/blockui';
-export { default } from '@primeuix/themes/lara/blockui';
+export const root = {
+    borderRadius: '{content.border.radius}'
+};
+
+export default {
+    root
+};

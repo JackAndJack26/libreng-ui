@@ -1,2 +1,8 @@
-export * from '@primeuix/themes/lara/speeddial';
-export { default } from '@primeuix/themes/lara/speeddial';
+export const root = {
+    gap: '0.5rem',
+    transitionDuration: '{transition.duration}'
+};
+
+export default {
+    root
+};

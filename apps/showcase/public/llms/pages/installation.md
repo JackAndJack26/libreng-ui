@@ -8,13 +8,13 @@ LibreNG UI is available for download on the npm registry .
 
 ```bash
 # Using npm
-npm install @libreng/ui @primeuix/themes
+npm install @libreng/ui @libreng/themes
 
 # Using yarn
-yarn add @libreng/ui @primeuix/themes
+yarn add @libreng/ui @libreng/themes
 
 # Using pnpm
-pnpm add @libreng/ui @primeuix/themes
+pnpm add @libreng/ui @libreng/themes
 ```
 
 ## Examples-
@@ -32,7 +32,7 @@ Add providePrimeNG to the list of providers in your app.config.ts and use the th
 ```typescript
 import { ApplicationConfig } from '@angular/core';
 import { providePrimeNG } from '@libreng/ui/config';
-import Aura from '@primeuix/themes/aura';
+import Aura from '@libreng/themes/aura';
 
 export const appConfig: ApplicationConfig = {
     providers: [
@@ -53,7 +53,7 @@ Configure LibreNG UI to use a theme like Aura.
 import { ApplicationConfig } from '@angular/core';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from '@libreng/ui/config';
-import Aura from '@primeuix/themes/aura';
+import Aura from '@libreng/themes/aura';
 
 export const appConfig: ApplicationConfig = {
     providers: [

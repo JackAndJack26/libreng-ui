@@ -1,2 +1,10 @@
-export * from '@primeuix/themes/lara/overlaybadge';
-export { default } from '@primeuix/themes/lara/overlaybadge';
+export const root = {
+    outline: {
+        width: '2px',
+        color: '{content.background}'
+    }
+};
+
+export default {
+    root
+};

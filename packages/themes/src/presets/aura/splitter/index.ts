@@ -1,2 +1,29 @@
-export * from '@primeuix/themes/aura/splitter';
-export { default } from '@primeuix/themes/aura/splitter';
+export const root = {
+    background: '{content.background}',
+    borderColor: '{content.border.color}',
+    color: '{content.color}',
+    transitionDuration: '{transition.duration}'
+};
+
+export const gutter = {
+    background: '{content.border.color}'
+};
+
+export const handle = {
+    size: '24px',
+    background: 'transparent',
+    borderRadius: '{content.border.radius}',
+    focusRing: {
+        width: '{focus.ring.width}',
+        style: '{focus.ring.style}',
+        color: '{focus.ring.color}',
+        offset: '{focus.ring.offset}',
+        shadow: '{focus.ring.shadow}'
+    }
+};
+
+export default {
+    root,
+    gutter,
+    handle
+};

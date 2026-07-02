@@ -1,2 +1,10 @@
-export * from '@primeuix/themes/material/iconfield';
-export { default } from '@primeuix/themes/material/iconfield';
+export const icon = {
+    color: '{form.field.icon.color}'
+};
+
+export const css = /*css*/ ``;
+
+export default {
+    icon,
+    css
+};

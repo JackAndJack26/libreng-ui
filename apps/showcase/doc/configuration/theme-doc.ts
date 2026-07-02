@@ -22,7 +22,7 @@ export class ThemeDoc {
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 import { providePrimeNG } from '@libreng/ui/config';
 
-import Aura from '@primeuix/themes/aura';
+import Aura from '@libreng/themes/aura';
 
 export const appConfig: ApplicationConfig = {
     providers: [

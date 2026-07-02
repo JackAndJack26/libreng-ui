@@ -1,2 +1,16 @@
-export * from '@primeuix/themes/nora/ripple';
-export { default } from '@primeuix/themes/nora/ripple';
+export const colorScheme = {
+    light: {
+        root: {
+            background: 'rgba(0,0,0,0.1)'
+        }
+    },
+    dark: {
+        root: {
+            background: 'rgba(255,255,255,0.4)'
+        }
+    }
+};
+
+export default {
+    colorScheme
+};

@@ -1,2 +1,7 @@
-export * from '@primeuix/themes/aura/iconfield';
-export { default } from '@primeuix/themes/aura/iconfield';
+export const icon = {
+    color: '{form.field.icon.color}'
+};
+
+export default {
+    icon
+};

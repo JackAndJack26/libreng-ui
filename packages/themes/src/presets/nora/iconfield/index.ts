@@ -1,2 +1,7 @@
-export * from '@primeuix/themes/nora/iconfield';
-export { default } from '@primeuix/themes/nora/iconfield';
+export const icon = {
+    color: '{form.field.icon.color}'
+};
+
+export default {
+    icon
+};

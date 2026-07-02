@@ -1,2 +1,8 @@
-export * from '@primeuix/themes/aura/speeddial';
-export { default } from '@primeuix/themes/aura/speeddial';
+export const root = {
+    gap: '0.5rem',
+    transitionDuration: '{transition.duration}'
+};
+
+export default {
+    root
+};

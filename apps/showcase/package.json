@@ -27,7 +27,7 @@
         "@docsearch/css": "^3.3.4",
         "@docsearch/js": "^3.3.4",
         "@primeuix/styled": "catalog:",
-        "@primeuix/themes": "catalog:",
+        "@libreng/themes": "workspace:*",
         "@primeuix/utils": "catalog:",
         "@angular/cdk": "catalog:angular22",
         "@stackblitz/sdk": "1.9.0",

@@ -1,2 +1,10 @@
-export * from '@primeuix/themes/aura/overlaybadge';
-export { default } from '@primeuix/themes/aura/overlaybadge';
+export const root = {
+    outline: {
+        width: '2px',
+        color: '{content.background}'
+    }
+};
+
+export default {
+    root
+};

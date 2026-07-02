@@ -1,7 +1,7 @@
 import APIDoc from '@/doc/apidoc/index.json';
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, input, signal } from '@angular/core';
-import ThemeDoc from '@primeuix/themes/tokens';
+import ThemeDoc from '@libreng/themes/tokens';
 import { AppDocSectionNav } from './app.docsection-nav';
 import { AppDocStyledPreset } from './app.docstyledpreset';
 import { AppDocThemingTable } from './app.docthemingtable';

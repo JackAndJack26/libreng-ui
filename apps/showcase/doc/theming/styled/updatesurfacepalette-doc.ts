@@ -19,7 +19,7 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 })
 export class UpdateSurfacePaletteDoc {
     code1 = {
-        typescript: `import { updateSurfacePalette } from '@primeuix/themes';`
+        typescript: `import { updateSurfacePalette } from '@libreng/themes';`
     };
 
     code2 = {

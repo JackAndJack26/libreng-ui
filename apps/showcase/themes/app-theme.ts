@@ -1,5 +1,5 @@
-import { definePreset } from '@primeuix/themes';
-import Aura from '@primeuix/themes/aura';
+import { definePreset } from '@libreng/themes';
+import Aura from '@libreng/themes/aura';
 
 const Noir = definePreset(Aura, {
     semantic: {

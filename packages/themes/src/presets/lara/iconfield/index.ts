@@ -1,2 +1,7 @@
-export * from '@primeuix/themes/lara/iconfield';
-export { default } from '@primeuix/themes/lara/iconfield';
+export const icon = {
+    color: '{form.field.icon.color}'
+};
+
+export default {
+    icon
+};

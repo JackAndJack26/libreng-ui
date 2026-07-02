@@ -18,12 +18,12 @@ import { AppCode } from '@/components/doc/app.code';
 export class DownloadDoc {
     code: Code = {
         command: `# Using npm
-npm install @libreng/ui @primeuix/themes
+npm install @libreng/ui @libreng/themes
 
 # Using yarn
-yarn add @libreng/ui @primeuix/themes
+yarn add @libreng/ui @libreng/themes
 
 # Using pnpm
-pnpm add @libreng/ui @primeuix/themes`
+pnpm add @libreng/ui @libreng/themes`
     };
 }
