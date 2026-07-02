@@ -1,11 +1,11 @@
 import Versions from '@/assets/data/versions.json';
 import { AppConfiguratorComponent } from '@/components/layout/configurator/app.configurator.component';
+import { AppSearchComponent } from '@/components/layout/search/app.search.component';
 import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule, DOCUMENT } from '@angular/common';
 import { ChangeDetectionStrategy, afterNextRender, booleanAttribute, Component, computed, ElementRef, Inject, Input, OnDestroy, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
-import docsearch from '@docsearch/js';
 import { DomHandler } from '@libreng/ui/dom';
 import { StyleClass } from '@libreng/ui/styleclass';
 
@@ -13,7 +13,7 @@ import { StyleClass } from '@libreng/ui/styleclass';
     changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'app-topbar',
     standalone: true,
-    imports: [CommonModule, FormsModule, StyleClass, RouterModule, AppConfiguratorComponent],
+    imports: [CommonModule, FormsModule, StyleClass, RouterModule, AppConfiguratorComponent, AppSearchComponent],
     template: `<div class="layout-topbar">
         <div class="layout-topbar-inner">
             <div class="layout-topbar-logo-container">
@@ -41,7 +41,12 @@ import { StyleClass } from '@libreng/ui/styleclass';
 
             <ul class="topbar-items">
                 <li>
-                    <div id="docsearch"></div>
+                    <button type="button" (click)="searchDialog.open()" class="flex items-center gap-2 border border-surface rounded-full py-1.5 px-3 text-muted-color hover:border-primary transition-colors cursor-pointer bg-transparent">
+                        <i class="pi pi-search text-sm"></i>
+                        <span class="text-sm">Search</span>
+                        <span class="text-xs border border-surface rounded px-1">Ctrl K</span>
+                    </button>
+                    <app-search #searchDialog />
                 </li>
                 <li>
                     <a href="https://github.com/JackAndJack26/libreng-ui" target="_blank" rel="noopener noreferrer" class="topbar-item">
@@ -127,7 +132,6 @@ export class AppTopBarComponent implements OnDestroy {
 
         afterNextRender(() => {
             this.bindScrollListener();
-            this.initDocSearch();
         });
     }
 
@@ -147,15 +151,6 @@ export class AppTopBarComponent implements OnDestroy {
 
     toggleDarkMode() {
         this.configService.appState.update((state) => ({ ...state, darkTheme: !state.darkTheme }));
-    }
-
-    initDocSearch() {
-        docsearch({
-            appId: 'XG1L2MUWT9',
-            apiKey: '0c7d92ce7c38649263123110162ac181',
-            indexName: 'primeng',
-            container: '#docsearch'
-        });
     }
 
     bindScrollListener() {

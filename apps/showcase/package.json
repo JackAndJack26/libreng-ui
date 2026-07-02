@@ -24,8 +24,6 @@
     "devDependencies": {
         "@algolia/client-search": "^4.19.1",
         "@angular/ssr": "catalog:angular22",
-        "@docsearch/css": "^3.3.4",
-        "@docsearch/js": "^3.3.4",
         "@libreng/styled": "workspace:*",
         "@libreng/themes": "workspace:*",
         "@libreng/utils": "workspace:*",
