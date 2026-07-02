@@ -1,4 +1,4 @@
-import { Component, DebugElement, PLATFORM_ID, provideZonelessChangeDetection } from '@angular/core';
+import { ChangeDetectionStrategy, Component, DebugElement, PLATFORM_ID, provideZonelessChangeDetection } from '@angular/core';
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
@@ -8,6 +8,7 @@ import { ZIndexUtils } from 'primeng/utils';
 import { ScrollTop, ScrollTopModule } from './scrolltop';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false,
     selector: 'test-basic-scrolltop',
     template: `<p-scrolltop [threshold]="threshold" [target]="target"></p-scrolltop>`
@@ -18,6 +19,7 @@ class TestBasicScrollTopComponent {
 }
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false,
     selector: 'test-scrolltop-with-parent',
     template: `
@@ -32,6 +34,7 @@ class TestBasicScrollTopComponent {
 class TestScrollTopWithParentComponent {}
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false,
     selector: 'test-scrolltop-with-icon',
     template: ` <p-scrolltop [icon]="icon" [threshold]="threshold" [buttonAriaLabel]="buttonAriaLabel"> </p-scrolltop> `
@@ -43,6 +46,7 @@ class TestScrollTopWithIconComponent {
 }
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false,
     selector: 'test-scrolltop-with-template',
     template: `
@@ -56,6 +60,7 @@ class TestScrollTopWithIconComponent {
 class TestScrollTopWithTemplateComponent {}
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false,
     selector: 'test-scrolltop-with-styles',
     template: `
@@ -74,6 +79,7 @@ class TestScrollTopWithStylesComponent {
 }
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false,
     selector: 'test-scrolltop-dynamic',
     template: `
@@ -841,6 +847,7 @@ describe('ScrollTop', () => {
     describe('Complex Scenarios', () => {
         it('should handle multiple ScrollTop instances', () => {
             @Component({
+                changeDetection: ChangeDetectionStrategy.Eager,
                 standalone: false,
                 template: `
                     <p-scrolltop [threshold]="100"></p-scrolltop>
@@ -865,6 +872,7 @@ describe('ScrollTop', () => {
 
         it('should work with nested scrollable containers', () => {
             @Component({
+                changeDetection: ChangeDetectionStrategy.Eager,
                 standalone: false,
                 template: `
                     <div class="outer" style="height: 300px; overflow: auto;">
@@ -897,6 +905,7 @@ describe('ScrollTop', () => {
 
     describe('PassThrough - Case 1: Simple string classes', () => {
         @Component({
+            changeDetection: ChangeDetectionStrategy.Eager,
             standalone: false,
             template: ` <p-scrolltop [threshold]="100" [pt]="pt"></p-scrolltop> `
         })
@@ -947,6 +956,7 @@ describe('ScrollTop', () => {
 
     describe('PassThrough - Case 2: Objects', () => {
         @Component({
+            changeDetection: ChangeDetectionStrategy.Eager,
             standalone: false,
             template: ` <p-scrolltop [threshold]="100" [pt]="pt"></p-scrolltop> `
         })
@@ -1006,6 +1016,7 @@ describe('ScrollTop', () => {
 
     describe('PassThrough - Case 3: Mixed object and string values', () => {
         @Component({
+            changeDetection: ChangeDetectionStrategy.Eager,
             standalone: false,
             template: ` <p-scrolltop [threshold]="100" [pt]="pt"></p-scrolltop> `
         })
@@ -1048,6 +1059,7 @@ describe('ScrollTop', () => {
 
     describe('PassThrough - Case 4: Use variables from instance', () => {
         @Component({
+            changeDetection: ChangeDetectionStrategy.Eager,
             standalone: false,
             template: ` <p-scrolltop [threshold]="threshold" [target]="target" [pt]="pt"></p-scrolltop> `
         })
@@ -1115,6 +1127,7 @@ describe('ScrollTop', () => {
 
     describe('PassThrough - Case 5: Event binding', () => {
         @Component({
+            changeDetection: ChangeDetectionStrategy.Eager,
             standalone: false,
             template: ` <p-scrolltop [threshold]="100" [pt]="pt"></p-scrolltop> `
         })
@@ -1182,12 +1195,14 @@ describe('ScrollTop', () => {
 
     describe('PassThrough - Case 6: Inline test', () => {
         @Component({
+            changeDetection: ChangeDetectionStrategy.Eager,
             standalone: false,
             template: ` <p-scrolltop [threshold]="100" [pt]="{ host: 'INLINE_HOST_CLASS' }"></p-scrolltop> `
         })
         class TestScrollTopInlineStringPtComponent {}
 
         @Component({
+            changeDetection: ChangeDetectionStrategy.Eager,
             standalone: false,
             template: ` <p-scrolltop [threshold]="100" [pt]="{ host: { class: 'INLINE_OBJECT_CLASS', style: { border: '2px solid green' } } }"></p-scrolltop> `
         })
@@ -1232,6 +1247,7 @@ describe('ScrollTop', () => {
             const { providePrimeNG } = require('primeng/config');
 
             @Component({
+                changeDetection: ChangeDetectionStrategy.Eager,
                 standalone: false,
                 template: `
                     <p-scrolltop [threshold]="100"></p-scrolltop>
@@ -1275,6 +1291,7 @@ describe('ScrollTop', () => {
             const { providePrimeNG } = require('primeng/config');
 
             @Component({
+                changeDetection: ChangeDetectionStrategy.Eager,
                 standalone: false,
                 template: ` <p-scrolltop [threshold]="100" [pt]="{ host: 'LOCAL_HOST_CLASS', root: 'LOCAL_ROOT_CLASS' }"></p-scrolltop> `
             })
@@ -1310,6 +1327,7 @@ describe('ScrollTop', () => {
 
     describe('PassThrough - Case 8: Test hooks', () => {
         @Component({
+            changeDetection: ChangeDetectionStrategy.Eager,
             standalone: false,
             template: ` <p-scrolltop [threshold]="100" [pt]="pt"></p-scrolltop> `
         })

@@ -13,10 +13,11 @@ import { StepDoc } from '@/doc/knob/step-doc';
 import { StrokeDoc } from '@/doc/knob/stroke-doc';
 import { TemplateDoc } from '@/doc/knob/template-doc';
 import { TemplateDrivenFormsDoc } from '@/doc/knob/templatedrivenforms-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc docTitle="Angular Knob Component" header="Knob" description="Knob is a form component to define number inputs with a dial." [docs]="docs" [apiDocs]="['Knob']" themeDocs="knob" [ptDocs]="ptComponent"></app-doc> `,
     standalone: true,
     imports: [AppDoc]

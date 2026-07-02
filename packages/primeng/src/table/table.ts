@@ -4926,6 +4926,7 @@ export class CancelEditableRow extends BaseComponent {
 }
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'p-cellEditor',
     standalone: false,
     template: `
@@ -5373,6 +5374,7 @@ export class ReorderableRow extends BaseComponent {
  * @group Components
  */
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'p-columnFilter, p-column-filter, p-columnfilter',
     standalone: false,
     template: `
@@ -6348,6 +6350,7 @@ export class ColumnFilter extends BaseComponent {
 }
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'p-columnFilterFormElement',
     standalone: false,
     template: `

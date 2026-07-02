@@ -4,10 +4,11 @@ import { FilterDoc } from '@/doc/picklist/filter-doc';
 import { ImportDoc } from '@/doc/picklist/import-doc';
 import { PTComponent } from '@/doc/picklist/pt/PTComponent';
 import { TemplateDoc } from '@/doc/picklist/template-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc docTitle="Angular PickList Component" header="PickList" description="PickList is used to reorder items between different lists." [docs]="docs" [apiDocs]="['PickList']" [ptDocs]="ptComponent" themeDocs="picklist"></app-doc>`,
     standalone: true,
     imports: [AppDoc],

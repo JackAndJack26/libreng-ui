@@ -2,10 +2,11 @@ import { AccessibilityDoc } from '@/doc/keyfilter/accessibility-doc';
 import { ImportDoc } from '@/doc/keyfilter/import-doc';
 import { PresetsDoc } from '@/doc/keyfilter/presets-doc';
 import { RegexDoc } from '@/doc/keyfilter/regex-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc
         docTitle="Angular KeyFilter Component"
         header="KeyFilter"

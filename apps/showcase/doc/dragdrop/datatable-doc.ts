@@ -3,12 +3,13 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { DragDropModule } from 'primeng/dragdrop';
 import { TableModule } from 'primeng/table';
 import { TagModule } from 'primeng/tag';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'datatable-doc',
     standalone: true,
     imports: [CommonModule, DragDropModule, TableModule, TagModule, AppCode, AppDocSectionText],

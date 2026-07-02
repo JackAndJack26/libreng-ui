@@ -8,9 +8,10 @@ import { MultipleDoc } from '@/doc/panelmenu/multiple-doc';
 import { PTComponent } from '@/doc/panelmenu/pt/PTComponent';
 import { RouterDoc } from '@/doc/panelmenu/router-doc';
 import { TemplateDoc } from '@/doc/panelmenu/template-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc
         docTitle="Angular PanelMenu Component"
         header="PanelMenu"

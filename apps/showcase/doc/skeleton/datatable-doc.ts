@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
 import { SkeletonModule } from 'primeng/skeleton';
@@ -6,6 +6,7 @@ import { TableModule } from 'primeng/table';
 import { CommonModule } from '@angular/common';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'datatable-doc',
     standalone: true,
     imports: [AppDocSectionText, AppCode, SkeletonModule, TableModule, CommonModule],

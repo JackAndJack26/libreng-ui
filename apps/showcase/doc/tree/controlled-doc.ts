@@ -1,12 +1,13 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { NodeService } from '@/service/nodeservice';
-import { Component, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
 import { TreeNode } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
 import { TreeModule } from 'primeng/tree';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'controlled-doc',
     standalone: true,
     imports: [TreeModule, ButtonModule, AppCode, AppDocSectionText],

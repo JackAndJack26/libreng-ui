@@ -3,9 +3,10 @@ import { BasicDoc } from '@/doc/animateonscroll/basic-doc';
 import { ImportDoc } from '@/doc/animateonscroll/import-doc';
 import { AppDoc } from '@/components/doc/app.doc';
 import { AppDocService } from '@/components/doc/app.doc.service';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: ` <app-doc
         docTitle="Angular Animate On Scroll Directive"
         header="AnimateOnScroll"

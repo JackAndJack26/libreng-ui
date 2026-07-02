@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { AppCode } from '@/components/doc/app.code';
@@ -7,6 +7,7 @@ import { IftaLabelModule } from 'primeng/iftalabel';
 import { TextareaModule } from 'primeng/textarea';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'iftalabel-doc',
     standalone: true,
     imports: [FormsModule, RouterModule, AppCode, AppDocSectionText, IftaLabelModule, TextareaModule],

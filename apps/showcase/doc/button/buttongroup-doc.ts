@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ButtonGroupModule } from 'primeng/buttongroup';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'buttongroup-doc',
     standalone: true,
     imports: [AppCode, AppDocSectionText, ButtonGroupModule, ButtonModule],

@@ -1,6 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'templates',
     standalone: false,
     templateUrl: './learnmore.component.html',

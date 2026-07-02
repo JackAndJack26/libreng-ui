@@ -6,9 +6,10 @@ import { ImportDoc } from '@/doc/carousel/import-doc';
 import { PTComponent } from '@/doc/carousel/pt/PTComponent';
 import { ResponsiveDoc } from '@/doc/carousel/responsive-doc';
 import { VerticalDoc } from '@/doc/carousel/vertical-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDoc],
     template: `

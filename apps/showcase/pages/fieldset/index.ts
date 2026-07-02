@@ -5,9 +5,10 @@ import { ImportDoc } from '@/doc/fieldset/import-doc';
 import { PTComponent } from '@/doc/fieldset/pt/PTComponent';
 import { TemplateDoc } from '@/doc/fieldset/template-doc';
 import { ToggleableDoc } from '@/doc/fieldset/toggleable-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDoc],
     template: `

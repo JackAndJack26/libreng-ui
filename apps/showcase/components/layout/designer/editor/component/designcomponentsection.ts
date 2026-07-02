@@ -1,9 +1,10 @@
-import { Component, computed, inject, input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DesignerService } from '@/service/designerservice';
 import { DesignTokenField } from '../designtokenfield';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'design-component-section',
     standalone: true,
     imports: [CommonModule, DesignTokenField],

@@ -5,10 +5,11 @@ import { ImportDoc } from '@/doc/menubar/import-doc';
 import { PTComponent } from '@/doc/menubar/pt/PTComponent';
 import { RouterDoc } from '@/doc/menubar/router-doc';
 import { TemplateDoc } from '@/doc/menubar/template-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc docTitle="Angular Menubar Component" header="Menubar" description="Menubar is a horizontal menu component." [docs]="docs" [apiDocs]="['Menubar', 'MenuItem']" [ptDocs]="ptComponent" themeDocs="menubar"></app-doc> `,
     standalone: true,
     imports: [AppDoc]

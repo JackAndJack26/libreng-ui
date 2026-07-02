@@ -5,9 +5,10 @@ import { RouterDoc } from '@/doc/breadcrumb/router-doc';
 import { TemplateDoc } from '@/doc/breadcrumb/template-doc';
 import { PTComponent } from '@/doc/breadcrumb/pt/PTComponent';
 import { AppDoc } from '@/components/doc/app.doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDoc],
     template: `

@@ -3,10 +3,11 @@ import { DataTableDoc } from '@/doc/dragdrop/datatable-doc';
 import { DragHandleDoc } from '@/doc/dragdrop/draghandle-doc';
 import { DropIndicatorDoc } from '@/doc/dragdrop/dropindicator-doc';
 import { ImportDoc } from '@/doc/dragdrop/import-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDoc],
     template: ` <app-doc docTitle="Angular Drag and Drop Component" header="Drag and Drop" description="pDraggable and pDroppable directives apply drag-drop behaviors to any element." [docs]="docs" [apiDocs]="['DragDrop']"></app-doc>`,

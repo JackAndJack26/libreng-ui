@@ -1,11 +1,12 @@
 import { Code } from '@/domain/code';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { MenuItem, PrimeIcons } from 'primeng/api';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
 import { MenuModule } from 'primeng/menu';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'constants-doc',
     standalone: true,
     imports: [AppDocSectionText, AppCode, MenuModule],

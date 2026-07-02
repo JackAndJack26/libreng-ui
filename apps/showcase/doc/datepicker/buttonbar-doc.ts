@@ -1,11 +1,12 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { ButtonModule } from 'primeng/button';
 import { DatePickerModule } from 'primeng/datepicker';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'buttonbar-doc',
     standalone: true,
     imports: [FormsModule, DatePickerModule, ButtonModule, AppCode, AppDocSectionText],

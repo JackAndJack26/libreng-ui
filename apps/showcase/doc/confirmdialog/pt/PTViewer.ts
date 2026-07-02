@@ -1,10 +1,11 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { ConfirmationService } from 'primeng/api';
 import { ConfirmDialogModule } from 'primeng/confirmdialog';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'confirmdialog-pt-viewer',
     standalone: true,
     imports: [CommonModule, AppDocPtViewer, ConfirmDialogModule],

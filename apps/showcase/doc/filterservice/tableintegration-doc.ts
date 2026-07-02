@@ -3,11 +3,12 @@ import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { Car } from '@/domain/car';
 import { CarService } from '@/service/carservice';
 import { CommonModule } from '@angular/common';
-import { ChangeDetectorRef, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, OnInit } from '@angular/core';
 import { FilterMatchMode, FilterService, SelectItem } from 'primeng/api';
 import { TableModule } from 'primeng/table';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'tableintegration-doc',
     standalone: true,
     imports: [CommonModule, AppCode, AppDocSectionText, TableModule],

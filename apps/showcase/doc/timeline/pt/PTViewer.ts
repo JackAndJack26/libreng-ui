@@ -1,9 +1,10 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'timeline-pt-viewer',
     standalone: true,
     imports: [CommonModule, AppDocPtViewer, TimelineModule],

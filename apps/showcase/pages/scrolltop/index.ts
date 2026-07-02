@@ -4,9 +4,10 @@ import { ElementDoc } from '@/doc/scrolltop/element-doc';
 import { ImportDoc } from '@/doc/scrolltop/import-doc';
 import { PTComponent } from '@/doc/scrolltop/pt/PTComponent';
 import { AppDoc } from '@/components/doc/app.doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDoc],
     template: ` <app-doc

@@ -9,10 +9,11 @@ import { SizesDoc } from '@/doc/inputotp/sizes-doc';
 import { TemplateDoc } from '@/doc/inputotp/template-doc';
 import { TemplateDrivenFormsDoc } from '@/doc/inputotp/templatedrivenforms-doc';
 import { PTComponent } from '@/doc/inputotp/pt/PTComponent';
-import { Component, ViewEncapsulation } from '@angular/core';
+import { ChangeDetectionStrategy, Component, ViewEncapsulation } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDoc],
     template: ` <app-doc docTitle="Angular Otp Input Component" header="InputOtp" description="Input Otp is used to enter one time passwords." [docs]="docs" [ptDocs]="ptComponent" [apiDocs]="['InputOtp']" themeDocs="inputotp"></app-doc> `,

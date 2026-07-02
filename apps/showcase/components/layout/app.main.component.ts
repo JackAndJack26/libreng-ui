@@ -1,6 +1,6 @@
 import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule } from '@angular/common';
-import { Component, computed, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
 import { PrimeNG } from 'primeng/config';
@@ -11,6 +11,7 @@ import { AppNewsComponent } from './news/app.news.component';
 import { AppTopBarComponent } from './topbar/app.topbar.component';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'app-main',
     template: `
         <div class="layout-wrapper" [ngClass]="containerClass()">

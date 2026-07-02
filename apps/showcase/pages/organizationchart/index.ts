@@ -6,9 +6,10 @@ import { ImportDoc } from '@/doc/organizationchart/import-doc';
 import { PTComponent } from '@/doc/organizationchart/pt/PTComponent';
 import { SelectionDoc } from '@/doc/organizationchart/selection-doc';
 import { TemplateDoc } from '@/doc/organizationchart/template-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: ` <app-doc
         docTitle="Angular Organization Chart Component"
         header="OrganizationChart"

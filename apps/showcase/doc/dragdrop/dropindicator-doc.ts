@@ -2,10 +2,11 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { Product } from '@/domain/product';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DragDropModule } from 'primeng/dragdrop';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'dropindicator-doc',
     standalone: true,
     imports: [CommonModule, DragDropModule, AppCode, AppDocSectionText],

@@ -7,9 +7,10 @@ import { PTComponent } from '@/doc/stepper/pt/PTComponent';
 import { StepsOnlyDoc } from '@/doc/stepper/stepsonly';
 import { TemplateDoc } from '@/doc/stepper/template-doc';
 import { VerticalDoc } from '@/doc/stepper/vertical-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc
         docTitle="Angular Stepper Component"
         header="Stepper"

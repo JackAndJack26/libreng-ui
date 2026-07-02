@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { DynamicDialogRef } from 'primeng/dynamicdialog';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'footer',
     standalone: true,
     imports: [ButtonModule],

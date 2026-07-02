@@ -1,11 +1,12 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { ChangeDetectorRef, Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, signal } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TreeNode } from 'primeng/api';
 import { TreeSelectModule } from 'primeng/treeselect';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'lazy-doc',
     standalone: true,
     imports: [FormsModule, TreeSelectModule, AppCode, AppDocSectionText],

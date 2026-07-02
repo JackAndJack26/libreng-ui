@@ -3,11 +3,12 @@ import { TemplateFeatures } from '@/components/template/templatefeatures';
 import { TemplateFeaturesAnimation } from '@/components/template/templatefeaturesanimation/templatefeaturesanimation';
 import { TemplateHero } from '@/components/template/templatehero/templatehero';
 import { TemplateLicense } from '@/components/template/templatelicense';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { GenesisLogo } from './genesislogo';
 import { GenesisSeparator } from './genesisseparator';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     selector: 'genesis-page',
     imports: [TemplateHero, TemplateLicense, GenesisSeparator, TemplateFeaturesAnimation, TemplateConfiguration, TemplateFeatures],

@@ -1,10 +1,11 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { OverlayModule } from 'primeng/overlay';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'overlay-pt-viewer',
     standalone: true,
     imports: [CommonModule, AppDocPtViewer, OverlayModule, ButtonModule],

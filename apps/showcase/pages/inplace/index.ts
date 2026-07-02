@@ -5,10 +5,11 @@ import { ImportDoc } from '@/doc/inplace/import-doc';
 import { InputDoc } from '@/doc/inplace/input-doc';
 import { LazyDoc } from '@/doc/inplace/lazy-doc';
 import { PTComponent } from '@/doc/inplace/pt/PTComponent';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDoc],
     template: ` <app-doc

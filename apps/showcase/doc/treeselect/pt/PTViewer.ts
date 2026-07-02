@@ -1,12 +1,13 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TreeNode } from 'primeng/api';
 import { TreeSelectModule } from 'primeng/treeselect';
 import { NodeService } from '@/service/nodeservice';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'treeselect-pt-viewer',
     standalone: true,
     imports: [CommonModule, AppDocPtViewer, TreeSelectModule, FormsModule],

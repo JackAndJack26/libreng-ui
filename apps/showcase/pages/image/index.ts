@@ -4,10 +4,11 @@ import { ImportDoc } from '@/doc/Image/import-doc';
 import { PreviewDoc } from '@/doc/Image/preview-doc';
 import { TemplateDoc } from '@/doc/Image/template-doc';
 import { PTComponent } from '@/doc/Image/pt/PTComponent';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc docTitle="Angular Image Component" header="Image" description="Displays an image with preview and tranformation options." [docs]="docs" [apiDocs]="['Image']" [ptDocs]="ptComponent" themeDocs="image"></app-doc> `,
     standalone: true,
     imports: [AppDoc]

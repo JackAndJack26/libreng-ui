@@ -4,11 +4,12 @@ import { TemplateFeaturesAnimation } from '@/components/template/templatefeature
 import { TemplateHero } from '@/components/template/templatehero/templatehero';
 import { TemplateLicense } from '@/components/template/templatelicense';
 import { TemplateYoutube } from '@/components/template/templateyoutube';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { VeronaLogo } from './veronalogo';
 import { VeronaSeparator } from './veronaseparator';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     selector: 'verona-page',
     imports: [TemplateHero, TemplateFeaturesAnimation, TemplateFeatures, TemplateConfiguration, TemplateFeaturesAnimation, TemplateYoutube, TemplateLicense, VeronaSeparator],

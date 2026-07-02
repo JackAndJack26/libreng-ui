@@ -1,10 +1,11 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { PhotoService } from '@/service/photoservice';
 import { CommonModule } from '@angular/common';
-import { Component, model } from '@angular/core';
+import { ChangeDetectionStrategy, Component, model } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'galleria-pt-viewer',
     standalone: true,
     imports: [CommonModule, AppDocPtViewer, GalleriaModule],

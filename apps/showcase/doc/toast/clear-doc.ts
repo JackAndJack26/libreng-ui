@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { MessageService } from 'primeng/api';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
@@ -6,6 +6,7 @@ import { Toast } from 'primeng/toast';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'clear-doc',
     standalone: true,
     imports: [AppDocSectionText, AppCode, Toast, ButtonModule],

@@ -1,11 +1,12 @@
 import { CommonModule } from '@angular/common';
-import { booleanAttribute, Component, Input } from '@angular/core';
+import { ChangeDetectionStrategy, booleanAttribute, Component, Input } from '@angular/core';
 import { Router, RouterModule } from '@angular/router';
 import { StyleClass } from 'primeng/styleclass';
 import { Tag } from 'primeng/tag';
 import { MenuItem } from './app.menu.component';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: '[app-menuitem]',
     template: `
         <button *ngIf="root && item.children" pButton type="button" class="px-link" pStyleClass="@next" enterFromClass="hidden" enterActiveClass="animate-slidedown" leaveToClass="hidden" leaveActiveClass="animate-slideup">

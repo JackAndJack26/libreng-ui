@@ -1,13 +1,14 @@
 import { AppCode } from '@/components/doc/app.code';
 import { Code } from '@/domain/code';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { Meta, Title } from '@angular/platform-browser';
 import { RouterModule } from '@angular/router';
 import { RippleModule } from 'primeng/ripple';
 import { TagModule } from 'primeng/tag';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [CommonModule, TagModule, AppCode, RouterModule, RippleModule],
     template: `

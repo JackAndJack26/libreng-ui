@@ -1,9 +1,10 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { PaginatorModule, PaginatorState } from 'primeng/paginator';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'images-doc',
     standalone: true,
     imports: [PaginatorModule, AppCode, AppDocSectionText],

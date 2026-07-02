@@ -1,12 +1,13 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { DatePickerModule } from 'primeng/datepicker';
 import { IftaLabelModule } from 'primeng/iftalabel';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'iftalabel-doc',
     standalone: true,
     imports: [FormsModule, RouterModule, DatePickerModule, IftaLabelModule, AppCode, AppDocSectionText],

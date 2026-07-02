@@ -1,11 +1,12 @@
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
-import { Component, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
 import { InfoDemo } from './infodemo';
 import { ButtonModule } from 'primeng/button';
 import { TableModule } from 'primeng/table';
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [ButtonModule, TableModule],
     template: ` <div class="flex justify-end mt-1 mb-4">

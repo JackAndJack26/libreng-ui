@@ -2,11 +2,12 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { PhotoService } from '@/service/photoservice';
 import { CommonModule } from '@angular/common';
-import { Component, inject, model, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject, model, OnInit } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { GalleriaModule } from 'primeng/galleria';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'without-thumbnails-doc',
     standalone: true,
     imports: [CommonModule, GalleriaModule, ButtonModule, AppCode, AppDocSectionText],

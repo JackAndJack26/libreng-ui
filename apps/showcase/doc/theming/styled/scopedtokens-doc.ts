@@ -1,10 +1,11 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { ToggleSwitchModule } from 'primeng/toggleswitch';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'scopedtokens-doc',
     standalone: true,
     imports: [FormsModule, AppCode, AppDocSectionText, ToggleSwitchModule],

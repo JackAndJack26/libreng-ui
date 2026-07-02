@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
@@ -6,6 +6,7 @@ import { TieredMenuModule } from 'primeng/tieredmenu';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'popup-doc',
     standalone: true,
     imports: [AppDocSectionText, AppCode, TieredMenuModule, ButtonModule],

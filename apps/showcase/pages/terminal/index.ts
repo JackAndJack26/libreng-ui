@@ -2,10 +2,11 @@ import { AccessibilityDoc } from '@/doc/terminal/accessibility-doc';
 import { BasicDoc } from '@/doc/terminal/basic-doc';
 import { ImportDoc } from '@/doc/terminal/import-doc';
 import { PTComponent } from '@/doc/terminal/pt/PTComponent';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc
         docTitle="Angular Terminal Component"
         header="Terminal"

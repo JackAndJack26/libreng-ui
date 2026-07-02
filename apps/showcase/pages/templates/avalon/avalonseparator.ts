@@ -1,8 +1,9 @@
 import { TemplateSeparator } from '@/components/template/templateseparator';
 import { AppConfigService } from '@/service/appconfigservice';
-import { Component, inject } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     selector: 'avalon-separator',
     imports: [TemplateSeparator],

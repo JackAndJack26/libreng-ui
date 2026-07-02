@@ -2,7 +2,7 @@ import Versions from '@/assets/data/versions.json';
 import { AppConfiguratorComponent } from '@/components/layout/configurator/app.configurator.component';
 import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { afterNextRender, booleanAttribute, Component, computed, ElementRef, Inject, Input, OnDestroy, Renderer2 } from '@angular/core';
+import { ChangeDetectionStrategy, afterNextRender, booleanAttribute, Component, computed, ElementRef, Inject, Input, OnDestroy, Renderer2 } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import docsearch from '@docsearch/js';
@@ -10,6 +10,7 @@ import { DomHandler } from 'primeng/dom';
 import { StyleClass } from 'primeng/styleclass';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'app-topbar',
     standalone: true,
     imports: [CommonModule, FormsModule, StyleClass, RouterModule, AppConfiguratorComponent],

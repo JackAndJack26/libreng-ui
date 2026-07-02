@@ -1,10 +1,11 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { Code } from '@/domain/code';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'verify-doc',
     standalone: true,
     imports: [AppDocSectionText, AppCode, ButtonModule],

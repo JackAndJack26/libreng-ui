@@ -1,11 +1,12 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, signal } from '@angular/core';
 import { TreeNode } from 'primeng/api';
 import { TreeModule } from 'primeng/tree';
 import { NodeService } from '@/service/nodeservice';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'tree-pt-viewer',
     standalone: true,
     imports: [CommonModule, AppDocPtViewer, TreeModule],

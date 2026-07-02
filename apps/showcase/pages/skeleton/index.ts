@@ -6,9 +6,10 @@ import { ListDoc } from '@/doc/skeleton/list-doc';
 import { PTComponent } from '@/doc/skeleton/pt/PTComponent';
 import { ShapesDoc } from '@/doc/skeleton/shapes-doc';
 import { AppDoc } from '@/components/doc/app.doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc
         docTitle="Angular Skeleton Component"
         header="Skeleton"

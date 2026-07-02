@@ -1,6 +1,7 @@
 {
     "compilerOptions": {
         /* Visit https://aka.ms/tsconfig to read more about this file */
+        "ignoreDeprecations": "6.0",                          /* (UPDATED for Angular 22 / TS 6.0) Silence deprecation errors for options like baseUrl removed in TS 7.0. */
 
         /* Projects */
         // "incremental": true,                              /* Save .tsbuildinfo files to allow for incremental compilation of projects. */

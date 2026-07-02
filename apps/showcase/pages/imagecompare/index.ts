@@ -4,9 +4,10 @@ import { BasicDoc } from '@/doc/imagecompare/basic-doc';
 import { ImportDoc } from '@/doc/imagecompare/import-doc';
 import { PTComponent } from '@/doc/imagecompare/pt/PTComponent';
 import { ResponsiveDoc } from '@/doc/imagecompare/responsive-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc
         docTitle="Angular ImageCompare Component"
         header="ImageCompare"

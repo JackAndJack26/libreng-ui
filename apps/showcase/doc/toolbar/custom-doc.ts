@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { AppCode } from '@/components/doc/app.code';
 import { ToolbarModule } from 'primeng/toolbar';
@@ -6,6 +6,7 @@ import { ButtonModule } from 'primeng/button';
 import { AvatarModule } from 'primeng/avatar';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'custom-doc',
     standalone: true,
     imports: [AppDocSectionText, AppCode, ToolbarModule, ButtonModule, AvatarModule],

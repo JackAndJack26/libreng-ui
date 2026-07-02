@@ -1,10 +1,11 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { ScrollPanelModule } from 'primeng/scrollpanel';
 import { ScrollTopModule } from 'primeng/scrolltop';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'scrolltop-pt-viewer',
     standalone: true,
     imports: [CommonModule, AppDocPtViewer, ScrollTopModule, ScrollPanelModule],

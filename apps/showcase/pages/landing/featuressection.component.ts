@@ -1,9 +1,10 @@
 import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AnimateOnScrollModule } from 'primeng/animateonscroll';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'features-section',
     standalone: true,
     imports: [CommonModule, AnimateOnScrollModule],

@@ -2,12 +2,13 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { Component, DebugElement, provideZonelessChangeDetection } from '@angular/core';
 import { FormsModule, ReactiveFormsModule, FormControl, FormGroup, Validators } from '@angular/forms';
 import { By } from '@angular/platform-browser';
-import { PLATFORM_ID } from '@angular/core';
+import { ChangeDetectionStrategy, PLATFORM_ID } from '@angular/core';
 import { KeyFilter, KeyFilterModule, KeyFilterPattern } from './keyfilter';
 import { CommonModule } from '@angular/common';
 
 // Test Components
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false,
     template: ` <input type="text" [(ngModel)]="value" [pKeyFilter]="pattern" [pValidateOnly]="validateOnly" (ngModelChange)="onModelChange($event)" #inputEl /> `
 })
@@ -22,6 +23,7 @@ class TestBasicKeyFilterComponent {
 }
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false,
     template: `
         <form [formGroup]="form">

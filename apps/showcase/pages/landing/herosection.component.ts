@@ -1,6 +1,6 @@
 import { AppConfigService } from '@/service/appconfigservice';
 import { CommonModule, isPlatformBrowser } from '@angular/common';
-import { ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component, Inject, OnDestroy, OnInit, PLATFORM_ID } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { MenuItem, SelectItem } from 'primeng/api';
@@ -24,6 +24,7 @@ import { MoviesApp } from './samples/moviesapp.component';
 import { OverviewApp } from './samples/overviewapp.component';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'hero-section',
     standalone: true,
     imports: [

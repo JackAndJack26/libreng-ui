@@ -18,11 +18,12 @@ import { SupportDoc } from '@/doc/uikit/common/support-doc';
 import { UpdatePrimeOneDoc } from '@/doc/uikit/common/updateprimeone-doc';
 import { PrimeUIFigmaPluginDoc } from '@/doc/uikit/v4/primeuifigmaplugin-doc';
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { RippleModule } from 'primeng/ripple';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [CommonModule, AppDocSectionNav, AppDocSection, RippleModule, RouterModule],
     template: `

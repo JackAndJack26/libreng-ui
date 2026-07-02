@@ -4,10 +4,11 @@ import { HeadlessDoc } from '@/doc/confirmpopup/headless-doc';
 import { ImportDoc } from '@/doc/confirmpopup/import-doc';
 import { PTComponent } from '@/doc/confirmpopup/pt/PTComponent';
 import { TemplateDoc } from '@/doc/confirmpopup/template-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDoc],
     template: `

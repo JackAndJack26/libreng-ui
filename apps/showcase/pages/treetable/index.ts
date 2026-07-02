@@ -31,10 +31,11 @@ import { SortSingleColumnDoc } from '@/doc/treetable/sortsinglecolumn-doc';
 import { TemplateDoc } from '@/doc/treetable/template-doc';
 import { LoadingMaskDoc } from '@/doc/treetable/loadingmask-doc';
 import { LoadingSkeletonDoc } from '@/doc/treetable/loadingskeleton-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc
         docTitle="Angular TreeTable Component"
         header="TreeTable"

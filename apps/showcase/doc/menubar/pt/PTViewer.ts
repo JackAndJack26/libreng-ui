@@ -1,10 +1,11 @@
 import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { CommonModule } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { MenuItem } from 'primeng/api';
 import { MenubarModule } from 'primeng/menubar';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'menubar-pt-viewer',
     standalone: true,
     imports: [CommonModule, AppDocPtViewer, MenubarModule],

@@ -1,11 +1,12 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { NodeService } from '@/service/nodeservice';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { TreeSelectModule } from 'primeng/treeselect';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'virtualscroll-doc',
     standalone: true,
     imports: [FormsModule, TreeSelectModule, AppCode, AppDocSectionText],

@@ -20,9 +20,10 @@ import { ItemWithoutThumbnailsDoc } from '@/doc/galleria/navigator/itemwithoutth
 import { PTComponent } from '@/doc/galleria/pt/PTComponent';
 import { ResponsiveDoc } from '@/doc/galleria/responsive-doc';
 import { ThumbnailDoc } from '@/doc/galleria/thumbnail-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: ` <app-doc docTitle="Angular Gallery Component" header="Galleria" description="Galleria is an advanced content gallery component." [docs]="docs" [apiDocs]="['Galleria']" [ptDocs]="ptComponent" componentName="Galleria"></app-doc>`,
     standalone: true,
     imports: [AppDoc],

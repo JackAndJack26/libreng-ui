@@ -11,9 +11,10 @@ import { LicenseDoc } from '@/doc/designer/license-doc';
 import { LimitationsDoc } from '@/doc/designer/limitations-doc';
 import { MigrationAssistantDoc } from '@/doc/designer/migrationassistant-doc';
 import { OverviewDoc } from '@/doc/designer/overview-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDocSection, AppDocSectionNav],
     template: `<div class="doc">

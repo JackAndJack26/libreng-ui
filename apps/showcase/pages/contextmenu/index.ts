@@ -7,10 +7,11 @@ import { PTComponent } from '@/doc/contextmenu/pt/PTComponent';
 import { RouterDoc } from '@/doc/contextmenu/router-doc';
 import { TableDoc } from '@/doc/contextmenu/table-doc';
 import { TemplateDoc } from '@/doc/contextmenu/template-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: true,
     imports: [AppDoc],
     template: `

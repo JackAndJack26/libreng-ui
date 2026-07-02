@@ -2,12 +2,13 @@ import { AppDocPtViewer, getPTOptions } from '@/components/doc/app.docptviewer';
 import { Product } from '@/domain/product';
 import { ProductService } from '@/service/productservice';
 import { CommonModule } from '@angular/common';
-import { Component, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, signal } from '@angular/core';
 import { ButtonModule } from 'primeng/button';
 import { CarouselModule } from 'primeng/carousel';
 import { TagModule } from 'primeng/tag';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'carousel-pt-viewer',
     standalone: true,
     imports: [CommonModule, AppDocPtViewer, CarouselModule, TagModule, ButtonModule],

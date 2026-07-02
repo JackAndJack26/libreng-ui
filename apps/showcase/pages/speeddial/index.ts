@@ -9,9 +9,10 @@ import { QuarterCircleDoc } from '@/doc/speeddial/quartercircle-doc';
 import { SemiCircleDoc } from '@/doc/speeddial/semicircle-doc';
 import { TemplateDoc } from '@/doc/speeddial/template-doc';
 import { TooltipDoc } from '@/doc/speeddial/tooltip-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     template: `<app-doc docTitle="Angular Speed Dial Component" header="Speed Dial" description="SpeedDial is a floating button with a popup menu." [docs]="docs" [apiDocs]="['SpeedDial']" [ptDocs]="ptComponent" themeDocs="speeddial"></app-doc>`,
     standalone: true,
     imports: [AppDoc],

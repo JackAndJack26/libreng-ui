@@ -1,9 +1,10 @@
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { OverlayBadgeModule } from 'primeng/overlaybadge';
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'overlay-doc',
     standalone: true,
     imports: [OverlayBadgeModule, AppCode, AppDocSectionText],

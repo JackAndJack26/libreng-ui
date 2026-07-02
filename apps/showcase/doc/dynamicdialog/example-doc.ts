@@ -1,6 +1,6 @@
 import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
-import { Component, OnDestroy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnDestroy } from '@angular/core';
 import { MessageService } from 'primeng/api';
 import { ButtonModule } from 'primeng/button';
 import { DialogService, DynamicDialogRef } from 'primeng/dynamicdialog';
@@ -9,6 +9,7 @@ import { Footer } from './footer';
 import { ProductListDemo } from './productlistdemo';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'example-doc',
     standalone: true,
     imports: [ToastModule, ButtonModule, AppCode, AppDocSectionText],

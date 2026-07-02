@@ -1,4 +1,4 @@
-import { Component, computed, inject, OnInit, signal } from '@angular/core';
+import { ChangeDetectionStrategy, Component, computed, inject, OnInit, signal } from '@angular/core';
 import { TabsModule } from 'primeng/tabs';
 import { FieldsetModule } from 'primeng/fieldset';
 import { CommonModule } from '@angular/common';
@@ -9,6 +9,7 @@ import { DesignComponentSection } from '@/components/layout/designer/editor/comp
 import { AppConfigService } from '@/service/appconfigservice';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'design-component',
     standalone: true,
     imports: [CommonModule, FieldsetModule, TabsModule, DesignComponentSection],

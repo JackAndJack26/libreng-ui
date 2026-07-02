@@ -2,10 +2,11 @@ import { AppCode } from '@/components/doc/app.code';
 import { AppDocSectionText } from '@/components/doc/app.docsectiontext';
 import { PhotoService } from '@/service/photoservice';
 import { CommonModule } from '@angular/common';
-import { Component, OnInit, model } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit, model } from '@angular/core';
 import { GalleriaModule } from 'primeng/galleria';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'click-event-doc',
     standalone: true,
     imports: [CommonModule, GalleriaModule, AppCode, AppDocSectionText],

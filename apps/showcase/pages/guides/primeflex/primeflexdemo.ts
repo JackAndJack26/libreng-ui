@@ -2,10 +2,11 @@ import { CompatibilityDoc } from '@/doc/guides/primeflex/compatibility-doc';
 import { MigrationDoc } from '@/doc/guides/primeflex/migration-doc';
 import { OverviewDoc } from '@/doc/guides/primeflex/overview-doc';
 import { TailwindCSSDoc } from '@/doc/guides/primeflex/tailwindcss-doc';
-import { Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { AppDoc } from '@/components/doc/app.doc';
 
 @Component({
+    changeDetection: ChangeDetectionStrategy.Eager,
     selector: 'css-layer',
     standalone: true,
     imports: [AppDoc],
