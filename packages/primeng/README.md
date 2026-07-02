@@ -65,6 +65,21 @@ npm install primeicons
 - Angular `^22.0.0`
 - Node.js `>= 22.22.3`
 
+## Migrating from PrimeNG v21
+
+The public API is unchanged (`p-*` selectors, `providePrimeNG`, theming, pass-through). Swap the packages and do a project-wide find and replace:
+
+```bash
+npm uninstall primeng @primeng/themes
+npm install @libreng/ui @libreng/themes
+```
+
+| Find | Replace with |
+|---|---|
+| `from 'primeng/` | `from '@libreng/ui/` |
+| `from '@primeng/themes` | `from '@libreng/themes` |
+| `from '@primeuix/themes` | `from '@libreng/themes` |
+
 ## Documentation & Source
 
 https://github.com/JackAndJack26/libreng-ui — the showcase app in `apps/showcase` documents all 80+ components with live demos.
