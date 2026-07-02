@@ -31,6 +31,7 @@ Each directory is the unmodified content of the official npm tarball:
 | `primeuix-motion` | `@primeuix/motion` | 0.0.10 | MIT | registry.npmjs.org/@primeuix/motion/-/motion-0.0.10.tgz | `9af4238226042d80518dd343c6481d03582e374a` |
 | `primeuix-themes` | `@primeuix/themes` | 2.0.3 | MIT | registry.npmjs.org/@primeuix/themes/-/themes-2.0.3.tgz | `c3919d49e818b3bbac611ab8d89a52d4ffed6815` |
 | `primeicons` | `primeicons` | 7.0.0 | MIT | registry.npmjs.org/primeicons/-/primeicons-7.0.0.tgz | `6b25c3fdcb29bb745a3035bdc1ed5902f4a419cf` |
+| `tailwindcss-primeui` | `tailwindcss-primeui` | 0.6.1 | MIT | registry.npmjs.org/tailwindcss-primeui/-/tailwindcss-primeui-0.6.1.tgz | `fcb74738e80d4253c14521114773f5ce638c6ee8` |
 
 Copyright (c) PrimeTek Informatics — each package retains its original MIT
 `LICENSE` file. Do not edit these directories in place; fork them into
