@@ -1,6 +1,6 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { clearPackageJson, copyDependencies, renameDTSFile, resolvePath } from '../../../scripts/build-helper.mjs';
+import { clearPackageJson, copyDependencies, materializeCatalogVersions, renameDTSFile, resolvePath } from '../../../scripts/build-helper.mjs';
 
 const { __dirname, __workspace, INPUT_DIR, OUTPUT_DIR } = resolvePath(import.meta.url);
 
@@ -14,3 +14,5 @@ fs.copySync(path.resolve(__dirname, '../README.md'), `${OUTPUT_DIR}/README.md`);
 fs.copySync(path.resolve(__workspace, './LICENSE.md'), `${OUTPUT_DIR}/LICENSE.md`);
 
 clearPackageJson(path.resolve(__dirname, `../${OUTPUT_DIR}/package.json`));
+
+materializeCatalogVersions(path.resolve(__dirname, `../${OUTPUT_DIR}/package.json`));

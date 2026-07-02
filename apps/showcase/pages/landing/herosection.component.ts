@@ -543,40 +543,40 @@ export class HeroSectionComponent implements OnInit, OnDestroy {
 
         this.opportunities = [
             {
-                title: 'Apollo',
-                link: 'https://apollo.primeng.org',
-                image: 'https://primefaces.org/cdn/primeng/images/layouts/apollo-ng.jpg',
-                text: 'Keep your application fresh with Apollo, the newest and most modern template available.'
+                title: 'Data Table',
+                link: '/table',
+                image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMTgwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjNjM2NkYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjJEM0VFIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0idXJsKCNnKSIgb3BhY2l0eT0iMC44NSIvPjxwYXRoIGQ9Ik0xMjAgNzB2NDBoMzJ2LTExaC0yMVY3MGgtMTF6IiBmaWxsPSIjZmZmIi8+PHJlY3QgeD0iMTYwIiB5PSI4OCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiByeD0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC44NSIvPjwvc3ZnPg==',
+                text: 'Present large datasets with sorting, filtering, pagination and selection.'
             },
             {
-                title: 'Ultima',
-                link: 'https://ultima.primeng.org/',
-                image: 'https://primefaces.org/cdn/primeng/images/layouts/ultima-ng.jpg',
-                text: "Elevate your application's intuitiveness with Ultima's premium Material Design interface."
+                title: 'Charts',
+                link: '/chart',
+                image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMTgwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjNjM2NkYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjJEM0VFIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0idXJsKCNnKSIgb3BhY2l0eT0iMC44NSIvPjxwYXRoIGQ9Ik0xMjAgNzB2NDBoMzJ2LTExaC0yMVY3MGgtMTF6IiBmaWxsPSIjZmZmIi8+PHJlY3QgeD0iMTYwIiB5PSI4OCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiByeD0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC44NSIvPjwvc3ZnPg==',
+                text: 'Visualize data with the Chart.js integration.'
             },
             {
-                title: 'Diamond',
-                link: 'https://diamond.primeng.org/',
-                image: 'https://primefaces.org/cdn/primeng/images/layouts/diamond-ng.jpg',
-                text: "Handle complex operations with elegance with Diamond's robust and powerful premium design."
+                title: 'Theming',
+                link: '/theming',
+                image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMTgwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjNjM2NkYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjJEM0VFIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0idXJsKCNnKSIgb3BhY2l0eT0iMC44NSIvPjxwYXRoIGQ9Ik0xMjAgNzB2NDBoMzJ2LTExaC0yMVY3MGgtMTF6IiBmaWxsPSIjZmZmIi8+PHJlY3QgeD0iMTYwIiB5PSI4OCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiByeD0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC44NSIvPjwvc3ZnPg==',
+                text: 'Design your own look and feel with the token based theming engine.'
             },
             {
-                title: 'Atlantis',
-                link: 'https://atlantis.primeng.org/',
-                image: 'https://primefaces.org/cdn/primeng/images/layouts/atlantis-ng.jpg',
-                text: "Boost your application's capabilities, customization with the Atlantis template."
+                title: 'Forms',
+                link: '/inputtext',
+                image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMTgwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjNjM2NkYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjJEM0VFIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0idXJsKCNnKSIgb3BhY2l0eT0iMC44NSIvPjxwYXRoIGQ9Ik0xMjAgNzB2NDBoMzJ2LTExaC0yMVY3MGgtMTF6IiBmaWxsPSIjZmZmIi8+PHJlY3QgeD0iMTYwIiB5PSI4OCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiByeD0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC44NSIvPjwvc3ZnPg==',
+                text: 'Build accessible forms with 25+ input components.'
             },
             {
-                title: 'Verona',
-                link: 'https://verona.primeng.org/',
-                image: 'https://primefaces.org/cdn/primeng/images/layouts/verona-ng.jpg',
-                text: "Achieve sophistication and subtlety with Verona's minimalistic, content-focused design."
+                title: 'Overlays',
+                link: '/dialog',
+                image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMTgwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjNjM2NkYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjJEM0VFIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0idXJsKCNnKSIgb3BhY2l0eT0iMC44NSIvPjxwYXRoIGQ9Ik0xMjAgNzB2NDBoMzJ2LTExaC0yMVY3MGgtMTF6IiBmaWxsPSIjZmZmIi8+PHJlY3QgeD0iMTYwIiB5PSI4OCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiByeD0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC44NSIvPjwvc3ZnPg==',
+                text: 'Dialogs, drawers, popovers and tooltips for rich interactions.'
             },
             {
-                title: 'Freya',
-                link: 'https://freya.primeng.org/',
-                image: 'https://primefaces.org/cdn/primeng/images/layouts/freya-ng.jpg',
-                text: "Give your application a sleek, updated look with Freya's chic and modern premium template."
+                title: 'Icons',
+                link: '/icons',
+                image: 'data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAzMjAgMTgwIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBzdG9wLWNvbG9yPSIjNjM2NkYxIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjMjJEM0VFIi8+PC9saW5lYXJHcmFkaWVudD48L2RlZnM+PHJlY3Qgd2lkdGg9IjMyMCIgaGVpZ2h0PSIxODAiIHJ4PSIxMiIgZmlsbD0idXJsKCNnKSIgb3BhY2l0eT0iMC44NSIvPjxwYXRoIGQ9Ik0xMjAgNzB2NDBoMzJ2LTExaC0yMVY3MGgtMTF6IiBmaWxsPSIjZmZmIi8+PHJlY3QgeD0iMTYwIiB5PSI4OCIgd2lkdGg9IjIyIiBoZWlnaHQ9IjIyIiByeD0iNSIgZmlsbD0iI2ZmZiIgb3BhY2l0eT0iMC44NSIvPjwvc3ZnPg==',
+                text: 'Hundreds of ready to use icons via the primeicons font.'
             }
         ];
 

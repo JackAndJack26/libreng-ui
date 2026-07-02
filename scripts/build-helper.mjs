@@ -120,3 +120,52 @@ export async function renameDTSFile(dir, newName, resolver) {
         }
     }
 }
+
+// Replaces pnpm "catalog:" / "catalog:<name>" references in a package.json with
+// the concrete ranges defined in pnpm-workspace.yaml, so the published manifest
+// is valid for any client (npm/yarn/pnpm).
+export function materializeCatalogVersions(pkgJsonPath) {
+    const { __workspace } = resolvePath(import.meta.url);
+    const yaml = fs.readFileSync(path.resolve(__workspace, 'pnpm-workspace.yaml'), 'utf8');
+
+    const catalogs = { default: {} };
+    let current = null;
+
+    for (const raw of yaml.split('\n')) {
+        const line = raw.replace(/\t/g, '    ');
+        if (/^catalog:\s*$/.test(line)) {
+            current = 'default';
+            continue;
+        }
+        if (/^catalogs:\s*$/.test(line)) {
+            current = 'catalogs';
+            continue;
+        }
+        if (current === 'catalogs') {
+            const named = line.match(/^ {4}([A-Za-z0-9_-]+):\s*$/);
+            if (named) {
+                catalogs[named[1]] = {};
+                current = `catalogs.${named[1]}`;
+                continue;
+            }
+        }
+        const entry = line.match(/^ {4,8}['"]?([^'":]+)['"]?:\s*(.+?)\s*$/);
+        if (entry && current) {
+            const target = current === 'default' ? catalogs.default : catalogs[current.split('.')[1]];
+            if (target) target[entry[1]] = entry[2].replace(/^['"]|['"]$/g, '');
+        }
+        if (/^[A-Za-z]/.test(line) && !/^catalogs?:/.test(line)) current = null;
+    }
+
+    const pkg = JSON.parse(fs.readFileSync(pkgJsonPath, 'utf8'));
+    for (const field of ['dependencies', 'peerDependencies', 'devDependencies']) {
+        for (const [name, range] of Object.entries(pkg[field] ?? {})) {
+            const m = typeof range === 'string' && range.match(/^catalog:(.*)$/);
+            if (!m) continue;
+            const cat = m[1] ? catalogs[m[1]] : catalogs.default;
+            if (cat?.[name]) pkg[field][name] = cat[name];
+            else throw new Error(`No catalog entry for ${name} (${range}) while materializing ${pkgJsonPath}`);
+        }
+    }
+    fs.writeFileSync(pkgJsonPath, JSON.stringify(pkg, null, 4) + '\n');
+}

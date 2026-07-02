@@ -10,7 +10,6 @@ export const routes: Routes = [
         children: [
             { path: 'accessibility', redirectTo: 'guides/accessibility', pathMatch: 'full' },
             { path: 'theming', redirectTo: 'theming/styled', pathMatch: 'full' },
-            { path: 'uikit/guide', redirectTo: 'uikit/guide/v3', pathMatch: 'full' },
             { path: 'autocomplete', loadChildren: () => import('@/pages/autocomplete/routes') },
             {
                 path: 'installation',
@@ -21,8 +20,6 @@ export const routes: Routes = [
                 loadChildren: () => import('@/pages/configuration/routes')
             },
             { path: 'playground', loadChildren: () => import('@/pages/playground/routes') },
-            { path: 'roadmap', loadChildren: () => import('@/pages/roadmap/routes') },
-            { path: 'team', loadChildren: () => import('@/pages/team/routes') },
             {
                 path: 'theming',
                 loadChildren: () => import('@/pages/theming/routes')
@@ -160,7 +157,6 @@ export const routes: Routes = [
                 loadChildren: () => import('@/pages/keyfilter/routes')
             },
             { path: 'listbox', loadChildren: () => import('@/pages/listbox/routes') },
-            { path: 'lts', loadChildren: () => import('@/pages/lts/routes') },
             {
                 path: 'megamenu',
                 loadChildren: () => import('@/pages/megamenu/routes')
@@ -243,7 +239,6 @@ export const routes: Routes = [
                 loadChildren: () => import('@/pages/splitter/routes')
             },
             { path: 'stepper', loadChildren: () => import('@/pages/stepper/routes') },
-            { path: 'support', loadChildren: () => import('@/pages/support/routes') },
             {
                 path: 'styleclass',
                 loadChildren: () => import('@/pages/styleclass/routes')
@@ -287,7 +282,6 @@ export const routes: Routes = [
                 path: 'virtualscroller',
                 loadChildren: () => import('@/pages/scroller/routes')
             },
-            { path: 'uikit', loadChildren: () => import('@/pages/uikit/routes') },
             { path: 'autofocus', loadChildren: () => import('@/pages/autofocus/routes') },
             { path: 'overlay', loadChildren: () => import('@/pages/overlay/routes') },
             {
@@ -302,7 +296,6 @@ export const routes: Routes = [
                 path: 'bind',
                 loadChildren: () => import('@/pages/bind/routes')
             },
-            { path: 'templates', loadChildren: () => import('@/pages/templates/templates.module').then((m) => m.TemplatesModule) },
             { path: 'guides', loadChildren: () => import('@/pages/guides/routes') },
             { path: 'llms', loadChildren: () => import('@/pages/llms/routes') },
             { path: 'mcp', loadChildren: () => import('@/pages/mcp/routes') },

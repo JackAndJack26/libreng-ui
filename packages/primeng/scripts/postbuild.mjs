@@ -1,8 +1,10 @@
 import fs from 'fs-extra';
 import path from 'path';
-import { resolvePath } from '../../../scripts/build-helper.mjs';
+import { materializeCatalogVersions, resolvePath } from '../../../scripts/build-helper.mjs';
 
 const { __dirname, __workspace, OUTPUT_DIR } = resolvePath(import.meta.url);
 
 fs.copySync(path.resolve(__dirname, '../README.md'), `${OUTPUT_DIR}/README.md`);
 fs.copySync(path.resolve(__workspace, './LICENSE.md'), `${OUTPUT_DIR}/LICENSE.md`);
+
+materializeCatalogVersions(path.resolve(__dirname, `../${OUTPUT_DIR}/package.json`));

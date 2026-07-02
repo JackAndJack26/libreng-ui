@@ -37,7 +37,7 @@ export class RouterDoc implements OnInit {
                     },
                     {
                         label: 'UI Kit',
-                        routerLink: '/uikit'
+                        routerLink: '/theming'
                     }
                 ]
             },
